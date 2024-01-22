@@ -63,7 +63,6 @@ body {
     transform: scale(1.5); /* 將按鈕的尺寸增加50% */
 }
 
-
 .contentner {
     position: relative;
     z-index: 1;
@@ -78,6 +77,17 @@ body {
     margin-left: 3vh;
     margin-right: 3vh;
     font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; /* 強制使用 Calibri 字體 */
+}
+
+/* 使用 CSS 調整對齊方式 */
+.center-container {
+    text-align: right;
+}
+
+/* 單純的超連結樣式 */
+.center-container a {
+    color: snow; /* 超連結文字顏色 */
+    text-decoration: none; /* 移除底線 */
 }
 
 /* 黑暗模式下的 .contentner */
