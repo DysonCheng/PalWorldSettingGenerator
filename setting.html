@@ -9,14 +9,16 @@
     <script src="generateSettings.js"></script>
 </head>
 <body>
-    <button type="button" onclick="generateSettings()">生成並下載設定檔</button>
-    <div class="contentner">
+    <button class="button2" onclick="toggleDarkMode()">切換主題</button>
+    <button class="button" onclick="generateSettings()">生成並下載設定檔</button>
+    <div id="container" class="contentner">
         <div class="scroll-message">
             <img src="R.gif" alt="down" class="small-gif">請　往　下　捲
         </div>
     <h1>🌺幻獸帕魯設定產生器🌺</h1>
     <h1>PalWorld Settings Generator</h1>
-    <h2> - by Rabi 20240122</h2>
+    <h1>Server Version 0.1.2.0</h1>
+    <h2> - by Dyson 20240122</h2>
     <form id="settingsForm">
         <table>
             <tr>
@@ -474,5 +476,14 @@
     <footer>
         <p>© 2024 Web materials provided by Pocket Pair. All creative rights belong to Dyson.</p>
     </footer>
+    <script>
+        // JavaScript 切換主題函數
+        function toggleDarkMode() {
+            // 取得容器元素
+            var container = document.getElementById('container');
+            // 切換 dark-mode 類別
+            container.classList.toggle('dark-mode');
+        }
+        </script>
 </body>
 </html>

@@ -13,10 +13,19 @@ body {
     width: 2%; /* 縮小為原大小的 1/5 */
 }
 
-button {
+/* 右下角按鈕 */
+.button {
     position: fixed;
-    right: 40px;
-    bottom: 30px;
+    right: 2%;
+    bottom: 5%;
+    z-index: 2; /* 設定比其他元素更大的 z-index */
+    transform: scale(1.5); /* 將按鈕的尺寸增加50% */
+}
+
+.button2 {
+    position: fixed;
+    left: 2%;
+    bottom: 5%;
     z-index: 2; /* 設定比其他元素更大的 z-index */
     transform: scale(1.5); /* 將按鈕的尺寸增加50% */
 }
@@ -24,7 +33,8 @@ button {
 .contentner {
     position: relative;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -34,6 +44,13 @@ button {
     margin-left: 3vh;
     margin-right: 3vh;
     font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; /* 強制使用 Calibri 字體 */
+}
+
+/* 黑暗模式下的 .contentner */
+.contentner.dark-mode {
+    
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
 }
 
 h1 {
