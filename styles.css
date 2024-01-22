@@ -1,3 +1,25 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 調整此值以改變暗度，越小越暗 */
+    z-index: -1;
+}
+
+body.snow-mode::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none; /* 將背景設為透明 */
+    z-index: -1;
+}
+
 body {
     background-image: url('Palworld_KeyVisual_1080p_Loco_C.png');
     background-size: cover;
@@ -7,10 +29,13 @@ body {
     padding: 0;
     overflow: auto;
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    position: relative;
 }
 
-.scroll-message .small-gif {
+.small-gif {
     width: 2%; /* 縮小為原大小的 1/5 */
+    display: block;
+    margin: auto;
 }
 
 /* 右下角按鈕 */
@@ -33,7 +58,7 @@ body {
 .contentner {
     position: relative;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -47,24 +72,35 @@ body {
 }
 
 /* 黑暗模式下的 .contentner */
-.contentner.dark-mode {
-    
-    background: rgba(255, 255, 255, 0.5);
+.contentner.snow-mode {
+    background: rgba(255, 255, 255, 0.7);
     color: #000;
 }
 
-h1 {
+h1, h2 {
     color: snow;
-    text-align: center;
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 添加陰影效果，可根據需要調整 */
+    text-align:center;
 }
 
-h2 {
+h3 {
     color: snow;
-    text-align: right;
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 添加陰影效果，可根據需要調整 */
+    text-align:right;
+}
+
+.snow-mode h1, .snow-mode h2 {
+    color: #000; /* 調整成白雪模式下的文字顏色 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 添加陰影效果，可根據需要調整 */
+    text-align: center; /* 在白雪模式下可能調整 h2 的對齊方式 */
+}
+
+.snow-mode h3 {
+    color: #000; /* 調整成白雪模式下的文字顏色 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 添加陰影效果，可根據需要調整 */
+    text-align: right; /* 在白雪模式下可能調整 h3 的對齊方式 */
 }
 
 table {

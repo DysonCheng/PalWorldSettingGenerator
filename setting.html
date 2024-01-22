@@ -11,16 +11,14 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-    <button class="button2" onclick="toggleDarkMode()">切換主題</button>
+    <button class="button2" onclick="toggleSnowMode()">切換主題</button>
     <button class="button" onclick="generateSettings()">生成並下載設定檔</button>
     <div id="container" class="contentner">
-        <div class="scroll-message">
-            <img src="R.gif" alt="down" class="small-gif">請　往　下　捲
-        </div>
+    <img src="R.gif" alt="down" class="small-gif">
     <h1>🌺幻獸帕魯設定產生器🌺</h1>
     <h1>PalWorld Settings Generator</h1>
-    <h1>Server Version 0.1.2.0</h1>
-    <h2> - by Dyson 20240122</h2>
+    <h2>Server Version 0.1.2.0</h2>
+    <h3> - by Dyson 20240122</h3>
     <form id="settingsForm">
         <table>
             <tr>
@@ -480,13 +478,19 @@
     </footer>
     <script>
         // JavaScript 切換主題函數
-        function toggleDarkMode() {
+        function toggleSnowMode() {
             // 取得容器元素
             var container = document.getElementById('container');
             // 切換 dark-mode 類別
-            container.classList.toggle('dark-mode');
+            container.classList.toggle('snow-mode');
+    
+            // 取得 body 元素
+            var body = document.body;
+            // 切換 snow-mode 類別
+            body.classList.toggle('snow-mode');
         }
     </script>
+    
         <div id="google_translate_element"></div>
     <script type="text/javascript">
       function googleTranslateElementInit() {
@@ -496,7 +500,7 @@
         autoDisplay: false
         }, 'google_translate_element');
         }
-
     </script>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61555804922934&is_tour_completed=true&tabs=timeline&width=340&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </body>
 </html>
