@@ -46,12 +46,12 @@
             <tr>
                 <td>日間時間加速率</td>
                 <td translate="no">DayTimeSpeedRate</td>
-                <td><input type="text" id="dayTimeSpeedRate" name="dayTimeSpeedRate" value="1.000000"></td>
+                <td><input type="number" id="dayTimeSpeedRate" name="dayTimeSpeedRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>夜間時間加速率</td>
                 <td translate="no">NightTimeSpeedRate</td>
-                <td><input type="text" id="nightTimeSpeedRate" name="nightTimeSpeedRate" value="1.000000"></td>
+                <td><input type="number" id="nightTimeSpeedRate" name="nightTimeSpeedRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <!-- 跨列至三欄，置中 -->
@@ -59,110 +59,115 @@
                     <strong>角色、幻獸、採集設定</strong>
                 </td>
             </tr>
+            <!-- <tr>
+                <td>經驗值加成率</td>
+                <td translate="no">ExpRate</td>
+                <td><input type="text" id="expRate" name="expRate" value="1.000000" step="0.1" min="0"></td>
+            </tr> -->
             <tr>
                 <td>經驗值加成率</td>
                 <td translate="no">ExpRate</td>
-                <td><input type="text" id="expRate" name="expRate" value="1.000000"></td>
+                <td><input type="number" id="expRate" name="expRate" value="1.000000" step="0.1" min="0" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物捕捉率</td>
                 <td translate="no">PalCaptureRate</td>
-                <td><input type="text" id="palCaptureRate" name="palCaptureRate" value="1.000000"></td>
+                <td><input type="number" id="palCaptureRate" name="palCaptureRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物生成數量加成率</td>
                 <td translate="no">PalSpawnNumRate</td>
-                <td><input type="text" id="palSpawnNumRate" name="palSpawnNumRate" value="1.000000"></td>
+                <td><input type="number" id="palSpawnNumRate" name="palSpawnNumRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物攻擊傷害加成率</td>
                 <td translate="no">PalDamageRateAttack</td>
-                <td><input type="text" id="palDamageRateAttack" name="palDamageRateAttack" value="1.000000"></td>
+                <td><input type="number" id="palDamageRateAttack" name="palDamageRateAttack" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物防禦傷害減免率</td>
                 <td translate="no">PalDamageRateDefense</td>
-                <td><input type="text" id="palDamageRateDefense" name="palDamageRateDefense" value="1.000000"></td>
+                <td><input type="number" id="palDamageRateDefense" name="palDamageRateDefense" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>玩家攻擊傷害加成率</td>
                 <td translate="no">PlayerDamageRateAttack</td>
-                <td><input type="text" id="playerDamageRateAttack" name="playerDamageRateAttack" value="1.000000"></td>
+                <td><input type="number" id="playerDamageRateAttack" name="playerDamageRateAttack" value="1.000000" step="0.1" min="0"></td>
             </tr>    
             <tr>
                 <td>玩家防禦傷害減免率</td>
                 <td translate="no">PlayerDamageRateDefense</td>
-                <td><input type="text" id="playerDamageRateDefense" name="playerDamageRateDefense" value="1.000000"></td>
+                <td><input type="number" id="playerDamageRateDefense" name="playerDamageRateDefense" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>玩家胃口下降率</td>
                 <td translate="no">PlayerStomachDecreaceRate</td>
-                <td><input type="text" id="playerStomachDecreaceRate" name="playerStomachDecreaceRate" value="1.000000"></td>
+                <td><input type="number" id="playerStomachDecreaceRate" name="playerStomachDecreaceRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>玩家耐力下降率</td>
                 <td translate="no">PlayerStaminaDecreaceRate</td>
-                <td><input type="text" id="playerStaminaDecreaceRate" name="playerStaminaDecreaceRate" value="1.000000"></td>
+                <td><input type="number" id="playerStaminaDecreaceRate" name="playerStaminaDecreaceRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>玩家自動生命恢復率</td>
                 <td translate="no">PlayerAutoHPRegeneRate</td>
-                <td><input type="text" id="playerAutoHPRegeneRate" name="playerAutoHPRegeneRate" value="1.000000"></td>
+                <td><input type="number" id="playerAutoHPRegeneRate" name="playerAutoHPRegeneRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>玩家睡眠中自動生命恢復率</td>
                 <td translate="no">PlayerAutoHpRegeneRateInSleep</td>
-                <td><input type="text" id="playerAutoHpRegeneRateInSleep" name="playerAutoHpRegeneRateInSleep" value="1.000000"></td>
+                <td><input type="number" id="playerAutoHpRegeneRateInSleep" name="playerAutoHpRegeneRateInSleep" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物胃口下降率</td>
                 <td translate="no">PalStomachDecreaceRate</td>
-                <td><input type="text" id="palStomachDecreaceRate" name="palStomachDecreaceRate" value="1.000000"></td>
+                <td><input type="number" id="palStomachDecreaceRate" name="palStomachDecreaceRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物耐力下降率</td>
                 <td translate="no">PalStaminaDecreaceRate</td>
-                <td><input type="text" id="palStaminaDecreaceRate" name="palStaminaDecreaceRate" value="1.000000"></td>
+                <td><input type="number" id="palStaminaDecreaceRate" name="palStaminaDecreaceRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物自動生命恢復率</td>
                 <td translate="no">PalAutoHPRegeneRate</td>
-                <td><input type="text" id="palAutoHPRegeneRate" name="palAutoHPRegeneRate" value="1.000000"></td>
+                <td><input type="number" id="palAutoHPRegeneRate" name="palAutoHPRegeneRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>寵物睡眠中自動生命恢復率</td>
                 <td translate="no">PalAutoHpRegeneRateInSleep</td>
-                <td><input type="text" id="palAutoHpRegeneRateInSleep" name="palAutoHpRegeneRateInSleep" value="1.000000"></td>
+                <td><input type="number" id="palAutoHpRegeneRateInSleep" name="palAutoHpRegeneRateInSleep" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>建築物傷害率</td>
                 <td translate="no">BuildObjectDamageRate</td>
-                <td><input type="text" id="buildObjectDamageRate" name="buildObjectDamageRate" value="1.000000"></td>
+                <td><input type="number" id="buildObjectDamageRate" name="buildObjectDamageRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>建築物劣化傷害率</td>
                 <td translate="no">BuildObjectDeteriorationDamageRate</td>
-                <td><input type="text" id="buildObjectDeteriorationDamageRate" name="buildObjectDeteriorationDamageRate" value="1.000000"></td>
+                <td><input type="number" id="buildObjectDeteriorationDamageRate" name="buildObjectDeteriorationDamageRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>掉落物品率</td>
                 <td translate="no">CollectionDropRate</td>
-                <td><input type="text" id="collectionDropRate" name="collectionDropRate" value="1.000000"></td>
+                <td><input type="number" id="collectionDropRate" name="collectionDropRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>收藏物品生命值率</td>
                 <td translate="no">CollectionObjectHpRate</td>
-                <td><input type="text" id="collectionObjectHpRate" name="collectionObjectHpRate" value="1.000000"></td>
+                <td><input type="number" id="collectionObjectHpRate" name="collectionObjectHpRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>收藏物品重生速率</td>
                 <td translate="no">CollectionObjectRespawnSpeedRate</td>
-                <td><input type="text" id="collectionObjectRespawnSpeedRate" name="collectionObjectRespawnSpeedRate" value="1.000000"></td>
+                <td><input type="number" id="collectionObjectRespawnSpeedRate" name="collectionObjectRespawnSpeedRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>敵人掉落物品率</td>
                 <td translate="no">EnemyDropItemRate</td>
-                <td><input type="text" id="enemyDropItemRate" name="enemyDropItemRate" value="1.000000"></td>
+                <td><input type="number" id="enemyDropItemRate" name="enemyDropItemRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>死亡懲罰</td>
@@ -250,27 +255,27 @@
             <tr>
                 <td>掉落物品最大數量</td>
                 <td translate="no">DropItemMaxNum</td>
-                <td><input type="text" id="dropItemMaxNum" name="dropItemMaxNum" value="3000"></td>
+                <td><input type="number" id="dropItemMaxNum" name="dropItemMaxNum" value="3000"></td>
             </tr>
             <tr>
                 <td>UNKO掉落物品最大數量</td>
                 <td translate="no">DropItemMaxNum_UNKO</td>
-                <td><input type="text" id="dropItemMaxNum_UNKO" name="dropItemMaxNum_UNKO" value="100"></td>
+                <td><input type="number" id="dropItemMaxNum_UNKO" name="dropItemMaxNum_UNKO" value="100"></td>
             </tr>
             <tr>
                 <td>基地營最大數量</td>
                 <td translate="no">BaseCampMaxNum</td>
-                <td><input type="text" id="baseCampMaxNum" name="baseCampMaxNum" value="128"></td>
+                <td><input type="number" id="baseCampMaxNum" name="baseCampMaxNum" value="128"></td>
             </tr>
             <tr>
                 <td>基地營工作者最大數量</td>
                 <td translate="no">BaseCampWorkerMaxNum</td>
-                <td><input type="text" id="baseCampWorkerMaxNum" name="baseCampWorkerMaxNum" value="15"></td>
+                <td><input type="number" id="baseCampWorkerMaxNum" name="baseCampWorkerMaxNum" value="15"></td>
             </tr>
             <tr>
                 <td>掉落物品存活最大時間</td>
                 <td translate="no">DropItemAliveMaxHours</td>
-                <td><input type="text" id="dropItemAliveMaxHours" name="dropItemAliveMaxHours" value="1.000000"></td>
+                <td><input type="number" id="dropItemAliveMaxHours" name="dropItemAliveMaxHours" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>自動重置公會沒有在線的玩家</td>
@@ -285,22 +290,22 @@
             <tr>
                 <td>沒有在線的玩家公會自動重置時間</td>
                 <td translate="no">AutoResetGuildTimeNoOnlinePlayers</td>
-                <td><input type="text" id="autoResetGuildTimeNoOnlinePlayers" name="autoResetGuildTimeNoOnlinePlayers" value="72.000000"></td>
+                <td><input type="number" id="autoResetGuildTimeNoOnlinePlayers" name="autoResetGuildTimeNoOnlinePlayers" value="72.000000"></td>
             </tr>
             <tr>
                 <td>公會玩家最大數量</td>
                 <td translate="no">GuildPlayerMaxNum</td>
-                <td><input type="text" id="guildPlayerMaxNum" name="guildPlayerMaxNum" value="20"></td>
+                <td><input type="number" id="guildPlayerMaxNum" name="guildPlayerMaxNum" value="20"></td>
             </tr>
             <tr>
                 <td>Pal蛋預設孵化時間</td>
                 <td translate="no">PalEggDefaultHatchingTime</td>
-                <td><input type="text" id="palEggDefaultHatchingTime" name="palEggDefaultHatchingTime" value="72.000000"></td>
+                <td><input type="number" id="palEggDefaultHatchingTime" name="palEggDefaultHatchingTime" value="72.000000"></td>
             </tr>
             <tr>
                 <td>工作速度倍率</td>
                 <td translate="no">WorkSpeedRate</td>
-                <td><input type="text" id="workSpeedRate" name="workSpeedRate" value="1.000000"></td>
+                <td><input type="number" id="workSpeedRate" name="workSpeedRate" value="1.000000" step="0.1" min="0"></td>
             </tr>
             <tr>
                 <td>是否多人遊玩</td>
@@ -392,12 +397,12 @@
             <tr>
                 <td>合作玩家最大數量</td>
                 <td translate="no">CoopPlayerMaxNum</td>
-                <td><input type="text" id="coopPlayerMaxNum" name="coopPlayerMaxNum" value="4"></td>
+                <td><input type="number" id="coopPlayerMaxNum" name="coopPlayerMaxNum" value="4"></td>
             </tr>
             <tr>
                 <td>伺服器玩家最大數量</td>
                 <td translate="no">ServerPlayerMaxNum</td>
-                <td><input type="text" id="serverPlayerMaxNum" name="serverPlayerMaxNum" value="32"></td>
+                <td><input type="number" id="serverPlayerMaxNum" name="serverPlayerMaxNum" value="32"></td>
             </tr>
             <tr>
                 <td>伺服器名稱</td>
