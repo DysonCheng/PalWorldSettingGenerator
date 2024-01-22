@@ -10,7 +10,7 @@ PalWorld Setting Generator is a configuration file generator designed for the ga
 
 ## How to Use
 
-1. Visit the [PalWorld Setting Generator](https://example.com/palworld-generator) website.
+1. Visit the [PalWorld Setting Generator]([https://example.com/palworld-generator](https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html)) website.
 2. Fill out the form with your desired configuration parameters.
 3. Click the "Generate and Download Settings File" button.
 4. Apply the downloaded configuration file to your PalWorld game.
