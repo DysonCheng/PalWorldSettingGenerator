@@ -15,6 +15,7 @@
     <button class="button3" onclick="SaveSettings()">下載到設定檔</button>
     <div id="container" class="contentner">
     <img src="R.gif" alt="down" class="small-gif">
+    <div id="google_translate_element"></div>
     <h1>🌺幻獸帕魯設定產生器🌺</h1>
     <h1>PalWorld Settings Generator</h1>
     <h2>Server Version 0.1.2.0</h2>
@@ -64,11 +65,6 @@
                     <strong>角色、幻獸、採集設定</strong>
                 </td>
             </tr>
-            <!-- <tr>
-                <td>經驗值加成率</td>
-                <td translate="no">ExpRate</td>
-                <td><input type="text" id="expRate" name="expRate" value="1.000000" step="0.1" min="0"></td>
-            </tr> -->
             <tr>
                 <td>經驗值加成率</td>
                 <td translate="no">ExpRate</td>
@@ -439,12 +435,6 @@
                 <td translate="no">PublicIP</td>
                 <td><input type="text" id="publicIP" name="publicIP" value=""></td>
             </tr>
-            <!-- <tr>
-                <td>RCON啟用</td>
-                <td>RCONEnabled</td>
-                <td><input type="text" id="rconEnabled" name="rconEnabled" value="False"></td>
-            </tr> -->
-            <!-- RCON啟用 -->
             <tr>
                 <td>RCON啟用</td>
                 <td translate="no">RCONEnabled</td>
@@ -493,15 +483,26 @@
             var container = document.getElementById('container');
             // 切換 dark-mode 類別
             container.classList.toggle('snow-mode');
-    
+            
             // 取得 body 元素
             var body = document.body;
             // 切換 snow-mode 類別
             body.classList.toggle('snow-mode');
+    
+            // 取得超連結元素
+            var links = document.querySelectorAll('.center-container a');
+    
+            // 檢查目前是否為白雪模式
+            var isSnowMode = body.classList.contains('snow-mode');
+    
+            // 根據模式切換超連結樣式
+            links.forEach(function(link) {
+                link.style.color = isSnowMode ? 'black' : 'snow';
+            });
         }
     </script>
     
-        <div id="google_translate_element"></div>
+    
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({
@@ -511,6 +512,5 @@
         }, 'google_translate_element');
         }
     </script>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61555804922934&is_tour_completed=true&tabs=timeline&width=340&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </body>
 </html>

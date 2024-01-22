@@ -165,8 +165,6 @@ footer p {
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
 }
 #google_translate_element {
-    position: fixed;
-    top: 10px; /* 调整到你想要的垂直位置，单位可以是 px、em、rem 等 */
-    right: 10px; /* 调整到你想要的水平位置，单位可以是 px、em、rem 等 */
+    position:sticky;
     z-index: 2;
   }
