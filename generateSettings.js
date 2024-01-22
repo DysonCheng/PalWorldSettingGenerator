@@ -10,7 +10,7 @@
             var palDamageRateDefense = document.getElementById('palDamageRateDefense').value;
             var playerDamageRateAttack = document.getElementById('playerDamageRateAttack').value;
             var playerDamageRateDefense = document.getElementById('playerDamageRateDefense').value;
-            var playerStomachDecreaceRate = document.getElementById('PlayerStomachDecreaceRate').value;
+            var playerStomachDecreaceRate = document.getElementById('playerStomachDecreaceRate').value;
             var playerStaminaDecreaceRate = document.getElementById('playerStaminaDecreaceRate').value;
             var playerAutoHPRegeneRate = document.getElementById('playerAutoHPRegeneRate').value;
             var playerAutoHpRegeneRateInSleep = document.getElementById('playerAutoHpRegeneRateInSleep').value;
