@@ -2,6 +2,13 @@
 
 ## Release Notes
 
+### Ver 1.3.2.1 ✨
+
+In this version, we have made several fixes and improvements to the project. The main changes include:
+
+Enhanced Theme Switching
+The theme switching functionality now provides a smoother and more pleasant experience. When transitioning to the snow mode, the switch is no longer instantaneous but rather gradual, reducing the impact on the user's eyes.
+
 ### Ver 1.3.2 ✨
 
 In this update (Version 1.3.2), I focused on improving the user experience with a more enhanced notification block. Here are the key changes made:
@@ -15,7 +22,7 @@ In this update (Version 1.3.2), I focused on improving the user experience with 
 The sliding scrollbar min & max issues are fixed.
 The description follows official content.
 
-### Ver 1.3 🔄
+### Ver 1.3 🚀
 
 Introducing a new feature: a sliding scrollbar! Elevate your user experience with this delightful addition.
 

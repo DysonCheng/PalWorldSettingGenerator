@@ -27,7 +27,7 @@
     <h1>PalWorld Settings Generator</h1>
     <h2>Server Version 0.1.2.0</h2>
     <h3> - by PalWorld Fans</h3>
-    <h3>Ver 1.3.2</h3>
+    <h3>Ver 1.3.2.1</h3>
     <div class="center-container">
       <!-- 單純的超連結 -->
       <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">參觀Github頁面(版本說明)</a><br>
@@ -677,7 +677,8 @@
   </footer>
   <script>
     // JavaScript 切換主題函數
-    function toggleSnowMode() {
+  // JavaScript 切換主題函數
+  function toggleSnowMode() {
       // 取得容器元素
       var container = document.getElementById('container');
       // 切換 dark-mode 類別
@@ -688,17 +689,21 @@
       // 切換 snow-mode 類別
       body.classList.toggle('snow-mode');
 
-      // 取得超連結元素
-      var links = document.querySelectorAll('.center-container a');
+      // 等待一小段時間再執行，確保過渡效果應用
+      setTimeout(function () {
+          // 取得超連結元素
+          var links = document.querySelectorAll('.center-container a');
 
-      // 檢查目前是否為白雪模式
-      var isSnowMode = body.classList.contains('snow-mode');
+          // 檢查目前是否為白雪模式
+          var isSnowMode = body.classList.contains('snow-mode');
 
-      // 根據模式切換超連結樣式
-      links.forEach(function (link) {
-        link.style.color = isSnowMode ? 'black' : 'snow';
-      });
-    }
+          // 根據模式切換超連結樣式
+          links.forEach(function (link) {
+              link.style.color = isSnowMode ? 'black' : 'snow';
+          });
+      }, 100); // 100 毫秒的延遲，可以根據實際效果調整
+  }
+
   </script>
   <script type="text/javascript">
     function googleTranslateElementInit() {

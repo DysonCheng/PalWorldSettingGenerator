@@ -38,6 +38,7 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* 調整此值以改變暗度，越小越暗 */
     z-index: -1;
+    transition: background-color 1s ease; /* 添加過渡效果，0.5秒的時間，easing 函數可以根據需要調整 */
 }
 
 body.snow-mode::before {
@@ -48,7 +49,7 @@ body.snow-mode::before {
     width: 100%;
     height: 100%;
     background: none; /* 將背景設為透明 */
-    z-index: -1;
+    z-index: -1;    
 }
 
 body {
@@ -61,6 +62,7 @@ body {
     overflow: auto;
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
     position: relative;
+    transition: background-color 1s ease; /* 添加過渡效果，0.5秒的時間，easing 函數可以根據需要調整 */
 }
 
 .small-gif {
@@ -108,6 +110,7 @@ body {
     margin-left: 3vh;
     margin-right: 3vh;
     font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    transition: background-color 1s ease; /* 同樣添加過渡效果 */
 }
 
 /* 使用 CSS 調整對齊方式 */
@@ -119,6 +122,7 @@ body {
 .center-container a {
     color: snow; /* 超連結文字顏色 */
     text-decoration: none; /* 移除底線 */
+    transition: color 1s ease; /* 過渡文字顏色 */
 }
 
 /* 黑暗模式下的 .contentner */
