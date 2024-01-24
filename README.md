@@ -10,7 +10,7 @@ PalWorld Setting Generator is a configuration file generator / editor designed f
 
 ## How to Use
 
-1. Visit the <a href="https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html" target="_blank">PalWorld Setting Generator</a> on the GitHub Page.
+1. Visit the [PalWorld Setting Generator](https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html) on the GitHub Page.
 
 2. Fill out the form with your desired configuration parameters.
 3. Click the "Generate and Download Settings File" button.
@@ -38,7 +38,7 @@ PalWorld Setting Generator 是為遊戲 PalWorld 設計的配置文件生成/編
 
 ## 如何使用
 
-1. 訪問 <a href="https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html" target="_blank">PalWorld Setting Generator</a> 在GitHub Page的網站。
+1. 訪問 [幻獸帕魯設定產生器](https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html) 在GitHub Page的網站。
 2. 使用您所需的配置參數填寫表單。
 3. 點擊“生成並下載設置文件”按鈕。
 4. 將下載的配置文件應用到您的 PalWorld 遊戲中。
