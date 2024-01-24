@@ -24,24 +24,24 @@
     <h1>PalWorld Settings Generator</h1>
     <h2>Server Version 0.1.2.0</h2>
     <h3> - by PalWorld Fans</h3>
-    <h3>Ver 1.3.1</h3>
+    <h3>Ver 1.3.2</h3>
     <div class="center-container">
         <!-- 單純的超連結 -->
-        <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">參觀Github頁面</a><br>
-        <a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">更新訊息(Gamer.com.tw)</a>
+        <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">參觀Github頁面(版本說明)</a><br>
+        <a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋(www.gamer.com.tw)</a>
     </div>
     <form id="settingsForm">
         <table>
             <tr>
-                <th>說明</th>
-                <th>變數名稱</th>
-                <th>數字</th>
-            </tr>
-            <tr>
                 <td colspan="3" style="text-align: center; font-weight: bold;">
-                    <strong>遊戲設定</strong>
+                    <strong>遊戲設定　🕹️</strong>
                 </td>
             </tr>
+            <tr>
+              <th>說明</th>
+              <th>變數名稱</th>
+              <th>數字</th>
+          </tr>
             <tr>
                 <td>調整遊戲的整體難度</td>
                 <td translate="no">Difficulty</td>
@@ -270,9 +270,14 @@
         </tr>
         <tr>
             <td colspan="3" style="text-align: center; font-weight: bold;">
-                <strong>伺服器設定</strong>
+                <strong>伺服器設定　🛠️</strong>
             </td>
         </tr>
+        <tr>
+          <th>說明</th>
+          <th>變數名稱</th>
+          <th>數字</th>
+      </tr>
         <tr>
             <td>允許玩家對玩家造成傷害</td>
             <td translate="no">bEnablePlayerToPlayerDamage</td>
@@ -663,6 +668,12 @@
                     }
                 });
                 document.getElementById("configField").value = '';
+                // Show notification
+                var notification = document.getElementById('notification2');
+                notification.style.opacity = 1;
+                setTimeout(function() {
+                    notification.style.opacity = 0;
+                }, 1500);
             }
         }
     </script>
@@ -720,5 +731,7 @@
       }
     }
   </script>
+  <div id="notification" class="hidden">已經複製到剪貼簿。✅</div>
+  <div id="notification2" class="hidden">讀取成功。✅</div>
 </body>
 </html>

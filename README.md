@@ -2,12 +2,20 @@
 
 ## Release Notes
 
-### Ver 1.3.1
+### Ver 1.3.2 ✨
+
+In this update (Version 1.3.2), I focused on improving the user experience with a more enhanced notification block. Here are the key changes made:
+- **Display Speed:** The notification block now appears faster, providing immediate feedback for actions such as copying content to the clipboard.
+- **Fade-out Time:** The disappearance of the notification block has been reduced for a quicker and smoother transition.
+- **Background Color:** The background color of the notification block has been slightly darkened to improve visibility while maintaining transparency.
+- **Opacity Animation:** The opacity transition in and out of the notification block has been optimized, ensuring a seamless and visually pleasing experience.
+
+### Ver 1.3.1 🔧
 
 The sliding scrollbar min & max issues are fixed.
 The description follows official content.
 
-### Ver 1.3 😄
+### Ver 1.3 🔄
 
 Introducing a new feature: a sliding scrollbar! Elevate your user experience with this delightful addition.
 
@@ -15,7 +23,9 @@ Introducing a new feature: a sliding scrollbar! Elevate your user experience wit
 
 Added numeric data reading functionality. Easily access and interpret numerical values, enhancing precision in your interactions.
 
-PalWorld Setting Generator is a configuration file generator designed for the game PalWorld. This tool allows players to easily customize various in-game parameters.
+# About the PalWorld Setting Generator
+
+PalWorld Setting Generator is a configuration file generator / editor designed for the game PalWorld. This tool allows players to easily customize various in-game parameters.
 
 ## Features
 
