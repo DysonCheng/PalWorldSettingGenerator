@@ -2,6 +2,10 @@
 
 ## Release Notes
 
+### Ver 1.3.1
+
+The sliding scrollbar min & max fixed.
+
 ### Ver 1.3 😄
 
 Introducing a new feature: a sliding scrollbar! Elevate your user experience with this delightful addition.
