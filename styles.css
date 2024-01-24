@@ -1,3 +1,23 @@
+.reset-btn {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* 新增 CSS 樣式，當數值為 0 時變更顏色 */
+  .lightbar:invalid {
+    background-color: pink !important; /* 粉紅色 */
+  }
+
+  /* 初始樣式，淺綠色 */
+  .lightbar {
+    background-color: #d2f5d2; /* 淺綠色 */
+  }
+
+  /* 變更顏色，非預設值且非 0 時為藍色 */
+  .lightbar.non-default:valid {
+    background-color: #c2e2f2; /* 藍色 */
+  }
+
 .iamfine {
     position: fixed;
     right: 2%;

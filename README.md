@@ -1,5 +1,15 @@
 # PalWorld Setting Generator
 
+## Release Notes
+
+### Ver 1.3 😄
+
+Introducing a new feature: a sliding scrollbar! Elevate your user experience with this delightful addition.
+
+### Ver 1.2 🚀
+
+Added numeric data reading functionality. Easily access and interpret numerical values, enhancing precision in your interactions.
+
 PalWorld Setting Generator is a configuration file generator designed for the game PalWorld. This tool allows players to easily customize various in-game parameters.
 
 ## Features
@@ -17,7 +27,7 @@ PalWorld Setting Generator is a configuration file generator designed for the ga
 
 ## Supported Languages
 
-- Currently supports multiple languages, please using web browser translator.
+- Currently supports multiple languages; feel free to utilize your web browser's translation feature.
 
 PalWorld Setting Generator is part of the PalWorld community, striving to enhance the gaming experience. Feel free to use the tool and provide feedback to ensure the in-game settings align with player expectations.
 

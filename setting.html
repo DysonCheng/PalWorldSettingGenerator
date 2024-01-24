@@ -35,448 +35,559 @@
             <tr>
                 <th>說明</th>
                 <th>變數名稱</th>
-                <th>文字欄位</th>
+                <th>數字</th>
             </tr>
             <tr>
-                <!-- 跨列至三欄，置中 -->
                 <td colspan="3" style="text-align: center; font-weight: bold;">
                     <strong>遊戲設定</strong>
                 </td>
             </tr>
             <tr>
-                <td>難度</td>
+                <td>調整遊戲的整體難度</td>
                 <td translate="no">Difficulty</td>
                 <td>
                     <select id="Difficulty" name="Difficulty">
                         <option value="None">None</option>
                         <option value="Easy">Easy</option>
                         <option value="Difficult">Difficult</option>
-                    </select>
+                    </select>(預設值:None),會整體影響各種機率與數值的總體設定
                 </td>
             </tr>
             <tr>
-                <td>日間時間加速率</td>
-                <td translate="no">DayTimeSpeedRate</td>
-                <td><input type="number" id="DayTimeSpeedRate" name="DayTimeSpeedRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>夜間時間加速率</td>
-                <td translate="no">NightTimeSpeedRate</td>
-                <td><input type="number" id="NightTimeSpeedRate" name="NightTimeSpeedRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <!-- 跨列至三欄，置中 -->
-                <td colspan="3" style="text-align: center; font-weight: bold;">
-                    <strong>角色、幻獸、採集設定</strong>
-                </td>
-            </tr>
-            <tr>
-                <td>經驗值加成率</td>
-                <td translate="no">ExpRate</td>
-                <td><input type="number" id="ExpRate" name="ExpRate" value="1.000000" step="0.1" min="0" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物捕捉率</td>
-                <td translate="no">PalCaptureRate</td>
-                <td><input type="number" id="PalCaptureRate" name="PalCaptureRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物生成數量加成率</td>
-                <td translate="no">PalSpawnNumRate</td>
-                <td><input type="number" id="PalSpawnNumRate" name="PalSpawnNumRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物攻擊傷害加成率</td>
-                <td translate="no">PalDamageRateAttack</td>
-                <td><input type="number" id="PalDamageRateAttack" name="PalDamageRateAttack" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物防禦傷害減免率</td>
-                <td translate="no">PalDamageRateDefense</td>
-                <td><input type="number" id="PalDamageRateDefense" name="PalDamageRateDefense" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>玩家攻擊傷害加成率</td>
-                <td translate="no">PlayerDamageRateAttack</td>
-                <td><input type="number" id="PlayerDamageRateAttack" name="PlayerDamageRateAttack" value="1.000000" step="0.1" min="0"></td>
-            </tr>    
-            <tr>
-                <td>玩家防禦傷害減免率</td>
-                <td translate="no">PlayerDamageRateDefense</td>
-                <td><input type="number" id="PlayerDamageRateDefense" name="PlayerDamageRateDefense" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>玩家胃口下降率</td>
-                <td translate="no">PlayerStomachDecreaceRate</td>
-                <td><input type="number" id="PlayerStomachDecreaceRate" name="PlayerStomachDecreaceRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>玩家耐力下降率</td>
-                <td translate="no">PlayerStaminaDecreaceRate</td>
-                <td><input type="number" id="PlayerStaminaDecreaceRate" name="PlayerStaminaDecreaceRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>玩家自動生命恢復率</td>
-                <td translate="no">PlayerAutoHPRegeneRate</td>
-                <td><input type="number" id="PlayerAutoHPRegeneRate" name="PlayerAutoHPRegeneRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>玩家睡眠中自動生命恢復率</td>
-                <td translate="no">PlayerAutoHpRegeneRateInSleep</td>
-                <td><input type="number" id="PlayerAutoHpRegeneRateInSleep" name="PlayerAutoHpRegeneRateInSleep" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物胃口下降率</td>
-                <td translate="no">PalStomachDecreaceRate</td>
-                <td><input type="number" id="PalStomachDecreaceRate" name="PalStomachDecreaceRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物耐力下降率</td>
-                <td translate="no">PalStaminaDecreaceRate</td>
-                <td><input type="number" id="PalStaminaDecreaceRate" name="PalStaminaDecreaceRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物自動生命恢復率</td>
-                <td translate="no">PalAutoHPRegeneRate</td>
-                <td><input type="number" id="PalAutoHPRegeneRate" name="PalAutoHPRegeneRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>寵物睡眠中自動生命恢復率</td>
-                <td translate="no">PalAutoHpRegeneRateInSleep</td>
-                <td><input type="number" id="PalAutoHpRegeneRateInSleep" name="PalAutoHpRegeneRateInSleep" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>建築物傷害率</td>
-                <td translate="no">BuildObjectDamageRate</td>
-                <td><input type="number" id="BuildObjectDamageRate" name="BuildObjectDamageRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>建築物劣化傷害率</td>
-                <td translate="no">BuildObjectDeteriorationDamageRate</td>
-                <td><input type="number" id="BuildObjectDeteriorationDamageRate" name="BuildObjectDeteriorationDamageRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>掉落物品率</td>
-                <td translate="no">CollectionDropRate</td>
-                <td><input type="number" id="CollectionDropRate" name="CollectionDropRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>收藏物品生命值率</td>
-                <td translate="no">CollectionObjectHpRate</td>
-                <td><input type="number" id="CollectionObjectHpRate" name="CollectionObjectHpRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>收藏物品重生速率</td>
-                <td translate="no">CollectionObjectRespawnSpeedRate</td>
-                <td><input type="number" id="CollectionObjectRespawnSpeedRate" name="CollectionObjectRespawnSpeedRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>敵人掉落物品率</td>
-                <td translate="no">EnemyDropItemRate</td>
-                <td><input type="number" id="EnemyDropItemRate" name="EnemyDropItemRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>死亡懲罰</td>
-                <td translate="no">DeathPenalty</td>
-                <td>
-                    <select id="DeathPenalty" name="DeathPenalty">
-                        <option value="None">None完全不掉</option>
-                        <option value="Item">Item掉落道具</option>
-                        <option value="ItemAndEquipment">ItemAndEquipment掉落道具與裝備</option>
-                        <option value="All" selected>All掉落全部(Pals)</option>
-                    </select>
-                </td>
-            </tr>            
-            
-            <tr>
-                <!-- 跨列至三欄，置中 -->
-                <td colspan="3" style="text-align: center; font-weight: bold;">
-                    <strong>伺服器設定</strong>
-                </td>
-            </tr>
-            <tr>
-                <td>允許玩家對玩家造成傷害</td>
-                <td translate="no">bEnablePlayerToPlayerDamage</td>
-                <td>
-                    <select id="bEnablePlayerToPlayerDamage" name="bEnablePlayerToPlayerDamage">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 允許友好火力 -->
-            <tr>
-                <td>允許友好火力</td>
-                <td translate="no">bEnableFriendlyFire</td>
-                <td>
-                    <select id="bEnableFriendlyFire" name="bEnableFriendlyFire">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 允許侵略者敵人 -->
-            <tr>
-                <td>允許侵略者敵人</td>
-                <td translate="no">bEnableInvaderEnemy</td>
-                <td>
-                    <select id="bEnableInvaderEnemy" name="bEnableInvaderEnemy">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 啟用UNKO -->
-            <tr>
-                <td>啟用UNKO</td>
-                <td translate="no">bActiveUNKO</td>
-                <td>
-                    <select id="bActiveUNKO" name="bActiveUNKO">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>啟用手柄瞄準輔助</td>
-                <td translate="no">bEnableAimAssistPad</td>
-                <td>
-                    <select id="bEnableAimAssistPad" name="bEnableAimAssistPad">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 啟用鍵盤瞄準輔助 -->
-            <tr>
-                <td>啟用鍵盤瞄準輔助</td>
-                <td translate="no">bEnableAimAssistKeyboard</td>
-                <td>
-                    <select id="bEnableAimAssistKeyboard" name="bEnableAimAssistKeyboard">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>掉落物品最大數量</td>
-                <td translate="no">DropItemMaxNum</td>
-                <td><input type="number" id="DropItemMaxNum" name="DropItemMaxNum" value="3000"></td>
-            </tr>
-            <tr>
-                <td>UNKO掉落物品最大數量</td>
-                <td translate="no">DropItemMaxNum_UNKO</td>
-                <td><input type="number" id="DropItemMaxNum_UNKO" name="DropItemMaxNum_UNKO" value="100"></td>
-            </tr>
-            <tr>
-                <td>基地營最大數量</td>
-                <td translate="no">BaseCampMaxNum</td>
-                <td><input type="number" id="BaseCampMaxNum" name="BaseCampMaxNum" value="128"></td>
-            </tr>
-            <tr>
-                <td>基地營工作者最大數量</td>
-                <td translate="no">BaseCampWorkerMaxNum</td>
-                <td><input type="number" id="BaseCampWorkerMaxNum" name="BaseCampWorkerMaxNum" value="15"></td>
-            </tr>
-            <tr>
-                <td>掉落物品存活最大時間</td>
-                <td translate="no">DropItemAliveMaxHours</td>
-                <td><input type="number" id="DropItemAliveMaxHours" name="DropItemAliveMaxHours" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>自動重置公會沒有在線的玩家</td>
-                <td translate="no">bAutoResetGuildNoOnlinePlayers</td>
-                <td>
-                    <select id="bAutoResetGuildNoOnlinePlayers" name="bAutoResetGuildNoOnlinePlayers">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>沒有在線的玩家公會自動重置時間</td>
-                <td translate="no">AutoResetGuildTimeNoOnlinePlayers</td>
-                <td><input type="number" id="AutoResetGuildTimeNoOnlinePlayers" name="AutoResetGuildTimeNoOnlinePlayers" value="72.000000"></td>
-            </tr>
-            <tr>
-                <td>公會玩家最大數量</td>
-                <td translate="no">GuildPlayerMaxNum</td>
-                <td><input type="number" id="GuildPlayerMaxNum" name="GuildPlayerMaxNum" value="20"></td>
-            </tr>
-            <tr>
-                <td>Pal蛋預設孵化時間</td>
-                <td translate="no">PalEggDefaultHatchingTime</td>
-                <td><input type="number" id="PalEggDefaultHatchingTime" name="PalEggDefaultHatchingTime" value="72.000000"></td>
-            </tr>
-            <tr>
-                <td>工作速度倍率</td>
-                <td translate="no">WorkSpeedRate</td>
-                <td><input type="number" id="WorkSpeedRate" name="WorkSpeedRate" value="1.000000" step="0.1" min="0"></td>
-            </tr>
-            <tr>
-                <td>是否多人遊玩</td>
-                <td translate="no">bIsMultiplay</td>
-                <td>
-                    <select id="bIsMultiplay" name="bIsMultiplay">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 是否PvP -->
-            <tr>
-                <td>是否PvP</td>
-                <td translate="no">bIsPvP</td>
-                <td>
-                    <select id="bIsPvP" name="bIsPvP">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 能否撿取其他公會死亡處罰物品 -->
-            <tr>
-                <td>能否撿取其他公會死亡處罰物品</td>
-                <td translate="no">bCanPickupOtherGuildDeathPenaltyDrop</td>
-                <td>
-                    <select id="bCanPickupOtherGuildDeathPenaltyDrop" name="bCanPickupOtherGuildDeathPenaltyDrop">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 是否啟用非登入處罰 -->
-            <tr>
-                <td>是否啟用非登入處罰</td>
-                <td translate="no">bEnableNonLoginPenalty</td>
-                <td>
-                    <select id="bEnableNonLoginPenalty" name="bEnableNonLoginPenalty">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 是否啟用快速移動 -->
-            <tr>
-                <td>是否啟用快速移動</td>
-                <td translate="no">bEnableFastTravel</td>
-                <td>
-                    <select id="bEnableFastTravel" name="bEnableFastTravel">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 是否由地圖選擇起始位置 -->
-            <tr>
-                <td>是否由地圖選擇起始位置</td>
-                <td translate="no">bIsStartLocationSelectByMap</td>
-                <td>
-                    <select id="bIsStartLocationSelectByMap" name="bIsStartLocationSelectByMap">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 登出後是否保留玩家 -->
-            <tr>
-                <td>登出後是否保留玩家</td>
-                <td translate="no">bExistPlayerAfterLogout</td>
-                <td>
-                    <select id="bExistPlayerAfterLogout" name="bExistPlayerAfterLogout">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <!-- 是否啟用防禦其他公會玩家 -->
-            <tr>
-                <td>是否啟用防禦其他公會玩家</td>
-                <td translate="no">bEnableDefenseOtherGuildPlayer</td>
-                <td>
-                    <select id="bEnableDefenseOtherGuildPlayer" name="bEnableDefenseOtherGuildPlayer">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>合作玩家最大數量</td>
-                <td translate="no">CoopPlayerMaxNum</td>
-                <td><input type="number" id="CoopPlayerMaxNum" name="CoopPlayerMaxNum" value="4"></td>
-            </tr>
-            <tr>
-                <td>伺服器玩家最大數量</td>
-                <td translate="no">ServerPlayerMaxNum</td>
-                <td><input type="number" id="ServerPlayerMaxNum" name="ServerPlayerMaxNum" value="32"></td>
-            </tr>
-            <tr>
-                <td>伺服器名稱</td>
-                <td translate="no">ServerName</td>
-                <td><input type="text" id="ServerName" name="ServerName" value="Default Palworld Server"></td>
-            </tr>
-            <tr>
-                <td>伺服器描述</td>
-                <td translate="no">ServerDescription</td>
-                <td><input type="text" id="ServerDescription" name="ServerDescription" value=""></td>
-            </tr>
-            <tr>
-                <td>管理員密碼</td>
-                <td translate="no">AdminPassword</td>
-                <td><input type="text" id="AdminPassword" name="AdminPassword" value=""></td>
-            </tr>
-            <tr>
-                <td>伺服器密碼</td>
-                <td translate="no">ServerPassword</td>
-                <td><input type="text" id="ServerPassword" name="ServerPassword" value=""></td>
-            </tr>
-            <tr>
-                <td>公開連接埠</td>
-                <td translate="no">PublicPort</td>
-                <td><input type="text" id="PublicPort" name="PublicPort" value="8211"></td>
-            </tr>
-            <tr>
-                <td>公開IP</td>
-                <td translate="no">PublicIP</td>
-                <td><input type="text" id="PublicIP" name="PublicIP" value=""></td>
-            </tr>
-            <tr>
-                <td>RCON啟用</td>
-                <td translate="no">RCONEnabled</td>
-                <td>
-                    <select id="RCONEnabled" name="RCONEnabled">
-                        <option value="True">True</option>
-                        <option value="False" selected>False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>RCON連接埠</td>
-                <td translate="no">RCONPort</td>
-                <td><input type="text" id="RCONPort" name="RCONPort" value="25575"></td>
-            </tr>
-            <tr>
-                <td>區域</td>
-                <td translate="no">Region</td>
-                <td><input type="text" id="Region" name="region" value=""></td>
-            </tr>
-            <tr>
-                <td>是否使用身份驗證</td>
-                <td translate="no">bUseAuth</td>
-                <td>
-                    <select id="bUseAuth" name="bUseAuth">
-                        <option value="True" selected>True</option>
-                        <option value="False">False</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>封鎖清單URL</td>
-                <td translate="no">BanListURL</td>
-                <td><input type="text" id="BanListURL" name="banListURL" value="https://api.Palworldgame.com/api/banlist.txt"></td>
-            </tr>      
+              <td>修改白天遊戲內時間的速度</td>
+              <td translate="no">DayTimeSpeedRate</td>
+              <td><input type="number" id="DayTimeSpeedRate" name="DayTimeSpeedRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+                  <input type="range" id="sliderDayTimeSpeedRate" min="0" max="10" step="1" value="1" oninput="updateInputValue('DayTimeSpeedRate', 'sliderDayTimeSpeedRate')" class="lightbar">
+                  <span class="reset-btn" onclick="resetValue('DayTimeSpeedRate')">恢復預設值</span>➡️(數字越小白天越短)</td>
+          </tr>
+          <tr>
+              <td>修改夜間遊戲時間的速度</td>
+              <td translate="no">NightTimeSpeedRate</td>
+              <td>
+                  <input type="number" id="NightTimeSpeedRate" name="NightTimeSpeedRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+                  <input type="range" id="sliderNightTimeSpeedRate" min="0" max="10" step="1" value="1" oninput="updateInputValue('NightTimeSpeedRate', 'sliderNightTimeSpeedRate')" class="lightbar">
+                  <span class="reset-btn" onclick="resetValue('NightTimeSpeedRate')">恢復預設值</span>➡️(數字越小夜間越短)</td>
+          </tr>
+          <tr>
+              <td>改變玩家和生物的經驗獲得率</td>
+              <td translate="no">ExpRate</td>
+              <td><input type="number" id="ExpRate" name="ExpRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+                  <input type="range" id="sliderExpRate" min="0" step="1" max="10" value="1" oninput="updateInputValue('ExpRate', 'sliderExpRate')" class="lightbar">
+                  <span class="reset-btn" onclick="resetValue('ExpRate')">恢復預設值</span>➡️(數字越大升級越快)
+              </td>
+          </tr>
+          <tr>
+            <td>調整捕獲Pal的機率</td>
+            <td translate="no">PalCaptureRate</td>
+            <td>
+              <input type="number" id="PalCaptureRate" name="PalCaptureRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalCaptureRate" min="0" max="10" step="1" value="1" oninput="updateInputValue('PalCaptureRate', 'sliderPalCaptureRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalCaptureRate')">恢復預設值</span>➡️(數字越大機率越高)
+            </td>
+          </tr>
+          <tr>
+            <td>調整帕爾生物的生成數量</td>
+            <td translate="no">PalSpawnNumRate</td>
+            <td>
+              <input type="number" id="PalSpawnNumRate" name="PalSpawnNumRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalSpawnNumRate" min="0" max="10" step="1" value="1" oninput="updateInputValue('PalSpawnNumRate', 'sliderPalSpawnNumRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalSpawnNumRate')">恢復預設值</span>➡️(數字越大生成越多)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物攻擊傷害加成率</td>
+            <td translate="no">PalDamageRateAttack</td>
+            <td>
+              <input type="number" id="PalDamageRateAttack" name="PalDamageRateAttack" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalDamageRateAttack" min="0" max="10" step="1" value="1" oninput="updateInputValue('PalDamageRateAttack', 'sliderPalDamageRateAttack')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalDamageRateAttack')">恢復預設值</span>➡️(數字越大攻擊越高)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物防禦傷害減免率</td>
+            <td translate="no">PalDamageRateDefense</td>
+            <td>
+              <input type="number" id="PalDamageRateDefense" name="PalDamageRateDefense" value="1" step="0.01" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalDamageRateDefense" min="0" max="10" step="1" value="1" oninput="updateInputValue('PalDamageRateDefense', 'sliderPalDamageRateDefense')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalDamageRateDefense')">恢復預設值</span>➡️(數字越小受傷越少)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家攻擊傷害加成率</td>
+            <td translate="no">PlayerDamageRateAttack</td>
+            <td>
+              <input type="number" id="PlayerDamageRateAttack" name="PlayerDamageRateAttack" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerDamageRateAttack" min="0" max="10" step="1" value="1" oninput="updateInputValue('PlayerDamageRateAttack', 'sliderPlayerDamageRateAttack')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerDamageRateAttack')">恢復預設值</span>➡️(數字越大攻擊越高)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家防禦傷害減免率</td>
+            <td translate="no">PlayerDamageRateDefense</td>
+            <td>
+              <input type="number" id="PlayerDamageRateDefense" name="PlayerDamageRateDefense" value="1" step="0.01" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerDamageRateDefense" min="0" max="5" step="1" value="1" oninput="updateInputValue('PlayerDamageRateDefense', 'sliderPlayerDamageRateDefense')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerDamageRateDefense')">恢復預設值</span>➡️(數字越小受傷越少)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家胃口下降率</td>
+            <td translate="no">PlayerStomachDecreaceRate</td>
+            <td>
+              <input type="number" id="PlayerStomachDecreaceRate" name="PlayerStomachDecreaceRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerStomachDecreaceRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PlayerStomachDecreaceRate', 'sliderPlayerStomachDecreaceRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerStomachDecreaceRate')">恢復預設值</span>➡️(數字越小越不容易餓)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家耐力下降率</td>
+            <td translate="no">PlayerStaminaDecreaceRate</td>
+            <td>
+              <input type="number" id="PlayerStaminaDecreaceRate" name="PlayerStaminaDecreaceRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerStaminaDecreaceRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PlayerStaminaDecreaceRate', 'sliderPlayerStaminaDecreaceRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerStaminaDecreaceRate')">恢復預設值</span>➡️(數字越小精力消耗越慢)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家自動生命恢復率</td>
+            <td translate="no">PlayerAutoHPRegeneRate</td>
+            <td>
+              <input type="number" id="PlayerAutoHPRegeneRate" name="PlayerAutoHPRegeneRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerAutoHPRegeneRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PlayerAutoHPRegeneRate', 'sliderPlayerAutoHPRegeneRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerAutoHPRegeneRate')">恢復預設值</span>➡️(數字越大回復HP越快)
+            </td>
+          </tr>
+          <tr>
+            <td>玩家睡眠中自動生命恢復率</td>
+            <td translate="no">PlayerAutoHpRegeneRateInSleep</td>
+            <td>
+              <input type="number" id="PlayerAutoHpRegeneRateInSleep" name="PlayerAutoHpRegeneRateInSleep" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPlayerAutoHpRegeneRateInSleep" min="0" max="5" step="1" value="1" oninput="updateInputValue('PlayerAutoHpRegeneRateInSleep', 'sliderPlayerAutoHpRegeneRateInSleep')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PlayerAutoHpRegeneRateInSleep')">恢復預設值</span>➡️(數字越大回復HP越快)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物胃口下降率</td>
+            <td translate="no">PalStomachDecreaceRate</td>
+            <td>
+              <input type="number" id="PalStomachDecreaceRate" name="PalStomachDecreaceRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalStomachDecreaceRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PalStomachDecreaceRate', 'sliderPalStomachDecreaceRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalStomachDecreaceRate')">恢復預設值</span>➡️(數字越小越不容易餓)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物耐力下降率</td>
+            <td translate="no">PalStaminaDecreaceRate</td>
+            <td>
+              <input type="number" id="PalStaminaDecreaceRate" name="PalStaminaDecreaceRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalStaminaDecreaceRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PalStaminaDecreaceRate', 'sliderPalStaminaDecreaceRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalStaminaDecreaceRate')">恢復預設值</span>➡️(數字越小精力消耗越慢)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物自動生命恢復率</td>
+            <td translate="no">PalAutoHPRegeneRate</td>
+            <td>
+              <input type="number" id="PalAutoHPRegeneRate" name="PalAutoHPRegeneRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalAutoHPRegeneRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('PalAutoHPRegeneRate', 'sliderPalAutoHPRegeneRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalAutoHPRegeneRate')">恢復預設值</span>➡️(數字越大回復HP越快)
+            </td>
+          </tr>
+          <tr>
+            <td>寵物睡眠中自動生命恢復率</td>
+            <td translate="no">PalAutoHpRegeneRateInSleep</td>
+            <td>
+              <input type="number" id="PalAutoHpRegeneRateInSleep" name="PalAutoHpRegeneRateInSleep" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderPalAutoHpRegeneRateInSleep" min="0" max="5" step="1" value="1" oninput="updateInputValue('PalAutoHpRegeneRateInSleep', 'sliderPalAutoHpRegeneRateInSleep')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('PalAutoHpRegeneRateInSleep')">恢復預設值</span>➡️(數字越大回復HP越快)
+            </td>
+          </tr>
+          <tr>
+            <td>建築物傷害率</td>
+            <td translate="no">BuildObjectDamageRate</td>
+            <td>
+              <input type="number" id="BuildObjectDamageRate" name="BuildObjectDamageRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderBuildObjectDamageRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('BuildObjectDamageRate', 'sliderBuildObjectDamageRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('BuildObjectDamageRate')">恢復預設值</span>➡️(數字越小受傷越少)
+            </td>
+          </tr>
+          <tr>
+            <td>建築物劣化傷害率</td>
+            <td translate="no">BuildObjectDeteriorationDamageRate</td>
+            <td>
+              <input type="number" id="BuildObjectDeteriorationDamageRate" name="BuildObjectDeteriorationDamageRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderBuildObjectDeteriorationDamageRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('BuildObjectDeteriorationDamageRate', 'sliderBuildObjectDeteriorationDamageRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('BuildObjectDeteriorationDamageRate')">恢復預設值</span>➡️(數字越小劣化越慢)
+            </td>
+          </tr>
+          <tr>
+            <td>採集物掉落率</td>
+            <td translate="no">CollectionDropRate</td>
+            <td>
+              <input type="number" id="CollectionDropRate" name="CollectionDropRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderCollectionDropRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('CollectionDropRate', 'sliderCollectionDropRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('CollectionDropRate')">恢復預設值</span>➡️(數字越大掉落越多)
+            </td>
+          </tr>
+          <tr>
+            <td>採集物生命值率</td>
+            <td translate="no">CollectionObjectHpRate</td>
+            <td>
+              <input type="number" id="CollectionObjectHpRate" name="CollectionObjectHpRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderCollectionObjectHpRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('CollectionObjectHpRate', 'sliderCollectionObjectHpRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('CollectionObjectHpRate')">恢復預設值</span>➡️(數字越大掉落越多)
+            </td>
+          </tr>
+          <tr>
+            <td>採集物重生速率</td>
+            <td translate="no">CollectionObjectRespawnSpeedRate</td>
+            <td>
+              <input type="number" id="CollectionObjectRespawnSpeedRate" name="CollectionObjectRespawnSpeedRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderCollectionObjectRespawnSpeedRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('CollectionObjectRespawnSpeedRate', 'sliderCollectionObjectRespawnSpeedRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('CollectionObjectRespawnSpeedRate')">恢復預設值</span>➡️(數字越小重生越快)
+            </td>
+          </tr>
+          <tr>
+            <td>敵人掉落物品率</td>
+            <td translate="no">EnemyDropItemRate</td>
+            <td>
+              <input type="number" id="EnemyDropItemRate" name="EnemyDropItemRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderEnemyDropItemRate" min="0" max="5" step="1" value="1" oninput="updateInputValue('EnemyDropItemRate', 'sliderEnemyDropItemRate')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('EnemyDropItemRate')">恢復預設值</span>➡️(數字越大掉落越多)
+            </td>
+          </tr>
+          <tr>
+            <td>死亡懲罰</td>
+            <td translate="no">DeathPenalty</td>
+            <td>
+                <select id="DeathPenalty" name="DeathPenalty">
+                    <option value="None">None完全不掉</option>
+                    <option value="Item">Item掉落道具</option>
+                    <option value="ItemAndEquipment">ItemAndEquipment掉落道具與裝備</option>
+                    <option value="All" selected>All掉落全部(Pals)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; font-weight: bold;">
+                <strong>伺服器設定</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>允許玩家對玩家造成傷害</td>
+            <td translate="no">bEnablePlayerToPlayerDamage</td>
+            <td>
+                <select id="bEnablePlayerToPlayerDamage" name="bEnablePlayerToPlayerDamage">
+                    <option value="True">True</option>
+                    <option value="False" selected>False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>允許友好火力</td>
+            <td translate="no">bEnableFriendlyFire</td>
+            <td>
+                <select id="bEnableFriendlyFire" name="bEnableFriendlyFire">
+                    <option value="True">True</option>
+                    <option value="False" selected>False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>允許侵略者敵人</td>
+            <td translate="no">bEnableInvaderEnemy</td>
+            <td>
+                <select id="bEnableInvaderEnemy" name="bEnableInvaderEnemy">
+                    <option value="True" selected>True</option>
+                    <option value="False">False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>啟用UNKO</td>
+            <td translate="no">bActiveUNKO</td>
+            <td>
+                <select id="bActiveUNKO" name="bActiveUNKO">
+                    <option value="True">True</option>
+                    <option value="False" selected>False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>啟用手柄瞄準輔助</td>
+            <td translate="no">bEnableAimAssistPad</td>
+            <td>
+                <select id="bEnableAimAssistPad" name="bEnableAimAssistPad">
+                    <option value="True" selected>True</option>
+                    <option value="False">False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>啟用鍵盤瞄準輔助</td>
+            <td translate="no">bEnableAimAssistKeyboard</td>
+            <td>
+                <select id="bEnableAimAssistKeyboard" name="bEnableAimAssistKeyboard">
+                    <option value="True">True</option>
+                    <option value="False" selected>False</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+          <td>掉落物品最大數量</td>
+          <td translate="no">DropItemMaxNum</td>
+          <td>
+            <input type="number" id="DropItemMaxNum" name="DropItemMaxNum" value="3000" step="100" class="lightbar" style="width: 60px;">
+            <input type="range" id="sliderDropItemMaxNum" min="0" max="5000" step="100" value="3000" oninput="updateInputValue('DropItemMaxNum', 'sliderDropItemMaxNum')" class="lightbar">
+            <span class="reset-btn" onclick="resetValue('DropItemMaxNum')">恢復預設值</span>➡️(數字越大地圖允許掉落物越多)
+          </td>
+        </tr>
+        <tr>
+          <td>UNKO掉落物品最大數量</td>
+          <td translate="no">DropItemMaxNum_UNKO</td>
+          <td>
+            <input type="number" id="DropItemMaxNum_UNKO" name="DropItemMaxNum_UNKO" value="100" step="10" class="lightbar" style="width: 60px;">
+            <input type="range" id="sliderDropItemMaxNum_UNKO" min="0" max="500" step="10" value="100" oninput="updateInputValue('DropItemMaxNum_UNKO', 'sliderDropItemMaxNum_UNKO')" class="lightbar">
+            <span class="reset-btn" onclick="resetValue('DropItemMaxNum_UNKO')">恢復預設值</span>➡️(數字越大地圖允許大便越多)
+          </td>
+        </tr>
+        <tr>
+          <td>基地營最大數量</td>
+          <td translate="no">BaseCampMaxNum</td>
+          <td>
+            <input type="number" id="BaseCampMaxNum" name="BaseCampMaxNum" value="128" step="1" class="lightbar" style="width: 60px;">
+            <input type="range" id="sliderBaseCampMaxNum" min="0" max="512" step="8" value="128" oninput="updateInputValue('BaseCampMaxNum', 'sliderBaseCampMaxNum')" class="lightbar">
+            <span class="reset-btn" onclick="resetValue('BaseCampMaxNum')">恢復預設值</span>➡️(數字越大地圖允許基地數量越多)
+          </td>
+        </tr>
+        <tr>
+          <td>基地營工作者最大數量</td>
+          <td translate="no">BaseCampWorkerMaxNum</td>
+          <td>
+            <input type="number" id="BaseCampWorkerMaxNum" name="BaseCampWorkerMaxNum" value="15" step="1" class="lightbar" style="width: 60px;">
+            <input type="range" id="sliderBaseCampWorkerMaxNum" min="0" max="50" step="1" value="15" oninput="updateInputValue('BaseCampWorkerMaxNum', 'sliderBaseCampWorkerMaxNum')" class="lightbar">
+            <span class="reset-btn" onclick="resetValue('BaseCampWorkerMaxNum')">恢復預設值</span>➡️(數字越大允許工作者越高)目前最大值15。超過無效。
+          </td>
+        </tr>
+        <tr>
+            <td>掉落物品存活最大時間</td>
+            <td translate="no">DropItemAliveMaxHours</td>
+            <td>
+              <input type="number" id="DropItemAliveMaxHours" name="DropItemAliveMaxHours" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderDropItemAliveMaxHours" min="0" max="5" step="1" value="1" oninput="updateInputValue('DropItemAliveMaxHours', 'sliderDropItemAliveMaxHours')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('DropItemAliveMaxHours')">恢復預設值</span>➡️(數字越小地圖掉落物消失越快)
+            </td>
+        </tr>
+        <tr>
+          <td>自動重置公會沒有在線的玩家</td>
+          <td translate="no">bAutoResetGuildNoOnlinePlayers</td>
+          <td>
+              <select id="bAutoResetGuildNoOnlinePlayers" name="bAutoResetGuildNoOnlinePlayers">
+                  <option value="True">True</option>
+                  <option value="False" selected>False</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>沒有在線的玩家公會自動重置時間</td>
+          <td translate="no">AutoResetGuildTimeNoOnlinePlayers</td>
+          <td>
+              <input type="number" id="AutoResetGuildTimeNoOnlinePlayers" name="AutoResetGuildTimeNoOnlinePlayers" value="72" step="0.1" min="0" class="lightbar" style="width: 60px;">
+              <input type="range" id="sliderAutoResetGuildTimeNoOnlinePlayers" min="0" max="720" step="8" value="72" oninput="updateInputValue('AutoResetGuildTimeNoOnlinePlayers', 'sliderAutoResetGuildTimeNoOnlinePlayers')" class="lightbar">
+              <span class="reset-btn" onclick="resetValue('AutoResetGuildTimeNoOnlinePlayers')">恢復預設值</span>➡️(數字越小剔除離線玩家離開公會時間越短)
+          </td>
+        </tr>
+        <tr>
+            <td>公會玩家最大數量</td>
+            <td translate="no">GuildPlayerMaxNum</td>
+            <td>
+                <input type="number" id="GuildPlayerMaxNum" name="GuildPlayerMaxNum" value="20" step="1" min="0" class="lightbar" style="width: 60px;">
+                <input type="range" id="sliderGuildPlayerMaxNum" min="0" max="100" step="1" value="20" oninput="updateInputValue('GuildPlayerMaxNum', 'sliderGuildPlayerMaxNum')" class="lightbar">
+                <span class="reset-btn" onclick="resetValue('GuildPlayerMaxNum')">恢復預設值</span>➡️(數字越大公會允許人數越多)
+            </td>
+        </tr>
+        <tr>
+            <td>Pal蛋預設孵化時間</td>
+            <td translate="no">PalEggDefaultHatchingTime</td>
+            <td>
+                <input type="number" id="PalEggDefaultHatchingTime" name="PalEggDefaultHatchingTime" value="72" step="0.1" min="0" class="lightbar" style="width: 60px;">
+                <input type="range" id="sliderPalEggDefaultHatchingTime" min="0" max="144" step="1" value="72" oninput="updateInputValue('PalEggDefaultHatchingTime', 'sliderPalEggDefaultHatchingTime')" class="lightbar">
+                <span class="reset-btn" onclick="resetValue('PalEggDefaultHatchingTime')">恢復預設值</span>➡️(數字越小巨大蛋孵化越快)
+            </td>
+        </tr>
+        <tr>
+          <td>工作速度倍率</td>
+          <td translate="no">WorkSpeedRate</td>
+          <td>
+            <input type="number" id="WorkSpeedRate" name="WorkSpeedRate" value="1" step="0.1" min="0" class="lightbar" style="width: 60px;">
+            <input type="range" id="sliderWorkSpeedRate" min="0" max="50" step="1" value="1" oninput="updateInputValue('WorkSpeedRate', 'sliderWorkSpeedRate')" class="lightbar">
+            <span class="reset-btn" onclick="resetValue('WorkSpeedRate')">恢復預設值</span>➡️(數字越大越快完成工作)
+          </td>
+        </tr>
+        <tr>
+          <td>是否多人遊玩</td>
+          <td translate="no">bIsMultiplay</td>
+          <td>
+              <select id="bIsMultiplay" name="bIsMultiplay">
+                  <option value="True">True</option>
+                  <option value="False" selected>False</option>
+              </select>
+          </td>
+          <tr>
+              <td>是否PvP</td>
+              <td translate="no">bIsPvP</td>
+              <td>
+                  <select id="bIsPvP" name="bIsPvP">
+                      <option value="True">True</option>
+                      <option value="False" selected>False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>能否撿取其他公會死亡處罰物品</td>
+              <td translate="no">bCanPickupOtherGuildDeathPenaltyDrop</td>
+              <td>
+                  <select id="bCanPickupOtherGuildDeathPenaltyDrop" name="bCanPickupOtherGuildDeathPenaltyDrop">
+                      <option value="True">True</option>
+                      <option value="False" selected>False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>是否啟用非登入處罰</td>
+              <td translate="no">bEnableNonLoginPenalty</td>
+              <td>
+                  <select id="bEnableNonLoginPenalty" name="bEnableNonLoginPenalty">
+                      <option value="True" selected>True</option>
+                      <option value="False">False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>是否啟用快速移動</td>
+              <td translate="no">bEnableFastTravel</td>
+              <td>
+                  <select id="bEnableFastTravel" name="bEnableFastTravel">
+                      <option value="True" selected>True</option>
+                      <option value="False">False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>是否由地圖選擇起始位置</td>
+              <td translate="no">bIsStartLocationSelectByMap</td>
+              <td>
+                  <select id="bIsStartLocationSelectByMap" name="bIsStartLocationSelectByMap">
+                      <option value="True" selected>True</option>
+                      <option value="False">False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>登出後是否保留玩家</td>
+              <td translate="no">bExistPlayerAfterLogout</td>
+              <td>
+                  <select id="bExistPlayerAfterLogout" name="bExistPlayerAfterLogout">
+                      <option value="True">True</option>
+                      <option value="False" selected>False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>是否啟用防禦其他公會玩家</td>
+              <td translate="no">bEnableDefenseOtherGuildPlayer</td>
+              <td>
+                  <select id="bEnableDefenseOtherGuildPlayer" name="bEnableDefenseOtherGuildPlayer">
+                      <option value="True">True</option>
+                      <option value="False" selected>False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+            <td>合作玩家最大數量</td>
+            <td translate="no">CoopPlayerMaxNum</td>
+            <td>
+                <input type="number" id="CoopPlayerMaxNum" name="CoopPlayerMaxNum" value="4" step="1" min="0" class="lightbar" style="width: 60px;">
+                <input type="range" id="sliderCoopPlayerMaxNum" min="0" max="50" step="1" value="4" oninput="updateInputValue('CoopPlayerMaxNum', 'sliderCoopPlayerMaxNum')" class="lightbar">
+                <span class="reset-btn" onclick="resetValue('CoopPlayerMaxNum')">恢復預設值</span>➡️(數字越大允許合作玩家越多)
+            </td>
+          </tr>
+          <tr>
+              <td>伺服器玩家最大數量</td>
+              <td translate="no">ServerPlayerMaxNum</td>
+              <td>
+                  <input type="number" id="ServerPlayerMaxNum" name="ServerPlayerMaxNum" value="32" step="1" min="0" class="lightbar" style="width: 60px;">
+                  <input type="range" id="sliderServerPlayerMaxNum" min="0" max="100" step="1" value="32" oninput="updateInputValue('ServerPlayerMaxNum', 'sliderServerPlayerMaxNum')" class="lightbar">
+                  <span class="reset-btn" onclick="resetValue('ServerPlayerMaxNum')">恢復預設值</span>➡️(數字越大伺服器允許容納人數越多)
+              </td>
+          </tr>
+          <tr>
+              <td>伺服器名稱</td>
+              <td translate="no">ServerName</td>
+              <td><input type="text" id="ServerName" name="ServerName" value="Default Palworld Server"></td>
+          </tr>
+          <tr>
+              <td>伺服器描述</td>
+              <td translate="no">ServerDescription</td>
+              <td><input type="text" id="ServerDescription" name="ServerDescription" value=""></td>
+          </tr>
+          <tr>
+              <td>管理員密碼</td>
+              <td translate="no">AdminPassword</td>
+              <td><input type="text" id="AdminPassword" name="AdminPassword" value=""></td>
+          </tr>
+          <tr>
+              <td>伺服器密碼</td>
+              <td translate="no">ServerPassword</td>
+              <td><input type="text" id="ServerPassword" name="ServerPassword" value=""></td>
+          </tr>
+          <tr>
+              <td>公開連接埠</td>
+              <td translate="no">PublicPort</td>
+              <td><input type="text" id="PublicPort" name="PublicPort" value="8211"></td>
+          </tr>
+          <tr>
+              <td>公開IP</td>
+              <td translate="no">PublicIP</td>
+              <td><input type="text" id="PublicIP" name="PublicIP" value=""></td>
+          </tr>
+          <tr>
+              <td>RCON啟用</td>
+              <td translate="no">RCONEnabled</td>
+              <td>
+                  <select id="RCONEnabled" name="RCONEnabled">
+                      <option value="True">True</option>
+                      <option value="False" selected>False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>RCON連接埠</td>
+              <td translate="no">RCONPort</td>
+              <td><input type="text" id="RCONPort" name="RCONPort" value="25575"></td>
+          </tr>
+          <tr>
+              <td>區域</td>
+              <td translate="no">Region</td>
+              <td><input type="text" id="Region" name="region" value=""></td>
+          </tr>
+          <tr>
+              <td>是否使用身份驗證</td>
+              <td translate="no">bUseAuth</td>
+              <td>
+                  <select id="bUseAuth" name="bUseAuth">
+                      <option value="True" selected>True</option>
+                      <option value="False">False</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>封鎖清單URL</td>
+              <td translate="no">BanListURL</td>
+              <td><input type="text" id="BanListURL" name="banListURL" value="https://api.Palworldgame.com/api/banlist.txt"></td>
+          </tr>
         </table>
-    </form>
+      </form>
     </div>
     <footer>
         <p>© 2024 Web materials provided by Pocket Pair.</p>
@@ -555,5 +666,59 @@
             }
         }
     </script>
+
+<script>
+    // 當頁面載入時設定初始樣式
+    document.addEventListener("DOMContentLoaded", function() {
+      initializeElement('DayTimeSpeedRate', 'sliderDayTimeSpeedRate');
+      initializeElement('NightTimeSpeedRate', 'sliderNightTimeSpeedRate');
+    });
+
+    function initializeElement(inputId, sliderId) {
+      var inputElement = document.getElementById(inputId);
+      inputElement.style.backgroundColor = "#d2f5d2"; // 淺綠色
+      if (inputElement.value !== inputElement.defaultValue) {
+        inputElement.classList.add("non-default");
+      }
+    }
+
+    function updateInputValue(inputId, sliderId) {
+      // 將數值型輸入的值更新為水平拉動條的值
+      document.getElementById(inputId).value = document.getElementById(sliderId).value;
+
+      // 新增檢查，若值為 0，將數值型輸入框變更背景色
+      if (document.getElementById(sliderId).value == 0) {
+        document.getElementById(inputId).setCustomValidity("Invalid");
+      } else {
+        document.getElementById(inputId).setCustomValidity("");
+      }
+
+      // 檢查是否為預設值，動態設定背景顏色
+      updateBackgroundColor(inputId);
+    }
+
+    function resetValue(elementId) {
+      // 重置數值型輸入的值為其初始值
+      document.getElementById(elementId).value = document.getElementById(elementId).defaultValue;
+
+      // 同時更新水平拉動條的值
+      var sliderId = 'slider' + elementId.substring(0, 1).toUpperCase() + elementId.substring(1);
+      document.getElementById(sliderId).value = document.getElementById(elementId).value;
+
+      // 並且觸發相應的事件，以反映變化
+      updateInputValue(elementId, sliderId);
+    }
+
+    function updateBackgroundColor(inputId) {
+      var inputElement = document.getElementById(inputId);
+      if (inputElement.value === inputElement.defaultValue) {
+        inputElement.classList.remove("non-default");
+        inputElement.style.backgroundColor = "#d2f5d2"; // 淺綠色
+      } else {
+        inputElement.classList.add("non-default");
+        inputElement.style.backgroundColor = "#c2e2f2"; // 藍色
+      }
+    }
+  </script>
 </body>
 </html>
