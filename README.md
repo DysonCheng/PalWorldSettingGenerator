@@ -4,7 +4,8 @@
 
 ### Ver 1.3.1
 
-The sliding scrollbar min & max fixed.
+The sliding scrollbar min & max issues are fixed.
+The description follows official content.
 
 ### Ver 1.3 😄
 
