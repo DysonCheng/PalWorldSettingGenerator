@@ -164,14 +164,24 @@ table, th, td {
 
 th, td {
     padding: 8px;
-    text-align: left;
     font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
 }
 
-/* 新增樣式，將第一欄與第二欄靠右對齊 */
+/* 第一欄與第二欄靠右對齊 */
 td:first-child, th:first-child {
     text-align: right;
 }
+
+/* 第二欄文字靠右 */
+td:nth-child(2), th:nth-child(2) {
+    text-align: right;
+}
+
+/* 第三欄靠左 */
+td:nth-child(3), th:nth-child(3) {
+    text-align: left;
+}
+
 
 .scroll-message {
     font-size: 24px; /* 字體大小 */
