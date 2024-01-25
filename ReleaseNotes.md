@@ -1,5 +1,11 @@
 # Release Notes
 
+## Ver 1.3.3 ✨
+
+Eliminated the dropdown menu. Utilizing more intuitive and easily understandable buttons for your convenience.
+Adjusted the message notifications. They will no longer obscure the mouse by hiding in the center of the screen.
+This update version now supports Server 0.1.3.0.
+
 ## Ver 1.3.2.1 ✨
 
 In this version, we have made several fixes and improvements to the project. The main changes include:

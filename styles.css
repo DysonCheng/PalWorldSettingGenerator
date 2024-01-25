@@ -267,29 +267,74 @@ footer p {
 
 #notification {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    right: 0%;
+    transform: translate(0%, 0%);
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(95, 203, 73, 0.5);
     color: #fff;
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
   }
   #notification2 {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    right: 0%;
+    transform: translate(0%, 0%);
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(95, 203, 73, 0.5);
     color: #fff;
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
   }
+
+/* 自訂顏色 */
+:root {
+    --radio-checked-color: #3498db; /* 已選中狀態的顏色 */
+    --radio-unchecked-color: #7f8c8d; /* 未選中狀態的顏色 */
+}
+
+/* 隱藏原始的Radiobutton樣式 */
+input[type="radio"] {
+    display: none;
+}
+
+/* 自定義Radiobutton樣式 */
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* 調整與文字的距離 */
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 1vw; /* 控制字型大小 */
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--radio-unchecked-color);
+    background-color: #fff; /* 背景色，可設定與頁面背景相同，形成空心效果 */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 已選中狀態的樣式 */
+input[type="radio"]:checked + label:before {
+    border-color: var(--radio-checked-color);
+    background-color: var(--radio-checked-color);
+}
+
+/* 方形的樣式 */
+input[type="radio"] + label:before {
+    border-radius: 4px; /* 調整方形的圓角半徑，根據需要調整 */
+}

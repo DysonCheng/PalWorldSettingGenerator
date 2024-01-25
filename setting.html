@@ -33,15 +33,15 @@
     <img src="R.gif" alt="down" class="small-gif">
     <div id="google_translate_element"></div>
     <h1>🌺PalWorld Settings Generator🌺</h1>
-    <h2>PalWorld設定產生器 - Server Version 0.1.2.0</h2>
+    <h2>PalWorld設定產生器 - Server Version 0.1.3.0</h2>
     <table class="banner-table">
       <tr>
         <td class="left-align"></td>
-        <td class="right-align"></td>
+        <td class="right-align">Updated:</td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">Github</a></div></td>
-        <td class="right-align">Ver 1.3.2.1</td>
+        <td class="right-align">2021-01-26 Ver 1.3.3</td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋</a></div></td>
@@ -59,11 +59,14 @@
           <td translate="no">Difficulty</td>
           <td>調整遊戲的整體難度</td>
           <td>
-            <select id="Difficulty" name="Difficulty">
-              <option value="None">不設定</option>
-              <option value="Easy">簡單</option>
-              <option value="Difficult">困難</option>
-            </select>(預設值:不設定),會整體影響各種機率與數值.
+              <input type="radio" id="Easy" name="Difficulty" value="Easy"> 
+              <label for="Easy">簡單</label>
+
+              <input type="radio" id="Difficult" name="Difficulty" value="Difficult">
+              <label for="Difficult">困難</label>
+
+              <input type="radio" id="None" name="Difficulty" value="None" checked>
+              <label for="None">不設定</label>(預設值:不設定),會整體影響各種機率與數值.
           </td>
         </tr>
         <tr>
@@ -239,7 +242,7 @@
           <td>
             <input type="number" id="PalAutoHPRegeneRate" name="PalAutoHPRegeneRate" value="1" step="0.1" min="0"
               class="lightbar" style="width: 60px;">
-            <input type="range" id="sliderPalAutoHPRegeneRate" min="0" max="3" step="1" value="1"
+            <input type="range" id="sliderPalAutoHPRegeneRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PalAutoHPRegeneRate', 'sliderPalAutoHPRegeneRate')" class="lightbar">
             <span class="reset-btn" onclick="resetValue('PalAutoHPRegeneRate')">🔄</span>(數字越大回復生命值越快)
           </td>
@@ -326,83 +329,95 @@
           </td>
         </tr>
 
+
         <tr>
           <td translate="no">DeathPenalty</td>
           <td>死亡懲罰</td>
           <td>
-            <select id="DeathPenalty" name="DeathPenalty">
-              <option value="None">None-完全不掉落</option>
-              <option value="Item">Item-只掉落道具</option>
-              <option value="ItemAndEquipment">ItemAndEquipment-掉落道具與裝備</option>
-              <option value="All" selected>All-掉落全部(包括Pals)</option>
-            </select>(預設值:掉落全部)
+              <input type="radio" id="DeathPenaltyNone" name="DeathPenalty" value="None">
+              <label for="DeathPenaltyNone">None-完全不掉落</label>
+              <input type="radio" id="DeathPenaltyItem" name="DeathPenalty" value="Item">
+              <label for="DeathPenaltyItem">Item-只掉落道具</label>
+              <br>
+              <input type="radio" id="DeathPenaltyItemAndEquipment" name="DeathPenalty" value="ItemAndEquipment">
+              <label for="DeathPenaltyItemAndEquipment">ItemAndEquipment-掉落道具與裝備</label>
+              <br>
+              <input type="radio" id="DeathPenaltyAll" name="DeathPenalty" value="All" checked>
+              <label for="DeathPenaltyAll">All-掉落全部(包括隊伍Pals)</label>
+              (預設值: 掉落全部)
           </td>
-        </tr>
+      </tr>
+      
         <tr>
           <td colspan="3" style="text-align: center; font-weight: bold; padding: 20px;">
             <strong>伺服器設定　🛠️</strong>
           </td>
         </tr>
+
         <tr>
           <td translate="no">bEnablePlayerToPlayerDamage</td>
           <td>開啟玩家對玩家造成傷害</td>
           <td>
-            <select id="bEnablePlayerToPlayerDamage" name="bEnablePlayerToPlayerDamage">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
+              <input type="radio" id="bEnablePlayerToPlayerDamageTrue" name="bEnablePlayerToPlayerDamage" value="True">
+              <label for="bEnablePlayerToPlayerDamageTrue">開啟</label>
+              <input type="radio" id="bEnablePlayerToPlayerDamageFalse" name="bEnablePlayerToPlayerDamage" value="False" checked>
+              <label for="bEnablePlayerToPlayerDamageFalse">關閉</label>
+              (預設值: 關閉)
           </td>
-        </tr>
-        <tr>
-          <td translate="no">bEnableFriendlyFire</td>
-          <td>開啟同隊傷害</td>
-          <td>
-            <select id="bEnableFriendlyFire" name="bEnableFriendlyFire">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:不允許)(同隊包括你的Pals)
-          </td>
-        </tr>
-        <tr>
-          <td translate="no">bEnableInvaderEnemy</td>
-          <td>是否會發生襲擊事件</td>
-          <td>
-            <select id="bEnableInvaderEnemy" name="bEnableInvaderEnemy">
-              <option value="True" selected>會發生</option>
-              <option value="False">不發生</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td translate="no">bActiveUNKO</td>
-          <td>啟用UNKO</td>
-          <td>
-            <select id="bActiveUNKO" name="bActiveUNKO">
-              <option value="True">啟用</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)(UNKO是Pals的大便)
-          </td>
-        </tr>
-        <tr>
-          <td translate="no">bEnableAimAssistPad</td>
-          <td>啟用手柄瞄準輔助</td>
-          <td>
-            <select id="bEnableAimAssistPad" name="bEnableAimAssistPad">
-              <option value="True" selected>啟用</option>
-              <option value="False">關閉</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td translate="no">bEnableAimAssistKeyboard</td>
-          <td>啟用鍵盤瞄準輔助</td>
-          <td>
-            <select id="bEnableAimAssistKeyboard" name="bEnableAimAssistKeyboard">
-              <option value="True">啟用</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
-          </td>
-        </tr>
+      </tr>
+    <tr>
+        <td translate="no">bEnableFriendlyFire</td>
+        <td>開啟同隊傷害</td>
+        <td>
+            <input type="radio" id="bEnableFriendlyFireTrue" name="bEnableFriendlyFire" value="True"d>
+            <label for="bEnableFriendlyFireTrue">開啟</label>
+            <input type="radio" id="bEnableFriendlyFireFalse" name="bEnableFriendlyFire" value="False" checked>
+            <label for="bEnableFriendlyFireFalse">關閉</label>
+            (預設值: 關閉) (同隊包括你的Pals)
+        </td>
+    </tr>
+    <tr>
+        <td translate="no">bEnableInvaderEnemy</td>
+        <td>是否會發生襲擊事件</td>
+        <td>
+            <input type="radio" id="bEnableInvaderEnemyTrue" name="bEnableInvaderEnemy" value="True" checked>
+            <label for="bEnableInvaderEnemyTrue">會發生</label>
+            <input type="radio" id="bEnableInvaderEnemyFalse" name="bEnableInvaderEnemy" value="False">
+            <label for="bEnableInvaderEnemyFalse">不發生</label>
+        </td>
+    </tr>
+    <tr>
+        <td translate="no">bActiveUNKO</td>
+        <td>啟用UNKO</td>
+        <td>
+            <input type="radio" id="bActiveUNKOTrue" name="bActiveUNKO" value="True">
+            <label for="bActiveUNKOTrue">啟用</label>
+            <input type="radio" id="bActiveUNKOFalse" name="bActiveUNKO" value="False" checked>
+            <label for="bActiveUNKOFalse">關閉</label>
+            (預設值: 關閉) (UNKO是Pals的大便)
+        </td>
+    </tr>
+    <tr>
+        <td translate="no">bEnableAimAssistPad</td>
+        <td>啟用手柄瞄準輔助</td>
+        <td>
+            <input type="radio" id="bEnableAimAssistPadTrue" name="bEnableAimAssistPad" value="True" checked>
+            <label for="bEnableAimAssistPadTrue">啟用</label>
+            <input type="radio" id="bEnableAimAssistPadFalse" name="bEnableAimAssistPad" value="False">
+            <label for="bEnableAimAssistPadFalse">關閉</label>
+        </td>
+    </tr>
+    <tr>
+        <td translate="no">bEnableAimAssistKeyboard</td>
+        <td>啟用鍵盤瞄準輔助</td>
+        <td>
+            <input type="radio" id="bEnableAimAssistKeyboardTrue" name="bEnableAimAssistKeyboard" value="True">
+            <label for="bEnableAimAssistKeyboardTrue">啟用</label>
+            <input type="radio" id="bEnableAimAssistKeyboardFalse" name="bEnableAimAssistKeyboard" value="False" checked>
+            <label for="bEnableAimAssistKeyboardFalse">關閉</label>
+            (預設值: 關閉)
+        </td>
+    </tr>
 
         <tr>
           <td translate="no">DropItemMaxNum</td>
@@ -459,16 +474,19 @@
             <span class="reset-btn" onclick="resetValue('DropItemAliveMaxHours')">🔄</span>(數字越小掉落物消失越快)
           </td>
         </tr>
+
         <tr>
           <td translate="no">bAutoResetGuildNoOnlinePlayers</td>
           <td>沒上線玩家自動退出公會</td>
           <td>
-            <select id="bAutoResetGuildNoOnlinePlayers" name="bAutoResetGuildNoOnlinePlayers">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
+              <input type="radio" id="bAutoResetGuildNoOnlinePlayersTrue" name="bAutoResetGuildNoOnlinePlayers" value="True">
+              <label for="bAutoResetGuildNoOnlinePlayersTrue">開啟</label>
+              <input type="radio" id="bAutoResetGuildNoOnlinePlayersFalse" name="bAutoResetGuildNoOnlinePlayers" value="False" checked>
+              <label for="bAutoResetGuildNoOnlinePlayersFalse">關閉</label>
+              (預設值: 關閉)
           </td>
-        </tr>
+      </tr>
+      
 
         <tr>
           <td translate="no">AutoResetGuildTimeNoOnlinePlayers</td>
@@ -516,86 +534,95 @@
             <span class="reset-btn" onclick="resetValue('WorkSpeedRate')">🔄</span>(數字越大工作越快)
           </td>
         </tr>
+       
         <tr>
           <td translate="no">bIsMultiplay</td>
           <td>是否多人遊玩</td>
           <td>
-            <select id="bIsMultiplay" name="bIsMultiplay">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
+              <input type="radio" id="bIsMultiplayTrue" name="bIsMultiplay" value="True">
+              <label for="bIsMultiplayTrue">開啟</label>
+              <input type="radio" id="bIsMultiplayFalse" name="bIsMultiplay" value="False" checked>
+              <label for="bIsMultiplayFalse">關閉</label>
+              (預設值: 關閉)
           </td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
           <td translate="no">bIsPvP</td>
           <td>是否開啟PvP模式</td>
           <td>
-            <select id="bIsPvP" name="bIsPvP">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
+              <input type="radio" id="bIsPvPTrue" name="bIsPvP" value="True">
+              <label for="bIsPvPTrue">開啟</label>
+              <input type="radio" id="bIsPvPFalse" name="bIsPvP" value="False" checked>
+              <label for="bIsPvPFalse">關閉</label>
+              (預設值: 關閉)
           </td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
           <td translate="no">bCanPickupOtherGuildDeathPenaltyDrop</td>
           <td>能否撿取其他公會死亡掉落物</td>
           <td>
-            <select id="bCanPickupOtherGuildDeathPenaltyDrop" name="bCanPickupOtherGuildDeathPenaltyDrop">
-              <option value="True">允許</option>
-              <option value="False" selected>不允許</option>
-            </select>(預設值:不允許)
+              <input type="radio" id="bCanPickupOtherGuildDeathPenaltyDropTrue" name="bCanPickupOtherGuildDeathPenaltyDrop" value="True">
+              <label for="bCanPickupOtherGuildDeathPenaltyDropTrue">允許</label>
+              <input type="radio" id="bCanPickupOtherGuildDeathPenaltyDropFalse" name="bCanPickupOtherGuildDeathPenaltyDrop" value="False" checked>
+              <label for="bCanPickupOtherGuildDeathPenaltyDropFalse">不允許</label>
+              (預設值: 不允許)
           </td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
           <td translate="no">bEnableNonLoginPenalty</td>
           <td>是否啟用沒登入處罰</td>
           <td>
-            <select id="bEnableNonLoginPenalty" name="bEnableNonLoginPenalty">
-              <option value="True" selected>開啟</option>
-              <option value="False">關閉</option>
-            </select>
+              <input type="radio" id="bEnableNonLoginPenaltyTrue" name="bEnableNonLoginPenalty" value="True" checked>
+              <label for="bEnableNonLoginPenaltyTrue">開啟</label>
+              <input type="radio" id="bEnableNonLoginPenaltyFalse" name="bEnableNonLoginPenalty" value="False">
+              <label for="bEnableNonLoginPenaltyFalse">關閉</label>
           </td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
           <td translate="no">bEnableFastTravel</td>
           <td>是否啟用快速移動</td>
           <td>
-            <select id="bEnableFastTravel" name="bEnableFastTravel">
-              <option value="True" selected>開啟</option>
-              <option value="False">關閉</option>
-            </select>
+              <input type="radio" id="bEnableFastTravelTrue" name="bEnableFastTravel" value="True" checked>
+              <label for="bEnableFastTravelTrue">開啟</label>
+              <input type="radio" id="bEnableFastTravelFalse" name="bEnableFastTravel" value="False">
+              <label for="bEnableFastTravelFalse">關閉</label>
           </td>
-        </tr>
+      </tr>
         <tr>
           <td translate="no">bIsStartLocationSelectByMap</td>
           <td>能否新角色可選擇出生點</td>
           <td>
-            <select id="bIsStartLocationSelectByMap" name="bIsStartLocationSelectByMap">
-              <option value="True" selected>開啟</option>
-              <option value="False">關閉</option>
-            </select>
+              <input type="radio" id="bIsStartLocationSelectByMapTrue" name="bIsStartLocationSelectByMap" value="True" checked>
+              <label for="bIsStartLocationSelectByMapTrue">開啟</label>
+              <input type="radio" id="bIsStartLocationSelectByMapFalse" name="bIsStartLocationSelectByMap" value="False">
+              <label for="bIsStartLocationSelectByMapFalse">關閉</label>
           </td>
-        </tr>
-        <tr>
-          <td translate="no">bExistPlayerAfterLogout</td>
-          <td>登出後玩家仍存在</td>
-          <td>
-            <select id="bExistPlayerAfterLogout" name="bExistPlayerAfterLogout">
-              <option value="True">開啟</option>
-              <option value="False" selected>關閉</option>
-            </select>(預設值:關閉)
-          </td>
-        </tr>
+      </tr>
+      
+      <tr>
+        <td translate="no">bExistPlayerAfterLogout</td>
+        <td>登出後玩家仍存在</td>
+        <td>
+            <input type="radio" id="bExistPlayerAfterLogoutTrue" name="bExistPlayerAfterLogout" value="True">
+            <label for="bExistPlayerAfterLogoutTrue">開啟</label>
+            <input type="radio" id="bExistPlayerAfterLogoutFalse" name="bExistPlayerAfterLogout" value="False" checked>
+            <label for="bExistPlayerAfterLogoutFalse">關閉</label>
+            (預設值:關閉)
+        </td>
+    </tr>
+    
         <tr>
           <td translate="no">bEnableDefenseOtherGuildPlayer</td>
           <td>是否會受到其他公會傷害</td>
           <td>
-            <select id="bEnableDefenseOtherGuildPlayer" name="bEnableDefenseOtherGuildPlayer">
-              <option value="True">會</option>
-              <option value="False" selected>不會</option>
-            </select>(預設值:不會)
+              <input type="radio" id="bEnableDefenseOtherGuildPlayerTrue" name="bEnableDefenseOtherGuildPlayer" value="True">
+              <label for="bEnableDefenseOtherGuildPlayerTrue">會</label>
+              <input type="radio" id="bEnableDefenseOtherGuildPlayerFalse" name="bEnableDefenseOtherGuildPlayer" value="False" checked>
+              <label for="bEnableDefenseOtherGuildPlayerFalse">不會</label>
+              (預設值:不會)
           </td>
-        </tr>
+      </tr>
+      
         <tr>
           <td translate="no">CoopPlayerMaxNum</td>
           <td>合作玩家人數上限</td>
@@ -648,16 +675,19 @@
           <td>公開IP</td>
           <td><input type="text" id="PublicIP" name="PublicIP" value=""></td>
         </tr>
+      
         <tr>
           <td translate="no">RCONEnabled</td>
           <td>RCON啟用</td>
           <td>
-            <select id="RCONEnabled" name="RCONEnabled">
-              <option value="True">啟用</option>
-              <option value="False" selected>不啟用</option>
-            </select>(預設值:不啟用)
+              <input type="radio" id="RCONEnabledTrue" name="RCONEnabled" value="True">
+              <label for="RCONEnabledTrue">啟用</label>
+              <input type="radio" id="RCONEnabledFalse" name="RCONEnabled" value="False" checked>
+              <label for="RCONEnabledFalse">不啟用</label>
+              (預設值:不啟用)
           </td>
         </tr>
+      
         <tr>
           <td translate="no">RCONPort</td>
           <td>RCON連接埠</td>
@@ -668,20 +698,21 @@
           <td>區域</td>
           <td><input type="text" id="Region" name="region" value=""></td>
         </tr>
+       
         <tr>
           <td translate="no">bUseAuth</td>
-          <td>是否使用身份驗證(?)</td>
+          <td>是否使用身份驗證</td>
           <td>
-            <select id="bUseAuth" name="bUseAuth">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
-            </select>
+              <input type="radio" id="bUseAuthTrue" name="bUseAuth" value="True" checked>
+              <label for="bUseAuthTrue">使用</label>
+              <input type="radio" id="bUseAuthFalse" name="bUseAuth" value="False">
+              <label for="bUseAuthFalse">不使用</label>
           </td>
-        </tr>
+        </tr>      
         <tr>
           <td translate="no">BanListURL</td>
           <td>封鎖清單URL</td>
-          <td><input type="text" id="BanListURL" name="banListURL" value="https://api.Palworldgame.com/api/banlist.txt">
+          <td><input type="text" id="BanListURL" name="banListURL" value="https://api.palworldgame.com/api/banlist.txt">
           </td>
         </tr>
       </table>
@@ -725,34 +756,42 @@
 
   <script>
     function parseConfig() {
-      
       var configText = document.getElementById("configField").value;
       var regex = /\(([^)]+)\)/;
       var matches = regex.exec(configText);
 
       if (matches && matches.length > 1) {
-        
         var configLines = matches[1].split(',');
 
         configLines.forEach(function (line) {
-          
           var keyValue = line.split('=');
 
           if (keyValue.length === 2) {
-            
             var key = keyValue[0].trim();
             var value = keyValue[1].trim().replace(/["']/g, '');
 
             var inputElement = document.getElementsByName(key)[0];
-            if (inputElement) {
-              inputElement.value = value;
-            }
 
-            console.log("Variable Name:", key, "Value:", value);
+            if (inputElement) {
+              if (inputElement.type === "radio") {
+                var radioButtons = document.getElementsByName(key);
+                for (var i = 0; i < radioButtons.length; i++) {
+                  if (radioButtons[i].value === value) {
+                    radioButtons[i].checked = true;
+                    break;
+                  }
+                }
+              } else {
+                inputElement.value = value;
+              }
+
+              console.log("Variable Name:", key, "Value:", value);
+            }
           }
         });
+
         document.getElementById("configField").value = '';
-        
+
         var notification = document.getElementById('notification2');
         notification.style.opacity = 1;
         setTimeout(function () {
@@ -761,9 +800,7 @@
       }
     }
   </script>
-
   <script>
-    
     document.addEventListener("DOMContentLoaded", function () {
       initializeElement('DayTimeSpeedRate', 'sliderDayTimeSpeedRate');
       initializeElement('NightTimeSpeedRate', 'sliderNightTimeSpeedRate');
@@ -809,7 +846,8 @@
         inputElement.style.backgroundColor = "#c2e2f2"; 
       }
     }
-  </script>
+  </script>  
+
   <script>
     document.getElementById('shareButton').addEventListener('click', function() {
       if (navigator.share) {

@@ -1,5 +1,5 @@
-        function generateSettings() {     
-            var Difficulty = document.getElementById('Difficulty').value;
+        function generateSettings() {
+            var Difficulty = document.querySelector('input[name="Difficulty"]:checked').value;
             var DayTimeSpeedRate = document.getElementById('DayTimeSpeedRate').value;
             var NightTimeSpeedRate = document.getElementById('NightTimeSpeedRate').value;
             var ExpRate = document.getElementById('ExpRate').value;
@@ -23,31 +23,31 @@
             var CollectionObjectHpRate = document.getElementById('CollectionObjectHpRate').value;
             var CollectionObjectRespawnSpeedRate = document.getElementById('CollectionObjectRespawnSpeedRate').value;
             var EnemyDropItemRate = document.getElementById('EnemyDropItemRate').value;
-            var DeathPenalty = document.getElementById('DeathPenalty').value;
-            var bEnablePlayerToPlayerDamage = document.getElementById('bEnablePlayerToPlayerDamage').value;
-            var bEnableFriendlyFire = document.getElementById('bEnableFriendlyFire').value;
-            var bEnableInvaderEnemy = document.getElementById('bEnableInvaderEnemy').value;
-            var bActiveUNKO = document.getElementById('bActiveUNKO').value;
-            var bEnableAimAssistPad = document.getElementById('bEnableAimAssistPad').value;
-            var bEnableAimAssistKeyboard = document.getElementById('bEnableAimAssistKeyboard').value;
+            var DeathPenalty = document.querySelector('input[name="DeathPenalty"]:checked').value;
+            var bEnablePlayerToPlayerDamage = document.querySelector('input[name="bEnablePlayerToPlayerDamage"]:checked').value;
+            var bEnableFriendlyFire = document.querySelector('input[name="bEnableFriendlyFire"]:checked').value;
+            var bEnableInvaderEnemy = document.querySelector('input[name="bEnableInvaderEnemy"]:checked').value;
+            var bActiveUNKO = document.querySelector('input[name="bActiveUNKO"]:checked').value;
+            var bEnableAimAssistPad = document.querySelector('input[name="bEnableAimAssistPad"]:checked').value;
+            var bEnableAimAssistKeyboard = document.querySelector('input[name="bEnableAimAssistKeyboard"]:checked').value;
             var DropItemMaxNum = document.getElementById('DropItemMaxNum').value;
             var DropItemMaxNum_UNKO = document.getElementById('DropItemMaxNum_UNKO').value;
             var BaseCampMaxNum = document.getElementById('BaseCampMaxNum').value;
             var BaseCampWorkerMaxNum = document.getElementById('BaseCampWorkerMaxNum').value;
             var DropItemAliveMaxHours = document.getElementById('DropItemAliveMaxHours').value;
-            var bAutoResetGuildNoOnlinePlayers = document.getElementById('bAutoResetGuildNoOnlinePlayers').value;
+            var bAutoResetGuildNoOnlinePlayers = document.querySelector('input[name="bAutoResetGuildNoOnlinePlayers"]:checked').value;
             var AutoResetGuildTimeNoOnlinePlayers = document.getElementById('AutoResetGuildTimeNoOnlinePlayers').value;
             var GuildPlayerMaxNum = document.getElementById('GuildPlayerMaxNum').value;
             var PalEggDefaultHatchingTime = document.getElementById('PalEggDefaultHatchingTime').value;
             var WorkSpeedRate = document.getElementById('WorkSpeedRate').value;
-            var bIsMultiplay = document.getElementById('bIsMultiplay').value;
-            var bIsPvP = document.getElementById('bIsPvP').value;
-            var bCanPickupOtherGuildDeathPenaltyDrop = document.getElementById('bCanPickupOtherGuildDeathPenaltyDrop').value;
-            var bEnableNonLoginPenalty = document.getElementById('bEnableNonLoginPenalty').value;
-            var bEnableFastTravel = document.getElementById('bEnableFastTravel').value;
-            var bIsStartLocationSelectByMap = document.getElementById('bIsStartLocationSelectByMap').value;
-            var bExistPlayerAfterLogout = document.getElementById('bExistPlayerAfterLogout').value;
-            var bEnableDefenseOtherGuildPlayer = document.getElementById('bEnableDefenseOtherGuildPlayer').value;
+            var bIsMultiplay = document.querySelector('input[name="bIsMultiplay"]:checked').value;
+            var bIsPvP = document.querySelector('input[name="bIsPvP"]:checked').value;
+            var bCanPickupOtherGuildDeathPenaltyDrop = document.querySelector('input[name="bCanPickupOtherGuildDeathPenaltyDrop"]:checked').value;
+            var bEnableNonLoginPenalty = document.querySelector('input[name="bEnableNonLoginPenalty"]:checked').value;
+            var bEnableFastTravel = document.querySelector('input[name="bEnableFastTravel"]:checked').value;
+            var bIsStartLocationSelectByMap = document.querySelector('input[name="bIsStartLocationSelectByMap"]:checked').value;
+            var bExistPlayerAfterLogout = document.querySelector('input[name="bExistPlayerAfterLogout"]:checked').value;
+            var bEnableDefenseOtherGuildPlayer = document.querySelector('input[name="bEnableDefenseOtherGuildPlayer"]:checked').value;
             var CoopPlayerMaxNum = document.getElementById('CoopPlayerMaxNum').value;
             var ServerPlayerMaxNum = document.getElementById('ServerPlayerMaxNum').value;
             var ServerName = '"' + document.getElementById('ServerName').value + '"';
@@ -56,12 +56,11 @@
             var ServerPassword = '"' + document.getElementById('ServerPassword').value + '"';
             var PublicPort = document.getElementById('PublicPort').value;
             var PublicIP = '"' + document.getElementById('PublicIP').value + '"';
-            var RCONEnabled = document.getElementById('RCONEnabled').value;
+            var RCONEnabled = document.querySelector('input[name="RCONEnabled"]:checked').value;
             var RCONPort = document.getElementById('RCONPort').value;
             var Region = '"' + document.getElementById('Region').value + '"';
-            var bUseAuth = document.getElementById('bUseAuth').value;
+            var bUseAuth = document.querySelector('input[name="bUseAuth"]:checked').value;
             var BanListURL = '"' + document.getElementById('BanListURL').value + '"';
-            // Create the PalWorldSettings.ini content
             var settingsContent = `[/Script/Pal.PalGameWorldSettings]
 OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},NightTimeSpeedRate=${NightTimeSpeedRate},ExpRate=${ExpRate},PalCaptureRate=${PalCaptureRate},PalSpawnNumRate=${PalSpawnNumRate},PalDamageRateAttack=${PalDamageRateAttack},PalDamageRateDefense=${PalDamageRateDefense},PlayerDamageRateAttack=${PlayerDamageRateAttack},PlayerDamageRateDefense=${PlayerDamageRateDefense},PlayerStomachDecreaceRate=${PlayerStomachDecreaceRate},PlayerStaminaDecreaceRate=${PlayerStaminaDecreaceRate},PlayerAutoHPRegeneRate=${PlayerAutoHPRegeneRate},PlayerAutoHpRegeneRateInSleep=${PlayerAutoHpRegeneRateInSleep},PalStomachDecreaceRate=${PalStomachDecreaceRate},PalStaminaDecreaceRate=${PalStaminaDecreaceRate},PalAutoHPRegeneRate=${PalAutoHPRegeneRate},PalAutoHpRegeneRateInSleep=${PalAutoHpRegeneRateInSleep},BuildObjectDamageRate=${BuildObjectDamageRate},BuildObjectDeteriorationDamageRate=${BuildObjectDeteriorationDamageRate},CollectionDropRate=${CollectionDropRate},CollectionObjectHpRate=${CollectionObjectHpRate},CollectionObjectRespawnSpeedRate=${CollectionObjectRespawnSpeedRate},EnemyDropItemRate=${EnemyDropItemRate},DeathPenalty=${DeathPenalty},bEnablePlayerToPlayerDamage=${bEnablePlayerToPlayerDamage},bEnableFriendlyFire=${bEnableFriendlyFire},bEnableInvaderEnemy=${bEnableInvaderEnemy},bActiveUNKO=${bActiveUNKO},bEnableAimAssistPad=${bEnableAimAssistPad},bEnableAimAssistKeyboard=${bEnableAimAssistKeyboard},DropItemMaxNum=${DropItemMaxNum},DropItemMaxNum_UNKO=${DropItemMaxNum_UNKO},BaseCampMaxNum=${BaseCampMaxNum},BaseCampWorkerMaxNum=${BaseCampWorkerMaxNum},DropItemAliveMaxHours=${DropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers=${bAutoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers=${AutoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum=${GuildPlayerMaxNum},PalEggDefaultHatchingTime=${PalEggDefaultHatchingTime},WorkSpeedRate=${WorkSpeedRate},bIsMultiplay=${bIsMultiplay},bIsPvP=${bIsPvP},bCanPickupOtherGuildDeathPenaltyDrop=${bCanPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty=${bEnableNonLoginPenalty},bEnableFastTravel=${bEnableFastTravel},bIsStartLocationSelectByMap=${bIsStartLocationSelectByMap},bExistPlayerAfterLogout=${bExistPlayerAfterLogout},bEnableDefenseOtherGuildPlayer=${bEnableDefenseOtherGuildPlayer},CoopPlayerMaxNum=${CoopPlayerMaxNum},ServerPlayerMaxNum=${ServerPlayerMaxNum},ServerName=${ServerName},ServerDescription=${ServerDescription},AdminPassword=${AdminPassword},ServerPassword=${ServerPassword},PublicPort=${PublicPort},PublicIP=${PublicIP},RCONEnabled=${RCONEnabled},RCONPort=${RCONPort},Region=${Region},bUseAuth=${bUseAuth},BanListURL=${BanListURL})`;
 
@@ -84,10 +83,9 @@ OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},Ni
             document.execCommand('copy');
             document.body.removeChild(textarea);
         }
-
+    
         function SaveSettings() {
-            
-            var Difficulty = document.getElementById('Difficulty').value;
+            var Difficulty = document.querySelector('input[name="Difficulty"]:checked').value;
             var DayTimeSpeedRate = document.getElementById('DayTimeSpeedRate').value;
             var NightTimeSpeedRate = document.getElementById('NightTimeSpeedRate').value;
             var ExpRate = document.getElementById('ExpRate').value;
@@ -111,31 +109,31 @@ OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},Ni
             var CollectionObjectHpRate = document.getElementById('CollectionObjectHpRate').value;
             var CollectionObjectRespawnSpeedRate = document.getElementById('CollectionObjectRespawnSpeedRate').value;
             var EnemyDropItemRate = document.getElementById('EnemyDropItemRate').value;
-            var DeathPenalty = document.getElementById('DeathPenalty').value;
-            var bEnablePlayerToPlayerDamage = document.getElementById('bEnablePlayerToPlayerDamage').value;
-            var bEnableFriendlyFire = document.getElementById('bEnableFriendlyFire').value;
-            var bEnableInvaderEnemy = document.getElementById('bEnableInvaderEnemy').value;
-            var bActiveUNKO = document.getElementById('bActiveUNKO').value;
-            var bEnableAimAssistPad = document.getElementById('bEnableAimAssistPad').value;
-            var bEnableAimAssistKeyboard = document.getElementById('bEnableAimAssistKeyboard').value;
+            var DeathPenalty = document.querySelector('input[name="DeathPenalty"]:checked').value;
+            var bEnablePlayerToPlayerDamage = document.querySelector('input[name="bEnablePlayerToPlayerDamage"]:checked').value;
+            var bEnableFriendlyFire = document.querySelector('input[name="bEnableFriendlyFire"]:checked').value;
+            var bEnableInvaderEnemy = document.querySelector('input[name="bEnableInvaderEnemy"]:checked').value;
+            var bActiveUNKO = document.querySelector('input[name="bActiveUNKO"]:checked').value;
+            var bEnableAimAssistPad = document.querySelector('input[name="bEnableAimAssistPad"]:checked').value;
+            var bEnableAimAssistKeyboard = document.querySelector('input[name="bEnableAimAssistKeyboard"]:checked').value;
             var DropItemMaxNum = document.getElementById('DropItemMaxNum').value;
             var DropItemMaxNum_UNKO = document.getElementById('DropItemMaxNum_UNKO').value;
             var BaseCampMaxNum = document.getElementById('BaseCampMaxNum').value;
             var BaseCampWorkerMaxNum = document.getElementById('BaseCampWorkerMaxNum').value;
             var DropItemAliveMaxHours = document.getElementById('DropItemAliveMaxHours').value;
-            var bAutoResetGuildNoOnlinePlayers = document.getElementById('bAutoResetGuildNoOnlinePlayers').value;
+            var bAutoResetGuildNoOnlinePlayers = document.querySelector('input[name="bAutoResetGuildNoOnlinePlayers"]:checked').value;
             var AutoResetGuildTimeNoOnlinePlayers = document.getElementById('AutoResetGuildTimeNoOnlinePlayers').value;
             var GuildPlayerMaxNum = document.getElementById('GuildPlayerMaxNum').value;
             var PalEggDefaultHatchingTime = document.getElementById('PalEggDefaultHatchingTime').value;
             var WorkSpeedRate = document.getElementById('WorkSpeedRate').value;
-            var bIsMultiplay = document.getElementById('bIsMultiplay').value;
-            var bIsPvP = document.getElementById('bIsPvP').value;
-            var bCanPickupOtherGuildDeathPenaltyDrop = document.getElementById('bCanPickupOtherGuildDeathPenaltyDrop').value;
-            var bEnableNonLoginPenalty = document.getElementById('bEnableNonLoginPenalty').value;
-            var bEnableFastTravel = document.getElementById('bEnableFastTravel').value;
-            var bIsStartLocationSelectByMap = document.getElementById('bIsStartLocationSelectByMap').value;
-            var bExistPlayerAfterLogout = document.getElementById('bExistPlayerAfterLogout').value;
-            var bEnableDefenseOtherGuildPlayer = document.getElementById('bEnableDefenseOtherGuildPlayer').value;
+            var bIsMultiplay = document.querySelector('input[name="bIsMultiplay"]:checked').value;
+            var bIsPvP = document.querySelector('input[name="bIsPvP"]:checked').value;
+            var bCanPickupOtherGuildDeathPenaltyDrop = document.querySelector('input[name="bCanPickupOtherGuildDeathPenaltyDrop"]:checked').value;
+            var bEnableNonLoginPenalty = document.querySelector('input[name="bEnableNonLoginPenalty"]:checked').value;
+            var bEnableFastTravel = document.querySelector('input[name="bEnableFastTravel"]:checked').value;
+            var bIsStartLocationSelectByMap = document.querySelector('input[name="bIsStartLocationSelectByMap"]:checked').value;
+            var bExistPlayerAfterLogout = document.querySelector('input[name="bExistPlayerAfterLogout"]:checked').value;
+            var bEnableDefenseOtherGuildPlayer = document.querySelector('input[name="bEnableDefenseOtherGuildPlayer"]:checked').value;
             var CoopPlayerMaxNum = document.getElementById('CoopPlayerMaxNum').value;
             var ServerPlayerMaxNum = document.getElementById('ServerPlayerMaxNum').value;
             var ServerName = '"' + document.getElementById('ServerName').value + '"';
@@ -144,12 +142,11 @@ OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},Ni
             var ServerPassword = '"' + document.getElementById('ServerPassword').value + '"';
             var PublicPort = document.getElementById('PublicPort').value;
             var PublicIP = '"' + document.getElementById('PublicIP').value + '"';
-            var RCONEnabled = document.getElementById('RCONEnabled').value;
+            var RCONEnabled = document.querySelector('input[name="RCONEnabled"]:checked').value;
             var RCONPort = document.getElementById('RCONPort').value;
             var Region = '"' + document.getElementById('Region').value + '"';
-            var bUseAuth = document.getElementById('bUseAuth').value;
+            var bUseAuth = document.querySelector('input[name="bUseAuth"]:checked').value;
             var BanListURL = '"' + document.getElementById('BanListURL').value + '"';
-            // Create the PalWorldSettings.ini content
             var settingsContent = `[/Script/Pal.PalGameWorldSettings]
 OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},NightTimeSpeedRate=${NightTimeSpeedRate},ExpRate=${ExpRate},PalCaptureRate=${PalCaptureRate},PalSpawnNumRate=${PalSpawnNumRate},PalDamageRateAttack=${PalDamageRateAttack},PalDamageRateDefense=${PalDamageRateDefense},PlayerDamageRateAttack=${PlayerDamageRateAttack},PlayerDamageRateDefense=${PlayerDamageRateDefense},PlayerStomachDecreaceRate=${PlayerStomachDecreaceRate},PlayerStaminaDecreaceRate=${PlayerStaminaDecreaceRate},PlayerAutoHPRegeneRate=${PlayerAutoHPRegeneRate},PlayerAutoHpRegeneRateInSleep=${PlayerAutoHpRegeneRateInSleep},PalStomachDecreaceRate=${PalStomachDecreaceRate},PalStaminaDecreaceRate=${PalStaminaDecreaceRate},PalAutoHPRegeneRate=${PalAutoHPRegeneRate},PalAutoHpRegeneRateInSleep=${PalAutoHpRegeneRateInSleep},BuildObjectDamageRate=${BuildObjectDamageRate},BuildObjectDeteriorationDamageRate=${BuildObjectDeteriorationDamageRate},CollectionDropRate=${CollectionDropRate},CollectionObjectHpRate=${CollectionObjectHpRate},CollectionObjectRespawnSpeedRate=${CollectionObjectRespawnSpeedRate},EnemyDropItemRate=${EnemyDropItemRate},DeathPenalty=${DeathPenalty},bEnablePlayerToPlayerDamage=${bEnablePlayerToPlayerDamage},bEnableFriendlyFire=${bEnableFriendlyFire},bEnableInvaderEnemy=${bEnableInvaderEnemy},bActiveUNKO=${bActiveUNKO},bEnableAimAssistPad=${bEnableAimAssistPad},bEnableAimAssistKeyboard=${bEnableAimAssistKeyboard},DropItemMaxNum=${DropItemMaxNum},DropItemMaxNum_UNKO=${DropItemMaxNum_UNKO},BaseCampMaxNum=${BaseCampMaxNum},BaseCampWorkerMaxNum=${BaseCampWorkerMaxNum},DropItemAliveMaxHours=${DropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers=${bAutoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers=${AutoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum=${GuildPlayerMaxNum},PalEggDefaultHatchingTime=${PalEggDefaultHatchingTime},WorkSpeedRate=${WorkSpeedRate},bIsMultiplay=${bIsMultiplay},bIsPvP=${bIsPvP},bCanPickupOtherGuildDeathPenaltyDrop=${bCanPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty=${bEnableNonLoginPenalty},bEnableFastTravel=${bEnableFastTravel},bIsStartLocationSelectByMap=${bIsStartLocationSelectByMap},bExistPlayerAfterLogout=${bExistPlayerAfterLogout},bEnableDefenseOtherGuildPlayer=${bEnableDefenseOtherGuildPlayer},CoopPlayerMaxNum=${CoopPlayerMaxNum},ServerPlayerMaxNum=${ServerPlayerMaxNum},ServerName=${ServerName},ServerDescription=${ServerDescription},AdminPassword=${AdminPassword},ServerPassword=${ServerPassword},PublicPort=${PublicPort},PublicIP=${PublicIP},RCONEnabled=${RCONEnabled},RCONPort=${RCONPort},Region=${Region},bUseAuth=${bUseAuth},BanListURL=${BanListURL})`;
 
