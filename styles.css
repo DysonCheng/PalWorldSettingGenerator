@@ -38,16 +38,17 @@
     background-color: #c2e2f2; 
   }
 
-.iamfine {
+  .iamfine {
     position: fixed;
     right: 2%;
     bottom: 25%;
     z-index: 2; 
-    transform: scale(1.5); 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-size: 1vw;
 }
+
 
 body::before {
     content: "";
@@ -97,14 +98,16 @@ body {
     right: 2%;
     bottom: 5%;
     z-index: 2; 
-    transform: scale(1.5); 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
 }
 .button3 {
     position: fixed;
     right: 2%;
     bottom: 12%;
     z-index: 2; 
-    transform: scale(1.5); 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
 }
 
 .button2 {
@@ -112,14 +115,34 @@ body {
     left: 2%;
     bottom: 5%;
     z-index: 2; 
-    transform: scale(1.5); 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
 }
 .button4 {
     position: fixed;
     left: 2%;
     bottom: 12%;
     z-index: 2; 
-    transform: scale(1.5); 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
+}
+
+.button5 {
+    position: fixed;
+    right: 2%;
+    bottom: 22%;
+    z-index: 2; 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
+}
+
+.button6 {
+    position: fixed;
+    right: 2%;
+    bottom: 27%;
+    z-index: 2; 
+    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
 }
 
 .contentner {
@@ -132,11 +155,12 @@ body {
     backdrop-filter: blur(10px);
     margin-top: 85vh;
     font-style: Normal;
+    font-size: 1vw;
     margin-bottom: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
     font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; 
-    transition: background-color 1s ease; 
+    transition: background-color 1s ease;
 }
 
 .center-container a {
@@ -226,13 +250,15 @@ footer {
     background-color: #333; 
     color: white; 
     padding: 10px; 
-    font-family: Calibri, Arial, sans-serif; 
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 1vw;
 }
 
 footer p {
     margin: 0; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    font-family: Calibri, Arial, sans-serif; 
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 1vw;
 }
 #google_translate_element {
     position:sticky;
@@ -251,6 +277,7 @@ footer p {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     z-index: 9;
+    font-size: 1vw;
   }
   #notification2 {
     position: fixed;
@@ -264,4 +291,5 @@ footer p {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     z-index: 9;
+    font-size: 1vw;
   }
