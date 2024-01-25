@@ -22,6 +22,7 @@
 </head>
 
 <body>
+  <button class="button4" id="shareButton">分享鏈結</button>
   <button class="button2" onclick="toggleSnowMode()">切換主題</button>
   <button class="button" onclick="generateSettings()">複製到剪貼簿</button>
   <button class="button3" onclick="SaveSettings()">下載到設定檔</button>
@@ -825,6 +826,24 @@
         inputElement.style.backgroundColor = "#c2e2f2"; 
       }
     }
+  </script>
+  <script>
+    document.getElementById('shareButton').addEventListener('click', function() {
+      if (navigator.share) {
+        var shareData = {
+          title: 'Amazoning Tool: PalWorld Setting Generator',
+          text: 'I discovered this web tool and recommend it to everyone.',
+          url: window.location.href,
+        };
+
+        navigator.share(shareData)
+          .then(() => console.log('Shared.'))
+          .catch((error) => console.error('Opps:', error));
+      } else {
+        // 如果瀏覽器不支援 navigator.share，你可以提供其他方式的分享，例如顯示 QR 碼或顯示分享連結供用戶複製
+        alert('Sorry, your browser does not support the sharing feature.抱歉，您的瀏覽器不支援分享功能。');
+      }
+    });
   </script>
   <div id="notification" class="hidden">已經複製到剪貼簿。✅</div>
   <div id="notification2" class="hidden">讀取成功。✅</div>

@@ -21,7 +21,7 @@
 .iamfine {
     position: fixed;
     right: 2%;
-    bottom: 20%;
+    bottom: 25%;
     z-index: 2; 
     transform: scale(1.5); 
     display: flex;
@@ -79,6 +79,13 @@ body {
     z-index: 2; 
     transform: scale(1.5); 
 }
+.button3 {
+    position: fixed;
+    right: 2%;
+    bottom: 12%;
+    z-index: 2; 
+    transform: scale(1.5); 
+}
 
 .button2 {
     position: fixed;
@@ -87,11 +94,10 @@ body {
     z-index: 2; 
     transform: scale(1.5); 
 }
-
-.button3 {
+.button4 {
     position: fixed;
-    right: 2%;
-    bottom: 10%;
+    left: 2%;
+    bottom: 12%;
     z-index: 2; 
     transform: scale(1.5); 
 }
