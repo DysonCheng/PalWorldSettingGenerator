@@ -2,13 +2,11 @@
 <html lang="zh-TW">
 
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2BEDCG67Y"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-D2BEDCG67Y');
   </script>
   <meta charset="UTF-8">
@@ -693,31 +691,20 @@
     <div class="buttom-container">
       <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank" translate="no">Design by Dyson Cheng</a>
     </div>
-    
   </footer>
   <script>
-    
   
   function toggleSnowMode() {
-      
       var container = document.getElementById('container');
-      
       container.classList.toggle('snow-mode');
-
-      
       var body = document.body;
-      
       body.classList.toggle('snow-mode');
 
       
       setTimeout(function () {
           
           var links = document.querySelectorAll('.center-container a');
-
-          
           var isSnowMode = body.classList.contains('snow-mode');
-
-          
           links.forEach(function (link) {
               link.style.color = isSnowMode ? 'black' : 'snow';
           });
@@ -739,8 +726,6 @@
     function parseConfig() {
       
       var configText = document.getElementById("configField").value;
-
-      
       var regex = /\(([^)]+)\)/;
       var matches = regex.exec(configText);
 
@@ -748,7 +733,6 @@
         
         var configLines = matches[1].split(',');
 
-        
         configLines.forEach(function (line) {
           
           var keyValue = line.split('=');
@@ -758,16 +742,12 @@
             var key = keyValue[0].trim();
             var value = keyValue[1].trim().replace(/["']/g, '');
 
-            
             var inputElement = document.getElementsByName(key)[0];
             if (inputElement) {
               inputElement.value = value;
             }
 
-            
             console.log("Variable Name:", key, "Value:", value);
-            
-
           }
         });
         document.getElementById("configField").value = '';
@@ -800,14 +780,12 @@
       
       document.getElementById(inputId).value = document.getElementById(sliderId).value;
 
-      
       if (document.getElementById(sliderId).value == 0) {
         document.getElementById(inputId).setCustomValidity("Invalid");
       } else {
         document.getElementById(inputId).setCustomValidity("");
       }
 
-      
       updateBackgroundColor(inputId);
     }
 
@@ -815,11 +793,8 @@
       
       document.getElementById(elementId).value = document.getElementById(elementId).defaultValue;
 
-      
       var sliderId = 'slider' + elementId.substring(0, 1).toUpperCase() + elementId.substring(1);
       document.getElementById(sliderId).value = document.getElementById(elementId).value;
-
-      
       updateInputValue(elementId, sliderId);
     }
 
@@ -847,7 +822,6 @@
           .then(() => console.log('Shared.'))
           .catch((error) => console.error('Opps:', error));
       } else {
-        // 如果瀏覽器不支援 navigator.share，你可以提供其他方式的分享，例如顯示 QR 碼或顯示分享連結供用戶複製
         alert('Sorry, your browser does not support the sharing feature.抱歉，您的瀏覽器不支援分享功能。');
       }
     });
