@@ -125,6 +125,11 @@ body {
     transition: color 1s ease; 
 }
 
+.buttom-container a {
+    color: snow; 
+    text-decoration: none; 
+    transition: color 1s ease; 
+}
 
 .contentner.snow-mode {
     background: rgba(255, 255, 255, 0.7);
