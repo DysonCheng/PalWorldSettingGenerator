@@ -61,9 +61,9 @@
           <td>調整遊戲的整體難度</td>
           <td>
             <select id="Difficulty" name="Difficulty">
-              <option value="None">None</option>
-              <option value="Easy">Easy</option>
-              <option value="Difficult">Difficult</option>
+              <option value="None">不設定</option>
+              <option value="Easy">簡單</option>
+              <option value="Difficult">困難</option>
             </select>(預設值:None),會整體影響各種機率與數值
           </td>
         </tr>
@@ -332,11 +332,11 @@
           <td>死亡懲罰</td>
           <td>
             <select id="DeathPenalty" name="DeathPenalty">
-              <option value="None">None-完全不掉</option>
-              <option value="Item">Item-掉落道具</option>
+              <option value="None">None-完全不掉落</option>
+              <option value="Item">Item-只掉落道具</option>
               <option value="ItemAndEquipment">ItemAndEquipment-掉落道具與裝備</option>
               <option value="All" selected>All-掉落全部(包括Pals)</option>
-            </select>(預設值:All)
+            </select>(預設值:掉落全部)
           </td>
         </tr>
         <tr>
@@ -346,22 +346,22 @@
         </tr>
         <tr>
           <td translate="no">bEnablePlayerToPlayerDamage</td>
-          <td>允許玩家對玩家造成傷害</td>
+          <td>開啟玩家對玩家造成傷害</td>
           <td>
             <select id="bEnablePlayerToPlayerDamage" name="bEnablePlayerToPlayerDamage">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
         <tr>
           <td translate="no">bEnableFriendlyFire</td>
-          <td>允許友好火力</td>
+          <td>開啟同隊傷害</td>
           <td>
             <select id="bEnableFriendlyFire" name="bEnableFriendlyFire">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:不允許)(同隊包括你的Pals)
           </td>
         </tr>
         <tr>
@@ -369,8 +369,8 @@
           <td>是否會發生襲擊事件</td>
           <td>
             <select id="bEnableInvaderEnemy" name="bEnableInvaderEnemy">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
+              <option value="True" selected>會發生</option>
+              <option value="False">不發生</option>
             </select>
           </td>
         </tr>
@@ -379,9 +379,9 @@
           <td>啟用UNKO</td>
           <td>
             <select id="bActiveUNKO" name="bActiveUNKO">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">啟用</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)(UNKO是Pals的大便)
           </td>
         </tr>
         <tr>
@@ -389,8 +389,8 @@
           <td>啟用手柄瞄準輔助</td>
           <td>
             <select id="bEnableAimAssistPad" name="bEnableAimAssistPad">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
+              <option value="True" selected>啟用</option>
+              <option value="False">關閉</option>
             </select>
           </td>
         </tr>
@@ -399,9 +399,9 @@
           <td>啟用鍵盤瞄準輔助</td>
           <td>
             <select id="bEnableAimAssistKeyboard" name="bEnableAimAssistKeyboard">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">啟用</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
 
@@ -462,12 +462,12 @@
         </tr>
         <tr>
           <td translate="no">bAutoResetGuildNoOnlinePlayers</td>
-          <td>自動重置公會沒上線玩家</td>
+          <td>沒上線玩家自動退出公會</td>
           <td>
             <select id="bAutoResetGuildNoOnlinePlayers" name="bAutoResetGuildNoOnlinePlayers">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
 
@@ -522,38 +522,38 @@
           <td>是否多人遊玩</td>
           <td>
             <select id="bIsMultiplay" name="bIsMultiplay">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
         <tr>
           <td translate="no">bIsPvP</td>
-          <td>是否PvP</td>
+          <td>是否開啟PvP模式</td>
           <td>
             <select id="bIsPvP" name="bIsPvP">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
         <tr>
           <td translate="no">bCanPickupOtherGuildDeathPenaltyDrop</td>
-          <td>能否撿取其他公會死亡處罰物品</td>
+          <td>能否撿取其他公會死亡掉落物</td>
           <td>
             <select id="bCanPickupOtherGuildDeathPenaltyDrop" name="bCanPickupOtherGuildDeathPenaltyDrop">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">允許</option>
+              <option value="False" selected>不允許</option>
+            </select>(預設值:不允許)
           </td>
         </tr>
         <tr>
           <td translate="no">bEnableNonLoginPenalty</td>
-          <td>是否啟用非登入處罰</td>
+          <td>是否啟用沒登入處罰</td>
           <td>
             <select id="bEnableNonLoginPenalty" name="bEnableNonLoginPenalty">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
+              <option value="True" selected>開啟</option>
+              <option value="False">關閉</option>
             </select>
           </td>
         </tr>
@@ -562,39 +562,39 @@
           <td>是否啟用快速移動</td>
           <td>
             <select id="bEnableFastTravel" name="bEnableFastTravel">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
+              <option value="True" selected>開啟</option>
+              <option value="False">關閉</option>
             </select>
           </td>
         </tr>
         <tr>
           <td translate="no">bIsStartLocationSelectByMap</td>
-          <td>是否由地圖選擇起始位置</td>
+          <td>能否新角色可選擇出生點</td>
           <td>
             <select id="bIsStartLocationSelectByMap" name="bIsStartLocationSelectByMap">
-              <option value="True" selected>True</option>
-              <option value="False">False</option>
+              <option value="True" selected>開啟</option>
+              <option value="False">關閉</option>
             </select>
           </td>
         </tr>
         <tr>
           <td translate="no">bExistPlayerAfterLogout</td>
-          <td>登出後是否保留玩家</td>
+          <td>登出後玩家仍存在</td>
           <td>
             <select id="bExistPlayerAfterLogout" name="bExistPlayerAfterLogout">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">開啟</option>
+              <option value="False" selected>關閉</option>
+            </select>(預設值:關閉)
           </td>
         </tr>
         <tr>
           <td translate="no">bEnableDefenseOtherGuildPlayer</td>
-          <td>是否啟用防禦其他公會玩家</td>
+          <td>是否會受到其他公會傷害</td>
           <td>
             <select id="bEnableDefenseOtherGuildPlayer" name="bEnableDefenseOtherGuildPlayer">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">會</option>
+              <option value="False" selected>不會</option>
+            </select>(預設值:不會)
           </td>
         </tr>
         <tr>
@@ -654,9 +654,9 @@
           <td>RCON啟用</td>
           <td>
             <select id="RCONEnabled" name="RCONEnabled">
-              <option value="True">True</option>
-              <option value="False" selected>False</option>
-            </select>(預設值:False)
+              <option value="True">啟用</option>
+              <option value="False" selected>不啟用</option>
+            </select>(預設值:不啟用)
           </td>
         </tr>
         <tr>
@@ -671,7 +671,7 @@
         </tr>
         <tr>
           <td translate="no">bUseAuth</td>
-          <td>是否使用身份驗證</td>
+          <td>是否使用身份驗證(?)</td>
           <td>
             <select id="bUseAuth" name="bUseAuth">
               <option value="True" selected>True</option>
