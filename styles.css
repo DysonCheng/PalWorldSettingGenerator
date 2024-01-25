@@ -152,7 +152,7 @@ body {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(18px);
     margin-top: 85vh;
     font-style: Normal;
     font-size: 1vw;
@@ -271,7 +271,7 @@ footer p {
     right: 0%;
     transform: translate(0%, 0%);
     padding: 20px;
-    background-color: rgba(95, 203, 73, 0.5);
+    background-color: rgba(95, 203, 73, 0.7);
     color: #fff;
     border-radius: 10px;
     opacity: 0;
@@ -285,7 +285,7 @@ footer p {
     right: 0%;
     transform: translate(0%, 0%);
     padding: 20px;
-    background-color: rgba(95, 203, 73, 0.5);
+    background-color: rgba(95, 203, 73, 0.7);
     color: #fff;
     border-radius: 10px;
     opacity: 0;
