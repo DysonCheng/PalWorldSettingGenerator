@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PalWorld Settings Generator</title>
-  <link rel="stylesheet" href="styles.css"> <!-- 引入外部樣式表 -->
+  <link rel="stylesheet" href="styles.css"> 
   <script src="generateSettings.js"></script>
   <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -29,7 +29,7 @@
     <h3> - by PalWorld Fans</h3>
     <h3>Ver 1.3.2.1</h3>
     <div class="center-container">
-      <!-- 單純的超連結 -->
+      
       <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">參觀Github頁面(版本說明)</a><br>
       <a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋(www.gamer.com.tw)</a>
     </div>
@@ -676,32 +676,32 @@
     <p>© 2024 Web materials provided by Pocket Pair.</p>
   </footer>
   <script>
-    // JavaScript 切換主題函數
-  // JavaScript 切換主題函數
+    
+  
   function toggleSnowMode() {
-      // 取得容器元素
+      
       var container = document.getElementById('container');
-      // 切換 dark-mode 類別
+      
       container.classList.toggle('snow-mode');
 
-      // 取得 body 元素
+      
       var body = document.body;
-      // 切換 snow-mode 類別
+      
       body.classList.toggle('snow-mode');
 
-      // 等待一小段時間再執行，確保過渡效果應用
+      
       setTimeout(function () {
-          // 取得超連結元素
+          
           var links = document.querySelectorAll('.center-container a');
 
-          // 檢查目前是否為白雪模式
+          
           var isSnowMode = body.classList.contains('snow-mode');
 
-          // 根據模式切換超連結樣式
+          
           links.forEach(function (link) {
               link.style.color = isSnowMode ? 'black' : 'snow';
           });
-      }, 100); // 100 毫秒的延遲，可以根據實際效果調整
+      }, 100); 
   }
 
   </script>
@@ -717,41 +717,41 @@
 
   <script>
     function parseConfig() {
-      // 獲取配置文件文本
+      
       var configText = document.getElementById("configField").value;
 
-      // 提取()內的內容
+      
       var regex = /\(([^)]+)\)/;
       var matches = regex.exec(configText);
 
       if (matches && matches.length > 1) {
-        // 將()內的內容分割成行
+        
         var configLines = matches[1].split(',');
 
-        // 遍歷每一行
+        
         configLines.forEach(function (line) {
-          // 分割每行的變數名稱和數值
+          
           var keyValue = line.split('=');
 
           if (keyValue.length === 2) {
-            // 移除引號和空格
+            
             var key = keyValue[0].trim();
             var value = keyValue[1].trim().replace(/["']/g, '');
 
-            // 找到對應的表單元素並設定值
+            
             var inputElement = document.getElementsByName(key)[0];
             if (inputElement) {
               inputElement.value = value;
             }
 
-            // 列印找到的變數名稱和數值
+            
             console.log("Variable Name:", key, "Value:", value);
-            // alert("Function called!");
+            
 
           }
         });
         document.getElementById("configField").value = '';
-        // Show notification
+        
         var notification = document.getElementById('notification2');
         notification.style.opacity = 1;
         setTimeout(function () {
@@ -762,7 +762,7 @@
   </script>
 
   <script>
-    // 當頁面載入時設定初始樣式
+    
     document.addEventListener("DOMContentLoaded", function () {
       initializeElement('DayTimeSpeedRate', 'sliderDayTimeSpeedRate');
       initializeElement('NightTimeSpeedRate', 'sliderNightTimeSpeedRate');
@@ -770,36 +770,36 @@
 
     function initializeElement(inputId, sliderId) {
       var inputElement = document.getElementById(inputId);
-      inputElement.style.backgroundColor = "#d2f5d2"; // 淺綠色
+      inputElement.style.backgroundColor = "#d2f5d2"; 
       if (inputElement.value !== inputElement.defaultValue) {
         inputElement.classList.add("non-default");
       }
     }
 
     function updateInputValue(inputId, sliderId) {
-      // 將數值型輸入的值更新為水平拉動條的值
+      
       document.getElementById(inputId).value = document.getElementById(sliderId).value;
 
-      // 新增檢查，若值為 0，將數值型輸入框變更背景色
+      
       if (document.getElementById(sliderId).value == 0) {
         document.getElementById(inputId).setCustomValidity("Invalid");
       } else {
         document.getElementById(inputId).setCustomValidity("");
       }
 
-      // 檢查是否為預設值，動態設定背景顏色
+      
       updateBackgroundColor(inputId);
     }
 
     function resetValue(elementId) {
-      // 重置數值型輸入的值為其初始值
+      
       document.getElementById(elementId).value = document.getElementById(elementId).defaultValue;
 
-      // 同時更新水平拉動條的值
+      
       var sliderId = 'slider' + elementId.substring(0, 1).toUpperCase() + elementId.substring(1);
       document.getElementById(sliderId).value = document.getElementById(elementId).value;
 
-      // 並且觸發相應的事件，以反映變化
+      
       updateInputValue(elementId, sliderId);
     }
 
@@ -807,10 +807,10 @@
       var inputElement = document.getElementById(inputId);
       if (inputElement.value === inputElement.defaultValue) {
         inputElement.classList.remove("non-default");
-        inputElement.style.backgroundColor = "#d2f5d2"; // 淺綠色
+        inputElement.style.backgroundColor = "#d2f5d2"; 
       } else {
         inputElement.classList.add("non-default");
-        inputElement.style.backgroundColor = "#c2e2f2"; // 藍色
+        inputElement.style.backgroundColor = "#c2e2f2"; 
       }
     }
   </script>

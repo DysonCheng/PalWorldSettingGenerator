@@ -3,27 +3,27 @@
     cursor: pointer;
   }
 
-  /* 新增 CSS 樣式，當數值為 0 時變更顏色 */
+  
   .lightbar:invalid {
-    background-color: pink !important; /* 粉紅色 */
+    background-color: pink !important; 
   }
 
-  /* 初始樣式，淺綠色 */
+  
   .lightbar {
-    background-color: #d2f5d2; /* 淺綠色 */
+    background-color: #d2f5d2; 
   }
 
-  /* 變更顏色，非預設值且非 0 時為藍色 */
+  
   .lightbar.non-default:valid {
-    background-color: #c2e2f2; /* 藍色 */
+    background-color: #c2e2f2; 
   }
 
 .iamfine {
     position: fixed;
     right: 2%;
     bottom: 20%;
-    z-index: 2; /* 設定比其他元素更大的 z-index */
-    transform: scale(1.5); /* 將按鈕的尺寸增加50% */
+    z-index: 2; 
+    transform: scale(1.5); 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -36,9 +36,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 調整此值以改變暗度，越小越暗 */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
-    transition: background-color 1s ease; /* 添加過渡效果，0.5秒的時間，easing 函數可以根據需要調整 */
+    transition: background-color 1s ease; 
 }
 
 body.snow-mode::before {
@@ -48,7 +48,7 @@ body.snow-mode::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: none; /* 將背景設為透明 */
+    background: none; 
     z-index: -1;    
 }
 
@@ -60,40 +60,40 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    font-family: Calibri, Arial, sans-serif; 
     position: relative;
-    transition: background-color 1s ease; /* 添加過渡效果，0.5秒的時間，easing 函數可以根據需要調整 */
+    transition: background-color 1s ease; 
 }
 
 .small-gif {
-    width: 2%; /* 縮小為原大小的 1/5 */
+    width: 2%; 
     display: block;
     margin: auto;
 }
 
-/* 右下角按鈕 */
+
 .button {
     position: fixed;
     right: 2%;
     bottom: 5%;
-    z-index: 2; /* 設定比其他元素更大的 z-index */
-    transform: scale(1.5); /* 將按鈕的尺寸增加50% */
+    z-index: 2; 
+    transform: scale(1.5); 
 }
 
 .button2 {
     position: fixed;
     left: 2%;
     bottom: 5%;
-    z-index: 2; /* 設定比其他元素更大的 z-index */
-    transform: scale(1.5); /* 將按鈕的尺寸增加50% */
+    z-index: 2; 
+    transform: scale(1.5); 
 }
 
 .button3 {
     position: fixed;
     right: 2%;
     bottom: 10%;
-    z-index: 2; /* 設定比其他元素更大的 z-index */
-    transform: scale(1.5); /* 將按鈕的尺寸增加50% */
+    z-index: 2; 
+    transform: scale(1.5); 
 }
 
 .contentner {
@@ -109,23 +109,23 @@ body {
     margin-bottom: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
-    font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; /* 強制使用 Calibri 字體 */
-    transition: background-color 1s ease; /* 同樣添加過渡效果 */
+    font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; 
+    transition: background-color 1s ease; 
 }
 
-/* 使用 CSS 調整對齊方式 */
+
 .center-container {
     text-align: right;
 }
 
-/* 單純的超連結樣式 */
+
 .center-container a {
-    color: snow; /* 超連結文字顏色 */
-    text-decoration: none; /* 移除底線 */
-    transition: color 1s ease; /* 過渡文字顏色 */
+    color: snow; 
+    text-decoration: none; 
+    transition: color 1s ease; 
 }
 
-/* 黑暗模式下的 .contentner */
+
 .contentner.snow-mode {
     background: rgba(255, 255, 255, 0.7);
     color: #000;
@@ -133,28 +133,28 @@ body {
 
 h1, h2 {
     color: snow;
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 添加陰影效果，可根據需要調整 */
+    font-family: Calibri, Arial, sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
     text-align:center;
 }
 
 h3 {
     color: snow;
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 添加陰影效果，可根據需要調整 */
+    font-family: Calibri, Arial, sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
     text-align:right;
 }
 
 .snow-mode h1, .snow-mode h2 {
-    color: #000; /* 調整成白雪模式下的文字顏色 */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 添加陰影效果，可根據需要調整 */
-    text-align: center; /* 在白雪模式下可能調整 h2 的對齊方式 */
+    color: #000; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
+    text-align: center; 
 }
 
 .snow-mode h3 {
-    color: #000; /* 調整成白雪模式下的文字顏色 */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 添加陰影效果，可根據需要調整 */
-    text-align: right; /* 在白雪模式下可能調整 h3 的對齊方式 */
+    color: #000; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
+    text-align: right; 
 }
 
 table {
@@ -168,46 +168,46 @@ table, th, td {
 
 th, td {
     padding: 8px;
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    font-family: Calibri, Arial, sans-serif; 
 }
 
-/* 第一欄與第二欄靠右對齊 */
+
 td:first-child, th:first-child {
     text-align: right;
 }
 
-/* 第二欄文字靠右 */
+
 td:nth-child(2), th:nth-child(2) {
     text-align: right;
 }
 
-/* 第三欄靠左 */
+
 td:nth-child(3), th:nth-child(3) {
     text-align: left;
 }
 
 
 .scroll-message {
-    font-size: 24px; /* 字體大小 */
-    color: white; /* 字體顏色 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 陰影效果 */
-    text-align: center; /* 文字置中 */
-    padding: 20px; /* 內邊距 */
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    font-size: 24px; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    padding: 20px; 
+    font-family: Calibri, Arial, sans-serif; 
 }
 
 footer {
-    text-align: center; /* 文字置中 */
-    background-color: #333; /* 背景顏色，可根據需要調整 */
-    color: white; /* 文字顏色為白色 */
-    padding: 10px; /* 內邊距，可根據需要調整 */
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    text-align: center; 
+    background-color: #333; 
+    color: white; 
+    padding: 10px; 
+    font-family: Calibri, Arial, sans-serif; 
 }
 
 footer p {
-    margin: 0; /* 移除段落的預設邊距 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 添加立體陰影，可根據需要調整 */
-    font-family: Calibri, Arial, sans-serif; /* 強制使用 Calibri 字體 */
+    margin: 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    font-family: Calibri, Arial, sans-serif; 
 }
 #google_translate_element {
     position:sticky;
