@@ -208,16 +208,6 @@ td:nth-child(3), th:nth-child(3) {
     text-align: left;
 }
 
-
-.scroll-message {
-    font-size: 24px; 
-    color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    text-align: center; 
-    padding: 20px; 
-    font-family: Calibri, Arial, sans-serif; 
-}
-
 footer {
     text-align: center; 
     background-color: #333; 
