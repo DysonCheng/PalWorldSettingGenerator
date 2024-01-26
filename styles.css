@@ -23,33 +23,6 @@
     cursor: pointer;
   }
 
-  
-  .lightbar:invalid {
-    background-color: pink !important; 
-  }
-
-  
-  .lightbar {
-    background-color: #d2f5d2; 
-  }
-
-  
-  .lightbar.non-default:valid {
-    background-color: #c2e2f2; 
-  }
-
-  .iamfine {
-    position: fixed;
-    right: 2%;
-    bottom: 25%;
-    z-index: 2; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 1vw;
-}
-
-
 body::before {
     content: "";
     position: fixed;
@@ -74,7 +47,7 @@ body.snow-mode::before {
 }
 
 body {
-    background-image: url('Palworld_KeyVisual_1080p_Loco_C.png');
+    background-image: url('imgs/Palworld_KeyVisual_1080p_Loco_C.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -92,56 +65,56 @@ body {
     margin: auto;
 }
 
+.scrollable-area {
+    z-index: 9; /* 設定比其他元素更大的 z-index */
+    opacity: 0; /* 初始設為透明 */
+    transition: opacity 0.2s ease-in-out; /* 添加過渡效果 */
+    position: fixed;
+  }
+  
+  /* Show the elements when the scroll position is reached */
+  .scrollable-area.visible {
+    opacity: 1; /* 顯示時設為不透明 */
+  }
 
-.button {
+.loaddata {
+    position: fixed;
+    right: 2%;
+    bottom: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.button0 {
+    position: fixed;
+    right: 2%;
+    bottom: 19%;
+    font-size: 1.5vw;
+}
+
+.button1 {
     position: fixed;
     right: 2%;
     bottom: 5%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
+    font-size: 1.5vw;
+}
+.button2 {
+    position: fixed;
+    right: 2%;
+    bottom: 12%;
     font-size: 1.5vw;
 }
 .button3 {
     position: fixed;
-    right: 2%;
-    bottom: 12%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
-    font-size: 1.5vw;
-}
-
-.button2 {
-    position: fixed;
     left: 2%;
     bottom: 5%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
     font-size: 1.5vw;
 }
 .button4 {
     position: fixed;
     left: 2%;
     bottom: 12%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
-    font-size: 1.5vw;
-}
-
-.button5 {
-    position: fixed;
-    right: 2%;
-    bottom: 22%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
-    font-size: 1.5vw;
-}
-
-.button6 {
-    position: fixed;
-    right: 2%;
-    bottom: 27%;
-    z-index: 2; 
-    /* transform: scale(1.5);  */
     font-size: 1.5vw;
 }
 
@@ -294,25 +267,22 @@ footer p {
     font-size: 1vw;
   }
 
-/* 自訂顏色 */
 :root {
-    --radio-checked-color: #3498db; /* 已選中狀態的顏色 */
-    --radio-unchecked-color: #7f8c8d; /* 未選中狀態的顏色 */
+    --radio-checked-color: #3498db;
+    --radio-unchecked-color: #7f8c8d;
 }
 
-/* 隱藏原始的Radiobutton樣式 */
 input[type="radio"] {
     display: none;
 }
 
-/* 自定義Radiobutton樣式 */
 input[type="radio"] + label {
     position: relative;
-    padding-left: 30px; /* 調整與文字的距離 */
+    padding-left: 30px;
     cursor: pointer;
     display: inline-block;
     line-height: 1.5;
-    font-size: 1vw; /* 控制字型大小 */
+    font-size: 1vw;
 }
 
 input[type="radio"] + label:before {
@@ -324,17 +294,15 @@ input[type="radio"] + label:before {
     width: 18px;
     height: 18px;
     border: 2px solid var(--radio-unchecked-color);
-    background-color: #fff; /* 背景色，可設定與頁面背景相同，形成空心效果 */
+    background-color: #fff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* 已選中狀態的樣式 */
 input[type="radio"]:checked + label:before {
     border-color: var(--radio-checked-color);
     background-color: var(--radio-checked-color);
 }
 
-/* 方形的樣式 */
 input[type="radio"] + label:before {
-    border-radius: 4px; /* 調整方形的圓角半徑，根據需要調整 */
+    border-radius: 4px;
 }

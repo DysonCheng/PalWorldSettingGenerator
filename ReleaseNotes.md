@@ -1,5 +1,11 @@
 # Release Notes
 
+## Ver 1.3.3.1 🔧✨
+
+This update removes the persistent display of incorrect numeric background colors. I will redo it and adjust the lower limit for reasonable numbers (without limiting the upper bound).
+Improved the blocking screen issue when reading windows, making the interface more aesthetically pleasing.
+Organizing the directory structure of the files as well.
+
 ## Ver 1.3.3 ✨
 
 Eliminated the dropdown menu. Utilizing more intuitive and easily understandable buttons for your convenience.
