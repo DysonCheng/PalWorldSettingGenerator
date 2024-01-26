@@ -3,7 +3,6 @@ function toggleSnowMode() {
     container.classList.toggle('snow-mode');
     var body = document.body;
     body.classList.toggle('snow-mode');
-
     
     setTimeout(function () {
         
