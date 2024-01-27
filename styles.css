@@ -1,3 +1,26 @@
+table.special-table {
+    border-collapse: collapse;
+    border: none;
+}
+    table.special-table td {
+        border-collapse: collapse;
+        border: none;
+    }
+    table.special-table a {
+        color: snow; 
+        text-decoration: none; 
+        transition: color 1s ease;
+    }
+    .special-table .left-align {
+        text-align: left;
+      }
+    
+      .special-table .right-align {
+        text-align: right;
+      }
+
+
+
 .banner-table {
     border-collapse: collapse;
     border: none;
@@ -6,7 +29,6 @@
   .banner-table td {
     border: none;
     padding: 10px;
-
   }
 
   .banner-table .left-align {
@@ -66,15 +88,16 @@ body {
 }
 
 .scrollable-area {
-    z-index: 9; /* 設定比其他元素更大的 z-index */
-    opacity: 0; /* 初始設為透明 */
-    transition: opacity 0.2s ease-in-out; /* 添加過渡效果 */
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
     position: fixed;
   }
   
-  /* Show the elements when the scroll position is reached */
+ 
   .scrollable-area.visible {
-    opacity: 1; /* 顯示時設為不透明 */
+    opacity: 1;
+    z-index: 9;
   }
 
 .loaddata {
@@ -139,7 +162,7 @@ body {
 .center-container a {
     color: snow; 
     text-decoration: none; 
-    transition: color 1s ease; 
+    transition: color 1s ease;
 }
 
 .buttom-container a {
