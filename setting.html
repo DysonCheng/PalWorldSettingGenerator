@@ -21,6 +21,7 @@
   <script src="js/googleTranslateElementInit.js"></script>
   <script src="js/HiddenButton.js"></script>
   <script src="js/reset.js"></script>
+  <script src="js/updatetime.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
@@ -57,19 +58,19 @@
     <br>
     <img src="imgs/R.gif" alt="down" class="small-gif">
     <h1>🌺PalWorld Settings Generator🌺</h1>
-    <h2>PalWorld設定產生器 - Server Version 0.1.3.1</h2>
+    <h2>PalWorld設定產生器 - Server Version 0.1.3.0</h2>
     <table class="banner-table">
       <tr>
         <td class="left-align"></td>
-        <td class="right-align">Updated:</td>
+        <td class="right-align"></td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">Github</a></div></td>
-        <td class="right-align">2021-01-26 Ver 1.3.3.1</td>
+        <td class="right-align"><div id="updateResult">Loading...</div></td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋</a></div></td>
-        <td class="right-align" translate="no">Design by PalWorld Fan: Dyson Cheng</td>
+        <td id="versionDisplay" class="right-align" translate="no">- DysonCheng</td>
       </tr>
     </table>
     <form id="settingsForm">
@@ -90,7 +91,7 @@
               <label for="Difficult">困難</label>
 
               <input type="radio" id="None" name="Difficulty" value="None" checked>
-              <label for="None">不設定</label>(預設值:不設定),會整體影響各種機率與數值.
+              <label for="None">不設定(預設)</label>會整體影響各種機率與數值.
           </td>
         </tr>
         <tr>
@@ -367,8 +368,7 @@
               <label for="DeathPenaltyItemAndEquipment">ItemAndEquipment-掉落道具與裝備</label>
               <br>
               <input type="radio" id="DeathPenaltyAll" name="DeathPenalty" value="All" checked>
-              <label for="DeathPenaltyAll">All-掉落全部(包括隊伍Pals)</label>
-              (預設值: 掉落全部)
+              <label for="DeathPenaltyAll">All-掉落全部(包括隊伍Pals)(預設)</label>
           </td>
       </tr>
       
@@ -385,8 +385,7 @@
               <input type="radio" id="bEnablePlayerToPlayerDamageTrue" name="bEnablePlayerToPlayerDamage" value="True">
               <label for="bEnablePlayerToPlayerDamageTrue">開啟</label>
               <input type="radio" id="bEnablePlayerToPlayerDamageFalse" name="bEnablePlayerToPlayerDamage" value="False" checked>
-              <label for="bEnablePlayerToPlayerDamageFalse">關閉</label>
-              (預設值: 關閉)
+              <label for="bEnablePlayerToPlayerDamageFalse">關閉(預設)</label>
           </td>
       </tr>
     <tr>
@@ -396,8 +395,7 @@
             <input type="radio" id="bEnableFriendlyFireTrue" name="bEnableFriendlyFire" value="True"d>
             <label for="bEnableFriendlyFireTrue">開啟</label>
             <input type="radio" id="bEnableFriendlyFireFalse" name="bEnableFriendlyFire" value="False" checked>
-            <label for="bEnableFriendlyFireFalse">關閉</label>
-            (預設值: 關閉) (同隊包括你的Pals)
+            <label for="bEnableFriendlyFireFalse">關閉(預設)</label>
         </td>
     </tr>
     <tr>
@@ -405,7 +403,7 @@
         <td>是否會發生襲擊事件</td>
         <td>
             <input type="radio" id="bEnableInvaderEnemyTrue" name="bEnableInvaderEnemy" value="True" checked>
-            <label for="bEnableInvaderEnemyTrue">會發生</label>
+            <label for="bEnableInvaderEnemyTrue">會發生(預設)</label>
             <input type="radio" id="bEnableInvaderEnemyFalse" name="bEnableInvaderEnemy" value="False">
             <label for="bEnableInvaderEnemyFalse">不發生</label>
         </td>
@@ -417,8 +415,7 @@
             <input type="radio" id="bActiveUNKOTrue" name="bActiveUNKO" value="True">
             <label for="bActiveUNKOTrue">啟用</label>
             <input type="radio" id="bActiveUNKOFalse" name="bActiveUNKO" value="False" checked>
-            <label for="bActiveUNKOFalse">關閉</label>
-            (預設值: 關閉) (UNKO是Pals的大便)
+            <label for="bActiveUNKOFalse">關閉(預設)</label>
         </td>
     </tr>
     <tr>
@@ -426,7 +423,7 @@
         <td>啟用手柄瞄準輔助</td>
         <td>
             <input type="radio" id="bEnableAimAssistPadTrue" name="bEnableAimAssistPad" value="True" checked>
-            <label for="bEnableAimAssistPadTrue">啟用</label>
+            <label for="bEnableAimAssistPadTrue">啟用(預設)</label>
             <input type="radio" id="bEnableAimAssistPadFalse" name="bEnableAimAssistPad" value="False">
             <label for="bEnableAimAssistPadFalse">關閉</label>
         </td>
@@ -438,8 +435,7 @@
             <input type="radio" id="bEnableAimAssistKeyboardTrue" name="bEnableAimAssistKeyboard" value="True">
             <label for="bEnableAimAssistKeyboardTrue">啟用</label>
             <input type="radio" id="bEnableAimAssistKeyboardFalse" name="bEnableAimAssistKeyboard" value="False" checked>
-            <label for="bEnableAimAssistKeyboardFalse">關閉</label>
-            (預設值: 關閉)
+            <label for="bEnableAimAssistKeyboardFalse">關閉(預設)</label>
         </td>
     </tr>
 
@@ -506,8 +502,7 @@
               <input type="radio" id="bAutoResetGuildNoOnlinePlayersTrue" name="bAutoResetGuildNoOnlinePlayers" value="True">
               <label for="bAutoResetGuildNoOnlinePlayersTrue">開啟</label>
               <input type="radio" id="bAutoResetGuildNoOnlinePlayersFalse" name="bAutoResetGuildNoOnlinePlayers" value="False" checked>
-              <label for="bAutoResetGuildNoOnlinePlayersFalse">關閉</label>
-              (預設值: 關閉)
+              <label for="bAutoResetGuildNoOnlinePlayersFalse">關閉(預設)</label>
           </td>
       </tr>
       
@@ -566,8 +561,7 @@
               <input type="radio" id="bIsMultiplayTrue" name="bIsMultiplay" value="True">
               <label for="bIsMultiplayTrue">開啟</label>
               <input type="radio" id="bIsMultiplayFalse" name="bIsMultiplay" value="False" checked>
-              <label for="bIsMultiplayFalse">關閉</label>
-              (預設值: 關閉)
+              <label for="bIsMultiplayFalse">關閉(預設)</label>
           </td>
       </tr>
       <tr>
@@ -577,8 +571,7 @@
               <input type="radio" id="bIsPvPTrue" name="bIsPvP" value="True">
               <label for="bIsPvPTrue">開啟</label>
               <input type="radio" id="bIsPvPFalse" name="bIsPvP" value="False" checked>
-              <label for="bIsPvPFalse">關閉</label>
-              (預設值: 關閉)
+              <label for="bIsPvPFalse">關閉(預設)</label>
           </td>
       </tr>
       <tr>
@@ -588,8 +581,7 @@
               <input type="radio" id="bCanPickupOtherGuildDeathPenaltyDropTrue" name="bCanPickupOtherGuildDeathPenaltyDrop" value="True">
               <label for="bCanPickupOtherGuildDeathPenaltyDropTrue">允許</label>
               <input type="radio" id="bCanPickupOtherGuildDeathPenaltyDropFalse" name="bCanPickupOtherGuildDeathPenaltyDrop" value="False" checked>
-              <label for="bCanPickupOtherGuildDeathPenaltyDropFalse">不允許</label>
-              (預設值: 不允許)
+              <label for="bCanPickupOtherGuildDeathPenaltyDropFalse">不允許(預設)</label>
           </td>
       </tr>
       <tr>
@@ -597,7 +589,7 @@
           <td>是否啟用沒登入處罰</td>
           <td>
               <input type="radio" id="bEnableNonLoginPenaltyTrue" name="bEnableNonLoginPenalty" value="True" checked>
-              <label for="bEnableNonLoginPenaltyTrue">開啟</label>
+              <label for="bEnableNonLoginPenaltyTrue">開啟(預設)</label>
               <input type="radio" id="bEnableNonLoginPenaltyFalse" name="bEnableNonLoginPenalty" value="False">
               <label for="bEnableNonLoginPenaltyFalse">關閉</label>
           </td>
@@ -607,7 +599,7 @@
           <td>是否啟用快速移動</td>
           <td>
               <input type="radio" id="bEnableFastTravelTrue" name="bEnableFastTravel" value="True" checked>
-              <label for="bEnableFastTravelTrue">開啟</label>
+              <label for="bEnableFastTravelTrue">開啟(預設)</label>
               <input type="radio" id="bEnableFastTravelFalse" name="bEnableFastTravel" value="False">
               <label for="bEnableFastTravelFalse">關閉</label>
           </td>
@@ -617,7 +609,7 @@
           <td>能否新角色可選擇出生點</td>
           <td>
               <input type="radio" id="bIsStartLocationSelectByMapTrue" name="bIsStartLocationSelectByMap" value="True" checked>
-              <label for="bIsStartLocationSelectByMapTrue">開啟</label>
+              <label for="bIsStartLocationSelectByMapTrue">開啟(預設)</label>
               <input type="radio" id="bIsStartLocationSelectByMapFalse" name="bIsStartLocationSelectByMap" value="False">
               <label for="bIsStartLocationSelectByMapFalse">關閉</label>
           </td>
@@ -630,8 +622,7 @@
             <input type="radio" id="bExistPlayerAfterLogoutTrue" name="bExistPlayerAfterLogout" value="True">
             <label for="bExistPlayerAfterLogoutTrue">開啟</label>
             <input type="radio" id="bExistPlayerAfterLogoutFalse" name="bExistPlayerAfterLogout" value="False" checked>
-            <label for="bExistPlayerAfterLogoutFalse">關閉</label>
-            (預設值:關閉)
+            <label for="bExistPlayerAfterLogoutFalse">關閉(預設)</label>
         </td>
     </tr>
     
@@ -642,8 +633,7 @@
               <input type="radio" id="bEnableDefenseOtherGuildPlayerTrue" name="bEnableDefenseOtherGuildPlayer" value="True">
               <label for="bEnableDefenseOtherGuildPlayerTrue">會</label>
               <input type="radio" id="bEnableDefenseOtherGuildPlayerFalse" name="bEnableDefenseOtherGuildPlayer" value="False" checked>
-              <label for="bEnableDefenseOtherGuildPlayerFalse">不會</label>
-              (預設值:不會)
+              <label for="bEnableDefenseOtherGuildPlayerFalse">不會(預設)</label>
           </td>
       </tr>
       
@@ -707,8 +697,7 @@
               <input type="radio" id="RCONEnabledTrue" name="RCONEnabled" value="True">
               <label for="RCONEnabledTrue">啟用</label>
               <input type="radio" id="RCONEnabledFalse" name="RCONEnabled" value="False" checked>
-              <label for="RCONEnabledFalse">不啟用</label>
-              (預設值:不啟用)
+              <label for="RCONEnabledFalse">不啟用(預設)</label>
           </td>
         </tr>
       
@@ -727,7 +716,7 @@
           <td>是否使用身份驗證</td>
           <td>
               <input type="radio" id="bUseAuthTrue" name="bUseAuth" value="True" checked>
-              <label for="bUseAuthTrue">使用</label>
+              <label for="bUseAuthTrue">使用(預設)</label>
               <input type="radio" id="bUseAuthFalse" name="bUseAuth" value="False">
               <label for="bUseAuthFalse">不使用</label>
           </td>
