@@ -1,4 +1,24 @@
 # Release Notes
+
+# Release Notes - January 29, 2024
+## Version 0.11✨
+
+## Feature Enhancements:
+### Configuration Settings UI Improvements:
+
+- **Range and Number Interaction:**
+  - Improved the interaction between range and number input elements.
+  - When moving the range slider, the corresponding number input background now turns light blue.
+
+## General Improvements:
+
+- **Notification System:**
+  - Enhanced the notification system for better user feedback.
+  - Notifications now fade out smoothly after being displayed.
+
+Thank you for using our service! If you encounter any issues or have feedback, please feel free to let us know.
+
+
 ## Version 0.1 🔧✨ (Redefinition)
 
 - **Note:** The version number has been redefined as pre release v0.1 (Beta).

@@ -21,7 +21,7 @@
   <script src="js/googleTranslateElementInit.js"></script>
   <script src="js/HiddenButton.js"></script>
   <script src="js/reset.js"></script>
-  <script src="js/updatetime.js"></script>
+  <!-- <script src="js/updatetime.js"></script> -->
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
@@ -66,7 +66,7 @@
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">Github</a></div></td>
-        <td class="right-align"><div id="updateResult">Loading...</div></td>
+        <td class="right-align"><div id="updateResult">Pre-Release v0.1</div></td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋</a></div></td>
@@ -739,19 +739,32 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      initializeElement('DayTimeSpeedRate', 'sliderDayTimeSpeedRate');
+        initializeAllElements();
     });
 
+    function initializeAllElements() {
+
+        var rangeInputs = document.querySelectorAll('input[type="range"]');
+
+        rangeInputs.forEach(function (rangeInput) {
+            var numberId = rangeInput.getAttribute('id').replace('slider', '');
+            initializeElement(numberId, rangeInput.getAttribute('id'));
+        });
+    }
+
     function initializeElement(inputId, sliderId) {
-      var inputElement = document.getElementById(inputId);
+        var inputElement = document.getElementById(inputId);
+
+        document.getElementById(sliderId).addEventListener('input', function () {
+            inputElement.style.backgroundColor = 'lightblue';
+        });
     }
 
     function updateInputValue(inputId, sliderId) {
-      document.getElementById(inputId).value = document.getElementById(sliderId).value;
-      document.getElementById(inputId).dispatchEvent(new Event('input'));
+        var inputValue = document.getElementById(sliderId).value;
+        document.getElementById(inputId).value = inputValue;
     }
-  </script>
-    
+  </script>    
   <script>
     document.getElementById('shareButton').addEventListener('click', function() {
       if (navigator.share) {
