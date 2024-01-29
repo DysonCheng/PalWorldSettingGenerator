@@ -14,7 +14,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PalWorld Settings Generator</title>
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles.css">
   <script src="js/generateSettings.js"></script>
   <script src="js/parseConfig.js"></script>
   <script src="js/toggleSnowMode.js"></script>
@@ -65,7 +65,7 @@
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank">Github</a></div></td>
-        <td class="right-align">2021-01-26 Ver 1.3.3</td>
+        <td class="right-align">2021-01-26 Ver 1.3.3.1</td>
       </tr>
       <tr>
         <td class="left-align"><div class="center-container"><a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165" target="_blank">問題與回饋</a></div></td>
@@ -98,9 +98,9 @@
           <td>白天流逝速度</td>
           <td><input type="number" id="DayTimeSpeedRate" name="DayTimeSpeedRate" value="1" step="0.1" min="0"
               class="lightbar" style="width: 60px;">
-            <input type="range" id="sliderDayTimeSpeedRate" min="0" max="5" step="1" value="1"
+            <input type="range" id="sliderDayTimeSpeedRate" min="0" max="5" step="0.5" value="1"
               oninput="updateInputValue('DayTimeSpeedRate', 'sliderDayTimeSpeedRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('DayTimeSpeedRate')">🔄</span>(數字越大白天越短)
+            <span class="reset-btn" onclick="resetValue('DayTimeSpeedRate')">🔄(數字越大白天越短)</span>
           </td>
         </tr>
         <tr>
@@ -109,9 +109,9 @@
           <td>
             <input type="number" id="NightTimeSpeedRate" name="NightTimeSpeedRate" value="1" step="0.1" min="0"
               class="lightbar" style="width: 60px;">
-            <input type="range" id="sliderNightTimeSpeedRate" min="0" max="5" step="1" value="1"
+            <input type="range" id="sliderNightTimeSpeedRate" min="0" max="5" step="0.5" value="1"
               oninput="updateInputValue('NightTimeSpeedRate', 'sliderNightTimeSpeedRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('NightTimeSpeedRate')">🔄</span>(數字越大夜晚越短)
+            <span class="reset-btn" onclick="resetValue('NightTimeSpeedRate')">🔄(數字越大夜晚越短)</span>
           </td>
         </tr>
         <tr>
@@ -119,9 +119,9 @@
           <td>經驗值倍率</td>
           <td><input type="number" id="ExpRate" name="ExpRate" value="1" step="0.1" min="0" class="lightbar"
               style="width: 60px;">
-            <input type="range" id="sliderExpRate" min="0" step="1" max="20" value="1"
+            <input type="range" id="sliderExpRate" min="0" step="1" max="20" value="0.5"
               oninput="updateInputValue('ExpRate', 'sliderExpRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('ExpRate')">🔄</span>(數字越大升級越快)
+            <span class="reset-btn" onclick="resetValue('ExpRate')">🔄(數字越大升級越快)</span>
           </td>
         </tr>
         <tr>
@@ -130,9 +130,9 @@
           <td>
             <input type="number" id="PalCaptureRate" name="PalCaptureRate" value="1" step="0.1" min="0" class="lightbar"
               style="width: 60px;">
-            <input type="range" id="sliderPalCaptureRate" min="0" max="20" step="1" value="1"
+            <input type="range" id="sliderPalCaptureRate" min="0" max="20" step="0.5" value="1"
               oninput="updateInputValue('PalCaptureRate', 'sliderPalCaptureRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalCaptureRate')">🔄</span>(數字越大機率越高)
+            <span class="reset-btn" onclick="resetValue('PalCaptureRate')">🔄(數字越大機率越高)</span>
           </td>
         </tr>
         <tr>
@@ -141,9 +141,9 @@
           <td>
             <input type="number" id="PalSpawnNumRate" name="PalSpawnNumRate" value="1" step="0.1" min="0"
               class="lightbar" style="width: 60px;">
-            <input type="range" id="sliderPalSpawnNumRate" min="0" max="5" step="1" value="1"
+            <input type="range" id="sliderPalSpawnNumRate" min="0" max="5" step="0.5" value="1"
               oninput="updateInputValue('PalSpawnNumRate', 'sliderPalSpawnNumRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalSpawnNumRate')">🔄</span>(數字越大數量越多)
+            <span class="reset-btn" onclick="resetValue('PalSpawnNumRate')">🔄(數字越大數量越多)</span>
           </td>
         </tr>
         <tr>
@@ -154,7 +154,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPalDamageRateAttack" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PalDamageRateAttack', 'sliderPalDamageRateAttack')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalDamageRateAttack')">🔄</span>(數字越大攻擊越高)
+            <span class="reset-btn" onclick="resetValue('PalDamageRateAttack')">🔄(數字越大攻擊越高)</span>
           </td>
         </tr>
         <tr>
@@ -165,7 +165,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPalDamageRateDefense" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PalDamageRateDefense', 'sliderPalDamageRateDefense')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalDamageRateDefense')">🔄</span>(數字越小受傷越少)
+            <span class="reset-btn" onclick="resetValue('PalDamageRateDefense')">🔄(數字越小受傷越少)</span>
           </td>
         </tr>
         <tr>
@@ -176,7 +176,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPlayerDamageRateAttack" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PlayerDamageRateAttack', 'sliderPlayerDamageRateAttack')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerDamageRateAttack')">🔄</span>(數字越大攻擊越高)
+            <span class="reset-btn" onclick="resetValue('PlayerDamageRateAttack')">🔄(數字越大攻擊越高)</span>
           </td>
         </tr>
         <tr>
@@ -187,7 +187,7 @@
               min="0" class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPlayerDamageRateDefense" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PlayerDamageRateDefense', 'sliderPlayerDamageRateDefense')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerDamageRateDefense')">🔄</span>(數字越小受傷越少)
+            <span class="reset-btn" onclick="resetValue('PlayerDamageRateDefense')">🔄(數字越小受傷越少)</span>
           </td>
         </tr>
         <tr>
@@ -199,7 +199,7 @@
             <input type="range" id="sliderPlayerStomachDecreaceRate" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PlayerStomachDecreaceRate', 'sliderPlayerStomachDecreaceRate')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerStomachDecreaceRate')">🔄</span>(數字越小越不容易餓)
+            <span class="reset-btn" onclick="resetValue('PlayerStomachDecreaceRate')">🔄(數字越小越不容易餓)</span>
           </td>
         </tr>
         <tr>
@@ -211,7 +211,7 @@
             <input type="range" id="sliderPlayerStaminaDecreaceRate" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PlayerStaminaDecreaceRate', 'sliderPlayerStaminaDecreaceRate')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerStaminaDecreaceRate')">🔄</span>(數字越小耐力消耗越慢)
+            <span class="reset-btn" onclick="resetValue('PlayerStaminaDecreaceRate')">🔄(數字越小耐力消耗越慢)</span>
           </td>
         </tr>
         <tr>
@@ -222,7 +222,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPlayerAutoHPRegeneRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PlayerAutoHPRegeneRate', 'sliderPlayerAutoHPRegeneRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerAutoHPRegeneRate')">🔄</span>(數字越大回復生命值越快)
+            <span class="reset-btn" onclick="resetValue('PlayerAutoHPRegeneRate')">🔄(數字越大回復生命值越快)</span>
           </td>
         </tr>
         <tr>
@@ -234,7 +234,7 @@
             <input type="range" id="sliderPlayerAutoHpRegeneRateInSleep" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PlayerAutoHpRegeneRateInSleep', 'sliderPlayerAutoHpRegeneRateInSleep')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PlayerAutoHpRegeneRateInSleep')">🔄</span>(數字越大回復生命值越多)
+            <span class="reset-btn" onclick="resetValue('PlayerAutoHpRegeneRateInSleep')">🔄(數字越大回復生命值越多)</span>
           </td>
         </tr>
 
@@ -246,7 +246,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPalStomachDecreaceRate" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PalStomachDecreaceRate', 'sliderPalStomachDecreaceRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalStomachDecreaceRate')">🔄</span>(數字越小越不容易餓)
+            <span class="reset-btn" onclick="resetValue('PalStomachDecreaceRate')">🔄(數字越小越不容易餓)</span>
           </td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPalStaminaDecreaceRate" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('PalStaminaDecreaceRate', 'sliderPalStaminaDecreaceRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalStaminaDecreaceRate')">🔄</span>(數字越小耐力消耗越慢)
+            <span class="reset-btn" onclick="resetValue('PalStaminaDecreaceRate')">🔄(數字越小耐力消耗越慢)</span>
           </td>
         </tr>
         <tr>
@@ -268,7 +268,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderPalAutoHPRegeneRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PalAutoHPRegeneRate', 'sliderPalAutoHPRegeneRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalAutoHPRegeneRate')">🔄</span>(數字越大回復生命值越快)
+            <span class="reset-btn" onclick="resetValue('PalAutoHPRegeneRate')">🔄(數字越大回復生命值越快)</span>
           </td>
         </tr>
         <tr>
@@ -280,7 +280,7 @@
             <input type="range" id="sliderPalAutoHpRegeneRateInSleep" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('PalAutoHpRegeneRateInSleep', 'sliderPalAutoHpRegeneRateInSleep')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalAutoHpRegeneRateInSleep')">🔄</span>(數字越大回復生命值越多)
+            <span class="reset-btn" onclick="resetValue('PalAutoHpRegeneRateInSleep')">🔄(數字越大回復生命值越多)</span>
           </td>
         </tr>
         <tr>
@@ -291,7 +291,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderBuildObjectDamageRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('BuildObjectDamageRate', 'sliderBuildObjectDamageRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('BuildObjectDamageRate')">🔄</span>(數字越大傷害越大)
+            <span class="reset-btn" onclick="resetValue('BuildObjectDamageRate')">🔄(數字越大傷害越大)</span>
           </td>
         </tr>
         <tr>
@@ -303,7 +303,7 @@
             <input type="range" id="sliderBuildObjectDeteriorationDamageRate" min="0" max="3" step="1" value="1"
               oninput="updateInputValue('BuildObjectDeteriorationDamageRate', 'sliderBuildObjectDeteriorationDamageRate')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('BuildObjectDeteriorationDamageRate')">🔄</span>(數字越小劣化越慢)
+            <span class="reset-btn" onclick="resetValue('BuildObjectDeteriorationDamageRate')">🔄(數字越小劣化越慢</span>)
           </td>
         </tr>
 
@@ -315,7 +315,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderCollectionDropRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('CollectionDropRate', 'sliderCollectionDropRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('CollectionDropRate')">🔄</span>(數字越大掉落越多)
+            <span class="reset-btn" onclick="resetValue('CollectionDropRate')">🔄(數字越大掉落越多)</span>
           </td>
         </tr>
         <tr>
@@ -326,7 +326,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderCollectionObjectHpRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('CollectionObjectHpRate', 'sliderCollectionObjectHpRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('CollectionObjectHpRate')">🔄</span>(數字越大數量越多)
+            <span class="reset-btn" onclick="resetValue('CollectionObjectHpRate')">🔄(數字越大數量越多)</span>
           </td>
         </tr>
         <tr>
@@ -338,7 +338,7 @@
             <input type="range" id="sliderCollectionObjectRespawnSpeedRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('CollectionObjectRespawnSpeedRate', 'sliderCollectionObjectRespawnSpeedRate')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('CollectionObjectRespawnSpeedRate')">🔄</span>(數字越小刷新越快)
+            <span class="reset-btn" onclick="resetValue('CollectionObjectRespawnSpeedRate')">🔄(數字越小刷新越快)</span>
           </td>
         </tr>
         <tr>
@@ -349,7 +349,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderEnemyDropItemRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('EnemyDropItemRate', 'sliderEnemyDropItemRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('EnemyDropItemRate')">🔄</span>(數字越大數量越多)
+            <span class="reset-btn" onclick="resetValue('EnemyDropItemRate')">🔄(數字越大數量越多)</span>
           </td>
         </tr>
 
@@ -451,7 +451,7 @@
               style="width: 60px;">
             <input type="range" id="sliderDropItemMaxNum" min="0" max="5000" step="100" value="3000"
               oninput="updateInputValue('DropItemMaxNum', 'sliderDropItemMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('DropItemMaxNum')">🔄</span>(數字越大允許掉落物越多)
+            <span class="reset-btn" onclick="resetValue('DropItemMaxNum')">🔄(數字越大允許掉落物越多)</span>
           </td>
         </tr>
         <tr>
@@ -462,7 +462,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderDropItemMaxNum_UNKO" min="0" max="500" step="100" value="100"
               oninput="updateInputValue('DropItemMaxNum_UNKO', 'sliderDropItemMaxNum_UNKO')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('DropItemMaxNum_UNKO')">🔄</span>(數字越大允許掉落物越多)
+            <span class="reset-btn" onclick="resetValue('DropItemMaxNum_UNKO')">🔄(數字越大允許掉落物越多)</span>
           </td>
         </tr>
         <tr>
@@ -473,7 +473,7 @@
               style="width: 60px;">
             <input type="range" id="sliderBaseCampMaxNum" min="0" max="256" step="8" value="128"
               oninput="updateInputValue('BaseCampMaxNum', 'sliderBaseCampMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('BaseCampMaxNum')">🔄</span>(數字越大允許據點數量越多)
+            <span class="reset-btn" onclick="resetValue('BaseCampMaxNum')">🔄(數字越大允許據點數量越多)</span>
           </td>
         </tr>
         <tr>
@@ -484,7 +484,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderBaseCampWorkerMaxNum" min="0" max="20" step="1" value="15"
               oninput="updateInputValue('BaseCampWorkerMaxNum', 'sliderBaseCampWorkerMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('BaseCampWorkerMaxNum')">🔄</span>(數字越大允許Pals越多)
+            <span class="reset-btn" onclick="resetValue('BaseCampWorkerMaxNum')">🔄(數字越大允許Pals越多)</span>
           </td>
         </tr>
         <tr>
@@ -495,7 +495,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderDropItemAliveMaxHours" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('DropItemAliveMaxHours', 'sliderDropItemAliveMaxHours')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('DropItemAliveMaxHours')">🔄</span>(數字越小掉落物消失越快)
+            <span class="reset-btn" onclick="resetValue('DropItemAliveMaxHours')">🔄(數字越小掉落物消失越快)</span>
           </td>
         </tr>
 
@@ -521,7 +521,7 @@
             <input type="range" id="sliderAutoResetGuildTimeNoOnlinePlayers" min="0" max="216" step="8" value="72"
               oninput="updateInputValue('AutoResetGuildTimeNoOnlinePlayers', 'sliderAutoResetGuildTimeNoOnlinePlayers')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('AutoResetGuildTimeNoOnlinePlayers')">🔄</span>(數字越小越快重置)
+            <span class="reset-btn" onclick="resetValue('AutoResetGuildTimeNoOnlinePlayers')">🔄(數字越小越快重置)</span>
           </td>
         </tr>
         <tr>
@@ -532,7 +532,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderGuildPlayerMaxNum" min="0" max="50" step="1" value="20"
               oninput="updateInputValue('GuildPlayerMaxNum', 'sliderGuildPlayerMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('GuildPlayerMaxNum')">🔄</span>(數字越大允許人數越多)
+            <span class="reset-btn" onclick="resetValue('GuildPlayerMaxNum')">🔄(數字越大允許人數越多)</span>
           </td>
         </tr>
         <tr>
@@ -544,7 +544,7 @@
             <input type="range" id="sliderPalEggDefaultHatchingTime" min="0" max="144" step="1" value="72"
               oninput="updateInputValue('PalEggDefaultHatchingTime', 'sliderPalEggDefaultHatchingTime')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('PalEggDefaultHatchingTime')">🔄</span>(數字越小孵化越快)
+            <span class="reset-btn" onclick="resetValue('PalEggDefaultHatchingTime')">🔄(數字越小孵化越快)</span>
           </td>
         </tr>
         <tr>
@@ -555,7 +555,7 @@
               style="width: 60px;">
             <input type="range" id="sliderWorkSpeedRate" min="0" max="10" step="1" value="1"
               oninput="updateInputValue('WorkSpeedRate', 'sliderWorkSpeedRate')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('WorkSpeedRate')">🔄</span>(數字越大工作越快)
+            <span class="reset-btn" onclick="resetValue('WorkSpeedRate')">🔄(數字越大工作越快)</span>
           </td>
         </tr>
        
@@ -655,7 +655,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderCoopPlayerMaxNum" min="0" max="12" step="1" value="4"
               oninput="updateInputValue('CoopPlayerMaxNum', 'sliderCoopPlayerMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('CoopPlayerMaxNum')">🔄</span>(數字越大允許合作玩家越多)
+            <span class="reset-btn" onclick="resetValue('CoopPlayerMaxNum')">🔄(數字越大允許合作玩家越多)</span>
           </td>
         </tr>
         <tr>
@@ -666,7 +666,7 @@
               class="lightbar" style="width: 60px;">
             <input type="range" id="sliderServerPlayerMaxNum" min="0" max="96" step="1" value="32"
               oninput="updateInputValue('ServerPlayerMaxNum', 'sliderServerPlayerMaxNum')" class="lightbar">
-            <span class="reset-btn" onclick="resetValue('ServerPlayerMaxNum')">🔄</span>(數字越大允許容納人數越多)
+            <span class="reset-btn" onclick="resetValue('ServerPlayerMaxNum')">🔄(數字越大允許容納人數越多)</span>
           </td>
         </tr>
         <tr>
