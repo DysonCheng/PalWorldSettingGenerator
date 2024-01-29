@@ -2,48 +2,51 @@ table.special-table {
     border-collapse: collapse;
     border: none;
 }
-    table.special-table td {
-        border-collapse: collapse;
-        border: none;
-    }
-    table.special-table a {
-        color: snow; 
-        text-decoration: none; 
-        transition: color 1s ease;
-    }
-    .special-table .left-align {
-        text-align: left;
-      }
-    
-      .special-table .right-align {
-        text-align: right;
-      }
+
+table.special-table td {
+    border-collapse: collapse;
+    border: none;
+}
+
+table.special-table a {
+    color: snow;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+
+.special-table .left-align {
+    text-align: left;
+}
+
+.special-table .right-align {
+    text-align: right;
+}
 
 
 
 .banner-table {
     border-collapse: collapse;
     border: none;
-  }
+}
 
-  .banner-table td {
+.banner-table td {
     border: none;
     padding: 10px;
-  }
+}
 
-  .banner-table .left-align {
+.banner-table .left-align {
     text-align: left;
-  }
+}
 
-  .banner-table .right-align {
+.banner-table .right-align {
     text-align: right;
-  }
+}
 
 
 .reset-btn {
     margin-left: 10px;
     cursor: pointer;
-  }
+}
 
 body::before {
     content: "";
@@ -52,9 +55,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
-    transition: background-color 1s ease; 
+    transition: background-color 1s ease;
 }
 
 body.snow-mode::before {
@@ -64,8 +67,8 @@ body.snow-mode::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: none; 
-    z-index: -1;    
+    background: none;
+    z-index: -1;
 }
 
 body {
@@ -76,13 +79,13 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    font-family: Calibri, Arial, sans-serif; 
+    font-family: Calibri, Arial, sans-serif;
     position: relative;
-    transition: background-color 1s ease; 
+    transition: background-color 1s ease;
 }
 
 .small-gif {
-    width: 2%; 
+    width: 2%;
     display: block;
     margin: auto;
 }
@@ -92,13 +95,13 @@ body {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     position: fixed;
-  }
-  
- 
-  .scrollable-area.visible {
+}
+
+
+.scrollable-area.visible {
     opacity: 1;
     z-index: 9;
-  }
+}
 
 .loaddata {
     position: fixed;
@@ -122,18 +125,21 @@ body {
     bottom: 5%;
     font-size: 1.5vw;
 }
+
 .button2 {
     position: fixed;
     right: 2%;
     bottom: 12%;
     font-size: 1.5vw;
 }
+
 .button3 {
     position: fixed;
     left: 2%;
     bottom: 5%;
     font-size: 1.5vw;
 }
+
 .button4 {
     position: fixed;
     left: 2%;
@@ -155,20 +161,20 @@ body {
     margin-bottom: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
-    font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif; 
+    font-family: Calibri, "Microsoft JhengHei", Arial, sans-serif;
     transition: background-color 1s ease;
 }
 
 .center-container a {
-    color: snow; 
-    text-decoration: none; 
+    color: snow;
+    text-decoration: none;
     transition: color 1s ease;
 }
 
 .buttom-container a {
-    color: snow; 
-    text-decoration: none; 
-    transition: color 1s ease; 
+    color: snow;
+    text-decoration: none;
+    transition: color 1s ease;
 }
 
 .contentner.snow-mode {
@@ -176,30 +182,32 @@ body {
     color: #000;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: snow;
-    font-family: Calibri, Arial, sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    text-align:center;
+    font-family: Calibri, Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
 h3 {
     color: snow;
-    font-family: Calibri, Arial, sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    text-align:right;
+    font-family: Calibri, Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: right;
 }
 
-.snow-mode h1, .snow-mode h2 {
-    color: #000; 
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
-    text-align: center; 
+.snow-mode h1,
+.snow-mode h2 {
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .snow-mode h3 {
-    color: #000; 
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
-    text-align: right; 
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    text-align: right;
 }
 
 table {
@@ -207,47 +215,54 @@ table {
     width: 100%;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
 }
 
-th, td {
+th,
+td {
     padding: 8px;
-    font-family: Calibri, Arial, sans-serif; 
+    font-family: Calibri, Arial, sans-serif;
 }
 
 
-td:first-child, th:first-child {
+td:first-child,
+th:first-child {
     text-align: right;
 }
 
 
-td:nth-child(2), th:nth-child(2) {
+td:nth-child(2),
+th:nth-child(2) {
     text-align: right;
 }
 
 
-td:nth-child(3), th:nth-child(3) {
+td:nth-child(3),
+th:nth-child(3) {
     text-align: left;
 }
 
 footer {
-    text-align: center; 
-    background-color: #333; 
-    color: white; 
-    padding: 10px; 
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     font-family: Calibri, Arial, sans-serif;
     font-size: 1vw;
 }
 
 footer p {
-    margin: 0; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: Calibri, Arial, sans-serif;
     font-size: 1vw;
 }
+
 #google_translate_element {
-    position:sticky;
+    position: sticky;
     z-index: 2;
 }
 
@@ -264,8 +279,9 @@ footer p {
     transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
-  }
-  #notification2 {
+}
+
+#notification2 {
     position: fixed;
     top: 10%;
     right: 0%;
@@ -278,7 +294,7 @@ footer p {
     transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
-  }
+}
 
 :root {
     --radio-checked-color: #3498db;
@@ -289,7 +305,7 @@ input[type="radio"] {
     display: none;
 }
 
-input[type="radio"] + label {
+input[type="radio"]+label {
     position: relative;
     padding-left: 1.2vw;
     cursor: pointer;
@@ -298,8 +314,8 @@ input[type="radio"] + label {
     font-size: 1vw;
 }
 
-input[type="radio"] + label:before {
-    align-items:center ;
+input[type="radio"]+label:before {
+    align-items: center;
     content: '';
     position: absolute;
     left: 0;
@@ -312,11 +328,11 @@ input[type="radio"] + label:before {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-input[type="radio"]:checked + label:before {
+input[type="radio"]:checked+label:before {
     border-color: var(--radio-checked-color);
     background-color: var(--radio-checked-color);
 }
 
-input[type="radio"] + label:before {
+input[type="radio"]+label:before {
     border-radius: 4px;
 }
