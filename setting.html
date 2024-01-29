@@ -750,6 +750,14 @@
             var numberId = rangeInput.getAttribute('id').replace('slider', '');
             initializeElement(numberId, rangeInput.getAttribute('id'));
         });
+
+        var numberInputs = document.querySelectorAll('input[type="number"]');
+        
+        numberInputs.forEach(function (numberInput) {
+            numberInput.addEventListener('input', function () {
+                numberInput.style.backgroundColor = 'lightblue';
+            });
+        });
     }
 
     function initializeElement(inputId, sliderId) {
@@ -762,9 +770,13 @@
 
     function updateInputValue(inputId, sliderId) {
         var inputValue = document.getElementById(sliderId).value;
-        document.getElementById(inputId).value = inputValue;
+        var inputElement = document.getElementById(inputId);
+
+        inputElement.value = inputValue;
+        inputElement.style.backgroundColor = 'lightblue';
     }
-  </script>    
+</script>
+
   <script>
     document.getElementById('shareButton').addEventListener('click', function() {
       if (navigator.share) {
