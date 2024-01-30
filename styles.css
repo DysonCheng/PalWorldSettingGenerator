@@ -22,6 +22,9 @@ table.special-table a {
     text-align: right;
 }
 
+body.snow-mode table.special-table a {
+    color: black;
+}
 
 
 .banner-table {
@@ -279,6 +282,7 @@ footer p {
     transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
+    pointer-events: none;
 }
 
 #notification2 {
@@ -294,6 +298,7 @@ footer p {
     transition: opacity 0.5s ease-in-out;
     z-index: 9;
     font-size: 1vw;
+    pointer-events: none;
 }
 
 :root {
