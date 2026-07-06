@@ -87,6 +87,99 @@ body {
     transition: background-color 1s ease;
 }
 
+.major-update-preview {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.major-update-preview__content {
+    display: grid;
+    justify-items: center;
+    width: min(96vw, 1800px);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Black", Arial, sans-serif;
+    letter-spacing: 0;
+    opacity: 0.54;
+    transform-origin: center;
+    filter:
+        drop-shadow(0 0 24px rgba(0, 247, 255, 0.95))
+        drop-shadow(0 0 82px rgba(255, 40, 140, 0.85))
+        drop-shadow(0 22px 46px rgba(0, 0, 0, 0.95));
+    animation: major-update-preview-breathe 2.4s ease-in-out infinite;
+}
+
+.major-update-preview__title,
+.major-update-preview__subtitle,
+.major-update-preview__note {
+    display: block;
+    font-weight: 900;
+    line-height: 0.68;
+    white-space: nowrap;
+}
+
+.major-update-preview__title {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: clamp(27rem, 45vw, 30rem);
+    text-shadow:
+        0 0 18px rgba(255, 255, 255, 0.9),
+        0 0 58px rgba(54, 255, 239, 0.86),
+        0 0 120px rgba(255, 44, 139, 0.84);
+}
+
+.major-update-preview__subtitle {
+    color: rgba(255, 226, 99, 0.72);
+    font-size: clamp(16.5rem, 24vw, 18rem);
+    text-shadow:
+        0 0 24px rgba(255, 226, 99, 0.96),
+        0 0 78px rgba(255, 44, 139, 0.88),
+        0 14px 36px rgba(0, 0, 0, 0.95);
+}
+
+.major-update-preview__note {
+    color: rgba(147, 246, 255, 0.7);
+    font-size: clamp(14.25rem, 22vw, 16rem);
+    text-shadow:
+        0 0 24px rgba(147, 246, 255, 0.95),
+        0 0 72px rgba(54, 255, 239, 0.82),
+        0 14px 36px rgba(0, 0, 0, 0.95);
+}
+
+@keyframes major-update-preview-breathe {
+    0%,
+    100% {
+        transform: scale(0.93);
+        opacity: 0.42;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.62;
+    }
+}
+
+@media (max-width: 700px) {
+    .major-update-preview__content {
+        width: 98vw;
+    }
+
+    .major-update-preview__title {
+        font-size: clamp(8rem, 44vw, 13rem);
+    }
+
+    .major-update-preview__subtitle {
+        font-size: clamp(4.7rem, 24vw, 7rem);
+    }
+
+    .major-update-preview__note {
+        font-size: clamp(4.2rem, 22vw, 6.4rem);
+    }
+}
+
 .small-gif {
     width: 2%;
     display: block;
