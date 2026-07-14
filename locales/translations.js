@@ -1,0 +1,3495 @@
+window.PALWORLD_I18N_CATALOG = {
+  "defaultLocale": "zh-TW",
+  "locales": {
+    "zh-TW": {
+      "languageName": "繁體中文",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld 設定產生器 - Server 1.0"
+      },
+      "language": {
+        "label": "語言",
+        "ariaLabel": "選擇介面語言"
+      },
+      "actions": {
+        "share": "分享鏈結",
+        "theme": "切換主題",
+        "copy": "複製到剪貼簿",
+        "download": "下載到設定檔",
+        "pastePlaceholder": "貼上設定",
+        "load": "讀取",
+        "add": "新增"
+      },
+      "links": {
+        "officialStart": "其實你可以從這邊開始(官方)：",
+        "dedicatedGuide": "專屬伺服器設定指南",
+        "balanceGuide": "伺服器遊戲平衡建議",
+        "communityGuide": "如何設定成Community伺服器？",
+        "commandsGuide": "伺服器命令一覽",
+        "feedback": "問題與回饋"
+      },
+      "sections": {
+        "game": "遊戲設定　🕹️",
+        "server": "伺服器設定　🛠️"
+      },
+      "storage": {
+        "title": "組態備份",
+        "description": "把目前表單存到瀏覽器，最多 10 組，可命名、改名與載入。",
+        "limit": "10 slots",
+        "slotLabel": "備份槽",
+        "nameLabel": "名稱",
+        "namePlaceholder": "例如：公會倍率設定",
+        "save": "儲存目前組態",
+        "load": "載入",
+        "rename": "改名",
+        "delete": "清空",
+        "emptySlot": "空白槽",
+        "saved": "已儲存「{name}」。",
+        "loaded": "已載入「{name}」。",
+        "renamed": "已改名為「{name}」。",
+        "deleted": "已清空第 {slot} 槽。",
+        "selectSavedSlot": "請先選擇已儲存的槽位。",
+        "nameRequired": "請輸入備份名稱。",
+        "compareA": "比較 A",
+        "compareB": "比較 B",
+        "compare": "比較備份",
+        "compareResultTitle": "備份比較",
+        "compareSummary": "{left} 與 {right} 有 {count} 個差異。",
+        "compareField": "參數",
+        "compareLeft": "A 值",
+        "compareRight": "B 值",
+        "compareSelectSaved": "請選擇兩個已儲存的備份。"
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "我發現這個 PalWorld 伺服器設定工具，推薦給大家。",
+        "unsupported": "抱歉，您的瀏覽器不支援分享功能。"
+      },
+      "notifications": {
+        "copied": "已經複製到剪貼簿。✅",
+        "loaded": "讀取成功。✅"
+      },
+      "notes": {
+        "difficulty": "會整體影響各種機率與數值."
+      },
+      "options": {
+        "easy": "簡單",
+        "difficult": "困難",
+        "noneDefault": "不設定(預設)",
+        "deathNone": "None-完全不掉落",
+        "deathItem": "Item-只掉落道具",
+        "deathItemEquipment": "ItemAndEquipment-掉落道具與裝備",
+        "deathAllDefault": "All-掉落全部(包括隊伍Pals)(預設)",
+        "open": "開啟",
+        "openDefault": "開啟(預設)",
+        "close": "關閉",
+        "closeDefault": "關閉(預設)",
+        "enable": "啟用",
+        "enableDefault": "啟用(預設)",
+        "disable": "關閉",
+        "disableDefault": "不啟用(預設)",
+        "occurDefault": "會發生(預設)",
+        "notOccur": "不發生",
+        "allow": "允許",
+        "notAllowDefault": "不允許(預設)",
+        "yes": "會",
+        "noDefault": "不會(預設)",
+        "useDefault": "使用(預設)",
+        "doNotUse": "不使用"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(數字越大白天越短)",
+        "biggerNightShorter": "🔄(數字越大夜晚越短)",
+        "biggerLevelFaster": "🔄(數字越大升級越快)",
+        "biggerChanceHigher": "🔄(數字越大機率越高)",
+        "biggerQuantityMore": "🔄(數字越大數量越多)",
+        "biggerAttackHigher": "🔄(數字越大攻擊越高)",
+        "smallerLessDamage": "🔄(數字越小受傷越少)",
+        "smallerLessHungry": "🔄(數字越小越不容易餓)",
+        "smallerStaminaSlower": "🔄(數字越小耐力消耗越慢)",
+        "biggerHpRegenFaster": "🔄(數字越大回復生命值越快)",
+        "biggerHpRegenMore": "🔄(數字越大回復生命值越多)",
+        "biggerDamageMore": "🔄(數字越大傷害越大)",
+        "smallerDecaySlower": "🔄(數字越小劣化越慢)",
+        "biggerDropsMore": "🔄(數字越大掉落越多)",
+        "smallerRespawnFaster": "🔄(數字越小刷新越快)",
+        "biggerDropsAllowed": "🔄(數字越大允許掉落物越多)",
+        "biggerBasesAllowed": "🔄(數字越大允許據點數量越多)",
+        "biggerPalsAllowed": "🔄(數字越大允許Pals越多)",
+        "smallerDropsDisappearFaster": "🔄(數字越小掉落物消失越快)",
+        "smallerResetFaster": "🔄(數字越小越快重置)",
+        "biggerPlayersAllowed": "🔄(數字越大允許人數越多)",
+        "smallerHatchFaster": "🔄(數字越小孵化越快)",
+        "biggerWorkFaster": "🔄(數字越大工作越快)",
+        "biggerCoopAllowed": "🔄(數字越大允許合作玩家越多)",
+        "biggerCapacityAllowed": "🔄(數字越大允許容納人數越多)"
+      },
+      "settings": {
+        "Difficulty": "調整遊戲的整體難度",
+        "RandomizerType": "隨機器類型",
+        "RandomizerSeed": "隨機器種子",
+        "bIsRandomizerPalLevelRandom": "隨機器是否隨機 Pal 等級",
+        "DayTimeSpeedRate": "白天流逝速度",
+        "NightTimeSpeedRate": "夜晚流逝速度",
+        "ExpRate": "經驗值倍率",
+        "AutoSaveSpan": "自動存檔間隔",
+        "PalCaptureRate": "捕獲機率倍率",
+        "PalSpawnNumRate": "Pals出現數量倍率",
+        "PalDamageRateAttack": "Pals攻擊傷害倍率",
+        "PalDamageRateDefense": "Pals承受傷害倍率",
+        "PlayerDamageRateAttack": "玩家攻擊傷害倍率",
+        "PlayerDamageRateDefense": "玩家承受傷害倍率",
+        "PlayerStomachDecreaceRate": "玩家飽食度降低倍率",
+        "PlayerStaminaDecreaceRate": "玩家耐力降低倍率",
+        "PlayerAutoHPRegeneRate": "玩家生命值自然回復倍率",
+        "PlayerAutoHpRegeneRateInSleep": "玩家睡眠時生命值回復倍率",
+        "PalStomachDecreaceRate": "Pals飽食度降低倍率",
+        "PalStaminaDecreaceRate": "Pals耐力降低倍率",
+        "PalAutoHPRegeneRate": "Pals生命值自然回復倍率",
+        "PalAutoHpRegeneRateInSleep": "Pals睡眠時生命自然回復倍率",
+        "bAllowEnhanceStat_Health": "允許強化生命值",
+        "bAllowEnhanceStat_Attack": "允許強化攻擊",
+        "bAllowEnhanceStat_Stamina": "允許強化耐力",
+        "bAllowEnhanceStat_Weight": "允許強化負重",
+        "bAllowEnhanceStat_WorkSpeed": "允許強化工作速度",
+        "PalEggDefaultHatchingTime": "巨大蛋孵化時間(小時)",
+        "WorkSpeedRate": "工作速度倍率",
+        "CollectionDropRate": "道具採集量倍率",
+        "CollectionObjectHpRate": "可採集物品生命值倍率",
+        "CollectionObjectRespawnSpeedRate": "可採集物品刷新時間間隔",
+        "EnemyDropItemRate": "道具掉落量倍率",
+        "DropItemMaxNum": "世界內的掉落物上限",
+        "PhysicsActiveDropItemMaxNum": "啟用物理的掉落物上限",
+        "DropItemMaxNum_UNKO": "UNKO掉落物上限",
+        "DropItemAliveMaxHours": "掉落物保留最大時間",
+        "ItemWeightRate": "物品重量倍率",
+        "EquipmentDurabilityDamageRate": "裝備耐久損耗倍率",
+        "ItemContainerForceMarkDirtyInterval": "物品容器強制標記更新間隔",
+        "ItemCorruptionMultiplier": "物品腐敗倍率",
+        "DenyTechnologyList": "禁止科技清單",
+        "BuildObjectHpRate": "建築物生命值倍率",
+        "BuildObjectDamageRate": "對建築傷害倍率",
+        "BuildObjectDeteriorationDamageRate": "建築物的劣化速度倍率",
+        "BaseCampMaxNum": "據點數量上限",
+        "BaseCampWorkerMaxNum": "據點工作Pals數量上限",
+        "BaseCampMaxNumInGuild": "每個公會據點數量上限",
+        "bBuildAreaLimit": "啟用建築區域限制",
+        "MaxBuildingLimitNum": "最大建築數量限制",
+        "bInvisibleOtherGuildBaseCampAreaFX": "隱藏其他公會據點區域特效",
+        "bEnableBuildingPlayerUIdDisplay": "顯示建築玩家 UID",
+        "BuildingNameDisplayCacheTTLSeconds": "建築名稱顯示快取秒數",
+        "bAutoResetGuildNoOnlinePlayers": "沒上線玩家自動退出公會",
+        "AutoResetGuildTimeNoOnlinePlayers": "沒上線玩家公會自動退出時間",
+        "GuildPlayerMaxNum": "公會人數上限",
+        "GuildRejoinCooldownMinutes": "重新加入公會冷卻分鐘",
+        "AutoTransferMasterCheckIntervalSeconds": "會長自動轉移檢查間隔秒數",
+        "AutoTransferMasterThresholdDays": "會長自動轉移門檻天數",
+        "MaxGuildsPerFrame": "每幀處理公會數上限",
+        "DeathPenalty": "死亡懲罰",
+        "bHardcore": "Hardcore 模式",
+        "bPalLost": "Pal Lost 模式",
+        "bCharacterRecreateInHardcore": "Hardcore 允許角色重建",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "能否撿取其他公會死亡掉落物",
+        "BlockRespawnTime": "封鎖重生時間",
+        "RespawnPenaltyDurationThreshold": "重生懲罰持續門檻",
+        "RespawnPenaltyTimeScale": "重生懲罰時間倍率",
+        "bEnablePlayerToPlayerDamage": "開啟玩家對玩家造成傷害",
+        "bEnableFriendlyFire": "開啟同隊傷害",
+        "bIsPvP": "是否開啟PvP模式",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "世界地圖顯示據點 PvP 物品數",
+        "bDisplayPvPItemNumOnWorldMap_Player": "世界地圖顯示玩家 PvP 物品數",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "PvP 擊殺玩家額外掉落物",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "PvP 擊殺玩家額外掉落數量",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "啟用 PvP 擊殺玩家額外掉落",
+        "bIsMultiplay": "是否多人遊玩",
+        "CoopPlayerMaxNum": "合作玩家人數上限",
+        "ServerPlayerMaxNum": "伺服器人數上限",
+        "ServerName": "伺服器名稱",
+        "ServerDescription": "伺服器描述",
+        "AdminPassword": "管理員密碼",
+        "ServerPassword": "伺服器密碼",
+        "PublicPort": "公開連接埠",
+        "PublicIP": "公開IP",
+        "Region": "區域",
+        "CrossplayPlatforms": "跨平台清單",
+        "bIsShowJoinLeftMessage": "顯示加入離開訊息",
+        "bAllowClientMod": "允許 Client Mod",
+        "RCONEnabled": "RCON啟用",
+        "RCONPort": "RCON連接埠",
+        "RESTAPIEnabled": "REST API 啟用",
+        "RESTAPIPort": "REST API 連接埠",
+        "bShowPlayerList": "顯示玩家列表",
+        "ChatPostLimitPerMinute": "每分鐘聊天發送限制",
+        "bUseAuth": "是否使用身份驗證",
+        "BanListURL": "封鎖清單URL",
+        "bEnableInvaderEnemy": "是否會發生襲擊事件",
+        "bActiveUNKO": "啟用UNKO",
+        "bEnableAimAssistPad": "啟用手柄瞄準輔助",
+        "bEnableAimAssistKeyboard": "啟用鍵盤瞄準輔助",
+        "bEnableNonLoginPenalty": "是否啟用沒登入處罰",
+        "bEnableFastTravel": "是否啟用快速移動",
+        "bEnableFastTravelOnlyBaseCamp": "快速移動僅限據點",
+        "bIsStartLocationSelectByMap": "能否新角色可選擇出生點",
+        "bExistPlayerAfterLogout": "登出後玩家仍存在",
+        "bEnableDefenseOtherGuildPlayer": "是否會受到其他公會傷害",
+        "bIsUseBackupSaveData": "使用備份存檔資料",
+        "LogFormatType": "Log 格式類型",
+        "SupplyDropSpan": "補給掉落間隔",
+        "EnablePredatorBossPal": "啟用 Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "伺服器 Pawn 複寫裁切距離",
+        "bAllowGlobalPalboxExport": "允許 Global Palbox 匯出",
+        "bAllowGlobalPalboxImport": "允許 Global Palbox 匯入",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "玩家 Pal 儲存更新檢查 Tick 間隔",
+        "MonsterFarmActionSpeedRate": "牧場行動速度倍率",
+        "bEnableVoiceChat": "啟用語音聊天",
+        "VoiceChatMaxVolumeDistance": "語音最大音量距離",
+        "VoiceChatZeroVolumeDistance": "語音零音量距離"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "基本與世界規則",
+          "description": "難度、隨機器、日夜速度與經驗值等核心世界設定。"
+        },
+        "palPlayerRates": {
+          "label": "Pal 與玩家倍率",
+          "description": "調整 Pal、玩家、孵蛋、工作速度與能力強化倍率。"
+        },
+        "itemsDrops": {
+          "label": "採集、掉落與物品",
+          "description": "管理採集量、掉落物上限、物品重量、耐久與腐敗。"
+        },
+        "buildingBase": {
+          "label": "建築與據點",
+          "description": "控制建築耐久、劣化、據點數量與建築顯示限制。"
+        },
+        "guild": {
+          "label": "公會與多人限制",
+          "description": "設定公會人數、離線重置與會長自動轉移規則。"
+        },
+        "deathRespawn": {
+          "label": "死亡、重生與懲罰",
+          "description": "調整死亡懲罰、Hardcore、Pal Lost 與重生懲罰。"
+        },
+        "pvpCombat": {
+          "label": "PvP 與戰鬥規則",
+          "description": "管理 PvP、友軍傷害與擊殺玩家額外掉落。"
+        },
+        "serverPublic": {
+          "label": "伺服器連線與公開資訊",
+          "description": "設定伺服器名稱、密碼、公開 IP、連接埠與跨平台清單。"
+        },
+        "adminApiSecurity": {
+          "label": "管理、API 與安全",
+          "description": "設定 RCON、REST API、驗證、聊天限制與封鎖清單。"
+        },
+        "advancedSystem": {
+          "label": "進階系統與效能",
+          "description": "其他系統行為、快速移動、備份、語音與效能相關設定。"
+        }
+      },
+      "boolean": {
+        "True": "開啟",
+        "False": "關閉"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "不設定",
+          "Easy": "簡單",
+          "Difficult": "困難"
+        },
+        "DeathPenalty": {
+          "None": "無",
+          "Item": "道具",
+          "ItemAndEquipment": "道具與裝備",
+          "All": "全部"
+        }
+      },
+      "tools": {
+        "searchLabel": "搜尋",
+        "searchPlaceholder": "RCON、PvP、Palbox",
+        "modifiedOnly": "只顯示修改項目",
+        "modifiedBadge": "已修改",
+        "clearFilters": "清除",
+        "expandAll": "全部展開",
+        "collapseAll": "全部收合",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "顯示 {visible}/{total}，已修改 {modified}。"
+      },
+      "templates": {
+        "title": "組態模板",
+        "selectLabel": "模板",
+        "apply": "套用模板",
+        "applied": "已套用「{name}」。",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "輕鬆 PvE：加快成長、降低死亡壓力，適合朋友伺服器。"
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "高風險生存：死亡更重、成長較慢，適合挑戰型伺服器。"
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP 準備：開啟玩家傷害、地圖顯示與擊殺玩家額外掉落。"
+        },
+        "boosted": {
+          "name": "高倍率爽玩",
+          "description": "快速高回報：適合短期遊玩、測試或活動伺服器。"
+        },
+        "stableDedicated": {
+          "name": "Dedicated Server 穩定版",
+          "description": "保守的專用伺服器設定：降低掉落物與複寫負載。"
+        }
+      },
+      "importReport": {
+        "title": "匯入報告",
+        "summary": "讀取 {known} 個已知參數、{unknown} 個未知參數、{missing} 個缺少參數。",
+        "known": "已讀取",
+        "unknown": "未知參數",
+        "missing": "缺少參數",
+        "none": "無"
+      }
+    },
+    "en-US": {
+      "languageName": "English",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld Settings Generator - Server 1.0"
+      },
+      "language": {
+        "label": "Language",
+        "ariaLabel": "Choose interface language"
+      },
+      "actions": {
+        "share": "Share link",
+        "theme": "Switch theme",
+        "copy": "Copy to clipboard",
+        "download": "Download config",
+        "pastePlaceholder": "Paste config",
+        "load": "Load",
+        "add": "Add"
+      },
+      "links": {
+        "officialStart": "Official starting points:",
+        "dedicatedGuide": "Dedicated server guide",
+        "balanceGuide": "Server balance guide",
+        "communityGuide": "Community server guide",
+        "commandsGuide": "Server commands",
+        "feedback": "Issues & feedback"
+      },
+      "sections": {
+        "game": "Game Settings　🕹️",
+        "server": "Server Settings　🛠️"
+      },
+      "storage": {
+        "title": "Config Backups",
+        "description": "Save the current form in this browser. Up to 10 named slots can be saved, renamed, and loaded.",
+        "limit": "10 slots",
+        "slotLabel": "Backup slot",
+        "nameLabel": "Name",
+        "namePlaceholder": "Example: Guild rate setup",
+        "save": "Save current config",
+        "load": "Load",
+        "rename": "Rename",
+        "delete": "Clear",
+        "emptySlot": "Empty slot",
+        "saved": "Saved \"{name}\".",
+        "loaded": "Loaded \"{name}\".",
+        "renamed": "Renamed to \"{name}\".",
+        "deleted": "Cleared slot {slot}.",
+        "selectSavedSlot": "Select a saved slot first.",
+        "nameRequired": "Enter a backup name.",
+        "compareA": "Compare A",
+        "compareB": "Compare B",
+        "compare": "Compare backups",
+        "compareResultTitle": "Backup comparison",
+        "compareSummary": "{count} differences between {left} and {right}.",
+        "compareField": "Setting",
+        "compareLeft": "A value",
+        "compareRight": "B value",
+        "compareSelectSaved": "Select two saved backups."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "I found this PalWorld server settings tool and recommend it.",
+        "unsupported": "Sorry, your browser does not support sharing."
+      },
+      "notifications": {
+        "copied": "Copied to clipboard. ✅",
+        "loaded": "Loaded successfully. ✅"
+      },
+      "notes": {
+        "difficulty": "Affects overall rates and values."
+      },
+      "options": {
+        "easy": "Easy",
+        "difficult": "Difficult",
+        "noneDefault": "None (default)",
+        "deathNone": "None - drop nothing",
+        "deathItem": "Item - drop items only",
+        "deathItemEquipment": "ItemAndEquipment - drop items and equipment",
+        "deathAllDefault": "All - drop everything, including party Pals (default)",
+        "open": "On",
+        "openDefault": "On (default)",
+        "close": "Off",
+        "closeDefault": "Off (default)",
+        "enable": "Enable",
+        "enableDefault": "Enable (default)",
+        "disable": "Disable",
+        "disableDefault": "Disabled (default)",
+        "occurDefault": "Occurs (default)",
+        "notOccur": "Does not occur",
+        "allow": "Allow",
+        "notAllowDefault": "Do not allow (default)",
+        "yes": "Yes",
+        "noDefault": "No (default)",
+        "useDefault": "Use (default)",
+        "doNotUse": "Do not use"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Higher value makes daytime shorter)",
+        "biggerNightShorter": "🔄(Higher value makes nighttime shorter)",
+        "biggerLevelFaster": "🔄(Higher value levels faster)",
+        "biggerChanceHigher": "🔄(Higher value increases chance)",
+        "biggerQuantityMore": "🔄(Higher value increases amount)",
+        "biggerAttackHigher": "🔄(Higher value increases attack)",
+        "smallerLessDamage": "🔄(Lower value reduces damage taken)",
+        "smallerLessHungry": "🔄(Lower value reduces hunger)",
+        "smallerStaminaSlower": "🔄(Lower value slows stamina drain)",
+        "biggerHpRegenFaster": "🔄(Higher value restores HP faster)",
+        "biggerHpRegenMore": "🔄(Higher value restores more HP)",
+        "biggerDamageMore": "🔄(Higher value increases damage)",
+        "smallerDecaySlower": "🔄(Lower value slows deterioration)",
+        "biggerDropsMore": "🔄(Higher value increases drops)",
+        "smallerRespawnFaster": "🔄(Lower value respawns faster)",
+        "biggerDropsAllowed": "🔄(Higher value allows more dropped items)",
+        "biggerBasesAllowed": "🔄(Higher value allows more bases)",
+        "biggerPalsAllowed": "🔄(Higher value allows more Pals)",
+        "smallerDropsDisappearFaster": "🔄(Lower value makes drops disappear sooner)",
+        "smallerResetFaster": "🔄(Lower value resets sooner)",
+        "biggerPlayersAllowed": "🔄(Higher value allows more players)",
+        "smallerHatchFaster": "🔄(Lower value hatches faster)",
+        "biggerWorkFaster": "🔄(Higher value works faster)",
+        "biggerCoopAllowed": "🔄(Higher value allows more co-op players)",
+        "biggerCapacityAllowed": "🔄(Higher value allows more server players)"
+      },
+      "settings": {
+        "Difficulty": "Adjusts the overall game difficulty",
+        "RandomizerType": "Randomizer type",
+        "RandomizerSeed": "Randomizer seed",
+        "bIsRandomizerPalLevelRandom": "Randomize Pal levels",
+        "DayTimeSpeedRate": "Daytime progression speed",
+        "NightTimeSpeedRate": "Nighttime progression speed",
+        "ExpRate": "Experience multiplier",
+        "AutoSaveSpan": "Auto-save interval",
+        "PalCaptureRate": "Capture chance multiplier",
+        "PalSpawnNumRate": "Pal spawn count multiplier",
+        "PalDamageRateAttack": "Pal attack damage multiplier",
+        "PalDamageRateDefense": "Pal damage taken multiplier",
+        "PlayerDamageRateAttack": "Player attack damage multiplier",
+        "PlayerDamageRateDefense": "Player damage taken multiplier",
+        "PlayerStomachDecreaceRate": "Player hunger decrease multiplier",
+        "PlayerStaminaDecreaceRate": "Player stamina decrease multiplier",
+        "PlayerAutoHPRegeneRate": "Player natural HP recovery multiplier",
+        "PlayerAutoHpRegeneRateInSleep": "Player sleeping HP recovery multiplier",
+        "PalStomachDecreaceRate": "Pal hunger decrease multiplier",
+        "PalStaminaDecreaceRate": "Pal stamina decrease multiplier",
+        "PalAutoHPRegeneRate": "Pal natural HP recovery multiplier",
+        "PalAutoHpRegeneRateInSleep": "Pal sleeping HP recovery multiplier",
+        "bAllowEnhanceStat_Health": "Allow health enhancement",
+        "bAllowEnhanceStat_Attack": "Allow attack enhancement",
+        "bAllowEnhanceStat_Stamina": "Allow stamina enhancement",
+        "bAllowEnhanceStat_Weight": "Allow weight enhancement",
+        "bAllowEnhanceStat_WorkSpeed": "Allow work speed enhancement",
+        "PalEggDefaultHatchingTime": "Huge egg hatching time (hours)",
+        "WorkSpeedRate": "Work speed multiplier",
+        "CollectionDropRate": "Gathered item amount multiplier",
+        "CollectionObjectHpRate": "Gatherable object HP multiplier",
+        "CollectionObjectRespawnSpeedRate": "Gatherable object respawn interval",
+        "EnemyDropItemRate": "Item drop amount multiplier",
+        "DropItemMaxNum": "Maximum dropped items in the world",
+        "PhysicsActiveDropItemMaxNum": "Physics-enabled dropped item limit",
+        "DropItemMaxNum_UNKO": "Maximum UNKO dropped items",
+        "DropItemAliveMaxHours": "Maximum time dropped items remain",
+        "ItemWeightRate": "Item weight rate",
+        "EquipmentDurabilityDamageRate": "Equipment durability damage rate",
+        "ItemContainerForceMarkDirtyInterval": "Item container force dirty interval",
+        "ItemCorruptionMultiplier": "Item spoilage multiplier",
+        "DenyTechnologyList": "Denied technology list",
+        "BuildObjectHpRate": "Building HP rate",
+        "BuildObjectDamageRate": "Damage multiplier against structures",
+        "BuildObjectDeteriorationDamageRate": "Structure deterioration speed multiplier",
+        "BaseCampMaxNum": "Maximum number of bases",
+        "BaseCampWorkerMaxNum": "Maximum working Pals per base",
+        "BaseCampMaxNumInGuild": "Base limit per guild",
+        "bBuildAreaLimit": "Enable build area limit",
+        "MaxBuildingLimitNum": "Maximum building limit",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Hide other guild base area FX",
+        "bEnableBuildingPlayerUIdDisplay": "Show building player UID",
+        "BuildingNameDisplayCacheTTLSeconds": "Building name display cache TTL",
+        "bAutoResetGuildNoOnlinePlayers": "Auto-remove offline players from guilds",
+        "AutoResetGuildTimeNoOnlinePlayers": "Auto guild reset time for offline players",
+        "GuildPlayerMaxNum": "Guild player limit",
+        "GuildRejoinCooldownMinutes": "Guild rejoin cooldown minutes",
+        "AutoTransferMasterCheckIntervalSeconds": "Guild master auto-transfer check interval",
+        "AutoTransferMasterThresholdDays": "Guild master auto-transfer threshold days",
+        "MaxGuildsPerFrame": "Max guilds processed per frame",
+        "DeathPenalty": "Death penalty",
+        "bHardcore": "Hardcore mode",
+        "bPalLost": "Pal Lost mode",
+        "bCharacterRecreateInHardcore": "Allow character recreation in Hardcore",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Allow picking up death drops from other guilds",
+        "BlockRespawnTime": "Block respawn time",
+        "RespawnPenaltyDurationThreshold": "Respawn penalty duration threshold",
+        "RespawnPenaltyTimeScale": "Respawn penalty time scale",
+        "bEnablePlayerToPlayerDamage": "Enable player-to-player damage",
+        "bEnableFriendlyFire": "Enable friendly fire",
+        "bIsPvP": "Enable PvP mode",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "Show base PvP item count on world map",
+        "bDisplayPvPItemNumOnWorldMap_Player": "Show player PvP item count on world map",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Extra drop item for PvP player kills",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Extra drop count for PvP player kills",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Enable extra drops for PvP player kills",
+        "bIsMultiplay": "Enable multiplayer",
+        "CoopPlayerMaxNum": "Co-op player limit",
+        "ServerPlayerMaxNum": "Server player limit",
+        "ServerName": "Server name",
+        "ServerDescription": "Server description",
+        "AdminPassword": "Admin password",
+        "ServerPassword": "Server password",
+        "PublicPort": "Public port",
+        "PublicIP": "Public IP",
+        "Region": "Region",
+        "CrossplayPlatforms": "Crossplay platforms",
+        "bIsShowJoinLeftMessage": "Show join and leave messages",
+        "bAllowClientMod": "Allow client mods",
+        "RCONEnabled": "RCON enabled",
+        "RCONPort": "RCON port",
+        "RESTAPIEnabled": "Enable REST API",
+        "RESTAPIPort": "REST API port",
+        "bShowPlayerList": "Show player list",
+        "ChatPostLimitPerMinute": "Chat posts per minute limit",
+        "bUseAuth": "Use authentication",
+        "BanListURL": "Ban list URL",
+        "bEnableInvaderEnemy": "Whether raid events occur",
+        "bActiveUNKO": "Enable UNKO",
+        "bEnableAimAssistPad": "Enable controller aim assist",
+        "bEnableAimAssistKeyboard": "Enable keyboard aim assist",
+        "bEnableNonLoginPenalty": "Enable non-login penalty",
+        "bEnableFastTravel": "Enable fast travel",
+        "bEnableFastTravelOnlyBaseCamp": "Fast travel only between bases",
+        "bIsStartLocationSelectByMap": "Allow new characters to choose spawn point",
+        "bExistPlayerAfterLogout": "Player remains after logout",
+        "bEnableDefenseOtherGuildPlayer": "Receive damage from other guilds",
+        "bIsUseBackupSaveData": "Use backup save data",
+        "LogFormatType": "Log format type",
+        "SupplyDropSpan": "Supply drop interval",
+        "EnablePredatorBossPal": "Enable Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "Server pawn replicate cull distance",
+        "bAllowGlobalPalboxExport": "Allow Global Palbox export",
+        "bAllowGlobalPalboxImport": "Allow Global Palbox import",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Player Pal storage update check tick interval",
+        "MonsterFarmActionSpeedRate": "Monster farm action speed rate",
+        "bEnableVoiceChat": "Enable voice chat",
+        "VoiceChatMaxVolumeDistance": "Voice chat max volume distance",
+        "VoiceChatZeroVolumeDistance": "Voice chat zero volume distance"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Core World Rules",
+          "description": "Difficulty, randomizer, day-night speed, experience, and other core world settings."
+        },
+        "palPlayerRates": {
+          "label": "Pal And Player Rates",
+          "description": "Adjust Pal, player, egg hatching, work speed, and stat enhancement rates."
+        },
+        "itemsDrops": {
+          "label": "Gathering, Drops, And Items",
+          "description": "Manage gathering yield, dropped item limits, item weight, durability, and spoilage."
+        },
+        "buildingBase": {
+          "label": "Buildings And Bases",
+          "description": "Control building HP, deterioration, base limits, and building display rules."
+        },
+        "guild": {
+          "label": "Guild And Multiplayer Limits",
+          "description": "Configure guild size, offline reset, and automatic guild master transfer rules."
+        },
+        "deathRespawn": {
+          "label": "Death, Respawn, And Penalties",
+          "description": "Tune death penalties, Hardcore, Pal Lost, and respawn penalty behavior."
+        },
+        "pvpCombat": {
+          "label": "PvP And Combat Rules",
+          "description": "Manage PvP, friendly fire, and extra drops from player kills."
+        },
+        "serverPublic": {
+          "label": "Server Connection And Public Info",
+          "description": "Set server name, passwords, public IP, ports, and crossplay platforms."
+        },
+        "adminApiSecurity": {
+          "label": "Admin, API, And Security",
+          "description": "Configure RCON, REST API, authentication, chat limits, and ban lists."
+        },
+        "advancedSystem": {
+          "label": "Advanced System And Performance",
+          "description": "Miscellaneous system behavior, fast travel, backups, voice, and performance settings."
+        }
+      },
+      "boolean": {
+        "True": "Enabled",
+        "False": "Disabled"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Not set",
+          "Easy": "Easy",
+          "Difficult": "Hard"
+        },
+        "DeathPenalty": {
+          "None": "None",
+          "Item": "Items",
+          "ItemAndEquipment": "Items and equipment",
+          "All": "All"
+        }
+      },
+      "tools": {
+        "searchLabel": "Search",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Show modified only",
+        "modifiedBadge": "Modified",
+        "clearFilters": "Clear",
+        "expandAll": "Expand all",
+        "collapseAll": "Collapse all",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} shown, {modified} modified."
+      },
+      "templates": {
+        "title": "Configuration Templates",
+        "selectLabel": "Template",
+        "apply": "Apply template",
+        "applied": "Applied \"{name}\".",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "Relaxed PvE settings with faster progress and lighter death pressure."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "High-risk survival settings with harsher death and slower growth."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP-ready settings with combat, map visibility, and player-kill drops."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Fast, high-reward settings for short sessions, testing, or events."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Conservative dedicated-server settings that reduce item and replication load."
+        }
+      },
+      "importReport": {
+        "title": "Import Report",
+        "summary": "Read {known} known settings, {unknown} unknown settings, {missing} missing settings.",
+        "known": "Loaded",
+        "unknown": "Unknown settings",
+        "missing": "Missing settings",
+        "none": "None"
+      }
+    },
+    "zh-CN": {
+      "languageName": "简体中文",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld 设置生成器 - Server 1.0"
+      },
+      "language": {
+        "label": "语言",
+        "ariaLabel": "选择界面语言"
+      },
+      "actions": {
+        "share": "分享链接",
+        "theme": "切换主题",
+        "copy": "复制到剪贴板",
+        "download": "下载设置文件",
+        "pastePlaceholder": "粘贴设置",
+        "load": "读取",
+        "add": "新增"
+      },
+      "links": {
+        "officialStart": "其实你可以从这里开始(官方)：",
+        "dedicatedGuide": "专用服务器设置指南",
+        "balanceGuide": "服务器游戏平衡建议",
+        "communityGuide": "如何设置为 Community 服务器？",
+        "commandsGuide": "服务器命令一览",
+        "feedback": "问题与反馈"
+      },
+      "sections": {
+        "game": "游戏设置　🕹️",
+        "server": "服务器设置　🛠️"
+      },
+      "storage": {
+        "title": "配置备份",
+        "description": "把当前表单保存到浏览器，最多 10 组，可命名、改名与载入。",
+        "limit": "10 slots",
+        "slotLabel": "备份槽",
+        "nameLabel": "名称",
+        "namePlaceholder": "例如：公会倍率设置",
+        "save": "保存当前配置",
+        "load": "载入",
+        "rename": "改名",
+        "delete": "清空",
+        "emptySlot": "空白槽",
+        "saved": "已保存“{name}”。",
+        "loaded": "已载入“{name}”。",
+        "renamed": "已改名为“{name}”。",
+        "deleted": "已清空第 {slot} 槽。",
+        "selectSavedSlot": "请先选择已保存的槽位。",
+        "nameRequired": "请输入备份名称。",
+        "compareA": "比较 A",
+        "compareB": "比较 B",
+        "compare": "比较备份",
+        "compareResultTitle": "备份比较",
+        "compareSummary": "{left} 与 {right} 有 {count} 个差异。",
+        "compareField": "参数",
+        "compareLeft": "A 值",
+        "compareRight": "B 值",
+        "compareSelectSaved": "请选择两个已保存的备份。"
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "我发现了这个 PalWorld 服务器设置工具，推荐给大家。",
+        "unsupported": "抱歉，您的浏览器不支持分享功能。"
+      },
+      "notifications": {
+        "copied": "已经复制到剪贴板。✅",
+        "loaded": "读取成功。✅"
+      },
+      "notes": {
+        "difficulty": "会整体影响各种概率与数值。"
+      },
+      "options": {
+        "easy": "简单",
+        "difficult": "困难",
+        "noneDefault": "不设置(默认)",
+        "deathNone": "None-完全不掉落",
+        "deathItem": "Item-只掉落道具",
+        "deathItemEquipment": "ItemAndEquipment-掉落道具与装备",
+        "deathAllDefault": "All-掉落全部(包括队伍 Pals)(默认)",
+        "open": "开启",
+        "openDefault": "开启(默认)",
+        "close": "关闭",
+        "closeDefault": "关闭(默认)",
+        "enable": "启用",
+        "enableDefault": "启用(默认)",
+        "disable": "关闭",
+        "disableDefault": "不启用(默认)",
+        "occurDefault": "会发生(默认)",
+        "notOccur": "不发生",
+        "allow": "允许",
+        "notAllowDefault": "不允许(默认)",
+        "yes": "会",
+        "noDefault": "不会(默认)",
+        "useDefault": "使用(默认)",
+        "doNotUse": "不使用"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(数字越大白天越短)",
+        "biggerNightShorter": "🔄(数字越大夜晚越短)",
+        "biggerLevelFaster": "🔄(数字越大升级越快)",
+        "biggerChanceHigher": "🔄(数字越大概率越高)",
+        "biggerQuantityMore": "🔄(数字越大数量越多)",
+        "biggerAttackHigher": "🔄(数字越大攻击越高)",
+        "smallerLessDamage": "🔄(数字越小受伤越少)",
+        "smallerLessHungry": "🔄(数字越小越不容易饿)",
+        "smallerStaminaSlower": "🔄(数字越小耐力消耗越慢)",
+        "biggerHpRegenFaster": "🔄(数字越大回复生命值越快)",
+        "biggerHpRegenMore": "🔄(数字越大回复生命值越多)",
+        "biggerDamageMore": "🔄(数字越大伤害越大)",
+        "smallerDecaySlower": "🔄(数字越小劣化越慢)",
+        "biggerDropsMore": "🔄(数字越大掉落越多)",
+        "smallerRespawnFaster": "🔄(数字越小刷新越快)",
+        "biggerDropsAllowed": "🔄(数字越大允许掉落物越多)",
+        "biggerBasesAllowed": "🔄(数字越大允许据点数量越多)",
+        "biggerPalsAllowed": "🔄(数字越大允许 Pals 越多)",
+        "smallerDropsDisappearFaster": "🔄(数字越小掉落物消失越快)",
+        "smallerResetFaster": "🔄(数字越小越快重置)",
+        "biggerPlayersAllowed": "🔄(数字越大允许人数越多)",
+        "smallerHatchFaster": "🔄(数字越小孵化越快)",
+        "biggerWorkFaster": "🔄(数字越大工作越快)",
+        "biggerCoopAllowed": "🔄(数字越大允许合作玩家越多)",
+        "biggerCapacityAllowed": "🔄(数字越大允许容纳人数越多)"
+      },
+      "settings": {
+        "Difficulty": "调整游戏整体难度",
+        "RandomizerType": "随机器类型",
+        "RandomizerSeed": "随机器种子",
+        "bIsRandomizerPalLevelRandom": "随机器是否随机 Pal 等级",
+        "DayTimeSpeedRate": "白天流逝速度",
+        "NightTimeSpeedRate": "夜晚流逝速度",
+        "ExpRate": "经验值倍率",
+        "AutoSaveSpan": "自动存档间隔",
+        "PalCaptureRate": "捕获概率倍率",
+        "PalSpawnNumRate": "Pals 出现数量倍率",
+        "PalDamageRateAttack": "Pals 攻击伤害倍率",
+        "PalDamageRateDefense": "Pals 承受伤害倍率",
+        "PlayerDamageRateAttack": "玩家攻击伤害倍率",
+        "PlayerDamageRateDefense": "玩家承受伤害倍率",
+        "PlayerStomachDecreaceRate": "玩家饱食度降低倍率",
+        "PlayerStaminaDecreaceRate": "玩家耐力降低倍率",
+        "PlayerAutoHPRegeneRate": "玩家生命值自然回复倍率",
+        "PlayerAutoHpRegeneRateInSleep": "玩家睡眠时生命值回复倍率",
+        "PalStomachDecreaceRate": "Pals 饱食度降低倍率",
+        "PalStaminaDecreaceRate": "Pals 耐力降低倍率",
+        "PalAutoHPRegeneRate": "Pals 生命值自然回复倍率",
+        "PalAutoHpRegeneRateInSleep": "Pals 睡眠时生命值回复倍率",
+        "bAllowEnhanceStat_Health": "允许强化生命值",
+        "bAllowEnhanceStat_Attack": "允许强化攻击",
+        "bAllowEnhanceStat_Stamina": "允许强化耐力",
+        "bAllowEnhanceStat_Weight": "允许强化负重",
+        "bAllowEnhanceStat_WorkSpeed": "允许强化工作速度",
+        "PalEggDefaultHatchingTime": "巨大蛋孵化时间(小时)",
+        "WorkSpeedRate": "工作速度倍率",
+        "CollectionDropRate": "道具采集量倍率",
+        "CollectionObjectHpRate": "可采集物品生命值倍率",
+        "CollectionObjectRespawnSpeedRate": "可采集物品刷新时间间隔",
+        "EnemyDropItemRate": "道具掉落量倍率",
+        "DropItemMaxNum": "世界内掉落物上限",
+        "PhysicsActiveDropItemMaxNum": "启用物理的掉落物上限",
+        "DropItemMaxNum_UNKO": "UNKO 掉落物上限",
+        "DropItemAliveMaxHours": "掉落物保留最大时间",
+        "ItemWeightRate": "物品重量倍率",
+        "EquipmentDurabilityDamageRate": "装备耐久损耗倍率",
+        "ItemContainerForceMarkDirtyInterval": "物品容器强制标记更新间隔",
+        "ItemCorruptionMultiplier": "物品腐败倍率",
+        "DenyTechnologyList": "禁止科技列表",
+        "BuildObjectHpRate": "建筑物生命值倍率",
+        "BuildObjectDamageRate": "对建筑伤害倍率",
+        "BuildObjectDeteriorationDamageRate": "建筑物劣化速度倍率",
+        "BaseCampMaxNum": "据点数量上限",
+        "BaseCampWorkerMaxNum": "据点工作 Pals 数量上限",
+        "BaseCampMaxNumInGuild": "每个公会据点数量上限",
+        "bBuildAreaLimit": "启用建筑区域限制",
+        "MaxBuildingLimitNum": "最大建筑数量限制",
+        "bInvisibleOtherGuildBaseCampAreaFX": "隐藏其他公会据点区域特效",
+        "bEnableBuildingPlayerUIdDisplay": "显示建筑玩家 UID",
+        "BuildingNameDisplayCacheTTLSeconds": "建筑名称显示缓存秒数",
+        "bAutoResetGuildNoOnlinePlayers": "没上线玩家自动退出公会",
+        "AutoResetGuildTimeNoOnlinePlayers": "没上线玩家公会自动退出时间",
+        "GuildPlayerMaxNum": "公会人数上限",
+        "GuildRejoinCooldownMinutes": "重新加入公会冷却分钟",
+        "AutoTransferMasterCheckIntervalSeconds": "会长自动转移检查间隔秒数",
+        "AutoTransferMasterThresholdDays": "会长自动转移门槛天数",
+        "MaxGuildsPerFrame": "每帧处理公会数上限",
+        "DeathPenalty": "死亡惩罚",
+        "bHardcore": "Hardcore 模式",
+        "bPalLost": "Pal Lost 模式",
+        "bCharacterRecreateInHardcore": "Hardcore 允许角色重建",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "能否拾取其他公会死亡掉落物",
+        "BlockRespawnTime": "封锁重生时间",
+        "RespawnPenaltyDurationThreshold": "重生惩罚持续门槛",
+        "RespawnPenaltyTimeScale": "重生惩罚时间倍率",
+        "bEnablePlayerToPlayerDamage": "开启玩家对玩家造成伤害",
+        "bEnableFriendlyFire": "开启同队伤害",
+        "bIsPvP": "是否开启 PvP 模式",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "世界地图显示据点 PvP 物品数",
+        "bDisplayPvPItemNumOnWorldMap_Player": "世界地图显示玩家 PvP 物品数",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "PvP 击杀玩家额外掉落物",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "PvP 击杀玩家额外掉落数量",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "启用 PvP 击杀玩家额外掉落",
+        "bIsMultiplay": "是否多人游玩",
+        "CoopPlayerMaxNum": "合作玩家人数上限",
+        "ServerPlayerMaxNum": "服务器人数上限",
+        "ServerName": "服务器名称",
+        "ServerDescription": "服务器描述",
+        "AdminPassword": "管理员密码",
+        "ServerPassword": "服务器密码",
+        "PublicPort": "公开端口",
+        "PublicIP": "公开 IP",
+        "Region": "区域",
+        "CrossplayPlatforms": "跨平台列表",
+        "bIsShowJoinLeftMessage": "显示加入离开消息",
+        "bAllowClientMod": "允许 Client Mod",
+        "RCONEnabled": "RCON 启用",
+        "RCONPort": "RCON 端口",
+        "RESTAPIEnabled": "启用 REST API",
+        "RESTAPIPort": "REST API 端口",
+        "bShowPlayerList": "显示玩家列表",
+        "ChatPostLimitPerMinute": "每分钟聊天发送限制",
+        "bUseAuth": "是否使用身份验证",
+        "BanListURL": "封锁清单 URL",
+        "bEnableInvaderEnemy": "是否会发生袭击事件",
+        "bActiveUNKO": "启用 UNKO",
+        "bEnableAimAssistPad": "启用手柄瞄准辅助",
+        "bEnableAimAssistKeyboard": "启用键盘瞄准辅助",
+        "bEnableNonLoginPenalty": "是否启用未登录处罚",
+        "bEnableFastTravel": "是否启用快速移动",
+        "bEnableFastTravelOnlyBaseCamp": "快速移动仅限据点",
+        "bIsStartLocationSelectByMap": "新角色能否选择出生点",
+        "bExistPlayerAfterLogout": "登出后玩家仍存在",
+        "bEnableDefenseOtherGuildPlayer": "是否会受到其他公会伤害",
+        "bIsUseBackupSaveData": "使用备份存档数据",
+        "LogFormatType": "Log 格式类型",
+        "SupplyDropSpan": "补给掉落间隔",
+        "EnablePredatorBossPal": "启用 Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "服务器 Pawn 复制裁切距离",
+        "bAllowGlobalPalboxExport": "允许 Global Palbox 导出",
+        "bAllowGlobalPalboxImport": "允许 Global Palbox 导入",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "玩家 Pal 存储更新检查 Tick 间隔",
+        "MonsterFarmActionSpeedRate": "牧场行动速度倍率",
+        "bEnableVoiceChat": "启用语音聊天",
+        "VoiceChatMaxVolumeDistance": "语音最大音量距离",
+        "VoiceChatZeroVolumeDistance": "语音零音量距离"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "基础与世界规则",
+          "description": "难度、随机器、昼夜速度与经验值等核心世界设置。"
+        },
+        "palPlayerRates": {
+          "label": "Pal 与玩家倍率",
+          "description": "调整 Pal、玩家、孵蛋、工作速度与属性强化倍率。"
+        },
+        "itemsDrops": {
+          "label": "采集、掉落与物品",
+          "description": "管理采集量、掉落物上限、物品重量、耐久与腐败。"
+        },
+        "buildingBase": {
+          "label": "建筑与据点",
+          "description": "控制建筑耐久、劣化、据点数量与建筑显示限制。"
+        },
+        "guild": {
+          "label": "公会与多人限制",
+          "description": "设置公会人数、离线重置与会长自动转移规则。"
+        },
+        "deathRespawn": {
+          "label": "死亡、重生与惩罚",
+          "description": "调整死亡惩罚、Hardcore、Pal Lost 与重生惩罚。"
+        },
+        "pvpCombat": {
+          "label": "PvP 与战斗规则",
+          "description": "管理 PvP、友军伤害与击杀玩家额外掉落。"
+        },
+        "serverPublic": {
+          "label": "服务器连接与公开信息",
+          "description": "设置服务器名称、密码、公开 IP、端口与跨平台列表。"
+        },
+        "adminApiSecurity": {
+          "label": "管理、API 与安全",
+          "description": "设置 RCON、REST API、验证、聊天限制与封禁列表。"
+        },
+        "advancedSystem": {
+          "label": "高级系统与性能",
+          "description": "其他系统行为、快速移动、备份、语音与性能相关设置。"
+        }
+      },
+      "boolean": {
+        "True": "开启",
+        "False": "关闭"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "不设置",
+          "Easy": "简单",
+          "Difficult": "困难"
+        },
+        "DeathPenalty": {
+          "None": "无",
+          "Item": "道具",
+          "ItemAndEquipment": "道具与装备",
+          "All": "全部"
+        }
+      },
+      "tools": {
+        "searchLabel": "搜索",
+        "searchPlaceholder": "RCON、PvP、Palbox",
+        "modifiedOnly": "只显示修改项目",
+        "modifiedBadge": "已修改",
+        "clearFilters": "清除",
+        "expandAll": "全部展开",
+        "collapseAll": "全部收起",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "显示 {visible}/{total}，已修改 {modified}。"
+      },
+      "templates": {
+        "title": "配置模板",
+        "selectLabel": "模板",
+        "apply": "套用模板",
+        "applied": "已套用“{name}”。",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "轻松 PvE：加快成长、降低死亡压力，适合朋友服务器。"
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "高风险生存：死亡更重、成长较慢，适合挑战型服务器。"
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP 准备：开启玩家伤害、地图显示与击杀玩家额外掉落。"
+        },
+        "boosted": {
+          "name": "高倍率爽玩",
+          "description": "快速高回报：适合短期游玩、测试或活动服务器。"
+        },
+        "stableDedicated": {
+          "name": "Dedicated Server 稳定版",
+          "description": "保守的专用服务器设置：降低掉落物与复制负载。"
+        }
+      },
+      "importReport": {
+        "title": "导入报告",
+        "summary": "读取 {known} 个已知参数、{unknown} 个未知参数、{missing} 个缺少参数。",
+        "known": "已读取",
+        "unknown": "未知参数",
+        "missing": "缺少参数",
+        "none": "无"
+      }
+    },
+    "ja-JP": {
+      "languageName": "日本語",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld 設定ジェネレーター - Server 1.0"
+      },
+      "language": {
+        "label": "言語",
+        "ariaLabel": "表示言語を選択"
+      },
+      "actions": {
+        "share": "リンクを共有",
+        "theme": "テーマ切替",
+        "copy": "クリップボードへコピー",
+        "download": "設定ファイルをダウンロード",
+        "pastePlaceholder": "設定を貼り付け",
+        "load": "読み込み",
+        "add": "追加"
+      },
+      "links": {
+        "officialStart": "公式情報はこちらから:",
+        "dedicatedGuide": "専用サーバー設定ガイド",
+        "balanceGuide": "サーバーバランスガイド",
+        "communityGuide": "Community サーバー設定ガイド",
+        "commandsGuide": "サーバーコマンド一覧",
+        "feedback": "問題とフィードバック"
+      },
+      "sections": {
+        "game": "ゲーム設定　🕹️",
+        "server": "サーバー設定　🛠️"
+      },
+      "storage": {
+        "title": "設定バックアップ",
+        "description": "現在のフォームをブラウザーに保存します。最大 10 個のスロットを保存、名前変更、読み込みできます。",
+        "limit": "10 slots",
+        "slotLabel": "バックアップスロット",
+        "nameLabel": "名前",
+        "namePlaceholder": "例: ギルド倍率設定",
+        "save": "現在の設定を保存",
+        "load": "読み込み",
+        "rename": "名前変更",
+        "delete": "消去",
+        "emptySlot": "空スロット",
+        "saved": "「{name}」を保存しました。",
+        "loaded": "「{name}」を読み込みました。",
+        "renamed": "「{name}」に名前変更しました。",
+        "deleted": "スロット {slot} を消去しました。",
+        "selectSavedSlot": "保存済みスロットを選択してください。",
+        "nameRequired": "バックアップ名を入力してください。",
+        "compareA": "比較 A",
+        "compareB": "比較 B",
+        "compare": "バックアップ比較",
+        "compareResultTitle": "バックアップ比較",
+        "compareSummary": "{left} と {right} に {count} 件の差分があります。",
+        "compareField": "設定",
+        "compareLeft": "A の値",
+        "compareRight": "B の値",
+        "compareSelectSaved": "保存済みバックアップを2つ選択してください。"
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "この PalWorld サーバー設定ツールを見つけました。おすすめです。",
+        "unsupported": "お使いのブラウザーは共有機能に対応していません。"
+      },
+      "notifications": {
+        "copied": "クリップボードにコピーしました。✅",
+        "loaded": "読み込み成功。✅"
+      },
+      "notes": {
+        "difficulty": "全体の確率と数値に影響します。"
+      },
+      "options": {
+        "easy": "簡単",
+        "difficult": "難しい",
+        "noneDefault": "なし(既定)",
+        "deathNone": "None - 何もドロップしない",
+        "deathItem": "Item - アイテムのみドロップ",
+        "deathItemEquipment": "ItemAndEquipment - アイテムと装備をドロップ",
+        "deathAllDefault": "All - 全てドロップ、手持ち Pals 含む(既定)",
+        "open": "オン",
+        "openDefault": "オン(既定)",
+        "close": "オフ",
+        "closeDefault": "オフ(既定)",
+        "enable": "有効",
+        "enableDefault": "有効(既定)",
+        "disable": "無効",
+        "disableDefault": "無効(既定)",
+        "occurDefault": "発生する(既定)",
+        "notOccur": "発生しない",
+        "allow": "許可",
+        "notAllowDefault": "許可しない(既定)",
+        "yes": "はい",
+        "noDefault": "いいえ(既定)",
+        "useDefault": "使用(既定)",
+        "doNotUse": "使用しない"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(数値が大きいほど昼が短くなります)",
+        "biggerNightShorter": "🔄(数値が大きいほど夜が短くなります)",
+        "biggerLevelFaster": "🔄(数値が大きいほどレベルアップが速くなります)",
+        "biggerChanceHigher": "🔄(数値が大きいほど確率が上がります)",
+        "biggerQuantityMore": "🔄(数値が大きいほど量が増えます)",
+        "biggerAttackHigher": "🔄(数値が大きいほど攻撃が上がります)",
+        "smallerLessDamage": "🔄(数値が小さいほど受けるダメージが減ります)",
+        "smallerLessHungry": "🔄(数値が小さいほど空腹になりにくくなります)",
+        "smallerStaminaSlower": "🔄(数値が小さいほどスタミナ消費が遅くなります)",
+        "biggerHpRegenFaster": "🔄(数値が大きいほどHP回復が速くなります)",
+        "biggerHpRegenMore": "🔄(数値が大きいほどHP回復量が増えます)",
+        "biggerDamageMore": "🔄(数値が大きいほどダメージが増えます)",
+        "smallerDecaySlower": "🔄(数値が小さいほど劣化が遅くなります)",
+        "biggerDropsMore": "🔄(数値が大きいほどドロップが増えます)",
+        "smallerRespawnFaster": "🔄(数値が小さいほど再出現が速くなります)",
+        "biggerDropsAllowed": "🔄(数値が大きいほどドロップ保持数が増えます)",
+        "biggerBasesAllowed": "🔄(数値が大きいほど拠点数が増えます)",
+        "biggerPalsAllowed": "🔄(数値が大きいほど Pals 数が増えます)",
+        "smallerDropsDisappearFaster": "🔄(数値が小さいほどドロップが早く消えます)",
+        "smallerResetFaster": "🔄(数値が小さいほど早くリセットされます)",
+        "biggerPlayersAllowed": "🔄(数値が大きいほど人数が増えます)",
+        "smallerHatchFaster": "🔄(数値が小さいほど孵化が速くなります)",
+        "biggerWorkFaster": "🔄(数値が大きいほど作業が速くなります)",
+        "biggerCoopAllowed": "🔄(数値が大きいほど協力プレイヤー数が増えます)",
+        "biggerCapacityAllowed": "🔄(数値が大きいほどサーバー人数が増えます)"
+      },
+      "settings": {
+        "Difficulty": "ゲーム全体の難易度を調整",
+        "RandomizerType": "ランダマイザー種別",
+        "RandomizerSeed": "ランダマイザーシード",
+        "bIsRandomizerPalLevelRandom": "Pal レベルをランダム化",
+        "DayTimeSpeedRate": "昼の進行速度",
+        "NightTimeSpeedRate": "夜の進行速度",
+        "ExpRate": "経験値倍率",
+        "AutoSaveSpan": "自動保存間隔",
+        "PalCaptureRate": "捕獲確率倍率",
+        "PalSpawnNumRate": "Pals 出現数倍率",
+        "PalDamageRateAttack": "Pals 攻撃ダメージ倍率",
+        "PalDamageRateDefense": "Pals 被ダメージ倍率",
+        "PlayerDamageRateAttack": "プレイヤー攻撃ダメージ倍率",
+        "PlayerDamageRateDefense": "プレイヤー被ダメージ倍率",
+        "PlayerStomachDecreaceRate": "プレイヤー満腹度低下倍率",
+        "PlayerStaminaDecreaceRate": "プレイヤースタミナ低下倍率",
+        "PlayerAutoHPRegeneRate": "プレイヤー自然HP回復倍率",
+        "PlayerAutoHpRegeneRateInSleep": "睡眠中プレイヤーHP回復倍率",
+        "PalStomachDecreaceRate": "Pals 満腹度低下倍率",
+        "PalStaminaDecreaceRate": "Pals スタミナ低下倍率",
+        "PalAutoHPRegeneRate": "Pals 自然HP回復倍率",
+        "PalAutoHpRegeneRateInSleep": "睡眠中 Pals HP回復倍率",
+        "bAllowEnhanceStat_Health": "HP強化を許可",
+        "bAllowEnhanceStat_Attack": "攻撃強化を許可",
+        "bAllowEnhanceStat_Stamina": "スタミナ強化を許可",
+        "bAllowEnhanceStat_Weight": "重量強化を許可",
+        "bAllowEnhanceStat_WorkSpeed": "作業速度強化を許可",
+        "PalEggDefaultHatchingTime": "巨大卵の孵化時間(時間)",
+        "WorkSpeedRate": "作業速度倍率",
+        "CollectionDropRate": "採集アイテム量倍率",
+        "CollectionObjectHpRate": "採集オブジェクトHP倍率",
+        "CollectionObjectRespawnSpeedRate": "採集オブジェクト再出現間隔",
+        "EnemyDropItemRate": "アイテムドロップ量倍率",
+        "DropItemMaxNum": "ワールド内ドロップアイテム上限",
+        "PhysicsActiveDropItemMaxNum": "物理有効ドロップ上限",
+        "DropItemMaxNum_UNKO": "UNKO ドロップアイテム上限",
+        "DropItemAliveMaxHours": "ドロップアイテム保持最大時間",
+        "ItemWeightRate": "アイテム重量倍率",
+        "EquipmentDurabilityDamageRate": "装備耐久ダメージ倍率",
+        "ItemContainerForceMarkDirtyInterval": "アイテムコンテナ強制更新間隔",
+        "ItemCorruptionMultiplier": "アイテム腐敗倍率",
+        "DenyTechnologyList": "禁止テクノロジー一覧",
+        "BuildObjectHpRate": "建築物HP倍率",
+        "BuildObjectDamageRate": "建築物へのダメージ倍率",
+        "BuildObjectDeteriorationDamageRate": "建築物劣化速度倍率",
+        "BaseCampMaxNum": "拠点数上限",
+        "BaseCampWorkerMaxNum": "拠点作業 Pals 数上限",
+        "BaseCampMaxNumInGuild": "ギルドごとの拠点上限",
+        "bBuildAreaLimit": "建築エリア制限を有効化",
+        "MaxBuildingLimitNum": "最大建築数制限",
+        "bInvisibleOtherGuildBaseCampAreaFX": "他ギルド拠点エリアFXを非表示",
+        "bEnableBuildingPlayerUIdDisplay": "建築プレイヤーUIDを表示",
+        "BuildingNameDisplayCacheTTLSeconds": "建築名表示キャッシュ秒数",
+        "bAutoResetGuildNoOnlinePlayers": "未ログインプレイヤーをギルドから自動退出",
+        "AutoResetGuildTimeNoOnlinePlayers": "未ログインプレイヤーのギルド自動退出時間",
+        "GuildPlayerMaxNum": "ギルド人数上限",
+        "GuildRejoinCooldownMinutes": "ギルド再加入クールダウン分",
+        "AutoTransferMasterCheckIntervalSeconds": "ギルドマスター自動移譲チェック間隔",
+        "AutoTransferMasterThresholdDays": "ギルドマスター自動移譲しきい日数",
+        "MaxGuildsPerFrame": "1フレームあたり処理ギルド上限",
+        "DeathPenalty": "死亡ペナルティ",
+        "bHardcore": "Hardcore モード",
+        "bPalLost": "Pal Lost モード",
+        "bCharacterRecreateInHardcore": "Hardcore でキャラクター再作成を許可",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "他ギルドの死亡ドロップ拾得",
+        "BlockRespawnTime": "リスポーンブロック時間",
+        "RespawnPenaltyDurationThreshold": "リスポーンペナルティ継続しきい値",
+        "RespawnPenaltyTimeScale": "リスポーンペナルティ時間倍率",
+        "bEnablePlayerToPlayerDamage": "プレイヤー同士のダメージを有効化",
+        "bEnableFriendlyFire": "フレンドリーファイアを有効化",
+        "bIsPvP": "PvP モード",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "ワールドマップに拠点PvPアイテム数を表示",
+        "bDisplayPvPItemNumOnWorldMap_Player": "ワールドマップにプレイヤーPvPアイテム数を表示",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "PvPでプレイヤー撃破時の追加ドロップ",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "PvPでプレイヤー撃破時の追加ドロップ数",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "PvPプレイヤー撃破時の追加ドロップを有効化",
+        "bIsMultiplay": "マルチプレイ",
+        "CoopPlayerMaxNum": "協力プレイヤー上限",
+        "ServerPlayerMaxNum": "サーバー人数上限",
+        "ServerName": "サーバー名",
+        "ServerDescription": "サーバー説明",
+        "AdminPassword": "管理者パスワード",
+        "ServerPassword": "サーバーパスワード",
+        "PublicPort": "公開ポート",
+        "PublicIP": "公開IP",
+        "Region": "地域",
+        "CrossplayPlatforms": "クロスプレイプラットフォーム",
+        "bIsShowJoinLeftMessage": "参加/退出メッセージを表示",
+        "bAllowClientMod": "Client Mod を許可",
+        "RCONEnabled": "RCON 有効",
+        "RCONPort": "RCON ポート",
+        "RESTAPIEnabled": "REST API を有効化",
+        "RESTAPIPort": "REST API ポート",
+        "bShowPlayerList": "プレイヤーリストを表示",
+        "ChatPostLimitPerMinute": "1分あたりのチャット投稿上限",
+        "bUseAuth": "認証を使用",
+        "BanListURL": "BAN リスト URL",
+        "bEnableInvaderEnemy": "襲撃イベントの発生",
+        "bActiveUNKO": "UNKO を有効化",
+        "bEnableAimAssistPad": "コントローラー照準補助を有効化",
+        "bEnableAimAssistKeyboard": "キーボード照準補助を有効化",
+        "bEnableNonLoginPenalty": "未ログインペナルティ",
+        "bEnableFastTravel": "ファストトラベル",
+        "bEnableFastTravelOnlyBaseCamp": "ファストトラベルを拠点間のみに制限",
+        "bIsStartLocationSelectByMap": "新キャラの出現地点選択",
+        "bExistPlayerAfterLogout": "ログアウト後もプレイヤーが残る",
+        "bEnableDefenseOtherGuildPlayer": "他ギルドからのダメージ",
+        "bIsUseBackupSaveData": "バックアップセーブデータを使用",
+        "LogFormatType": "ログ形式",
+        "SupplyDropSpan": "補給物資ドロップ間隔",
+        "EnablePredatorBossPal": "Predator Boss Pal を有効化",
+        "ServerReplicatePawnCullDistance": "サーバーPawn複製カリング距離",
+        "bAllowGlobalPalboxExport": "Global Palbox エクスポートを許可",
+        "bAllowGlobalPalboxImport": "Global Palbox インポートを許可",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "プレイヤーPal保管更新チェックTick間隔",
+        "MonsterFarmActionSpeedRate": "牧場アクション速度倍率",
+        "bEnableVoiceChat": "ボイスチャットを有効化",
+        "VoiceChatMaxVolumeDistance": "ボイスチャット最大音量距離",
+        "VoiceChatZeroVolumeDistance": "ボイスチャット無音距離"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "基本とワールドルール",
+          "description": "難易度、ランダマイザー、昼夜速度、経験値などの基本ワールド設定。"
+        },
+        "palPlayerRates": {
+          "label": "Pal とプレイヤー倍率",
+          "description": "Pal、プレイヤー、卵孵化、作業速度、能力強化の倍率を調整します。"
+        },
+        "itemsDrops": {
+          "label": "採集、ドロップ、アイテム",
+          "description": "採集量、ドロップ上限、重量、耐久、腐敗を管理します。"
+        },
+        "buildingBase": {
+          "label": "建築と拠点",
+          "description": "建築物のHP、劣化、拠点数、建築表示ルールを制御します。"
+        },
+        "guild": {
+          "label": "ギルドとマルチプレイ制限",
+          "description": "ギルド人数、未ログイン時のリセット、ギルドマスター自動移譲を設定します。"
+        },
+        "deathRespawn": {
+          "label": "死亡、リスポーン、ペナルティ",
+          "description": "死亡ペナルティ、Hardcore、Pal Lost、リスポーンペナルティを調整します。"
+        },
+        "pvpCombat": {
+          "label": "PvP と戦闘ルール",
+          "description": "PvP、フレンドリーファイア、プレイヤー撃破時の追加ドロップを管理します。"
+        },
+        "serverPublic": {
+          "label": "サーバー接続と公開情報",
+          "description": "サーバー名、パスワード、公開IP、ポート、クロスプレイ対象を設定します。"
+        },
+        "adminApiSecurity": {
+          "label": "管理、API、セキュリティ",
+          "description": "RCON、REST API、認証、チャット制限、BANリストを設定します。"
+        },
+        "advancedSystem": {
+          "label": "高度なシステムと性能",
+          "description": "その他の挙動、ファストトラベル、バックアップ、ボイス、性能設定です。"
+        }
+      },
+      "boolean": {
+        "True": "有効",
+        "False": "無効"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "未設定",
+          "Easy": "簡単",
+          "Difficult": "難しい"
+        },
+        "DeathPenalty": {
+          "None": "なし",
+          "Item": "アイテム",
+          "ItemAndEquipment": "アイテムと装備",
+          "All": "すべて"
+        }
+      },
+      "tools": {
+        "searchLabel": "検索",
+        "searchPlaceholder": "RCON、PvP、Palbox",
+        "modifiedOnly": "変更項目のみ表示",
+        "modifiedBadge": "変更済み",
+        "clearFilters": "クリア",
+        "expandAll": "すべて展開",
+        "collapseAll": "すべて折りたたむ",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} 件表示、変更済み {modified} 件。"
+      },
+      "templates": {
+        "title": "設定テンプレート",
+        "selectLabel": "テンプレート",
+        "apply": "テンプレート適用",
+        "applied": "「{name}」を適用しました。",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "ゆるめのPvE設定。進行を速め、死亡時の負担を軽くします。"
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "高リスクのサバイバル設定。死亡が重く、成長は遅めです。"
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP向けにプレイヤー攻撃、マップ表示、撃破時ドロップを有効化します。"
+        },
+        "boosted": {
+          "name": "ブースト",
+          "description": "短時間プレイ、テスト、イベント向けの高倍率設定です。"
+        },
+        "stableDedicated": {
+          "name": "安定 Dedicated Server",
+          "description": "ドロップと複製負荷を抑える保守的な専用サーバー設定です。"
+        }
+      },
+      "importReport": {
+        "title": "インポート結果",
+        "summary": "既知 {known} 件、不明 {unknown} 件、不足 {missing} 件を読み取りました。",
+        "known": "読み取り済み",
+        "unknown": "不明な設定",
+        "missing": "不足している設定",
+        "none": "なし"
+      }
+    },
+    "ko-KR": {
+      "languageName": "한국어",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld 설정 생성기 - Server 1.0"
+      },
+      "language": {
+        "label": "언어",
+        "ariaLabel": "인터페이스 언어 선택"
+      },
+      "actions": {
+        "share": "링크 공유",
+        "theme": "테마 전환",
+        "copy": "클립보드에 복사",
+        "download": "설정 파일 다운로드",
+        "pastePlaceholder": "설정 붙여넣기",
+        "load": "불러오기",
+        "add": "추가"
+      },
+      "links": {
+        "officialStart": "공식 정보는 여기서 시작하세요:",
+        "dedicatedGuide": "전용 서버 설정 가이드",
+        "balanceGuide": "서버 밸런스 가이드",
+        "communityGuide": "Community 서버 설정 가이드",
+        "commandsGuide": "서버 명령어",
+        "feedback": "문제 및 피드백"
+      },
+      "sections": {
+        "game": "게임 설정　🕹️",
+        "server": "서버 설정　🛠️"
+      },
+      "storage": {
+        "title": "설정 백업",
+        "description": "현재 폼을 브라우저에 저장합니다. 최대 10개 슬롯을 저장, 이름 변경, 불러오기 할 수 있습니다.",
+        "limit": "10 slots",
+        "slotLabel": "백업 슬롯",
+        "nameLabel": "이름",
+        "namePlaceholder": "예: 길드 배율 설정",
+        "save": "현재 설정 저장",
+        "load": "불러오기",
+        "rename": "이름 변경",
+        "delete": "비우기",
+        "emptySlot": "빈 슬롯",
+        "saved": "\"{name}\" 저장됨.",
+        "loaded": "\"{name}\" 불러옴.",
+        "renamed": "\"{name}\"(으)로 이름 변경됨.",
+        "deleted": "{slot}번 슬롯을 비웠습니다.",
+        "selectSavedSlot": "저장된 슬롯을 먼저 선택하세요.",
+        "nameRequired": "백업 이름을 입력하세요.",
+        "compareA": "비교 A",
+        "compareB": "비교 B",
+        "compare": "백업 비교",
+        "compareResultTitle": "백업 비교",
+        "compareSummary": "{left}와 {right} 사이에 차이 {count}개.",
+        "compareField": "설정",
+        "compareLeft": "A 값",
+        "compareRight": "B 값",
+        "compareSelectSaved": "저장된 백업 두 개를 선택하세요."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "이 PalWorld 서버 설정 도구를 찾았습니다. 추천합니다.",
+        "unsupported": "브라우저가 공유 기능을 지원하지 않습니다."
+      },
+      "notifications": {
+        "copied": "클립보드에 복사했습니다. ✅",
+        "loaded": "불러오기 성공. ✅"
+      },
+      "notes": {
+        "difficulty": "전체 확률과 수치에 영향을 줍니다."
+      },
+      "options": {
+        "easy": "쉬움",
+        "difficult": "어려움",
+        "noneDefault": "설정 안 함(기본)",
+        "deathNone": "None - 아무것도 떨어뜨리지 않음",
+        "deathItem": "Item - 아이템만 드롭",
+        "deathItemEquipment": "ItemAndEquipment - 아이템과 장비 드롭",
+        "deathAllDefault": "All - 파티 Pals 포함 모두 드롭(기본)",
+        "open": "켜기",
+        "openDefault": "켜기(기본)",
+        "close": "끄기",
+        "closeDefault": "끄기(기본)",
+        "enable": "활성화",
+        "enableDefault": "활성화(기본)",
+        "disable": "비활성화",
+        "disableDefault": "비활성화(기본)",
+        "occurDefault": "발생(기본)",
+        "notOccur": "발생 안 함",
+        "allow": "허용",
+        "notAllowDefault": "허용 안 함(기본)",
+        "yes": "예",
+        "noDefault": "아니요(기본)",
+        "useDefault": "사용(기본)",
+        "doNotUse": "사용 안 함"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(값이 클수록 낮이 짧아집니다)",
+        "biggerNightShorter": "🔄(값이 클수록 밤이 짧아집니다)",
+        "biggerLevelFaster": "🔄(값이 클수록 레벨업이 빨라집니다)",
+        "biggerChanceHigher": "🔄(값이 클수록 확률이 높아집니다)",
+        "biggerQuantityMore": "🔄(값이 클수록 수량이 많아집니다)",
+        "biggerAttackHigher": "🔄(값이 클수록 공격이 강해집니다)",
+        "smallerLessDamage": "🔄(값이 작을수록 받는 피해가 줄어듭니다)",
+        "smallerLessHungry": "🔄(값이 작을수록 덜 배고파집니다)",
+        "smallerStaminaSlower": "🔄(값이 작을수록 스태미나 소모가 느려집니다)",
+        "biggerHpRegenFaster": "🔄(값이 클수록 HP 회복이 빨라집니다)",
+        "biggerHpRegenMore": "🔄(값이 클수록 HP 회복량이 많아집니다)",
+        "biggerDamageMore": "🔄(값이 클수록 피해가 증가합니다)",
+        "smallerDecaySlower": "🔄(값이 작을수록 열화가 느려집니다)",
+        "biggerDropsMore": "🔄(값이 클수록 드롭이 많아집니다)",
+        "smallerRespawnFaster": "🔄(값이 작을수록 리스폰이 빨라집니다)",
+        "biggerDropsAllowed": "🔄(값이 클수록 드롭 아이템을 더 많이 허용합니다)",
+        "biggerBasesAllowed": "🔄(값이 클수록 거점을 더 많이 허용합니다)",
+        "biggerPalsAllowed": "🔄(값이 클수록 Pals를 더 많이 허용합니다)",
+        "smallerDropsDisappearFaster": "🔄(값이 작을수록 드롭이 빨리 사라집니다)",
+        "smallerResetFaster": "🔄(값이 작을수록 더 빨리 초기화됩니다)",
+        "biggerPlayersAllowed": "🔄(값이 클수록 인원을 더 많이 허용합니다)",
+        "smallerHatchFaster": "🔄(값이 작을수록 부화가 빨라집니다)",
+        "biggerWorkFaster": "🔄(값이 클수록 작업이 빨라집니다)",
+        "biggerCoopAllowed": "🔄(값이 클수록 협동 플레이어를 더 많이 허용합니다)",
+        "biggerCapacityAllowed": "🔄(값이 클수록 서버 인원을 더 많이 허용합니다)"
+      },
+      "settings": {
+        "Difficulty": "게임 전체 난이도 조정",
+        "RandomizerType": "랜덤 설정 유형",
+        "RandomizerSeed": "랜덤 시드",
+        "bIsRandomizerPalLevelRandom": "Pal 레벨 랜덤화",
+        "DayTimeSpeedRate": "낮 시간 진행 속도",
+        "NightTimeSpeedRate": "밤 시간 진행 속도",
+        "ExpRate": "경험치 배율",
+        "AutoSaveSpan": "자동 저장 간격",
+        "PalCaptureRate": "포획 확률 배율",
+        "PalSpawnNumRate": "Pals 출현 수 배율",
+        "PalDamageRateAttack": "Pals 공격 피해 배율",
+        "PalDamageRateDefense": "Pals 받는 피해 배율",
+        "PlayerDamageRateAttack": "플레이어 공격 피해 배율",
+        "PlayerDamageRateDefense": "플레이어 받는 피해 배율",
+        "PlayerStomachDecreaceRate": "플레이어 포만도 감소 배율",
+        "PlayerStaminaDecreaceRate": "플레이어 스태미나 감소 배율",
+        "PlayerAutoHPRegeneRate": "플레이어 자연 HP 회복 배율",
+        "PlayerAutoHpRegeneRateInSleep": "수면 중 플레이어 HP 회복 배율",
+        "PalStomachDecreaceRate": "Pals 포만도 감소 배율",
+        "PalStaminaDecreaceRate": "Pals 스태미나 감소 배율",
+        "PalAutoHPRegeneRate": "Pals 자연 HP 회복 배율",
+        "PalAutoHpRegeneRateInSleep": "수면 중 Pals HP 회복 배율",
+        "bAllowEnhanceStat_Health": "체력 강화 허용",
+        "bAllowEnhanceStat_Attack": "공격 강화 허용",
+        "bAllowEnhanceStat_Stamina": "스태미나 강화 허용",
+        "bAllowEnhanceStat_Weight": "무게 강화 허용",
+        "bAllowEnhanceStat_WorkSpeed": "작업 속도 강화 허용",
+        "PalEggDefaultHatchingTime": "거대 알 부화 시간(시간)",
+        "WorkSpeedRate": "작업 속도 배율",
+        "CollectionDropRate": "채집 아이템 양 배율",
+        "CollectionObjectHpRate": "채집 오브젝트 HP 배율",
+        "CollectionObjectRespawnSpeedRate": "채집 오브젝트 리스폰 간격",
+        "EnemyDropItemRate": "아이템 드롭 양 배율",
+        "DropItemMaxNum": "월드 내 드롭 아이템 최대 수",
+        "PhysicsActiveDropItemMaxNum": "물리 적용 드롭 아이템 한도",
+        "DropItemMaxNum_UNKO": "UNKO 드롭 아이템 최대 수",
+        "DropItemAliveMaxHours": "드롭 아이템 유지 최대 시간",
+        "ItemWeightRate": "아이템 무게 배율",
+        "EquipmentDurabilityDamageRate": "장비 내구도 손상 배율",
+        "ItemContainerForceMarkDirtyInterval": "아이템 컨테이너 강제 갱신 간격",
+        "ItemCorruptionMultiplier": "아이템 부패 배율",
+        "DenyTechnologyList": "금지 기술 목록",
+        "BuildObjectHpRate": "건축물 HP 배율",
+        "BuildObjectDamageRate": "건축물 대상 피해 배율",
+        "BuildObjectDeteriorationDamageRate": "건축물 열화 속도 배율",
+        "BaseCampMaxNum": "거점 수 상한",
+        "BaseCampWorkerMaxNum": "거점 작업 Pals 수 상한",
+        "BaseCampMaxNumInGuild": "길드당 거점 한도",
+        "bBuildAreaLimit": "건축 구역 제한 활성화",
+        "MaxBuildingLimitNum": "최대 건축 수 제한",
+        "bInvisibleOtherGuildBaseCampAreaFX": "다른 길드 거점 영역 효과 숨김",
+        "bEnableBuildingPlayerUIdDisplay": "건축 플레이어 UID 표시",
+        "BuildingNameDisplayCacheTTLSeconds": "건축 이름 표시 캐시 초",
+        "bAutoResetGuildNoOnlinePlayers": "미접속 플레이어 길드 자동 탈퇴",
+        "AutoResetGuildTimeNoOnlinePlayers": "미접속 플레이어 길드 자동 탈퇴 시간",
+        "GuildPlayerMaxNum": "길드 인원 상한",
+        "GuildRejoinCooldownMinutes": "길드 재가입 대기 시간(분)",
+        "AutoTransferMasterCheckIntervalSeconds": "길드장 자동 이전 확인 간격",
+        "AutoTransferMasterThresholdDays": "길드장 자동 이전 기준 일수",
+        "MaxGuildsPerFrame": "프레임당 처리 길드 수 한도",
+        "DeathPenalty": "사망 페널티",
+        "bHardcore": "Hardcore 모드",
+        "bPalLost": "Pal Lost 모드",
+        "bCharacterRecreateInHardcore": "Hardcore에서 캐릭터 재생성 허용",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "다른 길드 사망 드롭 획득 허용",
+        "BlockRespawnTime": "부활 차단 시간",
+        "RespawnPenaltyDurationThreshold": "부활 페널티 지속 기준",
+        "RespawnPenaltyTimeScale": "부활 페널티 시간 배율",
+        "bEnablePlayerToPlayerDamage": "플레이어 간 피해 활성화",
+        "bEnableFriendlyFire": "아군 피해 활성화",
+        "bIsPvP": "PvP 모드 활성화 여부",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "월드맵에 거점 PvP 아이템 수 표시",
+        "bDisplayPvPItemNumOnWorldMap_Player": "월드맵에 플레이어 PvP 아이템 수 표시",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "PvP 플레이어 처치 추가 드롭 아이템",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "PvP 플레이어 처치 추가 드롭 수",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "PvP 플레이어 처치 추가 드롭 활성화",
+        "bIsMultiplay": "멀티플레이 여부",
+        "CoopPlayerMaxNum": "협동 플레이어 상한",
+        "ServerPlayerMaxNum": "서버 플레이어 상한",
+        "ServerName": "서버 이름",
+        "ServerDescription": "서버 설명",
+        "AdminPassword": "관리자 비밀번호",
+        "ServerPassword": "서버 비밀번호",
+        "PublicPort": "공개 포트",
+        "PublicIP": "공개 IP",
+        "Region": "지역",
+        "CrossplayPlatforms": "크로스플레이 플랫폼",
+        "bIsShowJoinLeftMessage": "입장/퇴장 메시지 표시",
+        "bAllowClientMod": "Client Mod 허용",
+        "RCONEnabled": "RCON 활성화",
+        "RCONPort": "RCON 포트",
+        "RESTAPIEnabled": "REST API 활성화",
+        "RESTAPIPort": "REST API 포트",
+        "bShowPlayerList": "플레이어 목록 표시",
+        "ChatPostLimitPerMinute": "분당 채팅 전송 제한",
+        "bUseAuth": "인증 사용 여부",
+        "BanListURL": "차단 목록 URL",
+        "bEnableInvaderEnemy": "습격 이벤트 발생 여부",
+        "bActiveUNKO": "UNKO 활성화",
+        "bEnableAimAssistPad": "컨트롤러 조준 보조 활성화",
+        "bEnableAimAssistKeyboard": "키보드 조준 보조 활성화",
+        "bEnableNonLoginPenalty": "미로그인 페널티 활성화",
+        "bEnableFastTravel": "빠른 이동 활성화",
+        "bEnableFastTravelOnlyBaseCamp": "빠른 이동을 거점으로 제한",
+        "bIsStartLocationSelectByMap": "새 캐릭터 시작 지점 선택 허용",
+        "bExistPlayerAfterLogout": "로그아웃 후 플레이어 유지",
+        "bEnableDefenseOtherGuildPlayer": "다른 길드 피해 수신 여부",
+        "bIsUseBackupSaveData": "백업 저장 데이터 사용",
+        "LogFormatType": "로그 형식",
+        "SupplyDropSpan": "보급 드롭 간격",
+        "EnablePredatorBossPal": "Predator Boss Pal 활성화",
+        "ServerReplicatePawnCullDistance": "서버 Pawn 복제 컬링 거리",
+        "bAllowGlobalPalboxExport": "Global Palbox 내보내기 허용",
+        "bAllowGlobalPalboxImport": "Global Palbox 가져오기 허용",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "플레이어 Pal 저장 업데이트 확인 Tick 간격",
+        "MonsterFarmActionSpeedRate": "목장 행동 속도 배율",
+        "bEnableVoiceChat": "음성 채팅 활성화",
+        "VoiceChatMaxVolumeDistance": "음성 채팅 최대 음량 거리",
+        "VoiceChatZeroVolumeDistance": "음성 채팅 무음 거리"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "기본 및 월드 규칙",
+          "description": "난이도, 랜덤 설정, 낮밤 속도, 경험치 등 핵심 월드 설정입니다."
+        },
+        "palPlayerRates": {
+          "label": "Pal 및 플레이어 배율",
+          "description": "Pal, 플레이어, 알 부화, 작업 속도, 능력 강화 배율을 조정합니다."
+        },
+        "itemsDrops": {
+          "label": "채집, 드롭, 아이템",
+          "description": "채집량, 드롭 아이템 한도, 무게, 내구도, 부패를 관리합니다."
+        },
+        "buildingBase": {
+          "label": "건축 및 거점",
+          "description": "건축물 HP, 열화, 거점 수, 건축 표시 규칙을 제어합니다."
+        },
+        "guild": {
+          "label": "길드 및 멀티플레이 제한",
+          "description": "길드 인원, 오프라인 초기화, 길드장 자동 이전 규칙을 설정합니다."
+        },
+        "deathRespawn": {
+          "label": "사망, 부활, 페널티",
+          "description": "사망 페널티, Hardcore, Pal Lost, 부활 페널티를 조정합니다."
+        },
+        "pvpCombat": {
+          "label": "PvP 및 전투 규칙",
+          "description": "PvP, 아군 피해, 플레이어 처치 추가 드롭을 관리합니다."
+        },
+        "serverPublic": {
+          "label": "서버 접속 및 공개 정보",
+          "description": "서버 이름, 비밀번호, 공개 IP, 포트, 크로스플레이 플랫폼을 설정합니다."
+        },
+        "adminApiSecurity": {
+          "label": "관리, API, 보안",
+          "description": "RCON, REST API, 인증, 채팅 제한, 차단 목록을 설정합니다."
+        },
+        "advancedSystem": {
+          "label": "고급 시스템 및 성능",
+          "description": "기타 시스템 동작, 빠른 이동, 백업, 음성, 성능 관련 설정입니다."
+        }
+      },
+      "boolean": {
+        "True": "켜짐",
+        "False": "꺼짐"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "설정 안 함",
+          "Easy": "쉬움",
+          "Difficult": "어려움"
+        },
+        "DeathPenalty": {
+          "None": "없음",
+          "Item": "아이템",
+          "ItemAndEquipment": "아이템 및 장비",
+          "All": "전체"
+        }
+      },
+      "tools": {
+        "searchLabel": "검색",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "수정된 항목만 표시",
+        "modifiedBadge": "수정됨",
+        "clearFilters": "초기화",
+        "expandAll": "모두 펼치기",
+        "collapseAll": "모두 접기",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} 표시, 수정됨 {modified}."
+      },
+      "templates": {
+        "title": "구성 템플릿",
+        "selectLabel": "템플릿",
+        "apply": "템플릿 적용",
+        "applied": "\"{name}\" 적용됨.",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "빠른 성장과 낮은 사망 부담의 편한 PvE 설정입니다."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "사망 부담이 크고 성장이 느린 고위험 생존 설정입니다."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "플레이어 피해, 지도 표시, 처치 드롭을 켜는 PvP 설정입니다."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "짧은 플레이, 테스트, 이벤트용 고배율 설정입니다."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "드롭 아이템과 복제 부하를 줄이는 보수적 서버 설정입니다."
+        }
+      },
+      "importReport": {
+        "title": "가져오기 보고서",
+        "summary": "알려진 설정 {known}개, 알 수 없는 설정 {unknown}개, 누락 설정 {missing}개를 읽었습니다.",
+        "known": "읽음",
+        "unknown": "알 수 없는 설정",
+        "missing": "누락 설정",
+        "none": "없음"
+      }
+    },
+    "es-ES": {
+      "languageName": "Español",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "Generador de ajustes de PalWorld - Server 1.0"
+      },
+      "language": {
+        "label": "Idioma",
+        "ariaLabel": "Elegir idioma de la interfaz"
+      },
+      "actions": {
+        "share": "Compartir enlace",
+        "theme": "Cambiar tema",
+        "copy": "Copiar al portapapeles",
+        "download": "Descargar configuración",
+        "pastePlaceholder": "Pegar configuración",
+        "load": "Cargar",
+        "add": "Añadir"
+      },
+      "links": {
+        "officialStart": "Puntos de partida oficiales:",
+        "dedicatedGuide": "Guía de servidor dedicado",
+        "balanceGuide": "Guía de balance del servidor",
+        "communityGuide": "Guía de servidor Community",
+        "commandsGuide": "Comandos del servidor",
+        "feedback": "Problemas y comentarios"
+      },
+      "sections": {
+        "game": "Ajustes del juego　🕹️",
+        "server": "Ajustes del servidor　🛠️"
+      },
+      "storage": {
+        "title": "Copias de configuración",
+        "description": "Guarda el formulario actual en este navegador. Hasta 10 ranuras con nombre para guardar, renombrar y cargar.",
+        "limit": "10 slots",
+        "slotLabel": "Ranura",
+        "nameLabel": "Nombre",
+        "namePlaceholder": "Ejemplo: ajustes de gremio",
+        "save": "Guardar configuración",
+        "load": "Cargar",
+        "rename": "Renombrar",
+        "delete": "Vaciar",
+        "emptySlot": "Ranura vacía",
+        "saved": "Guardado \"{name}\".",
+        "loaded": "Cargado \"{name}\".",
+        "renamed": "Renombrado a \"{name}\".",
+        "deleted": "Ranura {slot} vaciada.",
+        "selectSavedSlot": "Elige primero una ranura guardada.",
+        "nameRequired": "Introduce un nombre.",
+        "compareA": "Comparar A",
+        "compareB": "Comparar B",
+        "compare": "Comparar copias",
+        "compareResultTitle": "Comparación de copias",
+        "compareSummary": "{count} diferencias entre {left} y {right}.",
+        "compareField": "Ajuste",
+        "compareLeft": "Valor A",
+        "compareRight": "Valor B",
+        "compareSelectSaved": "Selecciona dos copias guardadas."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "Encontré esta herramienta de ajustes de servidor de PalWorld y la recomiendo.",
+        "unsupported": "Tu navegador no admite la función de compartir."
+      },
+      "notifications": {
+        "copied": "Copiado al portapapeles. ✅",
+        "loaded": "Cargado correctamente. ✅"
+      },
+      "notes": {
+        "difficulty": "Afecta las tasas y valores generales."
+      },
+      "options": {
+        "easy": "Fácil",
+        "difficult": "Difícil",
+        "noneDefault": "Ninguno (predeterminado)",
+        "deathNone": "None - no soltar nada",
+        "deathItem": "Item - soltar solo objetos",
+        "deathItemEquipment": "ItemAndEquipment - soltar objetos y equipo",
+        "deathAllDefault": "All - soltar todo, incluidos Pals del equipo (predeterminado)",
+        "open": "Activado",
+        "openDefault": "Activado (predeterminado)",
+        "close": "Desactivado",
+        "closeDefault": "Desactivado (predeterminado)",
+        "enable": "Habilitar",
+        "enableDefault": "Habilitar (predeterminado)",
+        "disable": "Deshabilitar",
+        "disableDefault": "Deshabilitado (predeterminado)",
+        "occurDefault": "Ocurre (predeterminado)",
+        "notOccur": "No ocurre",
+        "allow": "Permitir",
+        "notAllowDefault": "No permitir (predeterminado)",
+        "yes": "Sí",
+        "noDefault": "No (predeterminado)",
+        "useDefault": "Usar (predeterminado)",
+        "doNotUse": "No usar"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Un valor mayor acorta el día)",
+        "biggerNightShorter": "🔄(Un valor mayor acorta la noche)",
+        "biggerLevelFaster": "🔄(Un valor mayor sube de nivel más rápido)",
+        "biggerChanceHigher": "🔄(Un valor mayor aumenta la probabilidad)",
+        "biggerQuantityMore": "🔄(Un valor mayor aumenta la cantidad)",
+        "biggerAttackHigher": "🔄(Un valor mayor aumenta el ataque)",
+        "smallerLessDamage": "🔄(Un valor menor reduce el daño recibido)",
+        "smallerLessHungry": "🔄(Un valor menor reduce el hambre)",
+        "smallerStaminaSlower": "🔄(Un valor menor ralentiza el gasto de resistencia)",
+        "biggerHpRegenFaster": "🔄(Un valor mayor regenera HP más rápido)",
+        "biggerHpRegenMore": "🔄(Un valor mayor regenera más HP)",
+        "biggerDamageMore": "🔄(Un valor mayor aumenta el daño)",
+        "smallerDecaySlower": "🔄(Un valor menor ralentiza el deterioro)",
+        "biggerDropsMore": "🔄(Un valor mayor aumenta los botines)",
+        "smallerRespawnFaster": "🔄(Un valor menor reaparece más rápido)",
+        "biggerDropsAllowed": "🔄(Un valor mayor permite más objetos soltados)",
+        "biggerBasesAllowed": "🔄(Un valor mayor permite más bases)",
+        "biggerPalsAllowed": "🔄(Un valor mayor permite más Pals)",
+        "smallerDropsDisappearFaster": "🔄(Un valor menor hace desaparecer antes los botines)",
+        "smallerResetFaster": "🔄(Un valor menor reinicia antes)",
+        "biggerPlayersAllowed": "🔄(Un valor mayor permite más jugadores)",
+        "smallerHatchFaster": "🔄(Un valor menor incuba más rápido)",
+        "biggerWorkFaster": "🔄(Un valor mayor trabaja más rápido)",
+        "biggerCoopAllowed": "🔄(Un valor mayor permite más jugadores cooperativos)",
+        "biggerCapacityAllowed": "🔄(Un valor mayor permite más jugadores en el servidor)"
+      },
+      "settings": {
+        "Difficulty": "Ajusta la dificultad general del juego",
+        "RandomizerType": "Tipo de aleatorizador",
+        "RandomizerSeed": "Semilla del aleatorizador",
+        "bIsRandomizerPalLevelRandom": "Aleatorizar niveles de Pal",
+        "DayTimeSpeedRate": "Velocidad del tiempo diurno",
+        "NightTimeSpeedRate": "Velocidad del tiempo nocturno",
+        "ExpRate": "Multiplicador de experiencia",
+        "AutoSaveSpan": "Intervalo de guardado automático",
+        "PalCaptureRate": "Multiplicador de probabilidad de captura",
+        "PalSpawnNumRate": "Multiplicador de aparición de Pals",
+        "PalDamageRateAttack": "Multiplicador de daño de ataque de Pals",
+        "PalDamageRateDefense": "Multiplicador de daño recibido por Pals",
+        "PlayerDamageRateAttack": "Multiplicador de daño de ataque del jugador",
+        "PlayerDamageRateDefense": "Multiplicador de daño recibido por el jugador",
+        "PlayerStomachDecreaceRate": "Multiplicador de reducción de hambre del jugador",
+        "PlayerStaminaDecreaceRate": "Multiplicador de reducción de resistencia del jugador",
+        "PlayerAutoHPRegeneRate": "Multiplicador de recuperación natural de HP del jugador",
+        "PlayerAutoHpRegeneRateInSleep": "Multiplicador de recuperación de HP del jugador al dormir",
+        "PalStomachDecreaceRate": "Multiplicador de reducción de hambre de Pals",
+        "PalStaminaDecreaceRate": "Multiplicador de reducción de resistencia de Pals",
+        "PalAutoHPRegeneRate": "Multiplicador de recuperación natural de HP de Pals",
+        "PalAutoHpRegeneRateInSleep": "Multiplicador de recuperación de HP de Pals al dormir",
+        "bAllowEnhanceStat_Health": "Permitir mejora de salud",
+        "bAllowEnhanceStat_Attack": "Permitir mejora de ataque",
+        "bAllowEnhanceStat_Stamina": "Permitir mejora de resistencia",
+        "bAllowEnhanceStat_Weight": "Permitir mejora de peso",
+        "bAllowEnhanceStat_WorkSpeed": "Permitir mejora de velocidad de trabajo",
+        "PalEggDefaultHatchingTime": "Tiempo de incubación de huevo enorme (horas)",
+        "WorkSpeedRate": "Multiplicador de velocidad de trabajo",
+        "CollectionDropRate": "Multiplicador de recolección de objetos",
+        "CollectionObjectHpRate": "Multiplicador de HP de objetos recolectables",
+        "CollectionObjectRespawnSpeedRate": "Intervalo de reaparición de objetos recolectables",
+        "EnemyDropItemRate": "Multiplicador de botín de objetos",
+        "DropItemMaxNum": "Máximo de objetos soltados en el mundo",
+        "PhysicsActiveDropItemMaxNum": "Límite de objetos caídos con física",
+        "DropItemMaxNum_UNKO": "Máximo de objetos UNKO soltados",
+        "DropItemAliveMaxHours": "Tiempo máximo de permanencia de objetos soltados",
+        "ItemWeightRate": "Multiplicador de peso de objetos",
+        "EquipmentDurabilityDamageRate": "Multiplicador de daño a durabilidad de equipo",
+        "ItemContainerForceMarkDirtyInterval": "Intervalo de actualización forzada de contenedores",
+        "ItemCorruptionMultiplier": "Multiplicador de deterioro de objetos",
+        "DenyTechnologyList": "Lista de tecnologías prohibidas",
+        "BuildObjectHpRate": "Multiplicador de vida de construcciones",
+        "BuildObjectDamageRate": "Multiplicador de daño contra estructuras",
+        "BuildObjectDeteriorationDamageRate": "Multiplicador de deterioro de estructuras",
+        "BaseCampMaxNum": "Número máximo de bases",
+        "BaseCampWorkerMaxNum": "Máximo de Pals trabajadores por base",
+        "BaseCampMaxNumInGuild": "Límite de bases por gremio",
+        "bBuildAreaLimit": "Activar límite de área de construcción",
+        "MaxBuildingLimitNum": "Límite máximo de construcciones",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Ocultar efectos de área de bases de otros gremios",
+        "bEnableBuildingPlayerUIdDisplay": "Mostrar UID del jugador en construcciones",
+        "BuildingNameDisplayCacheTTLSeconds": "TTL de caché de nombres de construcción",
+        "bAutoResetGuildNoOnlinePlayers": "Expulsar automáticamente jugadores sin conexión del gremio",
+        "AutoResetGuildTimeNoOnlinePlayers": "Tiempo de expulsión automática del gremio",
+        "GuildPlayerMaxNum": "Límite de jugadores del gremio",
+        "GuildRejoinCooldownMinutes": "Minutos de espera para reingresar al gremio",
+        "AutoTransferMasterCheckIntervalSeconds": "Intervalo de revisión para transferencia automática del líder",
+        "AutoTransferMasterThresholdDays": "Días umbral para transferencia automática del líder",
+        "MaxGuildsPerFrame": "Máximo de gremios procesados por fotograma",
+        "DeathPenalty": "Penalización por muerte",
+        "bHardcore": "Modo Hardcore",
+        "bPalLost": "Modo Pal Lost",
+        "bCharacterRecreateInHardcore": "Permitir recrear personaje en Hardcore",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Permitir recoger botín de muerte de otros gremios",
+        "BlockRespawnTime": "Tiempo de bloqueo de reaparición",
+        "RespawnPenaltyDurationThreshold": "Umbral de duración de penalización de reaparición",
+        "RespawnPenaltyTimeScale": "Escala de tiempo de penalización de reaparición",
+        "bEnablePlayerToPlayerDamage": "Habilitar daño entre jugadores",
+        "bEnableFriendlyFire": "Habilitar fuego amigo",
+        "bIsPvP": "Modo PvP",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "Mostrar cantidad de objetos PvP de bases en el mapa",
+        "bDisplayPvPItemNumOnWorldMap_Player": "Mostrar cantidad de objetos PvP de jugadores en el mapa",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Objeto extra al matar jugadores en PvP",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Cantidad extra al matar jugadores en PvP",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Activar botín extra al matar jugadores en PvP",
+        "bIsMultiplay": "Multijugador",
+        "CoopPlayerMaxNum": "Límite de jugadores cooperativos",
+        "ServerPlayerMaxNum": "Límite de jugadores del servidor",
+        "ServerName": "Nombre del servidor",
+        "ServerDescription": "Descripción del servidor",
+        "AdminPassword": "Contraseña de administrador",
+        "ServerPassword": "Contraseña del servidor",
+        "PublicPort": "Puerto público",
+        "PublicIP": "IP pública",
+        "Region": "Región",
+        "CrossplayPlatforms": "Plataformas crossplay",
+        "bIsShowJoinLeftMessage": "Mostrar mensajes de entrada y salida",
+        "bAllowClientMod": "Permitir Client Mod",
+        "RCONEnabled": "RCON habilitado",
+        "RCONPort": "Puerto RCON",
+        "RESTAPIEnabled": "Activar REST API",
+        "RESTAPIPort": "Puerto REST API",
+        "bShowPlayerList": "Mostrar lista de jugadores",
+        "ChatPostLimitPerMinute": "Límite de mensajes de chat por minuto",
+        "bUseAuth": "Usar autenticación",
+        "BanListURL": "URL de lista de bloqueo",
+        "bEnableInvaderEnemy": "Si ocurren eventos de incursión",
+        "bActiveUNKO": "Habilitar UNKO",
+        "bEnableAimAssistPad": "Habilitar ayuda de apuntado con mando",
+        "bEnableAimAssistKeyboard": "Habilitar ayuda de apuntado con teclado",
+        "bEnableNonLoginPenalty": "Habilitar penalización por no iniciar sesión",
+        "bEnableFastTravel": "Habilitar viaje rápido",
+        "bEnableFastTravelOnlyBaseCamp": "Viaje rápido solo entre bases",
+        "bIsStartLocationSelectByMap": "Permitir elegir punto inicial a nuevos personajes",
+        "bExistPlayerAfterLogout": "El jugador permanece tras cerrar sesión",
+        "bEnableDefenseOtherGuildPlayer": "Recibir daño de otros gremios",
+        "bIsUseBackupSaveData": "Usar datos de guardado de respaldo",
+        "LogFormatType": "Tipo de formato de log",
+        "SupplyDropSpan": "Intervalo de suministros",
+        "EnablePredatorBossPal": "Activar Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "Distancia de recorte de réplica de Pawn del servidor",
+        "bAllowGlobalPalboxExport": "Permitir exportar Global Palbox",
+        "bAllowGlobalPalboxImport": "Permitir importar Global Palbox",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Intervalo Tick de revisión del almacén Pal del jugador",
+        "MonsterFarmActionSpeedRate": "Multiplicador de velocidad de acciones de granja",
+        "bEnableVoiceChat": "Activar chat de voz",
+        "VoiceChatMaxVolumeDistance": "Distancia de volumen máximo de voz",
+        "VoiceChatZeroVolumeDistance": "Distancia de volumen cero de voz"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Reglas Básicas Del Mundo",
+          "description": "Dificultad, aleatorizador, velocidad día-noche, experiencia y ajustes centrales del mundo."
+        },
+        "palPlayerRates": {
+          "label": "Multiplicadores De Pal Y Jugador",
+          "description": "Ajusta Pal, jugador, incubación, velocidad de trabajo y mejoras de atributos."
+        },
+        "itemsDrops": {
+          "label": "Recolección, Botín Y Objetos",
+          "description": "Gestiona recolección, límites de objetos caídos, peso, durabilidad y deterioro."
+        },
+        "buildingBase": {
+          "label": "Construcción Y Bases",
+          "description": "Controla salud de edificios, deterioro, límites de bases y reglas de visualización."
+        },
+        "guild": {
+          "label": "Gremio Y Límites Multijugador",
+          "description": "Configura tamaño del gremio, reinicio por inactividad y transferencia automática del líder."
+        },
+        "deathRespawn": {
+          "label": "Muerte, Reaparición Y Penalizaciones",
+          "description": "Ajusta penalizaciones de muerte, Hardcore, Pal Lost y penalizaciones de reaparición."
+        },
+        "pvpCombat": {
+          "label": "PvP Y Reglas De Combate",
+          "description": "Gestiona PvP, fuego amigo y botín extra por matar jugadores."
+        },
+        "serverPublic": {
+          "label": "Conexión Del Servidor E Información Pública",
+          "description": "Define nombre, contraseñas, IP pública, puertos y plataformas crossplay."
+        },
+        "adminApiSecurity": {
+          "label": "Administración, API Y Seguridad",
+          "description": "Configura RCON, REST API, autenticación, límites de chat y listas de bloqueo."
+        },
+        "advancedSystem": {
+          "label": "Sistema Avanzado Y Rendimiento",
+          "description": "Comportamiento del sistema, viaje rápido, copias, voz y rendimiento."
+        }
+      },
+      "boolean": {
+        "True": "Activado",
+        "False": "Desactivado"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Sin definir",
+          "Easy": "Fácil",
+          "Difficult": "Difícil"
+        },
+        "DeathPenalty": {
+          "None": "Ninguna",
+          "Item": "Objetos",
+          "ItemAndEquipment": "Objetos y equipo",
+          "All": "Todo"
+        }
+      },
+      "tools": {
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Mostrar solo modificados",
+        "modifiedBadge": "Modificado",
+        "clearFilters": "Limpiar",
+        "expandAll": "Expandir todo",
+        "collapseAll": "Contraer todo",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} visibles, {modified} modificados."
+      },
+      "templates": {
+        "title": "Plantillas De Configuración",
+        "selectLabel": "Plantilla",
+        "apply": "Aplicar plantilla",
+        "applied": "Aplicado \"{name}\".",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "PvE relajado con progreso rápido y menos presión por muerte."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "Supervivencia de alto riesgo con muerte más dura y progreso lento."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "Ajustes listos para PvP con daño, mapa y botín por muertes."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Multiplicadores altos para sesiones cortas, pruebas o eventos."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Ajustes conservadores para reducir carga de objetos y replicación."
+        }
+      },
+      "importReport": {
+        "title": "Informe De Importación",
+        "summary": "Leídos {known} conocidos, {unknown} desconocidos, {missing} faltantes.",
+        "known": "Cargados",
+        "unknown": "Desconocidos",
+        "missing": "Faltantes",
+        "none": "Ninguno"
+      }
+    },
+    "fr-FR": {
+      "languageName": "Français",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "Générateur de réglages PalWorld - Server 1.0"
+      },
+      "language": {
+        "label": "Langue",
+        "ariaLabel": "Choisir la langue de l'interface"
+      },
+      "actions": {
+        "share": "Partager le lien",
+        "theme": "Changer de thème",
+        "copy": "Copier dans le presse-papiers",
+        "download": "Télécharger la config",
+        "pastePlaceholder": "Coller la config",
+        "load": "Charger",
+        "add": "Ajouter"
+      },
+      "links": {
+        "officialStart": "Points de départ officiels :",
+        "dedicatedGuide": "Guide serveur dédié",
+        "balanceGuide": "Guide d'équilibrage serveur",
+        "communityGuide": "Guide serveur Community",
+        "commandsGuide": "Commandes serveur",
+        "feedback": "Problèmes et retours"
+      },
+      "sections": {
+        "game": "Paramètres du jeu　🕹️",
+        "server": "Paramètres serveur　🛠️"
+      },
+      "storage": {
+        "title": "Sauvegardes de config",
+        "description": "Enregistre le formulaire actuel dans ce navigateur. Jusqu'à 10 emplacements nommés peuvent être sauvegardés, renommés et chargés.",
+        "limit": "10 slots",
+        "slotLabel": "Emplacement",
+        "nameLabel": "Nom",
+        "namePlaceholder": "Exemple : réglages de guilde",
+        "save": "Sauvegarder la config",
+        "load": "Charger",
+        "rename": "Renommer",
+        "delete": "Vider",
+        "emptySlot": "Emplacement vide",
+        "saved": "\"{name}\" sauvegardé.",
+        "loaded": "\"{name}\" chargé.",
+        "renamed": "Renommé en \"{name}\".",
+        "deleted": "Emplacement {slot} vidé.",
+        "selectSavedSlot": "Choisissez d'abord un emplacement sauvegardé.",
+        "nameRequired": "Saisissez un nom.",
+        "compareA": "Comparer A",
+        "compareB": "Comparer B",
+        "compare": "Comparer",
+        "compareResultTitle": "Comparaison",
+        "compareSummary": "{count} différences entre {left} et {right}.",
+        "compareField": "Réglage",
+        "compareLeft": "Valeur A",
+        "compareRight": "Valeur B",
+        "compareSelectSaved": "Sélectionnez deux sauvegardes."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "J'ai trouvé cet outil de paramètres serveur PalWorld et je le recommande.",
+        "unsupported": "Votre navigateur ne prend pas en charge le partage."
+      },
+      "notifications": {
+        "copied": "Copié dans le presse-papiers. ✅",
+        "loaded": "Chargé avec succès. ✅"
+      },
+      "notes": {
+        "difficulty": "Affecte les taux et valeurs globaux."
+      },
+      "options": {
+        "easy": "Facile",
+        "difficult": "Difficile",
+        "noneDefault": "Aucun (défaut)",
+        "deathNone": "None - ne rien laisser tomber",
+        "deathItem": "Item - objets uniquement",
+        "deathItemEquipment": "ItemAndEquipment - objets et équipement",
+        "deathAllDefault": "All - tout laisser tomber, Pals d'équipe inclus (défaut)",
+        "open": "Activé",
+        "openDefault": "Activé (défaut)",
+        "close": "Désactivé",
+        "closeDefault": "Désactivé (défaut)",
+        "enable": "Activer",
+        "enableDefault": "Activer (défaut)",
+        "disable": "Désactiver",
+        "disableDefault": "Désactivé (défaut)",
+        "occurDefault": "Se produit (défaut)",
+        "notOccur": "Ne se produit pas",
+        "allow": "Autoriser",
+        "notAllowDefault": "Ne pas autoriser (défaut)",
+        "yes": "Oui",
+        "noDefault": "Non (défaut)",
+        "useDefault": "Utiliser (défaut)",
+        "doNotUse": "Ne pas utiliser"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Une valeur plus grande raccourcit le jour)",
+        "biggerNightShorter": "🔄(Une valeur plus grande raccourcit la nuit)",
+        "biggerLevelFaster": "🔄(Une valeur plus grande accélère la montée de niveau)",
+        "biggerChanceHigher": "🔄(Une valeur plus grande augmente les chances)",
+        "biggerQuantityMore": "🔄(Une valeur plus grande augmente la quantité)",
+        "biggerAttackHigher": "🔄(Une valeur plus grande augmente l'attaque)",
+        "smallerLessDamage": "🔄(Une valeur plus petite réduit les dégâts reçus)",
+        "smallerLessHungry": "🔄(Une valeur plus petite réduit la faim)",
+        "smallerStaminaSlower": "🔄(Une valeur plus petite ralentit la consommation d'endurance)",
+        "biggerHpRegenFaster": "🔄(Une valeur plus grande régénère les PV plus vite)",
+        "biggerHpRegenMore": "🔄(Une valeur plus grande régénère plus de PV)",
+        "biggerDamageMore": "🔄(Une valeur plus grande augmente les dégâts)",
+        "smallerDecaySlower": "🔄(Une valeur plus petite ralentit la détérioration)",
+        "biggerDropsMore": "🔄(Une valeur plus grande augmente les butins)",
+        "smallerRespawnFaster": "🔄(Une valeur plus petite fait réapparaître plus vite)",
+        "biggerDropsAllowed": "🔄(Une valeur plus grande autorise plus d'objets au sol)",
+        "biggerBasesAllowed": "🔄(Une valeur plus grande autorise plus de bases)",
+        "biggerPalsAllowed": "🔄(Une valeur plus grande autorise plus de Pals)",
+        "smallerDropsDisappearFaster": "🔄(Une valeur plus petite fait disparaître les objets plus vite)",
+        "smallerResetFaster": "🔄(Une valeur plus petite réinitialise plus vite)",
+        "biggerPlayersAllowed": "🔄(Une valeur plus grande autorise plus de joueurs)",
+        "smallerHatchFaster": "🔄(Une valeur plus petite accélère l'éclosion)",
+        "biggerWorkFaster": "🔄(Une valeur plus grande accélère le travail)",
+        "biggerCoopAllowed": "🔄(Une valeur plus grande autorise plus de joueurs coop)",
+        "biggerCapacityAllowed": "🔄(Une valeur plus grande autorise plus de joueurs serveur)"
+      },
+      "settings": {
+        "Difficulty": "Ajuste la difficulté globale du jeu",
+        "RandomizerType": "Type de randomiseur",
+        "RandomizerSeed": "Graine du randomiseur",
+        "bIsRandomizerPalLevelRandom": "Rendre les niveaux de Pal aléatoires",
+        "DayTimeSpeedRate": "Vitesse de progression du jour",
+        "NightTimeSpeedRate": "Vitesse de progression de la nuit",
+        "ExpRate": "Multiplicateur d'expérience",
+        "AutoSaveSpan": "Intervalle de sauvegarde automatique",
+        "PalCaptureRate": "Multiplicateur de chance de capture",
+        "PalSpawnNumRate": "Multiplicateur d'apparition des Pals",
+        "PalDamageRateAttack": "Multiplicateur de dégâts d'attaque des Pals",
+        "PalDamageRateDefense": "Multiplicateur de dégâts reçus par les Pals",
+        "PlayerDamageRateAttack": "Multiplicateur de dégâts d'attaque du joueur",
+        "PlayerDamageRateDefense": "Multiplicateur de dégâts reçus par le joueur",
+        "PlayerStomachDecreaceRate": "Multiplicateur de baisse de faim du joueur",
+        "PlayerStaminaDecreaceRate": "Multiplicateur de baisse d'endurance du joueur",
+        "PlayerAutoHPRegeneRate": "Multiplicateur de régénération naturelle des PV du joueur",
+        "PlayerAutoHpRegeneRateInSleep": "Multiplicateur de récupération des PV du joueur en sommeil",
+        "PalStomachDecreaceRate": "Multiplicateur de baisse de faim des Pals",
+        "PalStaminaDecreaceRate": "Multiplicateur de baisse d'endurance des Pals",
+        "PalAutoHPRegeneRate": "Multiplicateur de régénération naturelle des PV des Pals",
+        "PalAutoHpRegeneRateInSleep": "Multiplicateur de récupération des PV des Pals en sommeil",
+        "bAllowEnhanceStat_Health": "Autoriser l'amélioration de santé",
+        "bAllowEnhanceStat_Attack": "Autoriser l'amélioration d'attaque",
+        "bAllowEnhanceStat_Stamina": "Autoriser l'amélioration d'endurance",
+        "bAllowEnhanceStat_Weight": "Autoriser l'amélioration de poids",
+        "bAllowEnhanceStat_WorkSpeed": "Autoriser l'amélioration de vitesse de travail",
+        "PalEggDefaultHatchingTime": "Temps d'éclosion des énormes œufs (heures)",
+        "WorkSpeedRate": "Multiplicateur de vitesse de travail",
+        "CollectionDropRate": "Multiplicateur de quantité de collecte",
+        "CollectionObjectHpRate": "Multiplicateur de PV des objets récoltables",
+        "CollectionObjectRespawnSpeedRate": "Intervalle de réapparition des objets récoltables",
+        "EnemyDropItemRate": "Multiplicateur de butin d'objets",
+        "DropItemMaxNum": "Maximum d'objets au sol dans le monde",
+        "PhysicsActiveDropItemMaxNum": "Limite d'objets au sol avec physique",
+        "DropItemMaxNum_UNKO": "Maximum d'objets UNKO au sol",
+        "DropItemAliveMaxHours": "Durée maximale des objets au sol",
+        "ItemWeightRate": "Multiplicateur de poids des objets",
+        "EquipmentDurabilityDamageRate": "Multiplicateur de perte de durabilité d'équipement",
+        "ItemContainerForceMarkDirtyInterval": "Intervalle de mise à jour forcée des conteneurs",
+        "ItemCorruptionMultiplier": "Multiplicateur de corruption des objets",
+        "DenyTechnologyList": "Liste de technologies interdites",
+        "BuildObjectHpRate": "Multiplicateur de PV des bâtiments",
+        "BuildObjectDamageRate": "Multiplicateur de dégâts contre les structures",
+        "BuildObjectDeteriorationDamageRate": "Multiplicateur de détérioration des structures",
+        "BaseCampMaxNum": "Nombre maximum de bases",
+        "BaseCampWorkerMaxNum": "Maximum de Pals travailleurs par base",
+        "BaseCampMaxNumInGuild": "Limite de bases par guilde",
+        "bBuildAreaLimit": "Activer la limite de zone de construction",
+        "MaxBuildingLimitNum": "Limite maximale de constructions",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Masquer les effets de zone des bases d'autres guildes",
+        "bEnableBuildingPlayerUIdDisplay": "Afficher l'UID du joueur sur les bâtiments",
+        "BuildingNameDisplayCacheTTLSeconds": "TTL du cache d'affichage des noms de bâtiments",
+        "bAutoResetGuildNoOnlinePlayers": "Retirer automatiquement les joueurs hors ligne des guildes",
+        "AutoResetGuildTimeNoOnlinePlayers": "Délai de retrait automatique de guilde",
+        "GuildPlayerMaxNum": "Limite de joueurs de guilde",
+        "GuildRejoinCooldownMinutes": "Minutes de recharge avant de rejoindre une guilde",
+        "AutoTransferMasterCheckIntervalSeconds": "Intervalle de vérification du transfert automatique du chef",
+        "AutoTransferMasterThresholdDays": "Seuil en jours pour le transfert automatique du chef",
+        "MaxGuildsPerFrame": "Guildes maximum traitées par image",
+        "DeathPenalty": "Pénalité de mort",
+        "bHardcore": "Mode Hardcore",
+        "bPalLost": "Mode Pal Lost",
+        "bCharacterRecreateInHardcore": "Autoriser la recréation du personnage en Hardcore",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Autoriser le ramassage des butins de mort d'autres guildes",
+        "BlockRespawnTime": "Temps de blocage de réapparition",
+        "RespawnPenaltyDurationThreshold": "Seuil de durée de pénalité de réapparition",
+        "RespawnPenaltyTimeScale": "Échelle de temps de pénalité de réapparition",
+        "bEnablePlayerToPlayerDamage": "Activer les dégâts entre joueurs",
+        "bEnableFriendlyFire": "Activer le tir ami",
+        "bIsPvP": "Mode PvP",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "Afficher les objets PvP des bases sur la carte",
+        "bDisplayPvPItemNumOnWorldMap_Player": "Afficher les objets PvP des joueurs sur la carte",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Objet supplémentaire lors d'une élimination PvP",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Nombre d'objets supplémentaires lors d'une élimination PvP",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Activer le butin supplémentaire lors d'une élimination PvP",
+        "bIsMultiplay": "Multijoueur",
+        "CoopPlayerMaxNum": "Limite de joueurs coop",
+        "ServerPlayerMaxNum": "Limite de joueurs serveur",
+        "ServerName": "Nom du serveur",
+        "ServerDescription": "Description du serveur",
+        "AdminPassword": "Mot de passe administrateur",
+        "ServerPassword": "Mot de passe serveur",
+        "PublicPort": "Port public",
+        "PublicIP": "IP publique",
+        "Region": "Région",
+        "CrossplayPlatforms": "Plateformes crossplay",
+        "bIsShowJoinLeftMessage": "Afficher les messages d'arrivée et de départ",
+        "bAllowClientMod": "Autoriser les Client Mods",
+        "RCONEnabled": "RCON activé",
+        "RCONPort": "Port RCON",
+        "RESTAPIEnabled": "Activer REST API",
+        "RESTAPIPort": "Port REST API",
+        "bShowPlayerList": "Afficher la liste des joueurs",
+        "ChatPostLimitPerMinute": "Limite de messages de chat par minute",
+        "bUseAuth": "Utiliser l'authentification",
+        "BanListURL": "URL de la liste de blocage",
+        "bEnableInvaderEnemy": "Déclenchement des raids",
+        "bActiveUNKO": "Activer UNKO",
+        "bEnableAimAssistPad": "Activer l'aide à la visée manette",
+        "bEnableAimAssistKeyboard": "Activer l'aide à la visée clavier",
+        "bEnableNonLoginPenalty": "Activer la pénalité de non-connexion",
+        "bEnableFastTravel": "Activer le voyage rapide",
+        "bEnableFastTravelOnlyBaseCamp": "Voyage rapide limité aux bases",
+        "bIsStartLocationSelectByMap": "Autoriser le choix du point de départ",
+        "bExistPlayerAfterLogout": "Le joueur reste après déconnexion",
+        "bEnableDefenseOtherGuildPlayer": "Dégâts reçus d'autres guildes",
+        "bIsUseBackupSaveData": "Utiliser les données de sauvegarde de secours",
+        "LogFormatType": "Type de format de log",
+        "SupplyDropSpan": "Intervalle de largage de ravitaillement",
+        "EnablePredatorBossPal": "Activer Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "Distance de culling de réplication Pawn serveur",
+        "bAllowGlobalPalboxExport": "Autoriser l'export Global Palbox",
+        "bAllowGlobalPalboxImport": "Autoriser l'import Global Palbox",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Intervalle Tick de vérification du stockage Pal joueur",
+        "MonsterFarmActionSpeedRate": "Multiplicateur de vitesse d'action de ferme",
+        "bEnableVoiceChat": "Activer le chat vocal",
+        "VoiceChatMaxVolumeDistance": "Distance de volume vocal maximal",
+        "VoiceChatZeroVolumeDistance": "Distance de volume vocal nul"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Règles De Base Du Monde",
+          "description": "Difficulté, randomiseur, vitesse jour-nuit, expérience et autres réglages du monde."
+        },
+        "palPlayerRates": {
+          "label": "Multiplicateurs Pal Et Joueur",
+          "description": "Ajuste Pal, joueur, incubation, vitesse de travail et améliorations de stats."
+        },
+        "itemsDrops": {
+          "label": "Récolte, Butin Et Objets",
+          "description": "Gère rendement, limites d'objets au sol, poids, durabilité et corruption."
+        },
+        "buildingBase": {
+          "label": "Bâtiments Et Bases",
+          "description": "Contrôle PV des bâtiments, détérioration, limites de bases et affichage."
+        },
+        "guild": {
+          "label": "Guilde Et Limites Multijoueur",
+          "description": "Configure taille de guilde, réinitialisation hors ligne et transfert automatique du chef."
+        },
+        "deathRespawn": {
+          "label": "Mort, Réapparition Et Pénalités",
+          "description": "Ajuste pénalités de mort, Hardcore, Pal Lost et pénalités de réapparition."
+        },
+        "pvpCombat": {
+          "label": "PvP Et Règles De Combat",
+          "description": "Gère PvP, tir allié et butin supplémentaire lors des éliminations de joueurs."
+        },
+        "serverPublic": {
+          "label": "Connexion Serveur Et Infos Publiques",
+          "description": "Définit nom, mots de passe, IP publique, ports et plateformes crossplay."
+        },
+        "adminApiSecurity": {
+          "label": "Administration, API Et Sécurité",
+          "description": "Configure RCON, REST API, authentification, limites de chat et listes de bannissement."
+        },
+        "advancedSystem": {
+          "label": "Système Avancé Et Performances",
+          "description": "Comportements système, voyage rapide, sauvegardes, voix et performances."
+        }
+      },
+      "boolean": {
+        "True": "Activé",
+        "False": "Désactivé"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Non défini",
+          "Easy": "Facile",
+          "Difficult": "Difficile"
+        },
+        "DeathPenalty": {
+          "None": "Aucune",
+          "Item": "Objets",
+          "ItemAndEquipment": "Objets et équipement",
+          "All": "Tout"
+        }
+      },
+      "tools": {
+        "searchLabel": "Rechercher",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Afficher les modifiés",
+        "modifiedBadge": "Modifié",
+        "clearFilters": "Effacer",
+        "expandAll": "Tout ouvrir",
+        "collapseAll": "Tout fermer",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} affichés, {modified} modifiés."
+      },
+      "templates": {
+        "title": "Modèles De Configuration",
+        "selectLabel": "Modèle",
+        "apply": "Appliquer",
+        "applied": "\"{name}\" appliqué.",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "PvE détendu avec progression rapide et pression de mort réduite."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "Survie à haut risque avec mort sévère et progression lente."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "Réglages PvP avec dégâts, carte et butin d'élimination."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Multiplicateurs élevés pour sessions courtes, tests ou événements."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Réglages conservateurs réduisant objets au sol et réplication."
+        }
+      },
+      "importReport": {
+        "title": "Rapport D'Import",
+        "summary": "{known} connus, {unknown} inconnus, {missing} manquants.",
+        "known": "Chargés",
+        "unknown": "Inconnus",
+        "missing": "Manquants",
+        "none": "Aucun"
+      }
+    },
+    "de-DE": {
+      "languageName": "Deutsch",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "PalWorld-Einstellungsgenerator - Server 1.0"
+      },
+      "language": {
+        "label": "Sprache",
+        "ariaLabel": "Sprache der Oberfläche auswählen"
+      },
+      "actions": {
+        "share": "Link teilen",
+        "theme": "Design wechseln",
+        "copy": "In Zwischenablage kopieren",
+        "download": "Konfig herunterladen",
+        "pastePlaceholder": "Konfig einfügen",
+        "load": "Laden",
+        "add": "Hinzufügen"
+      },
+      "links": {
+        "officialStart": "Offizielle Startpunkte:",
+        "dedicatedGuide": "Dedicated-Server-Anleitung",
+        "balanceGuide": "Server-Balance-Anleitung",
+        "communityGuide": "Community-Server-Anleitung",
+        "commandsGuide": "Serverbefehle",
+        "feedback": "Probleme & Feedback"
+      },
+      "sections": {
+        "game": "Spieleinstellungen　🕹️",
+        "server": "Servereinstellungen　🛠️"
+      },
+      "storage": {
+        "title": "Konfig-Backups",
+        "description": "Speichert das aktuelle Formular in diesem Browser. Bis zu 10 benannte Slots können gespeichert, umbenannt und geladen werden.",
+        "limit": "10 slots",
+        "slotLabel": "Backup-Slot",
+        "nameLabel": "Name",
+        "namePlaceholder": "Beispiel: Gildenraten",
+        "save": "Aktuelle Konfig speichern",
+        "load": "Laden",
+        "rename": "Umbenennen",
+        "delete": "Leeren",
+        "emptySlot": "Leerer Slot",
+        "saved": "\"{name}\" gespeichert.",
+        "loaded": "\"{name}\" geladen.",
+        "renamed": "In \"{name}\" umbenannt.",
+        "deleted": "Slot {slot} geleert.",
+        "selectSavedSlot": "Wähle zuerst einen gespeicherten Slot.",
+        "nameRequired": "Gib einen Backup-Namen ein.",
+        "compareA": "Vergleich A",
+        "compareB": "Vergleich B",
+        "compare": "Backups vergleichen",
+        "compareResultTitle": "Backupvergleich",
+        "compareSummary": "{count} Unterschiede zwischen {left} und {right}.",
+        "compareField": "Einstellung",
+        "compareLeft": "A-Wert",
+        "compareRight": "B-Wert",
+        "compareSelectSaved": "Wählen Sie zwei gespeicherte Backups."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "Ich habe dieses PalWorld-Servereinstellungstool gefunden und empfehle es.",
+        "unsupported": "Dein Browser unterstützt Teilen nicht."
+      },
+      "notifications": {
+        "copied": "In die Zwischenablage kopiert. ✅",
+        "loaded": "Erfolgreich geladen. ✅"
+      },
+      "notes": {
+        "difficulty": "Beeinflusst allgemeine Raten und Werte."
+      },
+      "options": {
+        "easy": "Einfach",
+        "difficult": "Schwer",
+        "noneDefault": "Keine (Standard)",
+        "deathNone": "None - nichts fallen lassen",
+        "deathItem": "Item - nur Gegenstände fallen lassen",
+        "deathItemEquipment": "ItemAndEquipment - Gegenstände und Ausrüstung fallen lassen",
+        "deathAllDefault": "All - alles fallen lassen, inklusive Team-Pals (Standard)",
+        "open": "Ein",
+        "openDefault": "Ein (Standard)",
+        "close": "Aus",
+        "closeDefault": "Aus (Standard)",
+        "enable": "Aktivieren",
+        "enableDefault": "Aktivieren (Standard)",
+        "disable": "Deaktivieren",
+        "disableDefault": "Deaktiviert (Standard)",
+        "occurDefault": "Tritt auf (Standard)",
+        "notOccur": "Tritt nicht auf",
+        "allow": "Erlauben",
+        "notAllowDefault": "Nicht erlauben (Standard)",
+        "yes": "Ja",
+        "noDefault": "Nein (Standard)",
+        "useDefault": "Verwenden (Standard)",
+        "doNotUse": "Nicht verwenden"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Höherer Wert macht den Tag kürzer)",
+        "biggerNightShorter": "🔄(Höherer Wert macht die Nacht kürzer)",
+        "biggerLevelFaster": "🔄(Höherer Wert levelt schneller)",
+        "biggerChanceHigher": "🔄(Höherer Wert erhöht die Chance)",
+        "biggerQuantityMore": "🔄(Höherer Wert erhöht die Menge)",
+        "biggerAttackHigher": "🔄(Höherer Wert erhöht Angriff)",
+        "smallerLessDamage": "🔄(Niedrigerer Wert verringert erlittenen Schaden)",
+        "smallerLessHungry": "🔄(Niedrigerer Wert verringert Hunger)",
+        "smallerStaminaSlower": "🔄(Niedrigerer Wert verlangsamt Ausdauerverbrauch)",
+        "biggerHpRegenFaster": "🔄(Höherer Wert regeneriert HP schneller)",
+        "biggerHpRegenMore": "🔄(Höherer Wert regeneriert mehr HP)",
+        "biggerDamageMore": "🔄(Höherer Wert erhöht Schaden)",
+        "smallerDecaySlower": "🔄(Niedrigerer Wert verlangsamt Verfall)",
+        "biggerDropsMore": "🔄(Höherer Wert erhöht Drops)",
+        "smallerRespawnFaster": "🔄(Niedrigerer Wert lässt schneller respawnen)",
+        "biggerDropsAllowed": "🔄(Höherer Wert erlaubt mehr Drops)",
+        "biggerBasesAllowed": "🔄(Höherer Wert erlaubt mehr Basen)",
+        "biggerPalsAllowed": "🔄(Höherer Wert erlaubt mehr Pals)",
+        "smallerDropsDisappearFaster": "🔄(Niedrigerer Wert lässt Drops schneller verschwinden)",
+        "smallerResetFaster": "🔄(Niedrigerer Wert setzt schneller zurück)",
+        "biggerPlayersAllowed": "🔄(Höherer Wert erlaubt mehr Spieler)",
+        "smallerHatchFaster": "🔄(Niedrigerer Wert brütet schneller)",
+        "biggerWorkFaster": "🔄(Höherer Wert arbeitet schneller)",
+        "biggerCoopAllowed": "🔄(Höherer Wert erlaubt mehr Koop-Spieler)",
+        "biggerCapacityAllowed": "🔄(Höherer Wert erlaubt mehr Server-Spieler)"
+      },
+      "settings": {
+        "Difficulty": "Passt die allgemeine Spielschwierigkeit an",
+        "RandomizerType": "Zufallsgenerator-Typ",
+        "RandomizerSeed": "Zufallsgenerator-Seed",
+        "bIsRandomizerPalLevelRandom": "Pal-Level zufällig machen",
+        "DayTimeSpeedRate": "Tageszeit-Geschwindigkeit",
+        "NightTimeSpeedRate": "Nachtzeit-Geschwindigkeit",
+        "ExpRate": "Erfahrungsmultiplikator",
+        "AutoSaveSpan": "Autospeicher-Intervall",
+        "PalCaptureRate": "Fangchancen-Multiplikator",
+        "PalSpawnNumRate": "Pal-Spawnanzahl-Multiplikator",
+        "PalDamageRateAttack": "Pal-Angriffsschaden-Multiplikator",
+        "PalDamageRateDefense": "Pal-Schadenserhalt-Multiplikator",
+        "PlayerDamageRateAttack": "Spieler-Angriffsschaden-Multiplikator",
+        "PlayerDamageRateDefense": "Spieler-Schadenserhalt-Multiplikator",
+        "PlayerStomachDecreaceRate": "Spieler-Hungerabnahme-Multiplikator",
+        "PlayerStaminaDecreaceRate": "Spieler-Ausdauerabnahme-Multiplikator",
+        "PlayerAutoHPRegeneRate": "Natürliche HP-Regeneration des Spielers",
+        "PlayerAutoHpRegeneRateInSleep": "HP-Regeneration des Spielers im Schlaf",
+        "PalStomachDecreaceRate": "Pal-Hungerabnahme-Multiplikator",
+        "PalStaminaDecreaceRate": "Pal-Ausdauerabnahme-Multiplikator",
+        "PalAutoHPRegeneRate": "Natürliche HP-Regeneration der Pals",
+        "PalAutoHpRegeneRateInSleep": "HP-Regeneration der Pals im Schlaf",
+        "bAllowEnhanceStat_Health": "Gesundheitsverstärkung erlauben",
+        "bAllowEnhanceStat_Attack": "Angriffsverstärkung erlauben",
+        "bAllowEnhanceStat_Stamina": "Ausdauerverstärkung erlauben",
+        "bAllowEnhanceStat_Weight": "Gewichtsverstärkung erlauben",
+        "bAllowEnhanceStat_WorkSpeed": "Arbeitsgeschwindigkeit-Verstärkung erlauben",
+        "PalEggDefaultHatchingTime": "Brutzeit großer Eier (Stunden)",
+        "WorkSpeedRate": "Arbeitsgeschwindigkeits-Multiplikator",
+        "CollectionDropRate": "Sammelobjekt-Mengenmultiplikator",
+        "CollectionObjectHpRate": "HP-Multiplikator sammelbarer Objekte",
+        "CollectionObjectRespawnSpeedRate": "Respawn-Intervall sammelbarer Objekte",
+        "EnemyDropItemRate": "Item-Dropmengen-Multiplikator",
+        "DropItemMaxNum": "Maximale Drops in der Welt",
+        "PhysicsActiveDropItemMaxNum": "Limit für Drops mit Physik",
+        "DropItemMaxNum_UNKO": "Maximale UNKO-Drops",
+        "DropItemAliveMaxHours": "Maximale Lebensdauer von Drops",
+        "ItemWeightRate": "Gegenstandsgewicht-Multiplikator",
+        "EquipmentDurabilityDamageRate": "Ausrüstungshaltbarkeit-Schadensmultiplikator",
+        "ItemContainerForceMarkDirtyInterval": "Intervall für erzwungene Container-Aktualisierung",
+        "ItemCorruptionMultiplier": "Gegenstandsverderb-Multiplikator",
+        "DenyTechnologyList": "Liste gesperrter Technologien",
+        "BuildObjectHpRate": "Gebäude-HP-Multiplikator",
+        "BuildObjectDamageRate": "Schaden gegen Strukturen",
+        "BuildObjectDeteriorationDamageRate": "Strukturverfall-Multiplikator",
+        "BaseCampMaxNum": "Maximale Anzahl an Basen",
+        "BaseCampWorkerMaxNum": "Maximale Arbeits-Pals pro Basis",
+        "BaseCampMaxNumInGuild": "Basislimit pro Gilde",
+        "bBuildAreaLimit": "Baubereichslimit aktivieren",
+        "MaxBuildingLimitNum": "Maximales Gebäudelimit",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Bereichseffekte fremder Gildenbasen ausblenden",
+        "bEnableBuildingPlayerUIdDisplay": "Spieler-UID an Gebäuden anzeigen",
+        "BuildingNameDisplayCacheTTLSeconds": "Cache-TTL für Gebäudenamenanzeige",
+        "bAutoResetGuildNoOnlinePlayers": "Offline-Spieler automatisch aus Gilden entfernen",
+        "AutoResetGuildTimeNoOnlinePlayers": "Zeit bis zum automatischen Gilden-Reset",
+        "GuildPlayerMaxNum": "Gilden-Spielerlimit",
+        "GuildRejoinCooldownMinutes": "Abklingzeit für Gildenbeitritt in Minuten",
+        "AutoTransferMasterCheckIntervalSeconds": "Prüfintervall für automatische Meisterübertragung",
+        "AutoTransferMasterThresholdDays": "Tagesschwelle für automatische Meisterübertragung",
+        "MaxGuildsPerFrame": "Maximal verarbeitete Gilden pro Frame",
+        "DeathPenalty": "Todesstrafe",
+        "bHardcore": "Hardcore-Modus",
+        "bPalLost": "Pal Lost-Modus",
+        "bCharacterRecreateInHardcore": "Charakter-Neuerstellung in Hardcore erlauben",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Todesdrops anderer Gilden aufheben",
+        "BlockRespawnTime": "Respawn-Sperrzeit",
+        "RespawnPenaltyDurationThreshold": "Dauerschwelle der Respawn-Strafe",
+        "RespawnPenaltyTimeScale": "Zeitskalierung der Respawn-Strafe",
+        "bEnablePlayerToPlayerDamage": "Spieler-gegen-Spieler-Schaden aktivieren",
+        "bEnableFriendlyFire": "Friendly Fire aktivieren",
+        "bIsPvP": "PvP-Modus",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "PvP-Gegenstandsanzahl von Basen auf Weltkarte anzeigen",
+        "bDisplayPvPItemNumOnWorldMap_Player": "PvP-Gegenstandsanzahl von Spielern auf Weltkarte anzeigen",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Zusatzdrop bei PvP-Spielerkills",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Anzahl Zusatzdrops bei PvP-Spielerkills",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Zusatzdrops bei PvP-Spielerkills aktivieren",
+        "bIsMultiplay": "Mehrspieler",
+        "CoopPlayerMaxNum": "Koop-Spielerlimit",
+        "ServerPlayerMaxNum": "Server-Spielerlimit",
+        "ServerName": "Servername",
+        "ServerDescription": "Serverbeschreibung",
+        "AdminPassword": "Admin-Passwort",
+        "ServerPassword": "Server-Passwort",
+        "PublicPort": "Öffentlicher Port",
+        "PublicIP": "Öffentliche IP",
+        "Region": "Region",
+        "CrossplayPlatforms": "Crossplay-Plattformen",
+        "bIsShowJoinLeftMessage": "Beitritts- und Verlassensmeldungen anzeigen",
+        "bAllowClientMod": "Client Mods erlauben",
+        "RCONEnabled": "RCON aktiviert",
+        "RCONPort": "RCON-Port",
+        "RESTAPIEnabled": "REST API aktivieren",
+        "RESTAPIPort": "REST API-Port",
+        "bShowPlayerList": "Spielerliste anzeigen",
+        "ChatPostLimitPerMinute": "Chatnachrichten-Limit pro Minute",
+        "bUseAuth": "Authentifizierung verwenden",
+        "BanListURL": "Banlisten-URL",
+        "bEnableInvaderEnemy": "Ob Raid-Ereignisse auftreten",
+        "bActiveUNKO": "UNKO aktivieren",
+        "bEnableAimAssistPad": "Controller-Zielhilfe aktivieren",
+        "bEnableAimAssistKeyboard": "Tastatur-Zielhilfe aktivieren",
+        "bEnableNonLoginPenalty": "Nicht-Login-Strafe aktivieren",
+        "bEnableFastTravel": "Schnellreise aktivieren",
+        "bEnableFastTravelOnlyBaseCamp": "Schnellreise nur zwischen Basen",
+        "bIsStartLocationSelectByMap": "Startpunktwahl für neue Charaktere",
+        "bExistPlayerAfterLogout": "Spieler bleibt nach Logout bestehen",
+        "bEnableDefenseOtherGuildPlayer": "Schaden von anderen Gilden",
+        "bIsUseBackupSaveData": "Backup-Speicherdaten verwenden",
+        "LogFormatType": "Logformat-Typ",
+        "SupplyDropSpan": "Versorgungsdrop-Intervall",
+        "EnablePredatorBossPal": "Predator Boss Pal aktivieren",
+        "ServerReplicatePawnCullDistance": "Server-Pawn-Replikations-Cull-Distanz",
+        "bAllowGlobalPalboxExport": "Global Palbox-Export erlauben",
+        "bAllowGlobalPalboxImport": "Global Palbox-Import erlauben",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Tick-Intervall für Spieler-Pal-Speicherprüfung",
+        "MonsterFarmActionSpeedRate": "Aktionsgeschwindigkeit der Farm",
+        "bEnableVoiceChat": "Voice-Chat aktivieren",
+        "VoiceChatMaxVolumeDistance": "Maximale Voice-Chat-Lautstärkedistanz",
+        "VoiceChatZeroVolumeDistance": "Voice-Chat-Null-Lautstärkedistanz"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Grundlegende Weltregeln",
+          "description": "Schwierigkeit, Zufallsgenerator, Tag-Nacht-Tempo, Erfahrung und zentrale Welteinstellungen."
+        },
+        "palPlayerRates": {
+          "label": "Pal- Und Spieler-Multiplikatoren",
+          "description": "Passt Pal, Spieler, Ausbrüten, Arbeitsgeschwindigkeit und Attributverstärkung an."
+        },
+        "itemsDrops": {
+          "label": "Sammeln, Drops Und Gegenstände",
+          "description": "Verwaltet Sammelertrag, Drop-Limits, Gewicht, Haltbarkeit und Verderb."
+        },
+        "buildingBase": {
+          "label": "Bauen Und Basen",
+          "description": "Steuert Gebäude-HP, Verfall, Basislimits und Anzeige von Gebäuden."
+        },
+        "guild": {
+          "label": "Gilde Und Multiplayer-Limits",
+          "description": "Konfiguriert Gildengröße, Offline-Reset und automatische Meisterübertragung."
+        },
+        "deathRespawn": {
+          "label": "Tod, Respawn Und Strafen",
+          "description": "Passt Todesstrafe, Hardcore, Pal Lost und Respawn-Strafen an."
+        },
+        "pvpCombat": {
+          "label": "PvP Und Kampfregeln",
+          "description": "Verwaltet PvP, Friendly Fire und Zusatzdrops bei Spielerkills."
+        },
+        "serverPublic": {
+          "label": "Serververbindung Und Öffentliche Infos",
+          "description": "Legt Servername, Passwörter, öffentliche IP, Ports und Crossplay-Plattformen fest."
+        },
+        "adminApiSecurity": {
+          "label": "Admin, API Und Sicherheit",
+          "description": "Konfiguriert RCON, REST API, Authentifizierung, Chatlimits und Bannlisten."
+        },
+        "advancedSystem": {
+          "label": "Erweitertes System Und Leistung",
+          "description": "Sonstiges Systemverhalten, Schnellreise, Backups, Sprache und Leistung."
+        }
+      },
+      "boolean": {
+        "True": "Aktiviert",
+        "False": "Deaktiviert"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Nicht festgelegt",
+          "Easy": "Einfach",
+          "Difficult": "Schwer"
+        },
+        "DeathPenalty": {
+          "None": "Keine",
+          "Item": "Gegenstände",
+          "ItemAndEquipment": "Gegenstände und Ausrüstung",
+          "All": "Alles"
+        }
+      },
+      "tools": {
+        "searchLabel": "Suchen",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Nur geänderte anzeigen",
+        "modifiedBadge": "Geändert",
+        "clearFilters": "Leeren",
+        "expandAll": "Alle öffnen",
+        "collapseAll": "Alle schließen",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} angezeigt, {modified} geändert."
+      },
+      "templates": {
+        "title": "Konfigurationsvorlagen",
+        "selectLabel": "Vorlage",
+        "apply": "Vorlage anwenden",
+        "applied": "\"{name}\" angewendet.",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "Entspanntes PvE mit schnellerem Fortschritt und milderen Todesfolgen."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "Risikoreiches Überleben mit härterem Tod und langsamem Wachstum."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP-Einstellungen mit Schaden, Kartenanzeige und Kill-Drops."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Hohe Multiplikatoren für kurze Sessions, Tests oder Events."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Konservative Einstellungen für weniger Item- und Replikationslast."
+        }
+      },
+      "importReport": {
+        "title": "Importbericht",
+        "summary": "{known} bekannte, {unknown} unbekannte, {missing} fehlende Einstellungen gelesen.",
+        "known": "Geladen",
+        "unknown": "Unbekannt",
+        "missing": "Fehlend",
+        "none": "Keine"
+      }
+    },
+    "pt-BR": {
+      "languageName": "Português",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "Gerador de configurações PalWorld - Server 1.0"
+      },
+      "language": {
+        "label": "Idioma",
+        "ariaLabel": "Escolher idioma da interface"
+      },
+      "actions": {
+        "share": "Compartilhar link",
+        "theme": "Alternar tema",
+        "copy": "Copiar para a área de transferência",
+        "download": "Baixar configuração",
+        "pastePlaceholder": "Colar configuração",
+        "load": "Carregar",
+        "add": "Adicionar"
+      },
+      "links": {
+        "officialStart": "Pontos de partida oficiais:",
+        "dedicatedGuide": "Guia de servidor dedicado",
+        "balanceGuide": "Guia de balanceamento do servidor",
+        "communityGuide": "Guia de servidor Community",
+        "commandsGuide": "Comandos do servidor",
+        "feedback": "Problemas e feedback"
+      },
+      "sections": {
+        "game": "Configurações do jogo　🕹️",
+        "server": "Configurações do servidor　🛠️"
+      },
+      "storage": {
+        "title": "Backups de configuração",
+        "description": "Salve o formulário atual neste navegador. Até 10 slots nomeados podem ser salvos, renomeados e carregados.",
+        "limit": "10 slots",
+        "slotLabel": "Slot de backup",
+        "nameLabel": "Nome",
+        "namePlaceholder": "Exemplo: ajustes da guilda",
+        "save": "Salvar configuração atual",
+        "load": "Carregar",
+        "rename": "Renomear",
+        "delete": "Limpar",
+        "emptySlot": "Slot vazio",
+        "saved": "\"{name}\" salvo.",
+        "loaded": "\"{name}\" carregado.",
+        "renamed": "Renomeado para \"{name}\".",
+        "deleted": "Slot {slot} limpo.",
+        "selectSavedSlot": "Selecione primeiro um slot salvo.",
+        "nameRequired": "Digite um nome para o backup.",
+        "compareA": "Comparar A",
+        "compareB": "Comparar B",
+        "compare": "Comparar backups",
+        "compareResultTitle": "Comparação de backups",
+        "compareSummary": "{count} diferenças entre {left} e {right}.",
+        "compareField": "Configuração",
+        "compareLeft": "Valor A",
+        "compareRight": "Valor B",
+        "compareSelectSaved": "Selecione dois backups salvos."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "Encontrei esta ferramenta de configurações de servidor PalWorld e recomendo.",
+        "unsupported": "Seu navegador não oferece suporte ao compartilhamento."
+      },
+      "notifications": {
+        "copied": "Copiado para a área de transferência. ✅",
+        "loaded": "Carregado com sucesso. ✅"
+      },
+      "notes": {
+        "difficulty": "Afeta taxas e valores gerais."
+      },
+      "options": {
+        "easy": "Fácil",
+        "difficult": "Difícil",
+        "noneDefault": "Nenhum (padrão)",
+        "deathNone": "None - não soltar nada",
+        "deathItem": "Item - soltar apenas itens",
+        "deathItemEquipment": "ItemAndEquipment - soltar itens e equipamentos",
+        "deathAllDefault": "All - soltar tudo, incluindo Pals do grupo (padrão)",
+        "open": "Ligado",
+        "openDefault": "Ligado (padrão)",
+        "close": "Desligado",
+        "closeDefault": "Desligado (padrão)",
+        "enable": "Ativar",
+        "enableDefault": "Ativar (padrão)",
+        "disable": "Desativar",
+        "disableDefault": "Desativado (padrão)",
+        "occurDefault": "Ocorre (padrão)",
+        "notOccur": "Não ocorre",
+        "allow": "Permitir",
+        "notAllowDefault": "Não permitir (padrão)",
+        "yes": "Sim",
+        "noDefault": "Não (padrão)",
+        "useDefault": "Usar (padrão)",
+        "doNotUse": "Não usar"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Valor maior deixa o dia mais curto)",
+        "biggerNightShorter": "🔄(Valor maior deixa a noite mais curta)",
+        "biggerLevelFaster": "🔄(Valor maior acelera o nível)",
+        "biggerChanceHigher": "🔄(Valor maior aumenta a chance)",
+        "biggerQuantityMore": "🔄(Valor maior aumenta a quantidade)",
+        "biggerAttackHigher": "🔄(Valor maior aumenta o ataque)",
+        "smallerLessDamage": "🔄(Valor menor reduz o dano recebido)",
+        "smallerLessHungry": "🔄(Valor menor reduz a fome)",
+        "smallerStaminaSlower": "🔄(Valor menor reduz o gasto de stamina)",
+        "biggerHpRegenFaster": "🔄(Valor maior regenera HP mais rápido)",
+        "biggerHpRegenMore": "🔄(Valor maior regenera mais HP)",
+        "biggerDamageMore": "🔄(Valor maior aumenta o dano)",
+        "smallerDecaySlower": "🔄(Valor menor reduz a deterioração)",
+        "biggerDropsMore": "🔄(Valor maior aumenta os drops)",
+        "smallerRespawnFaster": "🔄(Valor menor reaparece mais rápido)",
+        "biggerDropsAllowed": "🔄(Valor maior permite mais itens dropados)",
+        "biggerBasesAllowed": "🔄(Valor maior permite mais bases)",
+        "biggerPalsAllowed": "🔄(Valor maior permite mais Pals)",
+        "smallerDropsDisappearFaster": "🔄(Valor menor faz drops sumirem mais rápido)",
+        "smallerResetFaster": "🔄(Valor menor reinicia mais rápido)",
+        "biggerPlayersAllowed": "🔄(Valor maior permite mais jogadores)",
+        "smallerHatchFaster": "🔄(Valor menor choca mais rápido)",
+        "biggerWorkFaster": "🔄(Valor maior trabalha mais rápido)",
+        "biggerCoopAllowed": "🔄(Valor maior permite mais jogadores cooperativos)",
+        "biggerCapacityAllowed": "🔄(Valor maior permite mais jogadores no servidor)"
+      },
+      "settings": {
+        "Difficulty": "Ajusta a dificuldade geral do jogo",
+        "RandomizerType": "Tipo de randomizador",
+        "RandomizerSeed": "Semente do randomizador",
+        "bIsRandomizerPalLevelRandom": "Randomizar níveis dos Pal",
+        "DayTimeSpeedRate": "Velocidade de progressão do dia",
+        "NightTimeSpeedRate": "Velocidade de progressão da noite",
+        "ExpRate": "Multiplicador de experiência",
+        "AutoSaveSpan": "Intervalo de salvamento automático",
+        "PalCaptureRate": "Multiplicador de chance de captura",
+        "PalSpawnNumRate": "Multiplicador de aparição de Pals",
+        "PalDamageRateAttack": "Multiplicador de dano de ataque dos Pals",
+        "PalDamageRateDefense": "Multiplicador de dano recebido pelos Pals",
+        "PlayerDamageRateAttack": "Multiplicador de dano de ataque do jogador",
+        "PlayerDamageRateDefense": "Multiplicador de dano recebido pelo jogador",
+        "PlayerStomachDecreaceRate": "Multiplicador de redução de fome do jogador",
+        "PlayerStaminaDecreaceRate": "Multiplicador de redução de stamina do jogador",
+        "PlayerAutoHPRegeneRate": "Multiplicador de regeneração natural de HP do jogador",
+        "PlayerAutoHpRegeneRateInSleep": "Multiplicador de recuperação de HP do jogador dormindo",
+        "PalStomachDecreaceRate": "Multiplicador de redução de fome dos Pals",
+        "PalStaminaDecreaceRate": "Multiplicador de redução de stamina dos Pals",
+        "PalAutoHPRegeneRate": "Multiplicador de regeneração natural de HP dos Pals",
+        "PalAutoHpRegeneRateInSleep": "Multiplicador de recuperação de HP dos Pals dormindo",
+        "bAllowEnhanceStat_Health": "Permitir melhoria de vida",
+        "bAllowEnhanceStat_Attack": "Permitir melhoria de ataque",
+        "bAllowEnhanceStat_Stamina": "Permitir melhoria de stamina",
+        "bAllowEnhanceStat_Weight": "Permitir melhoria de peso",
+        "bAllowEnhanceStat_WorkSpeed": "Permitir melhoria de velocidade de trabalho",
+        "PalEggDefaultHatchingTime": "Tempo de incubação de ovo enorme (horas)",
+        "WorkSpeedRate": "Multiplicador de velocidade de trabalho",
+        "CollectionDropRate": "Multiplicador de quantidade coletada",
+        "CollectionObjectHpRate": "Multiplicador de HP de objetos coletáveis",
+        "CollectionObjectRespawnSpeedRate": "Intervalo de reaparecimento de objetos coletáveis",
+        "EnemyDropItemRate": "Multiplicador de quantidade de drops",
+        "DropItemMaxNum": "Máximo de itens dropados no mundo",
+        "PhysicsActiveDropItemMaxNum": "Limite de itens dropados com física",
+        "DropItemMaxNum_UNKO": "Máximo de itens UNKO dropados",
+        "DropItemAliveMaxHours": "Tempo máximo de permanência dos drops",
+        "ItemWeightRate": "Multiplicador de peso dos itens",
+        "EquipmentDurabilityDamageRate": "Multiplicador de dano à durabilidade do equipamento",
+        "ItemContainerForceMarkDirtyInterval": "Intervalo de atualização forçada de contêineres",
+        "ItemCorruptionMultiplier": "Multiplicador de deterioração dos itens",
+        "DenyTechnologyList": "Lista de tecnologias proibidas",
+        "BuildObjectHpRate": "Multiplicador de vida das construções",
+        "BuildObjectDamageRate": "Multiplicador de dano contra estruturas",
+        "BuildObjectDeteriorationDamageRate": "Multiplicador de deterioração de estruturas",
+        "BaseCampMaxNum": "Número máximo de bases",
+        "BaseCampWorkerMaxNum": "Máximo de Pals trabalhadores por base",
+        "BaseCampMaxNumInGuild": "Limite de bases por guilda",
+        "bBuildAreaLimit": "Ativar limite de área de construção",
+        "MaxBuildingLimitNum": "Limite máximo de construções",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Ocultar efeitos de área de bases de outras guildas",
+        "bEnableBuildingPlayerUIdDisplay": "Mostrar UID do jogador nas construções",
+        "BuildingNameDisplayCacheTTLSeconds": "TTL do cache de nomes de construção",
+        "bAutoResetGuildNoOnlinePlayers": "Remover automaticamente jogadores offline da guilda",
+        "AutoResetGuildTimeNoOnlinePlayers": "Tempo de remoção automática da guilda",
+        "GuildPlayerMaxNum": "Limite de jogadores da guilda",
+        "GuildRejoinCooldownMinutes": "Minutos de espera para reentrar na guilda",
+        "AutoTransferMasterCheckIntervalSeconds": "Intervalo de verificação da transferência automática do líder",
+        "AutoTransferMasterThresholdDays": "Dias limite para transferência automática do líder",
+        "MaxGuildsPerFrame": "Máximo de guildas processadas por quadro",
+        "DeathPenalty": "Penalidade de morte",
+        "bHardcore": "Modo Hardcore",
+        "bPalLost": "Modo Pal Lost",
+        "bCharacterRecreateInHardcore": "Permitir recriar personagem no Hardcore",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Permitir pegar drops de morte de outras guildas",
+        "BlockRespawnTime": "Tempo de bloqueio de respawn",
+        "RespawnPenaltyDurationThreshold": "Limite de duração da penalidade de respawn",
+        "RespawnPenaltyTimeScale": "Escala de tempo da penalidade de respawn",
+        "bEnablePlayerToPlayerDamage": "Ativar dano entre jogadores",
+        "bEnableFriendlyFire": "Ativar fogo amigo",
+        "bIsPvP": "Modo PvP",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "Mostrar itens PvP das bases no mapa-múndi",
+        "bDisplayPvPItemNumOnWorldMap_Player": "Mostrar itens PvP dos jogadores no mapa-múndi",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Item extra ao matar jogador no PvP",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Quantidade extra ao matar jogador no PvP",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Ativar drops extras ao matar jogador no PvP",
+        "bIsMultiplay": "Multijogador",
+        "CoopPlayerMaxNum": "Limite de jogadores cooperativos",
+        "ServerPlayerMaxNum": "Limite de jogadores do servidor",
+        "ServerName": "Nome do servidor",
+        "ServerDescription": "Descrição do servidor",
+        "AdminPassword": "Senha de administrador",
+        "ServerPassword": "Senha do servidor",
+        "PublicPort": "Porta pública",
+        "PublicIP": "IP público",
+        "Region": "Região",
+        "CrossplayPlatforms": "Plataformas crossplay",
+        "bIsShowJoinLeftMessage": "Mostrar mensagens de entrada e saída",
+        "bAllowClientMod": "Permitir Client Mod",
+        "RCONEnabled": "RCON ativado",
+        "RCONPort": "Porta RCON",
+        "RESTAPIEnabled": "Ativar REST API",
+        "RESTAPIPort": "Porta REST API",
+        "bShowPlayerList": "Mostrar lista de jogadores",
+        "ChatPostLimitPerMinute": "Limite de mensagens de chat por minuto",
+        "bUseAuth": "Usar autenticação",
+        "BanListURL": "URL da lista de bloqueio",
+        "bEnableInvaderEnemy": "Se eventos de invasão ocorrem",
+        "bActiveUNKO": "Ativar UNKO",
+        "bEnableAimAssistPad": "Ativar assistência de mira no controle",
+        "bEnableAimAssistKeyboard": "Ativar assistência de mira no teclado",
+        "bEnableNonLoginPenalty": "Ativar penalidade por não login",
+        "bEnableFastTravel": "Ativar viagem rápida",
+        "bEnableFastTravelOnlyBaseCamp": "Viagem rápida apenas entre bases",
+        "bIsStartLocationSelectByMap": "Permitir escolher ponto inicial",
+        "bExistPlayerAfterLogout": "Jogador permanece após logout",
+        "bEnableDefenseOtherGuildPlayer": "Receber dano de outras guildas",
+        "bIsUseBackupSaveData": "Usar dados de salvamento de backup",
+        "LogFormatType": "Tipo de formato de log",
+        "SupplyDropSpan": "Intervalo de drop de suprimentos",
+        "EnablePredatorBossPal": "Ativar Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "Distância de corte de réplica de Pawn do servidor",
+        "bAllowGlobalPalboxExport": "Permitir exportar Global Palbox",
+        "bAllowGlobalPalboxImport": "Permitir importar Global Palbox",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Intervalo Tick de verificação do armazenamento Pal do jogador",
+        "MonsterFarmActionSpeedRate": "Multiplicador de velocidade de ação da fazenda",
+        "bEnableVoiceChat": "Ativar chat de voz",
+        "VoiceChatMaxVolumeDistance": "Distância de volume máximo do chat de voz",
+        "VoiceChatZeroVolumeDistance": "Distância de volume zero do chat de voz"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Regras Básicas Do Mundo",
+          "description": "Dificuldade, randomizador, velocidade dia-noite, experiência e ajustes centrais do mundo."
+        },
+        "palPlayerRates": {
+          "label": "Multiplicadores De Pal E Jogador",
+          "description": "Ajusta Pal, jogador, incubação, velocidade de trabalho e melhorias de atributos."
+        },
+        "itemsDrops": {
+          "label": "Coleta, Drops E Itens",
+          "description": "Gerencia coleta, limites de itens dropados, peso, durabilidade e deterioração."
+        },
+        "buildingBase": {
+          "label": "Construções E Bases",
+          "description": "Controla vida das construções, deterioração, limites de bases e exibição."
+        },
+        "guild": {
+          "label": "Guilda E Limites Multiplayer",
+          "description": "Configura tamanho da guilda, reset offline e transferência automática do líder."
+        },
+        "deathRespawn": {
+          "label": "Morte, Respawn E Penalidades",
+          "description": "Ajusta penalidades de morte, Hardcore, Pal Lost e penalidades de respawn."
+        },
+        "pvpCombat": {
+          "label": "PvP E Regras De Combate",
+          "description": "Gerencia PvP, fogo amigo e drops extras ao matar jogadores."
+        },
+        "serverPublic": {
+          "label": "Conexão Do Servidor E Informações Públicas",
+          "description": "Define nome, senhas, IP público, portas e plataformas crossplay."
+        },
+        "adminApiSecurity": {
+          "label": "Administração, API E Segurança",
+          "description": "Configura RCON, REST API, autenticação, limites de chat e listas de banimento."
+        },
+        "advancedSystem": {
+          "label": "Sistema Avançado E Desempenho",
+          "description": "Comportamento do sistema, viagem rápida, backups, voz e desempenho."
+        }
+      },
+      "boolean": {
+        "True": "Ativado",
+        "False": "Desativado"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Não definido",
+          "Easy": "Fácil",
+          "Difficult": "Difícil"
+        },
+        "DeathPenalty": {
+          "None": "Nenhuma",
+          "Item": "Itens",
+          "ItemAndEquipment": "Itens e equipamento",
+          "All": "Tudo"
+        }
+      },
+      "tools": {
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Mostrar só modificados",
+        "modifiedBadge": "Modificado",
+        "clearFilters": "Limpar",
+        "expandAll": "Expandir tudo",
+        "collapseAll": "Recolher tudo",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "{visible}/{total} exibidos, {modified} modificados."
+      },
+      "templates": {
+        "title": "Modelos De Configuração",
+        "selectLabel": "Modelo",
+        "apply": "Aplicar modelo",
+        "applied": "\"{name}\" aplicado.",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "PvE tranquilo com progresso rápido e menor pressão de morte."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "Sobrevivência de alto risco com morte severa e progresso lento."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "Ajustes prontos para PvP com dano, mapa e drops por abates."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Multiplicadores altos para sessões curtas, testes ou eventos."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Ajustes conservadores para reduzir carga de itens e replicação."
+        }
+      },
+      "importReport": {
+        "title": "Relatório De Importação",
+        "summary": "Lidos {known} conhecidos, {unknown} desconhecidos, {missing} ausentes.",
+        "known": "Carregados",
+        "unknown": "Desconhecidos",
+        "missing": "Ausentes",
+        "none": "Nenhum"
+      }
+    },
+    "ru-RU": {
+      "languageName": "Русский",
+      "app": {
+        "title": "PalWorld Settings Generator",
+        "subtitle": "Генератор настроек PalWorld - Server 1.0"
+      },
+      "language": {
+        "label": "Язык",
+        "ariaLabel": "Выбрать язык интерфейса"
+      },
+      "actions": {
+        "share": "Поделиться ссылкой",
+        "theme": "Сменить тему",
+        "copy": "Скопировать в буфер",
+        "download": "Скачать конфиг",
+        "pastePlaceholder": "Вставьте конфиг",
+        "load": "Загрузить",
+        "add": "Добавить"
+      },
+      "links": {
+        "officialStart": "Официальные материалы:",
+        "dedicatedGuide": "Руководство выделенного сервера",
+        "balanceGuide": "Баланс сервера",
+        "communityGuide": "Руководство Community-сервера",
+        "commandsGuide": "Команды сервера",
+        "feedback": "Проблемы и отзывы"
+      },
+      "sections": {
+        "game": "Настройки игры　🕹️",
+        "server": "Настройки сервера　🛠️"
+      },
+      "storage": {
+        "title": "Резервные конфиги",
+        "description": "Сохраняет текущую форму в этом браузере. До 10 именованных слотов можно сохранять, переименовывать и загружать.",
+        "limit": "10 slots",
+        "slotLabel": "Слот",
+        "nameLabel": "Имя",
+        "namePlaceholder": "Например: настройки гильдии",
+        "save": "Сохранить текущий конфиг",
+        "load": "Загрузить",
+        "rename": "Переименовать",
+        "delete": "Очистить",
+        "emptySlot": "Пустой слот",
+        "saved": "\"{name}\" сохранён.",
+        "loaded": "\"{name}\" загружен.",
+        "renamed": "Переименовано в \"{name}\".",
+        "deleted": "Слот {slot} очищен.",
+        "selectSavedSlot": "Сначала выберите сохранённый слот.",
+        "nameRequired": "Введите имя резервной копии.",
+        "compareA": "Сравнить A",
+        "compareB": "Сравнить B",
+        "compare": "Сравнить бэкапы",
+        "compareResultTitle": "Сравнение бэкапов",
+        "compareSummary": "Различий между {left} и {right}: {count}.",
+        "compareField": "Настройка",
+        "compareLeft": "Значение A",
+        "compareRight": "Значение B",
+        "compareSelectSaved": "Выберите два сохраненных бэкапа."
+      },
+      "share": {
+        "title": "Amazoning Tool: PalWorld Setting Generator",
+        "text": "Я нашёл этот инструмент настроек сервера PalWorld и рекомендую его.",
+        "unsupported": "Ваш браузер не поддерживает функцию общего доступа."
+      },
+      "notifications": {
+        "copied": "Скопировано в буфер. ✅",
+        "loaded": "Успешно загружено. ✅"
+      },
+      "notes": {
+        "difficulty": "Влияет на общие коэффициенты и значения."
+      },
+      "options": {
+        "easy": "Легко",
+        "difficult": "Сложно",
+        "noneDefault": "Нет (по умолчанию)",
+        "deathNone": "None - ничего не выпадет",
+        "deathItem": "Item - выпадут только предметы",
+        "deathItemEquipment": "ItemAndEquipment - выпадут предметы и снаряжение",
+        "deathAllDefault": "All - выпадет всё, включая Pals в группе (по умолчанию)",
+        "open": "Вкл.",
+        "openDefault": "Вкл. (по умолчанию)",
+        "close": "Выкл.",
+        "closeDefault": "Выкл. (по умолчанию)",
+        "enable": "Включить",
+        "enableDefault": "Включить (по умолчанию)",
+        "disable": "Отключить",
+        "disableDefault": "Отключено (по умолчанию)",
+        "occurDefault": "Происходит (по умолчанию)",
+        "notOccur": "Не происходит",
+        "allow": "Разрешить",
+        "notAllowDefault": "Не разрешать (по умолчанию)",
+        "yes": "Да",
+        "noDefault": "Нет (по умолчанию)",
+        "useDefault": "Использовать (по умолчанию)",
+        "doNotUse": "Не использовать"
+      },
+      "hints": {
+        "biggerDayShorter": "🔄(Чем больше значение, тем короче день)",
+        "biggerNightShorter": "🔄(Чем больше значение, тем короче ночь)",
+        "biggerLevelFaster": "🔄(Чем больше значение, тем быстрее уровень)",
+        "biggerChanceHigher": "🔄(Чем больше значение, тем выше шанс)",
+        "biggerQuantityMore": "🔄(Чем больше значение, тем больше количество)",
+        "biggerAttackHigher": "🔄(Чем больше значение, тем выше атака)",
+        "smallerLessDamage": "🔄(Чем меньше значение, тем меньше входящий урон)",
+        "smallerLessHungry": "🔄(Чем меньше значение, тем медленнее голод)",
+        "smallerStaminaSlower": "🔄(Чем меньше значение, тем медленнее тратится выносливость)",
+        "biggerHpRegenFaster": "🔄(Чем больше значение, тем быстрее реген HP)",
+        "biggerHpRegenMore": "🔄(Чем больше значение, тем больше реген HP)",
+        "biggerDamageMore": "🔄(Чем больше значение, тем больше урон)",
+        "smallerDecaySlower": "🔄(Чем меньше значение, тем медленнее износ)",
+        "biggerDropsMore": "🔄(Чем больше значение, тем больше добычи)",
+        "smallerRespawnFaster": "🔄(Чем меньше значение, тем быстрее респавн)",
+        "biggerDropsAllowed": "🔄(Чем больше значение, тем больше предметов на земле)",
+        "biggerBasesAllowed": "🔄(Чем больше значение, тем больше баз)",
+        "biggerPalsAllowed": "🔄(Чем больше значение, тем больше Pals)",
+        "smallerDropsDisappearFaster": "🔄(Чем меньше значение, тем быстрее исчезает добыча)",
+        "smallerResetFaster": "🔄(Чем меньше значение, тем быстрее сброс)",
+        "biggerPlayersAllowed": "🔄(Чем больше значение, тем больше игроков)",
+        "smallerHatchFaster": "🔄(Чем меньше значение, тем быстрее инкубация)",
+        "biggerWorkFaster": "🔄(Чем больше значение, тем быстрее работа)",
+        "biggerCoopAllowed": "🔄(Чем больше значение, тем больше игроков в коопе)",
+        "biggerCapacityAllowed": "🔄(Чем больше значение, тем больше игроков на сервере)"
+      },
+      "settings": {
+        "Difficulty": "Настраивает общую сложность игры",
+        "RandomizerType": "Тип рандомайзера",
+        "RandomizerSeed": "Сид рандомайзера",
+        "bIsRandomizerPalLevelRandom": "Случайные уровни Pal",
+        "DayTimeSpeedRate": "Скорость течения дня",
+        "NightTimeSpeedRate": "Скорость течения ночи",
+        "ExpRate": "Множитель опыта",
+        "AutoSaveSpan": "Интервал автосохранения",
+        "PalCaptureRate": "Множитель шанса поимки",
+        "PalSpawnNumRate": "Множитель появления Pals",
+        "PalDamageRateAttack": "Множитель урона атаки Pals",
+        "PalDamageRateDefense": "Множитель получаемого урона Pals",
+        "PlayerDamageRateAttack": "Множитель урона атаки игрока",
+        "PlayerDamageRateDefense": "Множитель получаемого урона игрока",
+        "PlayerStomachDecreaceRate": "Множитель снижения сытости игрока",
+        "PlayerStaminaDecreaceRate": "Множитель снижения выносливости игрока",
+        "PlayerAutoHPRegeneRate": "Множитель естественного восстановления HP игрока",
+        "PlayerAutoHpRegeneRateInSleep": "Множитель восстановления HP игрока во сне",
+        "PalStomachDecreaceRate": "Множитель снижения сытости Pals",
+        "PalStaminaDecreaceRate": "Множитель снижения выносливости Pals",
+        "PalAutoHPRegeneRate": "Множитель естественного восстановления HP Pals",
+        "PalAutoHpRegeneRateInSleep": "Множитель восстановления HP Pals во сне",
+        "bAllowEnhanceStat_Health": "Разрешить усиление здоровья",
+        "bAllowEnhanceStat_Attack": "Разрешить усиление атаки",
+        "bAllowEnhanceStat_Stamina": "Разрешить усиление выносливости",
+        "bAllowEnhanceStat_Weight": "Разрешить усиление переносимого веса",
+        "bAllowEnhanceStat_WorkSpeed": "Разрешить усиление скорости работы",
+        "PalEggDefaultHatchingTime": "Время инкубации огромного яйца (часы)",
+        "WorkSpeedRate": "Множитель скорости работы",
+        "CollectionDropRate": "Множитель количества добычи при сборе",
+        "CollectionObjectHpRate": "Множитель HP собираемых объектов",
+        "CollectionObjectRespawnSpeedRate": "Интервал респавна собираемых объектов",
+        "EnemyDropItemRate": "Множитель выпадающих предметов",
+        "DropItemMaxNum": "Максимум предметов на земле в мире",
+        "PhysicsActiveDropItemMaxNum": "Лимит выпавших предметов с физикой",
+        "DropItemMaxNum_UNKO": "Максимум предметов UNKO на земле",
+        "DropItemAliveMaxHours": "Максимальное время жизни предметов на земле",
+        "ItemWeightRate": "Множитель веса предметов",
+        "EquipmentDurabilityDamageRate": "Множитель урона прочности снаряжения",
+        "ItemContainerForceMarkDirtyInterval": "Интервал принудительного обновления контейнеров",
+        "ItemCorruptionMultiplier": "Множитель порчи предметов",
+        "DenyTechnologyList": "Список запрещенных технологий",
+        "BuildObjectHpRate": "Множитель HP строений",
+        "BuildObjectDamageRate": "Множитель урона по строениям",
+        "BuildObjectDeteriorationDamageRate": "Множитель износа строений",
+        "BaseCampMaxNum": "Максимум баз",
+        "BaseCampWorkerMaxNum": "Максимум рабочих Pals на базе",
+        "BaseCampMaxNumInGuild": "Лимит баз на гильдию",
+        "bBuildAreaLimit": "Включить ограничение зоны строительства",
+        "MaxBuildingLimitNum": "Максимальный лимит строений",
+        "bInvisibleOtherGuildBaseCampAreaFX": "Скрывать эффекты зон баз других гильдий",
+        "bEnableBuildingPlayerUIdDisplay": "Показывать UID игрока на строениях",
+        "BuildingNameDisplayCacheTTLSeconds": "TTL кэша отображения названий строений",
+        "bAutoResetGuildNoOnlinePlayers": "Автоудаление офлайн-игроков из гильдии",
+        "AutoResetGuildTimeNoOnlinePlayers": "Время автоудаления офлайн-игроков из гильдии",
+        "GuildPlayerMaxNum": "Лимит игроков гильдии",
+        "GuildRejoinCooldownMinutes": "Перезарядка повторного вступления в гильдию",
+        "AutoTransferMasterCheckIntervalSeconds": "Интервал проверки автопередачи лидера гильдии",
+        "AutoTransferMasterThresholdDays": "Порог дней для автопередачи лидера гильдии",
+        "MaxGuildsPerFrame": "Максимум гильдий за кадр",
+        "DeathPenalty": "Штраф за смерть",
+        "bHardcore": "Режим Hardcore",
+        "bPalLost": "Режим Pal Lost",
+        "bCharacterRecreateInHardcore": "Разрешить пересоздание персонажа в Hardcore",
+        "bCanPickupOtherGuildDeathPenaltyDrop": "Разрешить подбирать добычу смерти других гильдий",
+        "BlockRespawnTime": "Время блокировки возрождения",
+        "RespawnPenaltyDurationThreshold": "Порог длительности штрафа возрождения",
+        "RespawnPenaltyTimeScale": "Масштаб времени штрафа возрождения",
+        "bEnablePlayerToPlayerDamage": "Включить урон между игроками",
+        "bEnableFriendlyFire": "Включить дружественный огонь",
+        "bIsPvP": "Режим PvP",
+        "bDisplayPvPItemNumOnWorldMap_BaseCamp": "Показывать PvP-предметы баз на карте мира",
+        "bDisplayPvPItemNumOnWorldMap_Player": "Показывать PvP-предметы игроков на карте мира",
+        "AdditionalDropItemWhenPlayerKillingInPvPMode": "Дополнительный предмет за убийство игрока в PvP",
+        "AdditionalDropItemNumWhenPlayerKillingInPvPMode": "Количество дополнительных предметов за убийство игрока в PvP",
+        "bAdditionalDropItemWhenPlayerKillingInPvPMode": "Включить дополнительные предметы за убийство игрока в PvP",
+        "bIsMultiplay": "Мультиплеер",
+        "CoopPlayerMaxNum": "Лимит кооперативных игроков",
+        "ServerPlayerMaxNum": "Лимит игроков сервера",
+        "ServerName": "Имя сервера",
+        "ServerDescription": "Описание сервера",
+        "AdminPassword": "Пароль администратора",
+        "ServerPassword": "Пароль сервера",
+        "PublicPort": "Публичный порт",
+        "PublicIP": "Публичный IP",
+        "Region": "Регион",
+        "CrossplayPlatforms": "Платформы crossplay",
+        "bIsShowJoinLeftMessage": "Показывать сообщения входа и выхода",
+        "bAllowClientMod": "Разрешить Client Mod",
+        "RCONEnabled": "RCON включён",
+        "RCONPort": "Порт RCON",
+        "RESTAPIEnabled": "Включить REST API",
+        "RESTAPIPort": "Порт REST API",
+        "bShowPlayerList": "Показывать список игроков",
+        "ChatPostLimitPerMinute": "Лимит сообщений чата в минуту",
+        "bUseAuth": "Использовать аутентификацию",
+        "BanListURL": "URL списка блокировок",
+        "bEnableInvaderEnemy": "Происходят ли рейды",
+        "bActiveUNKO": "Включить UNKO",
+        "bEnableAimAssistPad": "Включить помощь прицеливания на геймпаде",
+        "bEnableAimAssistKeyboard": "Включить помощь прицеливания на клавиатуре",
+        "bEnableNonLoginPenalty": "Включить штраф за неактивность входа",
+        "bEnableFastTravel": "Включить быстрое перемещение",
+        "bEnableFastTravelOnlyBaseCamp": "Быстрое перемещение только между базами",
+        "bIsStartLocationSelectByMap": "Разрешить выбор точки старта новым персонажам",
+        "bExistPlayerAfterLogout": "Игрок остаётся после выхода",
+        "bEnableDefenseOtherGuildPlayer": "Получение урона от других гильдий",
+        "bIsUseBackupSaveData": "Использовать резервные сохранения",
+        "LogFormatType": "Тип формата логов",
+        "SupplyDropSpan": "Интервал сброса припасов",
+        "EnablePredatorBossPal": "Включить Predator Boss Pal",
+        "ServerReplicatePawnCullDistance": "Дистанция отсечения репликации Pawn сервера",
+        "bAllowGlobalPalboxExport": "Разрешить экспорт Global Palbox",
+        "bAllowGlobalPalboxImport": "Разрешить импорт Global Palbox",
+        "PlayerDataPalStorageUpdateCheckTickInterval": "Tick-интервал проверки хранилища Pal игрока",
+        "MonsterFarmActionSpeedRate": "Множитель скорости действий фермы",
+        "bEnableVoiceChat": "Включить голосовой чат",
+        "VoiceChatMaxVolumeDistance": "Дистанция максимальной громкости голоса",
+        "VoiceChatZeroVolumeDistance": "Дистанция нулевой громкости голоса"
+      },
+      "groups": {
+        "basicWorld": {
+          "label": "Основные Правила Мира",
+          "description": "Сложность, рандомайзер, скорость дня и ночи, опыт и основные настройки мира."
+        },
+        "palPlayerRates": {
+          "label": "Множители Pal И Игрока",
+          "description": "Настройка Pal, игрока, вылупления, скорости работы и усиления характеристик."
+        },
+        "itemsDrops": {
+          "label": "Сбор, Добыча И Предметы",
+          "description": "Управление добычей, лимитами выпавших предметов, весом, прочностью и порчей."
+        },
+        "buildingBase": {
+          "label": "Строения И Базы",
+          "description": "Контроль HP строений, износа, лимитов баз и отображения строений."
+        },
+        "guild": {
+          "label": "Гильдия И Лимиты Мультиплеера",
+          "description": "Размер гильдии, сброс при офлайне и автоматическая передача лидера."
+        },
+        "deathRespawn": {
+          "label": "Смерть, Возрождение И Штрафы",
+          "description": "Настройка штрафов смерти, Hardcore, Pal Lost и штрафов возрождения."
+        },
+        "pvpCombat": {
+          "label": "PvP И Правила Боя",
+          "description": "Управление PvP, дружественным огнем и дополнительной добычей за убийство игроков."
+        },
+        "serverPublic": {
+          "label": "Подключение И Публичная Информация",
+          "description": "Имя сервера, пароли, публичный IP, порты и платформы crossplay."
+        },
+        "adminApiSecurity": {
+          "label": "Администрирование, API И Безопасность",
+          "description": "Настройка RCON, REST API, аутентификации, лимитов чата и бан-листов."
+        },
+        "advancedSystem": {
+          "label": "Расширенная Система И Производительность",
+          "description": "Прочее поведение системы, быстрое перемещение, бэкапы, голос и производительность."
+        }
+      },
+      "boolean": {
+        "True": "Включено",
+        "False": "Выключено"
+      },
+      "enum": {
+        "Difficulty": {
+          "None": "Не задано",
+          "Easy": "Легко",
+          "Difficult": "Сложно"
+        },
+        "DeathPenalty": {
+          "None": "Нет",
+          "Item": "Предметы",
+          "ItemAndEquipment": "Предметы и снаряжение",
+          "All": "Все"
+        }
+      },
+      "tools": {
+        "searchLabel": "Поиск",
+        "searchPlaceholder": "RCON, PvP, Palbox",
+        "modifiedOnly": "Показать только измененные",
+        "modifiedBadge": "Изменено",
+        "clearFilters": "Очистить",
+        "expandAll": "Открыть все",
+        "collapseAll": "Закрыть все",
+        "tagPlaceholder": "Technology ID",
+        "filterResult": "Показано {visible}/{total}, изменено {modified}."
+      },
+      "templates": {
+        "title": "Шаблоны Конфигурации",
+        "selectLabel": "Шаблон",
+        "apply": "Применить шаблон",
+        "applied": "Применен \"{name}\".",
+        "casualPve": {
+          "name": "Casual PvE",
+          "description": "Спокойный PvE с быстрым прогрессом и мягкой смертью."
+        },
+        "hardcore": {
+          "name": "Hardcore",
+          "description": "Высокий риск: жесткая смерть и более медленный рост."
+        },
+        "pvp": {
+          "name": "PvP",
+          "description": "PvP-настройки с уроном, картой и добычей за убийства."
+        },
+        "boosted": {
+          "name": "Boosted",
+          "description": "Высокие множители для коротких сессий, тестов или событий."
+        },
+        "stableDedicated": {
+          "name": "Stable Dedicated Server",
+          "description": "Консервативные настройки для снижения нагрузки предметов и репликации."
+        }
+      },
+      "importReport": {
+        "title": "Отчет Импорта",
+        "summary": "Прочитано известных: {known}, неизвестных: {unknown}, отсутствующих: {missing}.",
+        "known": "Загружено",
+        "unknown": "Неизвестные",
+        "missing": "Отсутствующие",
+        "none": "Нет"
+      }
+    }
+  }
+};

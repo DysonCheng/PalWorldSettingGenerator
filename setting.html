@@ -15,59 +15,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PalWorld Settings Generator</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="js/settingsSchema.js"></script>
+  <script src="js/formState.js"></script>
   <script src="js/generateSettings.js"></script>
   <script src="js/parseConfig.js"></script>
   <script src="js/toggleSnowMode.js"></script>
-  <script src="js/googleTranslateElementInit.js"></script>
-  <script src="js/HiddenButton.js"></script>
   <script src="js/reset.js"></script>
+  <script src="js/settingsForm.js" defer></script>
+  <script src="locales/translations.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/configSlots.js" defer></script>
+  <script src="js/templates.js" defer></script>
+  <script src="js/editorTools.js" defer></script>
+  <script src="js/autoHideToolbar.js" defer></script>
   <!-- <script src="js/updatetime.js"></script> -->
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
-  <div class="major-update-preview" role="status" aria-label="1.0 Update Coming">
-    <div class="major-update-preview__content" translate="no">
-      <strong class="major-update-preview__title">1.0</strong>
-      <span class="major-update-preview__subtitle">Update</span>
-      <span class="major-update-preview__note">Coming</span>
-    </div>
-  </div>
   <div class="scrollable-area" id="HiddenArea">
-    <button class="button4" id="shareButton">分享鏈結</button>
-    <button class="button3" onclick="toggleSnowMode()">切換主題</button>
-    <button class="button1" onclick="generateSettings()">複製到剪貼簿</button>
-    <button class="button2" onclick="SaveSettings()">下載到設定檔</button>
-    <textarea class="loaddata" id="configField" name="configField" rows="8" cols="15" placeholder="貼上設定"></textarea>
-    <button class="button0" onclick="parseConfig()">讀取</button>
-  </div>
+    <div class="toolbar-actions">
+      <button class="button4" id="shareButton" data-i18n="actions.share">分享鏈結</button>
+      <button class="button3" onclick="toggleSnowMode()" data-i18n="actions.theme">切換主題</button>
+      <button class="button1" onclick="generateSettings()" data-i18n="actions.copy">複製到剪貼簿</button>
+      <button class="button2" onclick="SaveSettings()" data-i18n="actions.download">下載到設定檔</button>
+      <button class="button0" onclick="parseConfig()" data-i18n="actions.load">讀取</button>
+      <button type="button" id="modifiedOnlyToggle" class="toolbar-toggle" aria-pressed="false"
+        data-i18n="tools.modifiedOnly">只顯示修改項目</button>
+      <button type="button" id="clearFiltersButton" data-i18n="tools.clearFilters">清除</button>
+      <button type="button" id="expandAllGroupsButton" data-i18n="tools.expandAll">全部展開</button>
+      <button type="button" id="collapseAllGroupsButton" data-i18n="tools.collapseAll">全部收合</button>
+    </div>
+    <label class="toolbar-field" for="settingSearch">
+      <span data-i18n="tools.searchLabel">搜尋</span>
+      <input type="search" id="settingSearch" autocomplete="off" data-i18n-placeholder="tools.searchPlaceholder"
+        placeholder="RCON, PvP, Palbox">
+    </label>
+    <label class="language-switcher" for="languageSelect">
+      <span data-i18n="language.label">語言</span>
+      <select id="languageSelect" data-i18n-aria-label="language.ariaLabel">
+        <option value="zh-TW">繁體中文</option>
+        <option value="en-US">English</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="ja-JP">日本語</option>
+        <option value="ko-KR">한국어</option>
+        <option value="es-ES">Español</option>
+        <option value="fr-FR">Français</option>
+        <option value="de-DE">Deutsch</option>
+        <option value="pt-BR">Português</option>
+        <option value="ru-RU">Русский</option>
+      </select>
+    </label>
+    <span id="filterResultText" class="toolbar-status" aria-live="polite"></span>
+    <textarea class="loaddata" id="configField" name="configField" rows="3" cols="28" placeholder="貼上設定"
+      data-i18n-placeholder="actions.pastePlaceholder"></textarea>
+    <a class="sponsor-button" href="https://www.buymeacoffee.com/dysoncheng" target="_blank"
+      rel="noopener noreferrer" aria-label="Buy me a coffee" translate="no">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%90%B3&slug=dysoncheng&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff"
+        alt="Buy me a coffee">
+    </a>
   </div>
   <div id="container" class="contentner">
     <table class="special-table">
       <tr>
-        <td class="right-align">其實你可以從這邊開始(官方)：</td>
+        <td class="right-align" data-i18n="links.officialStart">其實你可以從這邊開始(官方)：</td>
         <td class="left-align">
-          <a href="https://tech.palworldgame.com/dedicated-server-guide" target="_blank">專屬伺服器設定指南</a>
+          <a href="https://tech.palworldgame.com/dedicated-server-guide" target="_blank"
+            data-i18n="links.dedicatedGuide">專屬伺服器設定指南</a>
         </td>
         <td class="Left-align">
-          <a href="https://tech.palworldgame.com/optimize-game-balance" target="_blank">伺服器遊戲平衡建議</a>
+          <a href="https://tech.palworldgame.com/optimize-game-balance" target="_blank"
+            data-i18n="links.balanceGuide">伺服器遊戲平衡建議</a>
         </td>
         <td class="Left-align">
-          <a href="https://tech.palworldgame.com/community-server-guide" target="_blank">如何設定成Community伺服器？</a>
+          <a href="https://tech.palworldgame.com/community-server-guide" target="_blank"
+            data-i18n="links.communityGuide">如何設定成Community伺服器？</a>
         </td>
         <td class="Left-align">
-          <a href="https://tech.palworldgame.com/settings-and-operation/commands" target="_blank">伺服器命令一覽</a>
+          <a href="https://tech.palworldgame.com/settings-and-operation/commands" target="_blank"
+            data-i18n="links.commandsGuide">伺服器命令一覽</a>
         </td>
-        <td class="right-align">
-          <div id="google_translate_element"></div>
-        </td>
+        <td class="right-align"></td>
       </tr>
     </table>
     <br>
     <img src="imgs/R.gif" alt="down" class="small-gif">
     <h1>🌺PalWorld Settings Generator🌺</h1>
-    <h2>PalWorld設定產生器 - Server Version 0.1.5.0</h2>
+    <h2 data-i18n="app.subtitle">PalWorld設定產生器 - Server 1.0</h2>
     <table class="banner-table">
       <tr>
         <td class="left-align"></td>
@@ -79,22 +112,100 @@
               target="_blank">Github</a></div>
         </td>
         <td class="right-align">
-          <div id="updateResult">Pre-Release v0.1.2</div>
+          <div id="updateResult">Server 1.0</div>
         </td>
       </tr>
       <tr>
         <td class="left-align">
           <div class="center-container"><a href="https://forum.gamer.com.tw/Co.php?bsn=71458&sn=1165"
-              target="_blank">問題與回饋</a></div>
+              target="_blank" data-i18n="links.feedback">問題與回饋</a></div>
         </td>
         <td id="versionDisplay" class="right-align" translate="no">- DysonCheng</td>
       </tr>
     </table>
+    <section class="dashboard-grid utility-dashboard" id="utilityDashboard" aria-label="Editor modules">
+      <div class="utility-dashboard__modules" id="utilityModules">
+        <section class="dashboard-module template-panel" aria-labelledby="templatePanelTitle">
+          <div class="dashboard-module__header template-panel__header">
+            <div>
+              <h3 id="templatePanelTitle" data-i18n="templates.title">組態模板</h3>
+              <p id="templateDescription"></p>
+            </div>
+            <div class="template-panel__controls">
+              <label for="templateSelect">
+                <span data-i18n="templates.selectLabel">模板</span>
+                <select id="templateSelect">
+                  <option value="casualPve" data-i18n="templates.casualPve.name">Casual PvE</option>
+                  <option value="hardcore" data-i18n="templates.hardcore.name">Hardcore</option>
+                  <option value="pvp" data-i18n="templates.pvp.name">PvP</option>
+                  <option value="boosted" data-i18n="templates.boosted.name">高倍率爽玩</option>
+                  <option value="stableDedicated" data-i18n="templates.stableDedicated.name">Dedicated Server 穩定版</option>
+                </select>
+              </label>
+              <button type="button" id="applyTemplateButton" data-i18n="templates.apply">套用模板</button>
+            </div>
+          </div>
+          <p id="templateStatus" class="template-panel__status" aria-live="polite"></p>
+        </section>
+        <section id="importReport" class="dashboard-module import-report" aria-live="polite" hidden>
+          <div class="dashboard-module__header">
+            <h3 data-i18n="importReport.title">匯入報告</h3>
+          </div>
+          <div id="importReportContent"></div>
+        </section>
+      </div>
+      <div class="config-dashboard" aria-label="Configuration modules">
+        <section class="dashboard-module config-slots" aria-labelledby="configSlotsTitle">
+          <div class="dashboard-module__header config-slots__header">
+            <div>
+              <h3 id="configSlotsTitle" data-i18n="storage.title">組態備份</h3>
+              <p data-i18n="storage.description">把目前表單存到瀏覽器，最多 10 組，可命名、改名與載入。</p>
+            </div>
+            <span class="config-slots__badge" data-i18n="storage.limit">10 slots</span>
+          </div>
+          <div class="config-slots__controls">
+            <label for="configSlotSelect">
+              <span data-i18n="storage.slotLabel">備份槽</span>
+              <select id="configSlotSelect"></select>
+            </label>
+            <label for="configSlotName">
+              <span data-i18n="storage.nameLabel">名稱</span>
+              <input type="text" id="configSlotName" maxlength="40" autocomplete="off"
+                data-i18n-placeholder="storage.namePlaceholder" placeholder="例如：公會倍率設定">
+            </label>
+            <div class="config-slots__actions">
+              <button type="button" id="saveSlotButton" data-i18n="storage.save">儲存目前組態</button>
+              <button type="button" id="loadSlotButton" data-i18n="storage.load">載入</button>
+              <button type="button" id="renameSlotButton" data-i18n="storage.rename">改名</button>
+              <button type="button" id="deleteSlotButton" data-i18n="storage.delete">清空</button>
+            </div>
+          </div>
+          <p id="configSlotStatus" class="config-slots__status" aria-live="polite"></p>
+        </section>
+        <section class="dashboard-module config-slots config-slots--compare" aria-labelledby="configCompareTitle">
+          <div class="dashboard-module__header">
+            <h3 id="configCompareTitle" data-i18n="storage.compareResultTitle">備份比較</h3>
+          </div>
+          <div class="config-slots__compare">
+            <label for="configCompareA">
+              <span data-i18n="storage.compareA">比較 A</span>
+              <select id="configCompareA"></select>
+            </label>
+            <label for="configCompareB">
+              <span data-i18n="storage.compareB">比較 B</span>
+              <select id="configCompareB"></select>
+            </label>
+            <button type="button" id="compareSlotsButton" data-i18n="storage.compare">比較備份</button>
+          </div>
+          <div id="configCompareResult" class="config-slots__compare-result" hidden></div>
+        </section>
+      </div>
+    </section>
     <form id="settingsForm">
       <table>
         <tr>
           <td colspan="3" style="text-align: center; font-weight: bold; padding: 20px;">
-            <strong>遊戲設定　🕹️</strong>
+            <strong data-i18n="sections.game">遊戲設定　🕹️</strong>
           </td>
         </tr>
         <tr>
@@ -108,7 +219,7 @@
             <label for="Difficult">困難</label>
 
             <input type="radio" id="None" name="Difficulty" value="None" checked>
-            <label for="None">不設定(預設)</label>會整體影響各種機率與數值.
+            <label for="None">不設定(預設)</label><span data-i18n="notes.difficulty">會整體影響各種機率與數值.</span>
           </td>
         </tr>
         <tr>
@@ -321,7 +432,7 @@
             <input type="range" id="sliderBuildObjectDeteriorationDamageRate" min="0" max="3" step="0.5" value="1"
               oninput="updateInputValue('BuildObjectDeteriorationDamageRate', 'sliderBuildObjectDeteriorationDamageRate')"
               class="lightbar">
-            <span class="reset-btn" onclick="resetValue('BuildObjectDeteriorationDamageRate')">🔄(數字越小劣化越慢</span>)
+            <span class="reset-btn" onclick="resetValue('BuildObjectDeteriorationDamageRate')">🔄(數字越小劣化越慢)</span>
           </td>
         </tr>
 
@@ -389,7 +500,7 @@
 
         <tr>
           <td colspan="3" style="text-align: center; font-weight: bold; padding: 20px;">
-            <strong>伺服器設定　🛠️</strong>
+            <strong data-i18n="sections.server">伺服器設定　🛠️</strong>
           </td>
         </tr>
 
@@ -755,7 +866,7 @@
     </form>
   </div>
   <footer>
-    <p translate="no">2024 Web materials provided by ©Pocketpair, Inc.</p>
+    <p translate="no">2024-2026 Web materials provided by ©Pocketpair, Inc.</p>
     <div class="buttom-container">
       <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank" translate="no">Design by Dyson
         Cheng</a>
@@ -803,24 +914,75 @@
   </script>
 
   <script>
-    document.getElementById('shareButton').addEventListener('click', function () {
-      if (navigator.share) {
+    (function () {
+      var publicShareUrl = 'https://dysoncheng.github.io/PalWorldSettingGenerator/setting.html';
+
+      function getShareUrl() {
+        var protocol = window.location.protocol;
+        var hostname = window.location.hostname;
+        var isLocalPage = protocol === 'file:' || hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '[::1]';
+
+        if ((protocol === 'https:' || protocol === 'http:') && !isLocalPage) {
+          return window.location.href;
+        }
+
+        return publicShareUrl;
+      }
+
+      function copyShareUrl(url) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(url).catch(function () {
+            copyCodeToClipboard(url);
+          });
+        }
+
+        copyCodeToClipboard(url);
+        return Promise.resolve();
+      }
+
+      function showShareCopied() {
+        showNotification('notification');
+      }
+
+      function fallbackToCopy(url) {
+        copyShareUrl(url)
+          .then(showShareCopied)
+          .catch(function (error) {
+            console.error('Share fallback failed:', error);
+            window.prompt(window.i18n ? window.i18n.t('share.unsupported') : 'Copy this link:', url);
+          });
+      }
+
+      document.getElementById('shareButton').addEventListener('click', function () {
+        var shareUrl = getShareUrl();
         var shareData = {
-          title: 'Amazoning Tool: PalWorld Setting Generator',
-          text: 'I discovered this web tool and recommend it to everyone.',
-          url: window.location.href,
+          title: window.i18n ? window.i18n.t('share.title') : 'Amazoning Tool: PalWorld Setting Generator',
+          text: window.i18n ? window.i18n.t('share.text') : 'I discovered this web tool and recommend it to everyone.',
+          url: shareUrl,
         };
 
-        navigator.share(shareData)
-          .then(() => console.log('Shared.'))
-          .catch((error) => console.error('Opps:', error));
-      } else {
-        alert('Sorry, your browser does not support the sharing feature.抱歉，您的瀏覽器不支援分享功能。');
-      }
-    });
+        if (navigator.share) {
+          navigator.share(shareData)
+            .then(function () {
+              console.log('Shared.');
+            })
+            .catch(function (error) {
+              if (error && error.name === 'AbortError') {
+                return;
+              }
+
+              console.warn('Share failed, copied link instead:', error);
+              fallbackToCopy(shareUrl);
+            });
+          return;
+        }
+
+        fallbackToCopy(shareUrl);
+      });
+    }());
   </script>
-  <div id="notification" class="hidden">已經複製到剪貼簿。✅</div>
-  <div id="notification2" class="hidden">讀取成功。✅</div>
+  <div id="notification" class="hidden" data-i18n="notifications.copied">已經複製到剪貼簿。✅</div>
+  <div id="notification2" class="hidden" data-i18n="notifications.loaded">讀取成功。✅</div>
 </body>
 
 </html>
