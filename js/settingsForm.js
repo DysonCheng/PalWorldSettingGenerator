@@ -232,8 +232,203 @@
     return wrapper;
   }
 
+  function toNumber(value, fallback) {
+    var number = Number(value);
+    return Number.isFinite(number) ? number : fallback;
+  }
+
+  function decimalPlaces(value) {
+    var stringValue = String(value || "");
+    if (stringValue.indexOf("e-") !== -1) {
+      return Number(stringValue.split("e-")[1]) || 0;
+    }
+    var match = stringValue.match(/\.(\d+)/);
+    return match ? match[1].length : 0;
+  }
+
+  function getNumberPrecision(field) {
+    return Math.min(
+      6,
+      Math.max(decimalPlaces(field.defaultValue), decimalPlaces(field.step || "1"))
+    );
+  }
+
+  function formatNumberValue(field, value) {
+    var number = Number(value);
+    if (!Number.isFinite(number)) {
+      return value;
+    }
+
+    var precision = getNumberPrecision(field);
+    if (precision > 0) {
+      return number.toFixed(precision);
+    }
+    return String(Math.round(number));
+  }
+
+  function normalizeBoundary(value, step, direction) {
+    if (!Number.isFinite(value)) {
+      return value;
+    }
+    if (!Number.isFinite(step) || step <= 0) {
+      return value;
+    }
+
+    var scaled = direction === "min"
+      ? Math.floor(value / step) * step
+      : Math.ceil(value / step) * step;
+    return Number(scaled.toFixed(Math.min(6, decimalPlaces(step))));
+  }
+
+  function getSliderMax(field, defaultValue, step) {
+    if (field.max !== undefined) {
+      return toNumber(field.max, defaultValue);
+    }
+
+    if (/Port$/.test(field.key)) {
+      return 65535;
+    }
+    if (field.key === "DropItemMaxNum_UNKO") {
+      return 500;
+    }
+    if (field.key === "DropItemMaxNum" || field.key === "PhysicsActiveDropItemMaxNum") {
+      return 5000;
+    }
+    if (field.key === "MaxBuildingLimitNum") {
+      return 10000;
+    }
+    if (field.key === "BaseCampMaxNum") {
+      return 256;
+    }
+    if (field.key === "BaseCampWorkerMaxNum") {
+      return 50;
+    }
+    if (/(CoopPlayerMaxNum|ServerPlayerMaxNum|GuildPlayerMaxNum)$/.test(field.key)) {
+      return 128;
+    }
+    if (/Distance$/.test(field.key)) {
+      return Math.max(defaultValue * 2, 10000);
+    }
+    if (/Rate$/.test(field.key) || /Multiplier$/.test(field.key) || /TimeScale$/.test(field.key)) {
+      return Math.max(5, defaultValue * 5, step * 20);
+    }
+    if (step >= 100) {
+      return Math.max(defaultValue * 2, step * 50);
+    }
+    if (step >= 60) {
+      return Math.max(defaultValue * 2, step * 60);
+    }
+    if (step >= 10) {
+      return Math.max(defaultValue * 5, step * 50);
+    }
+    if (step >= 1) {
+      if (defaultValue <= 5) {
+        return 10;
+      }
+      if (defaultValue <= 20) {
+        return 50;
+      }
+      if (defaultValue <= 100) {
+        return 200;
+      }
+      return defaultValue * 2;
+    }
+
+    return Math.max(5, defaultValue * 5, step * 50);
+  }
+
+  function getSliderBounds(field) {
+    var step = Math.abs(toNumber(field.step, 0.1)) || 0.1;
+    var defaultValue = toNumber(field.defaultValue, 0);
+    var min = field.min !== undefined
+      ? toNumber(field.min, 0)
+      : (defaultValue < 0 ? defaultValue : 0);
+    var max = getSliderMax(field, Math.abs(defaultValue), step);
+
+    if (max <= min) {
+      max = min + step * 10;
+    }
+
+    return {
+      min: normalizeBoundary(min, step, "min"),
+      max: normalizeBoundary(max, step, "max"),
+      step: step
+    };
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+  }
+
+  function syncSliderBounds(slider, value, step) {
+    var min = toNumber(slider.min, value);
+    var max = toNumber(slider.max, value);
+    if (value < min) {
+      slider.min = String(normalizeBoundary(value, step, "min"));
+    }
+    if (value > max) {
+      slider.max = String(normalizeBoundary(value, step, "max"));
+    }
+  }
+
+  function createNumberControl(field) {
+    var bounds = getSliderBounds(field);
+    var input = createElement("input", {
+      type: "number",
+      id: getFieldId(field.key),
+      name: field.key,
+      value: field.defaultValue,
+      "data-default": field.defaultValue,
+      step: field.step || String(bounds.step),
+      min: field.min,
+      max: field.max,
+      inputmode: "decimal",
+      class: "lightbar number-control__input"
+    });
+    var defaultValue = toNumber(field.defaultValue, bounds.min);
+    var slider = createElement("input", {
+      type: "range",
+      id: "slider" + getFieldId(field.key),
+      class: "lightbar number-control__slider",
+      min: bounds.min,
+      max: bounds.max,
+      step: bounds.step,
+      value: clamp(defaultValue, bounds.min, bounds.max),
+      "data-number-input": getFieldId(field.key),
+      "aria-label": field.label + " slider"
+    });
+    var wrapper = createElement("div", { class: "number-control" });
+
+    function syncSliderFromInput() {
+      var value = Number(input.value);
+      if (!Number.isFinite(value)) {
+        return;
+      }
+      syncSliderBounds(slider, value, bounds.step);
+      slider.value = String(clamp(value, toNumber(slider.min, value), toNumber(slider.max, value)));
+    }
+
+    slider.addEventListener("input", function () {
+      input.value = formatNumberValue(field, slider.value);
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    });
+    slider.addEventListener("change", function () {
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+    input.addEventListener("input", syncSliderFromInput);
+    input.addEventListener("change", syncSliderFromInput);
+
+    wrapper.appendChild(input);
+    wrapper.appendChild(slider);
+    return wrapper;
+  }
+
   function createTextControl(field) {
     var inputType = field.type === "number" ? "number" : "text";
+    if (field.type === "number") {
+      return createNumberControl(field);
+    }
+
     var input = createElement("input", {
       type: inputType,
       id: getFieldId(field.key),
@@ -241,17 +436,6 @@
       value: field.defaultValue,
       "data-default": field.defaultValue
     });
-
-    if (field.type === "number") {
-      input.setAttribute("step", field.step || "0.1");
-      if (field.min !== undefined) {
-        input.setAttribute("min", field.min);
-      }
-      if (field.max !== undefined) {
-        input.setAttribute("max", field.max);
-      }
-      input.classList.add("lightbar");
-    }
 
     return input;
   }
@@ -288,7 +472,7 @@
   function createFieldRow(field) {
     var row = createElement("tr", { class: "setting-row", "data-setting-key": field.key });
 
-    row.appendChild(createElement("td", { translate: "no" }, field.key));
+    row.appendChild(createElement("td", { translate: "no", title: field.key }, field.key));
 
     var labelCell = createElement("td");
     labelCell.appendChild(createElement("span", {

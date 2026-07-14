@@ -9,17 +9,11 @@ function setSnowMode(enabled) {
 
   body.classList.toggle("snow-mode", enabled);
   if (container) {
-    container.classList.toggle("snow-mode", enabled);
+    container.classList.remove("snow-mode");
   }
 
   localStorage.setItem(THEME_STORAGE_KEY, enabled ? "snow" : "default");
 
-  setTimeout(function () {
-    var links = document.querySelectorAll(".center-container a");
-    links.forEach(function (link) {
-      link.style.color = enabled ? "black" : "snow";
-    });
-  }, 100);
 }
 
 function toggleSnowMode() {

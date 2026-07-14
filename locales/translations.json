@@ -313,7 +313,8 @@
         "expandAll": "全部展開",
         "collapseAll": "全部收合",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "顯示 {visible}/{total}，已修改 {modified}。"
+        "filterResult": "顯示 {visible}/{total}，已修改 {modified}。",
+        "backToTop": "回到最上方"
       },
       "templates": {
         "title": "組態模板",
@@ -662,7 +663,8 @@
         "expandAll": "Expand all",
         "collapseAll": "Collapse all",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} shown, {modified} modified."
+        "filterResult": "{visible}/{total} shown, {modified} modified.",
+        "backToTop": "Back to top"
       },
       "templates": {
         "title": "Configuration Templates",
@@ -1011,7 +1013,8 @@
         "expandAll": "全部展开",
         "collapseAll": "全部收起",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "显示 {visible}/{total}，已修改 {modified}。"
+        "filterResult": "显示 {visible}/{total}，已修改 {modified}。",
+        "backToTop": "回到顶部"
       },
       "templates": {
         "title": "配置模板",
@@ -1360,7 +1363,8 @@
         "expandAll": "すべて展開",
         "collapseAll": "すべて折りたたむ",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} 件表示、変更済み {modified} 件。"
+        "filterResult": "{visible}/{total} 件表示、変更済み {modified} 件。",
+        "backToTop": "ページ上部へ"
       },
       "templates": {
         "title": "設定テンプレート",
@@ -1709,7 +1713,8 @@
         "expandAll": "모두 펼치기",
         "collapseAll": "모두 접기",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} 표시, 수정됨 {modified}."
+        "filterResult": "{visible}/{total} 표시, 수정됨 {modified}.",
+        "backToTop": "맨 위로"
       },
       "templates": {
         "title": "구성 템플릿",
@@ -2058,7 +2063,8 @@
         "expandAll": "Expandir todo",
         "collapseAll": "Contraer todo",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} visibles, {modified} modificados."
+        "filterResult": "{visible}/{total} visibles, {modified} modificados.",
+        "backToTop": "Volver arriba"
       },
       "templates": {
         "title": "Plantillas De Configuración",
@@ -2407,7 +2413,8 @@
         "expandAll": "Tout ouvrir",
         "collapseAll": "Tout fermer",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} affichés, {modified} modifiés."
+        "filterResult": "{visible}/{total} affichés, {modified} modifiés.",
+        "backToTop": "Retour en haut"
       },
       "templates": {
         "title": "Modèles De Configuration",
@@ -2756,7 +2763,8 @@
         "expandAll": "Alle öffnen",
         "collapseAll": "Alle schließen",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} angezeigt, {modified} geändert."
+        "filterResult": "{visible}/{total} angezeigt, {modified} geändert.",
+        "backToTop": "Nach oben"
       },
       "templates": {
         "title": "Konfigurationsvorlagen",
@@ -3105,7 +3113,8 @@
         "expandAll": "Expandir tudo",
         "collapseAll": "Recolher tudo",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "{visible}/{total} exibidos, {modified} modificados."
+        "filterResult": "{visible}/{total} exibidos, {modified} modificados.",
+        "backToTop": "Voltar ao topo"
       },
       "templates": {
         "title": "Modelos De Configuração",
@@ -3454,7 +3463,8 @@
         "expandAll": "Открыть все",
         "collapseAll": "Закрыть все",
         "tagPlaceholder": "Technology ID",
-        "filterResult": "Показано {visible}/{total}, изменено {modified}."
+        "filterResult": "Показано {visible}/{total}, изменено {modified}.",
+        "backToTop": "Наверх"
       },
       "templates": {
         "title": "Шаблоны Конфигурации",

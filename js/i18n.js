@@ -167,6 +167,13 @@
         t(element.getAttribute("data-i18n-aria-label"), element.getAttribute("aria-label") || "")
       );
     });
+
+    document.querySelectorAll("[data-i18n-title]").forEach(function (element) {
+      element.setAttribute(
+        "title",
+        t(element.getAttribute("data-i18n-title"), element.getAttribute("title") || "")
+      );
+    });
   }
 
   function applySettingDescriptions() {
@@ -302,6 +309,9 @@
     await loadCatalog();
     attachLanguageSelect();
     applyTranslations();
+    document.dispatchEvent(
+      new CustomEvent("i18n:change", { detail: { locale: currentLocale } })
+    );
     readyResolve();
   });
 })();

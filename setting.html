@@ -19,37 +19,39 @@
   <script src="js/formState.js"></script>
   <script src="js/generateSettings.js"></script>
   <script src="js/parseConfig.js"></script>
-  <script src="js/toggleSnowMode.js"></script>
+  <script src="js/toggleSnowMode.js?v=20260715-theme"></script>
   <script src="js/reset.js"></script>
-  <script src="js/settingsForm.js" defer></script>
+  <script src="js/settingsForm.js?v=20260715-number-sliders" defer></script>
   <script src="locales/translations.js" defer></script>
-  <script src="js/i18n.js" defer></script>
+  <script src="js/i18n.js?v=20260715-back-to-top" defer></script>
   <script src="js/configSlots.js" defer></script>
   <script src="js/templates.js" defer></script>
   <script src="js/editorTools.js" defer></script>
   <script src="js/autoHideToolbar.js" defer></script>
+  <script src="js/backToTop.js" defer></script>
   <!-- <script src="js/updatetime.js"></script> -->
 </head>
 
 <body>
   <div class="scrollable-area" id="HiddenArea">
-    <div class="toolbar-actions">
-      <button class="button4" id="shareButton" data-i18n="actions.share">分享鏈結</button>
-      <button class="button3" onclick="toggleSnowMode()" data-i18n="actions.theme">切換主題</button>
-      <button class="button1" onclick="generateSettings()" data-i18n="actions.copy">複製到剪貼簿</button>
-      <button class="button2" onclick="SaveSettings()" data-i18n="actions.download">下載到設定檔</button>
-      <button class="button0" onclick="parseConfig()" data-i18n="actions.load">讀取</button>
-      <button type="button" id="modifiedOnlyToggle" class="toolbar-toggle" aria-pressed="false"
-        data-i18n="tools.modifiedOnly">只顯示修改項目</button>
-      <button type="button" id="clearFiltersButton" data-i18n="tools.clearFilters">清除</button>
-      <button type="button" id="expandAllGroupsButton" data-i18n="tools.expandAll">全部展開</button>
-      <button type="button" id="collapseAllGroupsButton" data-i18n="tools.collapseAll">全部收合</button>
+    <div class="toolbar-actions" role="toolbar" aria-label="Quick actions">
+      <div class="toolbar-action-group toolbar-action-group--primary">
+        <button class="button1" onclick="generateSettings()" data-i18n="actions.copy">複製到剪貼簿</button>
+        <button class="button2" onclick="SaveSettings()" data-i18n="actions.download">下載到設定檔</button>
+      </div>
+      <div class="toolbar-action-group toolbar-action-group--utility">
+        <button class="button0" onclick="parseConfig()" data-i18n="actions.load">讀取</button>
+        <button class="button4" id="shareButton" data-i18n="actions.share">分享鏈結</button>
+        <button class="button3" onclick="toggleSnowMode()" data-i18n="actions.theme">切換主題</button>
+      </div>
+      <div class="toolbar-action-group toolbar-action-group--view">
+        <button type="button" id="modifiedOnlyToggle" class="toolbar-toggle" aria-pressed="false"
+          data-i18n="tools.modifiedOnly">只顯示修改項目</button>
+        <button type="button" id="clearFiltersButton" data-i18n="tools.clearFilters">清除</button>
+        <button type="button" id="expandAllGroupsButton" data-i18n="tools.expandAll">全部展開</button>
+        <button type="button" id="collapseAllGroupsButton" data-i18n="tools.collapseAll">全部收合</button>
+      </div>
     </div>
-    <label class="toolbar-field" for="settingSearch">
-      <span data-i18n="tools.searchLabel">搜尋</span>
-      <input type="search" id="settingSearch" autocomplete="off" data-i18n-placeholder="tools.searchPlaceholder"
-        placeholder="RCON, PvP, Palbox">
-    </label>
     <label class="language-switcher" for="languageSelect">
       <span data-i18n="language.label">語言</span>
       <select id="languageSelect" data-i18n-aria-label="language.ariaLabel">
@@ -65,9 +67,14 @@
         <option value="ru-RU">Русский</option>
       </select>
     </label>
-    <span id="filterResultText" class="toolbar-status" aria-live="polite"></span>
+    <label class="toolbar-field" for="settingSearch">
+      <span data-i18n="tools.searchLabel">搜尋</span>
+      <input type="search" id="settingSearch" autocomplete="off" data-i18n-placeholder="tools.searchPlaceholder"
+        placeholder="RCON, PvP, Palbox">
+    </label>
     <textarea class="loaddata" id="configField" name="configField" rows="3" cols="28" placeholder="貼上設定"
       data-i18n-placeholder="actions.pastePlaceholder"></textarea>
+    <span id="filterResultText" class="toolbar-status" aria-live="polite"></span>
     <a class="sponsor-button" href="https://www.buymeacoffee.com/dysoncheng" target="_blank"
       rel="noopener noreferrer" aria-label="Buy me a coffee" translate="no">
       <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%90%B3&slug=dysoncheng&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff"
@@ -99,7 +106,7 @@
     </table>
     <br>
     <img src="imgs/R.gif" alt="down" class="small-gif">
-    <h1>🌺PalWorld Settings Generator🌺</h1>
+    <h1>PalWorld Settings Generator</h1>
     <h2 data-i18n="app.subtitle">PalWorld設定產生器 - Server 1.0</h2>
     <table class="banner-table">
       <tr>
@@ -872,6 +879,13 @@
         Cheng</a>
     </div>
   </footer>
+  <button type="button" id="backToTopButton" class="back-to-top" aria-label="回到最上方" aria-hidden="true"
+    title="回到最上方" data-i18n-aria-label="tools.backToTop" data-i18n-title="tools.backToTop" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 19V5"></path>
+      <path d="m5 12 7-7 7 7"></path>
+    </svg>
+  </button>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -880,28 +894,20 @@
 
     function initializeAllElements() {
 
-      var rangeInputs = document.querySelectorAll('input[type="range"]');
-
-      rangeInputs.forEach(function (rangeInput) {
-        var numberId = rangeInput.getAttribute('id').replace('slider', '');
-        initializeElement(numberId, rangeInput.getAttribute('id'));
-      });
-
-      var numberInputs = document.querySelectorAll('input[type="number"]');
-
-      numberInputs.forEach(function (numberInput) {
-        numberInput.addEventListener('input', function () {
-          numberInput.style.backgroundColor = 'lightblue';
-        });
+      document.querySelectorAll('input[type="range"][data-number-input]').forEach(function (rangeInput) {
+        initializeElement(rangeInput.dataset.numberInput, rangeInput.getAttribute('id'));
       });
     }
 
     function initializeElement(inputId, sliderId) {
       var inputElement = document.getElementById(inputId);
+      var sliderElement = document.getElementById(sliderId);
 
-      document.getElementById(sliderId).addEventListener('input', function () {
-        inputElement.style.backgroundColor = 'lightblue';
-      });
+      if (!inputElement || !sliderElement || sliderElement.dataset.legacyListenerAttached) {
+        return;
+      }
+
+      sliderElement.dataset.legacyListenerAttached = 'true';
     }
 
     function updateInputValue(inputId, sliderId) {
@@ -909,7 +915,8 @@
       var inputElement = document.getElementById(inputId);
 
       inputElement.value = inputValue;
-      inputElement.style.backgroundColor = 'lightblue';
+      inputElement.dispatchEvent(new Event('input', { bubbles: true }));
+      inputElement.dispatchEvent(new Event('change', { bubbles: true }));
     }
   </script>
 
