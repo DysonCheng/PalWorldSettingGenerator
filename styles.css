@@ -1781,6 +1781,7 @@ body.snow-mode table.special-table a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 188px;
     padding: 16px;
     border: 1px solid var(--hairline);
     border-radius: var(--radius-card);
@@ -1809,6 +1810,14 @@ body.snow-mode table.special-table a {
     justify-content: space-between;
     gap: 14px;
     margin-bottom: 14px;
+}
+
+.utility-dashboard .dashboard-module__header,
+.utility-dashboard .template-panel__header,
+.utility-dashboard .config-slots__header,
+.utility-dashboard .config-slots--compare .dashboard-module__header {
+    min-height: 78px;
+    margin-bottom: 0;
 }
 
 .dashboard-module__header > :first-child,
@@ -1862,6 +1871,12 @@ body.snow-mode table.special-table a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     align-items: end;
+}
+
+.utility-dashboard .template-panel__controls,
+.utility-dashboard .config-slots__controls,
+.utility-dashboard .config-slots__compare {
+    margin-top: 0;
 }
 
 .template-panel__controls {
@@ -1941,7 +1956,14 @@ body.snow-mode table.special-table a {
 
 .utility-dashboard .template-panel__status,
 .utility-dashboard .config-slots__status {
-    margin-top: auto;
+    margin-top: 8px;
+}
+
+.utility-dashboard .config-slots--compare::after {
+    content: "";
+    display: block;
+    min-height: 1.35em;
+    margin-top: 8px;
 }
 
 .import-report {
@@ -2641,6 +2663,28 @@ body.snow-mode .back-to-top:hover {
 
     .utility-dashboard {
         grid-template-columns: 1fr;
+    }
+
+    .utility-dashboard .dashboard-module {
+        min-height: 0;
+    }
+
+    .utility-dashboard .dashboard-module__header,
+    .utility-dashboard .template-panel__header,
+    .utility-dashboard .config-slots__header,
+    .utility-dashboard .config-slots--compare .dashboard-module__header {
+        min-height: 0;
+        margin-bottom: 12px;
+    }
+
+    .utility-dashboard .template-panel__controls,
+    .utility-dashboard .config-slots__controls,
+    .utility-dashboard .config-slots__compare {
+        margin-top: 0;
+    }
+
+    .utility-dashboard .config-slots--compare::after {
+        display: none;
     }
 
     .dashboard-module__header,
