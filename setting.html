@@ -40,7 +40,6 @@
         <button class="button2" onclick="SaveSettings()" data-i18n="actions.download">下載到設定檔</button>
       </div>
       <div class="toolbar-action-group toolbar-action-group--utility">
-        <button class="button0" onclick="parseConfig()" data-i18n="actions.load">讀取</button>
         <button class="button4" id="shareButton" data-i18n="actions.share">分享鏈結</button>
         <button class="button3" onclick="toggleSnowMode()" data-i18n="actions.theme">切換主題</button>
       </div>
@@ -72,14 +71,13 @@
       <input type="search" id="settingSearch" autocomplete="off" data-i18n-placeholder="tools.searchPlaceholder"
         placeholder="RCON, PvP, Palbox">
     </label>
-    <textarea class="loaddata" id="configField" name="configField" rows="3" cols="28" placeholder="貼上設定"
-      data-i18n-placeholder="actions.pastePlaceholder"></textarea>
+    <div class="config-paste-control">
+      <textarea class="loaddata" id="configField" name="configField" rows="3" cols="28" placeholder="貼上設定"
+        data-i18n-placeholder="actions.pastePlaceholder"></textarea>
+      <button type="button" class="button0 config-paste-control__load" onclick="parseConfig()"
+        data-i18n="actions.load">讀取</button>
+    </div>
     <span id="filterResultText" class="toolbar-status" aria-live="polite"></span>
-    <a class="sponsor-button" href="https://www.buymeacoffee.com/dysoncheng" target="_blank"
-      rel="noopener noreferrer" aria-label="Buy me a coffee" translate="no">
-      <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%90%B3&slug=dysoncheng&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff"
-        alt="Buy me a coffee">
-    </a>
   </div>
   <div id="container" class="contentner">
     <table class="special-table">
@@ -106,7 +104,7 @@
     </table>
     <br>
     <img src="imgs/R.gif" alt="down" class="small-gif">
-    <h1>PalWorld Settings Generator</h1>
+    <h1 data-i18n="app.title">PalWorld Settings Generator</h1>
     <h2 data-i18n="app.subtitle">PalWorld設定產生器 - Server 1.0</h2>
     <table class="banner-table">
       <tr>
@@ -191,7 +189,10 @@
         </section>
         <section class="dashboard-module config-slots config-slots--compare" aria-labelledby="configCompareTitle">
           <div class="dashboard-module__header">
-            <h3 id="configCompareTitle" data-i18n="storage.compareResultTitle">備份比較</h3>
+            <div>
+              <h3 id="configCompareTitle" data-i18n="storage.compareResultTitle">備份比較</h3>
+              <p data-i18n="storage.compareDescription">選擇兩個已儲存的備份，快速比較哪些設定值不同。</p>
+            </div>
           </div>
           <div class="config-slots__compare">
             <label for="configCompareA">
@@ -877,6 +878,11 @@
     <div class="buttom-container">
       <a href="https://github.com/DysonCheng/PalWorldSettingGenerator" target="_blank" translate="no">Design by Dyson
         Cheng</a>
+      <a class="sponsor-button" href="https://www.buymeacoffee.com/dysoncheng" target="_blank"
+        rel="noopener noreferrer" aria-label="Buy me a coffee" translate="no">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%90%B3&slug=dysoncheng&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff"
+          alt="Buy me a coffee">
+      </a>
     </div>
   </footer>
   <button type="button" id="backToTopButton" class="back-to-top" aria-label="回到最上方" aria-hidden="true"
